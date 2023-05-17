@@ -32,17 +32,17 @@ I’ve changed my app, modified flows, everything works fine in Dev, publish cus
 Uh-oh, the flows aren’t reflecting changes.
 {{< image src="giphy.gif" caption="XML Mappings" height="1000" width="800">}}
 
-# Issue: Changes made in one environment, don’t reflect in another environment in a managed solution #
+## Issue: Changes made in one environment, don’t reflect in another environment in a managed solution
 
-## Solution/Fix: Check on your Flows, or anything not reflecting the changes, for the Solution Layers. ##
+## Solution/Fix: Check on your Flows, or anything not reflecting the changes, for the Solution Layers
 
 - Go to your flow for example, the ellipsis (…) and check the Solution Layers.
 - Check if there is an Unmanaged layer there.
 - Remove this layer, and reimport your package.
 - Test and it should have updated, if not, check for more unmanaged layers.
 
-### What are unmanaged layers and why do they occur? ###
+## What are unmanaged layers and why do they occur?
 
 If you have a managed solution, and make any edit (could also be just open a flow run and save it) it can create an edited ‘unmanaged’ layer, and this could cause your updates to not go through.
 
-Check out this Microsoft article on more indepth explanation on it: https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm
+Check out this Microsoft article on more indepth explanation on it: <https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm>

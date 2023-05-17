@@ -28,11 +28,11 @@ code:
 Adaptive cards is the name for the pop-up you can get in Teams, with custom content asking you to confirm something, or to submit a remark.
 One way of creating them is through Adaptive card Designer (JSON).
 
-Another way is to use the new Cards (preview) method in PowerApps maker - find out how here: Microsoft Learn Page - https://learn.microsoft.com/en-us/power-apps/cards/overview
+Another way is to use the new Cards (preview) method in PowerApps maker - find out how here: Microsoft Learn Page - <https://learn.microsoft.com/en-us/power-apps/cards/overview>
 
 If you want to use your adaptive card as for example an approval, or you want the color choice you need to get the data that the card receives.
 
-- On https://adaptivecards.io/designer/ design the card the way you want it.
+- On <https://adaptivecards.io/designer/> design the card the way you want it.
 - Make sure on the right-hand side, to add an ID element to your button or choice field.
 
 This ID Element is important so you can recognize your data later on in the PARSE JSON step.
@@ -43,10 +43,10 @@ The new Cards Preview function offers the same functionality, however while I fi
 
 Your flow run will fail as it needs this parameter. To bypass, I copy/paste the code from the Card Preview option, into the Card Payload Editor from Adaptivecards.IO and check for an error there.
 
-**Power Automate**
+## Power Automate
+
 - Once you designed your card, insert it in your Power Automate Flow:
 - Add a step, click on Teams, Post an adaptive card and wait for a response.
-
 
 {{< image src="AdaptiveCard-EmptyBody.png" caption="" height="300" width="700">}}
 
@@ -63,7 +63,7 @@ Different choices of material, feedback or other choice options
 {{< image src="AdaptiveCards-CardinTeams.png" caption="" height="500" width="700">}}
 
 - After your Teams card, add an action for Parse JSON (JSON sounds scary but I’ll walk you through it)
-- On outputs, type the name of your card step, add _ for spaces. Example: outputs(’Post_adaptive_card_and_wait_for_a_response’)?[’body’]
+- On outputs, type the name of your card step, add _for spaces. Example: outputs(’Post_adaptive_card_and_wait_for_a_response’)?[’body’]
 - On the schema area type {}
 
 {{< image src="AdaptiveCard-parse json filled out.png" caption="" height="450" width="1000">}}

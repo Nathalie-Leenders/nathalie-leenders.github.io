@@ -43,10 +43,10 @@ In your Apply to each, do the following:
 - On top of your flow, initialize a string variable
 - Add a Compose step
 - Add the data you need
-- After each line, add < br > (break) (without spaces)
-- One < br > is a line break, < br >< br > is a new paragraph
+- After each line, add `<br>` (break)
+- One `<br>` is a line break, `<br><br>` is a new paragraph
 - Append to string variable
-- Select the Output from your Compose, and add 2x < br >
+- Select the Output from your Compose, and add 2x `<br>`
 
 By using append, it adds onto the variable, so each time the action is selected it adds to it, and adding a new paragraph.
 

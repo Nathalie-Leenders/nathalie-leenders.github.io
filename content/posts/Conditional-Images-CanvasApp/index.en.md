@@ -39,29 +39,34 @@ You can do this by using an If statement and some variables, let’s look at the
 - Add a button
 - On your datasources, add Office365Users to your app
 - On your Onselect from the button, add this statement:
-` If(!IsBlank(Find(”@Powerplatform.com”,DataCardValue1.Text)),
 
-Set(VarOfficeImage,true),Set(VarOfficeImage,false)); `
+  ```PowerFx
+  If(!IsBlank(Find("@Powerplatform.com",DataCardValue1.Text)),
+
+  Set(VarOfficeImage,true),Set(VarOfficeImage,false));
+  ```
 
 Make sure your datacardvalue matches the one in your email field. The variable will error but that’s fine as we’ll set that up now.
 
-What this does, is if you have for example Janedoe@Powerplatform.com it sets your variable, I will now explain how this variable works.
+What this does, is if you have for example `Janedoe@Powerplatform.com` it sets your variable, I will now explain how this variable works.
 
 - On your image datacard, find the image1 field, and go to the Image Property.
-- Paste the following code to your Image property: 
+- Paste the following code to your Image property:
 
-`If(Form.Mode = FormMode.Edit, 
+  ```PowerFx
+  If(Form.Mode = FormMode.Edit,
 
-Parent.Default,
+  Parent.Default,
 
-VarOfficeImage=true,Office365Users.UserPhotoV2(DataCardValue1), 
+  VarOfficeImage=true,Office365Users.UserPhotoV2(DataCardValue1),
 
-AddPicture1.Media)`
+  AddPicture1.Media)
+  ```
 
 What this does, if that if you’re in edit mode modifying someone, it grabs the parent (existing) image, otherwise if the variable for your office image is true (if you pushed the button) to grab the user photo for the person you have specified in your email address field.
 
 If that variable is false (there is no match in the email field) you can add your own image through the regular image card.
 
-# Test your functionality, and save the app.
+## Test your functionality, and save the app
 
 I understand this seems very tricky, let me know if you have any questions.
