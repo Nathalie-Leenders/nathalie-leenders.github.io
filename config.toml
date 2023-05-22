@@ -30,7 +30,7 @@ theme = "DoIt"
     pre = ""
     post = ""
     name = "About me"
-    url = "/About/"
+    url = "/Aboutme/"
     title = ""
     weight = 2   
   [[menu.main]]
@@ -95,7 +95,15 @@ theme = "DoIt"
     Twitter="@NathLeenders" 
     LinkedIn="nathalie-leenders-den-nijs-8853871b/"
     Github="Nathalie-Leenders"
+    Email="info@nathalieleenders.com"
 
+#Google analytics
+[params.analytics]
+    enable = true
+    # Google Analytics
+    [params.analytics.google]
+      id = "G-G0R550W0TM"
+      anonymizeIP = true
 
 # Markup related configuration in Hugo
 [markup]
