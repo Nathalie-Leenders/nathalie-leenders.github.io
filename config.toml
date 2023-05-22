@@ -15,13 +15,13 @@ theme = "DoIt"
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
+    identifier = "blog"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Posts"
-    url = "/posts/"
+    name = "Blog"
+    url = "/blog/"
     # title will be shown when you hover on this menu link
     title = ""
     weight = 1
@@ -41,6 +41,38 @@ theme = "DoIt"
     url = "/categories/"
     title = ""
     weight = 3
+[[menu.main]]
+    identifier = "glossary"
+    pre = ""
+    post = ""
+    name = "Glossary"
+    url = "/glossary/"
+    title = ""
+    weight = 4    
+[[menu.main]]
+    identifier = "speaking"
+    pre = ""
+    post = ""
+    name = "Speaking at events"
+    url = "/speakingengagements/"
+    title = ""
+    weight = 5
+[[menu.main]]
+    identifier = "videos"
+    pre = ""
+    post = ""
+    name = "Videos"
+    url = "/videos/"
+    title = ""
+    weight = 6
+[[menu.main]]
+    identifier = "contact"
+    pre = ""
+    post = ""
+    name = "Contact"
+    url = "/contact/"
+    title = ""
+    weight = 7          
 
 [params.home.profile]
   enable = true
@@ -53,6 +85,7 @@ theme = "DoIt"
 [params.social]
     Twitter="@NathLeenders" 
     LinkedIn="nathalie-leenders-den-nijs-8853871b/"
+    Github="Nathalie-Leenders"
 
 
 # Markup related configuration in Hugo
