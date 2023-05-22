@@ -41,7 +41,6 @@ To get to the XML mapping, you must first have the Developer Tab activated.
 
 {{< image src="xmlmapping screenshot1.png" caption="Developer tab" height="600" width="800">}}
 
-
 Now you’re able to open the Developer Tab, and in the middle you’ll find the XML Mapping.
 Here is where the fun starts.
 
@@ -49,21 +48,23 @@ XML Mapping, as the name says, uses an XML file to map the words.
 
 - Open NotePad, and copy/paste the following:
 
-`<?xml version=”1.0” encoding=”UTF-8” standalone=”no”?>
-<DemoXMLNode xmlns=”http://CustomDemoXML.htm”>
-<Name></Name>
-<Insertnewasyouwant></Insertnewasyouwant>
-</DemoXMLNode>`
+  ```xml
+  <?xml version=”1.0” encoding=”UTF-8” standalone=”no”?>
+  <DemoXMLNode xmlns=”http://CustomDemoXML.htm”>
+  <Name></Name>
+  <Insertnewasyouwant></Insertnewasyouwant>
+  </DemoXMLNode>
+  ```
 
-(I got this code off of someones blog a while ago, if I remember who it was I will post it here, I promise)
+  (I got this code off of someones blog a while ago, if I remember who it was I will post it here, I promise)
 
-- Use the <> and </> to map your XML names.
+- Use the `<>` and `</>` to map your XML names.
 - Save as .XML file.
 - Now in Microsoft Word, on the XML Mapping pane, go to the dropdown, and click on (Add a new Part…)
 - Select your file.
 - It will show up as the following:
 
-{{< image src="xmlmapping screenshot2.png" caption="Breaks start and End" height="600" width="800">}}
+  {{< image src="xmlmapping screenshot2.png" caption="Breaks start and End" height="600" width="800">}}
 
 I’ve used Word1 and Word2, but you can of course specify your own naming in the XML.
 
@@ -73,14 +74,14 @@ Next step is binding this to something on your form or document.
 - Insert a Text content control
 - Place the text in this content control
 - Select in your Word file what you want to have repeated (The content control)
-- Right click on Word1
+- Right click on `Word1`
 - Select Map to selected Content control
 
-{{< image src="xmlmapping screenshot3.png" caption="XML Mappings" height="1000" width="800">}}
+  {{< image src="xmlmapping screenshot3.png" caption="XML Mappings" height="1000" width="800">}}
 
-You have now mapped that content control, to Word1
+You have now mapped that content control, to `Word1`
 
-* Now in your header, footer or where ever you want, Right click on Word1, Insert content control, and in this case Word1 as Plain text, and it will appear and be a repeated text from where you’re changing it.
+- Now in your header, footer or where ever you want, Right click on `Word1`, Insert content control, and in this case `Word1` as Plain text, and it will appear and be a repeated text from where you’re changing it.
 
 It might take a few seconds to reflect.
 

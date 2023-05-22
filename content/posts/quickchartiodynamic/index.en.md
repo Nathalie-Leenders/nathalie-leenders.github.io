@@ -47,29 +47,36 @@ Add in Basic chart (courtesy of Kristine’s video):
 - In your Canvas app, add in an image.
 - In the Image property, type the following:
 
-“https://quickchart.io/chart?c=”& EncodeUrl(” “)
+  ```
+  "https://quickchart.io/chart?c="& EncodeUrl(" ")
+  ```
 
-- Between your ” ” you’ll want to paste the code from the chart URL (don’t copy  /chart?c= as you already have that before your EncodeURL
+- Between your `" "` you’ll want to paste the code from the chart URL (don’t copy `/chart?c=` as you already have that before your EncodeURL)
 
 - Modify the data labels, datasets, backgrounds etc and that works (Takes some practice)
 
 (If you get a token error, check for any characters that may be in the wrong place, or missing brackets etc)
 
-Here’s where the “Quick Tip” comes in and why I needed help.
+Here’s where the “Quick Tip" comes in and why I needed help.
 
 If you try and type in your collection, or variable in data it won’t recognize it.
 
 You need to wrap it as follows:
 
 Old:
+
+```
 data:[1,2,3,4,5]
+```
 
 New:
 
-    data:[”& First(Col1).Value & “,
-            “& First(Col2).Value & “,
-            “& First(Col3).Value & “,
-            “& First(Col4).Value & “,
-            “& First(Col5).Value & “]
+```
+    data:["& First(Col1).Value & ",
+            "& First(Col2).Value & ",
+            "& First(Col3).Value & ",
+            "& First(Col4).Value & ",
+            "& First(Col5).Value & "]
+```
 
-**So use “&  your variable/collection &”**
+**So use `"&  your variable/collection &"`**

@@ -25,9 +25,9 @@ code:
     maxShownLines: 100
 ---
 
-# How to move stages automatically (BPF) using Power Automate (no http calls needed)
+## How to move stages automatically (BPF) using Power Automate (no http calls needed)
 
-Quick summary: You need to grab data from 3 different tables, link them using lookup columns, capture ID’s, and add in conditions and use Data operations to shape the data into usable steps. Then add in a switch depending on your stage names, and add final actions updating your BPF table.
+Quick summary: You need to grab data from 3 different tables, link them using lookup columns, capture ID's, and add in conditions and use Data operations to shape the data into usable steps. Then add in a switch depending on your stage names, and add final actions updating your BPF table.
 
 Sounds easy enough right?…..
 
@@ -35,87 +35,92 @@ Sounds easy enough right?…..
 
 I hope this helps, and I tried explaining it clearly, please let me know in case of any questions, feedback, other methods etc. For me this worked.
 
-# Table structures needed: #
+## Table structures needed
+
 - Main Table
 - Business process flow table (automatically created once you add a Process and save it, bring into your solution)
 - Process Stages table (In Default Solution)
 
-## Set relationship by doing lookup fields ##
+## Set relationship by doing lookup fields
 
 In Main Table; set lookup columns:
+
 - Active Stage
 - Admin_Request
 
 In BPF table; set lookup columns:
+
 - New_request
 - (GUID ID of your Main Table)
 
 Identify process steps
+
 - Trigger: When a row is added, modified or deleted (Dataverse)
 - Added or Modified -  Business process flow table
-
 - Initialize variables for; number of stages you have
 - (use a compose to check outputs if needed)
 
 Getting the data from your tables
+
 - Get Record
 - List rows – Table: Main Table
-- Row ID: `triggerOutputs()?[’body/_bpf_new_requestid_value’]`
+- Row ID: `triggerOutputs()?['body/_bpf_new_requestid_value']`
 
-### Search for your request ID in the BPN table (using the lookup columns) ###
+## Search for your request ID in the BPN table (using the lookup columns)
 
 {{< image src="Process Stages screenshot 2.png" caption="Beaker's head on fire" height="800" width="500">}}
 
 - Get Process Stages (Gets active stage)
 - List rows – Table:Process Stages (This exists in the Default Solution)
-- Row ID: `triggerOutputs()?[’body/_activestageid_value’]`
+- Row ID: `triggerOutputs()?['body/_activestageid_value']`
 - List rows – All Process Stages (or use an Http request)
 - List rows – Table: Process Stages
-- Filter Rows: `_processid_value eq outputs(’Get_process_Stages’)?[’body/_processid_value’]`
+- Filter Rows: `_processid_value eq outputs('Get_process_Stages')?['body/_processid_value']`
 
+  {{< image src="process stages Screenshot 3.png" caption="Beaker's head on fire" height="800" width="500">}}
 
-{{< image src="process stages Screenshot 3.png" caption="Beaker's head on fire" height="800" width="500">}}
-
-#### Get all process stage names ####
+## Get all process stage names
 
 - Set an Apply to each
-- Output:  `outputs(’List_rows_-_all_process_stages’)?[’body/value’]`
+- Output:  `outputs('List_rows_-_all_process_stages')?['body/value']`
 - Compose action: get all body from process stages
-- Inputs:` items(’Apply_to_each’)`
+- Inputs: `items('Apply_to_each')`
 - Put a terminate – successful and run your flow, grab the output from the body of your Compose – get all body from Process Stages
 - Go back into Edit
 - Continue with the steps (re) move the terminate
 - Parse JSON
-- Content: `outputs(’Compose_-_get_all_body_from_Process_Stages’)`
+- Content: `outputs('Compose_-_get_all_body_from_Process_Stages')`
 - Schema: Click on Generate from Sample, and use the output body as grabbed in the earlier step
 
-##### Setting your variables to capture the Process ID’s #####
+## Setting your variables to capture the Process ID's
+
 - Create a Scope – Set variables
 - Append your string variables with the following code:
 
-`if(equals(body(’Parse_JSON’)?[’stagename’],’New Stage’),body(’Parse_JSON’)?[’processstageid’],'’)`
+  ```PowerFx
+  if(equals(body('Parse_JSON')?['stagename'],'New Stage'),body('Parse_JSON')?['processstageid'],'')
+  ```
 
+  {{< image src="screenshot 5.png" caption="Beaker's head on fire" height="800" width="500">}}
 
-{{< image src="screenshot 5.png" caption="Beaker's head on fire" height="800" width="500">}}
-
-**What does this do?** <br>
+### What does this do?
 
 It checks in each apply to each, if the name matches the stagename, and then appends the ID into your string variable.
 
-Switch for each Stage – On: `outputs(’Get_process_Stages’)?[’body/stagename’]`
+Switch for each Stage – On: `outputs('Get_process_Stages')?['body/stagename']`
 
 - Add per stage your case
 - Equals – your stage name
 - Update a row
 - Your BPF Table
-- Row ID: `triggerOutputs()?[’body/businessprocessflowinstanceid’]`
-- On the Active Process stage: `/processstages/@{variables(’NewStage’)}`
+- Row ID: `triggerOutputs()?['body/businessprocessflowinstanceid']`
+- On the Active Process stage: `/processstages/@{variables('NewStage')}`
 - Completed On: `utcNow()`
 
-{{< image src="screenshot 6.png" caption="Beaker's head on fire" height="800" width="500">}}
+  {{< image src="screenshot 6.png" caption="Beaker's head on fire" height="800" width="500">}}
 
 
-**What does this do?** <br>
+### What does this do?
 
 This identifies the current stage, and moves it to the next using the process ID which you specified in your variable, date now.
 
