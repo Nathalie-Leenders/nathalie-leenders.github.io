@@ -26,13 +26,21 @@ theme = "DoIt"
     title = ""
     weight = 1
   [[menu.main]]
+    identifier = "aboutme"
+    pre = ""
+    post = ""
+    name = "About me"
+    url = "/About/"
+    title = ""
+    weight = 2   
+  [[menu.main]]
     identifier = "tags"
     pre = ""
     post = ""
     name = "Tags"
     url = "/tags/"
     title = ""
-    weight = 2
+    weight = 3
   [[menu.main]]
     identifier = "categories"
     pre = ""
@@ -40,7 +48,7 @@ theme = "DoIt"
     name = "Categories"
     url = "/categories/"
     title = ""
-    weight = 3
+    weight = 4
 [[menu.main]]
     identifier = "glossary"
     pre = ""
@@ -48,7 +56,7 @@ theme = "DoIt"
     name = "Glossary"
     url = "/glossary/"
     title = ""
-    weight = 4    
+    weight = 5    
 [[menu.main]]
     identifier = "speaking"
     pre = ""
@@ -56,7 +64,7 @@ theme = "DoIt"
     name = "Speaking at events"
     url = "/speakingengagements/"
     title = ""
-    weight = 5
+    weight = 6
 [[menu.main]]
     identifier = "videos"
     pre = ""
@@ -64,7 +72,7 @@ theme = "DoIt"
     name = "Videos"
     url = "/videos/"
     title = ""
-    weight = 6
+    weight = 7
 [[menu.main]]
     identifier = "contact"
     pre = ""
@@ -72,7 +80,8 @@ theme = "DoIt"
     name = "Contact"
     url = "/contact/"
     title = ""
-    weight = 7          
+    weight = 8
+            
 
 [params.home.profile]
   enable = true
