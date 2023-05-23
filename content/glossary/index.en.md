@@ -1,8 +1,5 @@
-# [A](#a) | B | C | D | E | [F](#f) | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z | 
+# [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#E) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [X](#x) | [Y](#y) | [Z](#z) | 
 
-(Not yet working to click on, working on it!)
-
-[R][This is a test]
 
 # A
 
@@ -84,8 +81,6 @@ Workflow created by Power Automate, formerly named as such.
 # K
 
 # L
-
-# This is a test
 
 **Low Code (No Code)**
 Build apps and automations without any prior coding knowledge. The Power Platform offers an intuitive way to directly tell a button or form (or gallery, or image etc etc) what to do without needing to dive into a programming language such as C#, HTML, CSS. It uses PowerFX.
