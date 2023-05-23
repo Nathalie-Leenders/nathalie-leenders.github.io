@@ -83,7 +83,14 @@ theme = "DoIt"
     url = "/contact/"
     title = ""
     weight = 9
-            
+[[menu.main]]
+    identifier = "recommended"
+    pre = ""
+    post = ""
+    name = "Awesome people"
+    url = "/recommended/"
+    title = ""
+    weight = 10           
 
 [params.home.profile]
   enable = true

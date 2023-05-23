@@ -27,7 +27,7 @@ code:
 
 <!--more-->
 
-{{< admonition type=note title="Note" open=true >}}
+{{< admonition type=success title="Biggest tip I can give you" open=true >}}
 Check this out if you want to learn how to get Microsoft exam vouchers for free! :yellow_heart:
 {{< /admonition >}}
 
