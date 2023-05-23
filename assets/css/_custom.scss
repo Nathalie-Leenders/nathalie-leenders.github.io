@@ -5,6 +5,7 @@
     [theme=dark] & {
 
         color: $global-font-color-dark;
+        background-color: darkgoldenrod;
 
     }
 
@@ -14,6 +15,7 @@
     [theme=black] & {
 
         color: $global-font-color-black;
+        background-color: darkorange
 
     }
 }
