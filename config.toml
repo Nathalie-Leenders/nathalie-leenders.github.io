@@ -29,14 +29,6 @@ theme = "DoIt"
     title = ""
     weight = 1
   [[menu.main]]
-    identifier = "aboutme"
-    pre = ""
-    post = ""
-    name = "About me"
-    url = "/Aboutme/"
-    title = ""
-    weight = 6   
-  [[menu.main]]
     identifier = "tags"
     pre = ""
     post = ""
@@ -59,12 +51,20 @@ theme = "DoIt"
     name = "Glossary"
     url = "/glossary/"
     title = ""
-    weight = 5    
+    weight = 5
+[[menu.main]]
+    identifier = "aboutme"
+    pre = ""
+    post = ""
+    name = "About me"
+    url = "/Aboutme/"
+    title = ""
+    weight = 6     
 [[menu.main]]
     identifier = "speaking"
     pre = ""
     post = ""
-    name = "Speaking at events"
+    name = "Speaking"
     url = "/speakingengagements/"
     title = ""
     weight = 7
@@ -105,7 +105,7 @@ theme = "DoIt"
       # URL of the LOGO
       logo = "logo.png"
       # title name
-      name = ""
+      name = "Power Platform Tips & Tricks"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
