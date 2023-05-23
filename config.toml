@@ -6,6 +6,7 @@ defaultContentLanguage = "en"
 languageCode = "en"
 title = "Power Platform Tips & Tricks"
 
+paginate = 20
 enableEmoji = true
 
 # Change the default theme to be use when building the site with Hugo
@@ -99,6 +100,18 @@ theme = "DoIt"
   # URL of avatar shown in home page
   avatarURL = "image.jpg"
   social = true
+
+[params.header.title]
+      # URL of the LOGO
+      logo = "logo.png"
+      # title name
+      name = ""
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      # {{< version 0.2.5 >}} whether to use typeit animation for title name
+      typeit = true
 
 [params.social]
     Twitter="@NathLeenders" 
