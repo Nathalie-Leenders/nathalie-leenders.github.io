@@ -8,7 +8,7 @@
             <loc>http://example.org/posts/</loc><lastmod>2023-05-15T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/</loc><lastmod>2023-05-15T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/tags/</loc><lastmod>2023-05-15T14:27:14&#43;00:00</lastmod></url><url>
-            <loc>http://example.org/posts/microsoftexams/</loc><lastmod>2023-05-15T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/posts/microsoftexams-secrets/</loc><lastmod>2023-05-15T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/tags/vouchers/</loc><lastmod>2023-05-15T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/categories/canvas-apps/</loc><lastmod>2023-04-12T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/tags/canvasapps/</loc><lastmod>2023-04-12T14:27:14&#43;00:00</lastmod></url><url>
@@ -30,12 +30,38 @@
             <loc>http://example.org/tags/powerautomate/</loc><lastmod>2023-03-16T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/posts/unmanagedlayers-alm/</loc><lastmod>2023-03-16T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/posts/collectvalues-choiceoptionsets/</loc><lastmod>2023-03-07T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/posts/microsoftexamsvideo/</loc><lastmod>2023-02-28T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/tags/microsoft-exams/</loc><lastmod>2023-02-28T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/categories/vouchers/</loc><lastmod>2023-02-28T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/tags/boolean/</loc><lastmod>2023-02-15T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/posts/boolean-in-sql/</loc><lastmod>2023-02-15T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/tags/sql/</loc><lastmod>2023-02-15T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/posts/dataversechoices-sqlbackend/</loc><lastmod>2023-02-14T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/categories/model-driven-apps/</loc><lastmod>2023-02-14T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/tags/virtual-tables/</loc><lastmod>2023-02-14T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/categories/virtual-tables/</loc><lastmod>2023-02-14T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/posts/forktobork/</loc><lastmod>2023-01-13T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/tags/github/</loc><lastmod>2023-01-13T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/categories/github/</loc><lastmod>2023-01-13T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/tags/muppets/</loc><lastmod>2023-01-13T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/posts/countinvariables/</loc><lastmod>2023-01-03T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/posts/combinemultipledata/</loc><lastmod>2023-01-03T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/tags/variables/</loc><lastmod>2023-01-03T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/posts/conditional-images-canvasapp/</loc><lastmod>2022-11-07T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/tags/images/</loc><lastmod>2022-11-07T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/tags/adaptive-cards/</loc><lastmod>2022-10-19T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/categories/adaptive-cards/</loc><lastmod>2022-10-19T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/posts/template-copy/</loc><lastmod>2022-10-19T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/tags/microsoft-teams/</loc><lastmod>2022-10-19T14:27:14&#43;00:00</lastmod></url><url>
+            <loc>http://example.org/categories/microsoft-teams/</loc><lastmod>2022-10-19T14:27:14&#43;00:00</lastmod></url><url>
             <loc>http://example.org/showcase/</loc><lastmod>2021-11-01T20:08:29&#43;08:00</lastmod></url><url>
             <loc>http://example.org/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/aboutme/</loc><priority>0</priority></url><url>
+            <loc>http://example.org/contact/</loc><priority>0</priority></url><url>
+            <loc>http://example.org/glossary/</loc><priority>0</priority></url><url>
+            <loc>http://example.org/recommended/</loc><priority>0</priority></url><url>
+            <loc>http://example.org/speakingengagements/</loc><priority>0</priority></url><url>
+            <loc>http://example.org/videos/</loc><priority>0</priority></url><url>
             <loc>http://example.org/authors/</loc></url><url>
             <loc>http://example.org/tags/configuration/</loc></url><url>
             <loc>http://example.org/tags/content/</loc></url><url>

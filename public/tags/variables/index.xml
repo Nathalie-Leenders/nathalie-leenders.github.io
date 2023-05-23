@@ -1,0 +1,33 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Variables - Tag - Power Platform Tips &amp; Tricks</title>
+        <link>http://example.org/tags/variables/</link>
+        <description>Variables - Tag - Power Platform Tips &amp; Tricks</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Jan 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/variables/" rel="self" type="application/rss+xml" /><item>
+    <title>Adding a count to your Power Automate Flow (Integer/Increment variable)</title>
+    <link>http://example.org/posts/countinvariables/</link>
+    <pubDate>Tue, 03 Jan 2023 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/countinvariables/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/countinvariables/varcount%20step%201.png" referrerpolicy="no-referrer">
+            </div>Starting with an intro to variables, I want to explain how you can use a very simple counter to your Power Automate flow. Let’s say you have an Apply to each, like 5 entries, and after this you email your client with the combined data from those 5 entries.
+Add the following steps:
+On top of your flow, add an Initialize Variable Choose a name Select Type Integer Leave Initial value blank (or select a starting count) In your Apply to each, add an Increment Variable (Increment means to add/change the count) Increment the variable you’ve created on top with 1 in the value.]]></description>
+</item><item>
+    <title>Combine data from multiple apply to each into a single output file (Variables and compose)</title>
+    <link>http://example.org/posts/combinemultipledata/</link>
+    <pubDate>Tue, 03 Jan 2023 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/combinemultipledata/</guid>
+    <description><![CDATA[This was a tricky one to figure out, took me a few hours and failed attempts.
+I have log entries, and my flow is triggered to email them all that were submitted the day prior, at 8am. Getting the data into the email pulls it into an apply to each (which makes sense, but is not what I want)
+So, there is a way around the apply to each, but I’ll not get into that here.]]></description>
+</item><item>
+    <title>How to get conditional images in your Canvas app</title>
+    <link>http://example.org/posts/conditional-images-canvasapp/</link>
+    <pubDate>Mon, 07 Nov 2022 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/conditional-images-canvasapp/</guid>
+    <description><![CDATA[Ever had a scenario, where someone wanted to have images in their app, but also pull them from a source somewhere?Let’s say, you want to reflect their office image in your app. But you also want to possibility to overwrite/upload your own instead.
+You can do this by using an If statement and some variables, let’s look at the following scenario.
+You work for a company called Powerplatform with their email domain @Powerplatform.]]></description>
+</item></channel>
+</rss>

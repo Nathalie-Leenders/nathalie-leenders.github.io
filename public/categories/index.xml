@@ -39,6 +39,27 @@
     </author><guid>http://example.org/categories/powerapps/</guid>
     <description><![CDATA[]]></description>
 </item><item>
+    <title>Vouchers</title>
+    <link>http://example.org/categories/vouchers/</link>
+    <pubDate>Tue, 28 Feb 2023 14:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://example.org/categories/vouchers/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Model Driven Apps</title>
+    <link>http://example.org/categories/model-driven-apps/</link>
+    <pubDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://example.org/categories/model-driven-apps/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Virtual Tables</title>
+    <link>http://example.org/categories/virtual-tables/</link>
+    <pubDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://example.org/categories/virtual-tables/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Github</title>
     <link>http://example.org/categories/github/</link>
     <pubDate>Fri, 13 Jan 2023 14:27:14 &#43;0000</pubDate><author>
@@ -46,11 +67,11 @@
     </author><guid>http://example.org/categories/github/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Documentation</title>
-    <link>http://example.org/categories/documentation/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate><author>
+    <title>Adaptive Cards</title>
+    <link>http://example.org/categories/adaptive-cards/</link>
+    <pubDate>Wed, 19 Oct 2022 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/documentation/</guid>
+    </author><guid>http://example.org/categories/adaptive-cards/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

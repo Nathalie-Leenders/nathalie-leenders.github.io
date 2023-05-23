@@ -17,8 +17,28 @@ For example, if there is an empty entry, but the item exists and you specify tha
     <link>http://example.org/posts/collectvalues-choiceoptionsets/</link>
     <pubDate>Tue, 07 Mar 2023 14:27:14 &#43;0000</pubDate><author>
                         <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/collectvalues-choiceoptionsets/</guid>
-    <description><![CDATA[Ever noticed that when you select your columnname, in the dynamic data, it doesnt give you the result and it stays blank? I’d like to explain how you can get the value for your dropdown.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/collectvalues-choiceoptionsets/power-autoamte-vs-flow.webp" referrerpolicy="no-referrer">
+            </div>Ever noticed that when you select your columnname, in the dynamic data, it doesnt give you the result and it stays blank?I’d like to explain how you can get the value for your dropdown.
 There is a difference between the display name, and the actual name of that value. Dataverse often uses @OData.Community.Display.V1.FormattedValue instead of the previous new_value_label.
 In your Power automate flow, either run the flow and check the body, or add a Compose step after your Get Items/Update Item etc.]]></description>
+</item><item>
+    <title>Adding a count to your Power Automate Flow (Integer/Increment variable)</title>
+    <link>http://example.org/posts/countinvariables/</link>
+    <pubDate>Tue, 03 Jan 2023 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/countinvariables/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/countinvariables/varcount%20step%201.png" referrerpolicy="no-referrer">
+            </div>Starting with an intro to variables, I want to explain how you can use a very simple counter to your Power Automate flow. Let’s say you have an Apply to each, like 5 entries, and after this you email your client with the combined data from those 5 entries.
+Add the following steps:
+On top of your flow, add an Initialize Variable Choose a name Select Type Integer Leave Initial value blank (or select a starting count) In your Apply to each, add an Increment Variable (Increment means to add/change the count) Increment the variable you’ve created on top with 1 in the value.]]></description>
+</item><item>
+    <title>Combine data from multiple apply to each into a single output file (Variables and compose)</title>
+    <link>http://example.org/posts/combinemultipledata/</link>
+    <pubDate>Tue, 03 Jan 2023 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/combinemultipledata/</guid>
+    <description><![CDATA[This was a tricky one to figure out, took me a few hours and failed attempts.
+I have log entries, and my flow is triggered to email them all that were submitted the day prior, at 8am. Getting the data into the email pulls it into an apply to each (which makes sense, but is not what I want)
+So, there is a way around the apply to each, but I’ll not get into that here.]]></description>
 </item></channel>
 </rss>

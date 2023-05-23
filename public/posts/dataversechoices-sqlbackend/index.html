@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Dataverse Choices to SQL backend- Update! - Power Platform Tips &amp; Tricks</title><meta name="Description" content="A 3-part blog to display the struggles I had in making this work"><meta property="og:title" content="Dataverse Choices to SQL backend- Update!" />
+<meta property="og:description" content="A 3-part blog to display the struggles I had in making this work" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/dataversechoices-sqlbackend/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-14T14:27:14+00:00" />
+<meta property="article:modified_time" content="2023-02-14T14:27:14+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dataverse Choices to SQL backend- Update!"/>
+<meta name="twitter:description" content="A 3-part blog to display the struggles I had in making this work"/>
+<meta name="application-name" content="Power Platform Tips &amp; Tricks">
+<meta name="apple-mobile-web-app-title" content="Power Platform Tips &amp; Tricks">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="http://example.org/posts/dataversechoices-sqlbackend/" /><link rel="prev" href="http://example.org/posts/forktobork/" /><link rel="next" href="http://example.org/posts/boolean-in-sql/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Dataverse Choices to SQL backend- Update!",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/dataversechoices-sqlbackend\/"
+        },"genre": "posts","keywords": "SQL, Virtual Tables","wordcount":  537 ,
+        "url": "http:\/\/example.org\/posts\/dataversechoices-sqlbackend\/","datePublished": "2023-02-14T14:27:14+00:00","dateModified": "2023-02-14T14:27:14+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"authors": [{
+                        "@type": "Person",
+                        "name": "nathalieleenders"                    
+                    }],"description": "A 3-part blog to display the struggles I had in making this work"
+    }
+    </script><script src="//instant.page/5.1.1" defer type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+</head>
+
+<body header-desktop="" header-mobile=""><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Power Platform Tips &amp; Tricks"><img
+        class="logo"
+        loading="lazy"
+        src="/logo.png"
+        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" ><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/glossary/"> Glossary </a><a class="menu-item" href="/aboutme/"> About me </a><a class="menu-item" href="/speakingengagements/"> Speaking at events </a><a class="menu-item" href="/videos/"> Videos </a><a class="menu-item" href="/contact/"> Contact </a><a class="menu-item" href="/recommended/"> Awesome people </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Power Platform Tips &amp; Tricks"><img
+        class="logo"
+        loading="lazy"
+        src="/logo.png"
+        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" ><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/glossary/" title="">Glossary</a><a class="menu-item" href="/aboutme/" title="">About me</a><a class="menu-item" href="/speakingengagements/" title="">Speaking at events</a><a class="menu-item" href="/videos/" title="">Videos</a><a class="menu-item" href="/contact/" title="">Contact</a><a class="menu-item" href="/recommended/" title="">Awesome people</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Dataverse Choices to SQL backend- Update!</h1><h2 class="single-subtitle">How to get choices/dropdowns with a virtual table - SQL backend</h2><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='http://example.org/authors/nathalieleenders'>Nathalie</a></span>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/model-driven-apps/"><i class="far fa-folder fa-fw"></i>Model Driven Apps</a>&nbsp;<a href="/categories/virtual-tables/"><i class="far fa-folder fa-fw"></i>Virtual Tables</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/how-to-doit/"><i class="far fa-list-alt fa-fw"></i>How to DoIt</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-02-14">2023-02-14</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-02-14">2023-02-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;537 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/posts/dataversechoices-sqlbackend/powerapps-logo.png"
+        srcset="/posts/dataversechoices-sqlbackend/powerapps-logo.png, /posts/dataversechoices-sqlbackend/powerapps-logo.png 1.5x, /posts/dataversechoices-sqlbackend/powerapps-logo.png 2x"
+        sizes="auto"
+        alt="/posts/dataversechoices-sqlbackend/powerapps-logo.png"
+        title="A 3-part blog to display the struggles I had in making this work" height="688"   width="1824" ></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">This is a lenghty tale of the whole adventure getting this to work</div>
+        </div>
+    </div>
+<p>Yannick Reekmans has helped me tremendously!! 🙏</p>
+<a target="_blank" href="https://github.com/YannickRe" title="Yannick Reekmans" class="friend-link" rel="noopener noreferrer">
+    <div class="friend-link-div">
+        <div class="friend-link-avatar"><img
+        
+        loading="lazy"
+        src="https://avatars.githubusercontent.com/u/9973962?v=4"
+        srcset="https://avatars.githubusercontent.com/u/9973962?v=4, https://avatars.githubusercontent.com/u/9973962?v=4 1.5x, https://avatars.githubusercontent.com/u/9973962?v=4 2x"
+        sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/9973962?v=4"
+        title="https://avatars.githubusercontent.com/u/9973962?v=4" ></div>
+        <div class="friend-link-info">
+            <div class="friend-name-div">
+                <i class="fas fa-user-circle fa-fw"></i>
+                <i class="friend-name">Yannick Reekmans</i>
+            </div>
+            <p class="friend-bio">Check him out on Github!</p>
+        </div>
+    </div>
+</a>
+<p>We tested plugins, to make sure the form doesnt see the choice field, then map using either a java script or business rule to the value field, but even if we tell the plugin to ignore the attribute for the choice field, it would still try and submit it, and throw the error the virtual entity needed to be updated for the optionset. 🙃</p>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw"></i>Success<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>This shows how to get around the whole issue, recap, choices arent supported</p>
+<p>Yannick proposed I use a PCF Component, to wrap around the value field, to make it behave like a dropdown.
+I used <a href="https://pcf.gallery/csv-dropdown-control/" target="_blank" rel="noopener noreferrer">https://pcf.gallery/csv-dropdown-control/</a> from <a href="https://pcf.gallery/authors#ivan_ficko" target="_blank" rel="noopener noreferrer">https://pcf.gallery/authors#ivan_ficko</a></p>
+<ul>
+<li>Import the Managed Solution</li>
+<li>Go to your components menu on the left,</li>
+<li>Add in the component</li>
+<li>On your value field, in classic mode, open the properties</li>
+<li>Go to Controls</li>
+<li>Under the properties add in your csv values (use delimiter ; ) (I had to dive into the .js code for that one)</li>
+</ul>
+<p>Now it’s a value field, that behaves like a dropdown, but is still being seen as the value field, and not a foreign body trying to be updated.</p>
+</div>
+        </div>
+    </div>
+<p><strong>Now onto the fun part:</strong></p>
+<h1 id="old-content---disclaimer---this-does-not-work" class="headerLink">
+    <a href="#old-content---disclaimer---this-does-not-work" class="header-mark"></a>Old content - Disclaimer - This does not work!</h1><div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Hold on, scratch that, ignore all below. This does not work!</div>
+        </div>
+    </div>
+<p>I’ve consulted with Microsoft support. and currently SQL virtual connector does not support choice options…</p>
+<p>I’ll try and find a way around this, and let you know once I do. Microsoft will change their documentation to reflect this…</p>
+<figure><a class="lightgallery" href="/posts/dataversechoices-sqlbackend/zoe-muppets.gif" title="/posts/dataversechoices-sqlbackend/zoe-muppets.gif" data-thumbnail="/posts/dataversechoices-sqlbackend/zoe-muppets.gif" data-sub-html="<h2>Bummer!</h2>">
+        <img
+            
+            loading="lazy"
+            src="/posts/dataversechoices-sqlbackend/zoe-muppets.gif"
+            srcset="/posts/dataversechoices-sqlbackend/zoe-muppets.gif, /posts/dataversechoices-sqlbackend/zoe-muppets.gif 1.5x, /posts/dataversechoices-sqlbackend/zoe-muppets.gif 2x"
+            sizes="auto"
+            alt="/posts/dataversechoices-sqlbackend/zoe-muppets.gif" height="800"  width="600" >
+    </a><figcaption class="image-caption">Bummer!</figcaption>
+    </figure>
+<h4 id="old-content---disclaimer---this-does-not-work-old-blogpost-for-reference-only-or-how-to-use-business-rules-to-fill-a-field-value" class="headerLink">
+    <a href="#old-content---disclaimer---this-does-not-work-old-blogpost-for-reference-only-or-how-to-use-business-rules-to-fill-a-field-value" class="header-mark"></a>Old content - Disclaimer - This does not work! Old blogpost for reference only, or, how to use business rules to fill a field value</h4><p>I’m developing a solution with a SQL data backend. Using Virtual Tables I’ve mapped my SQL DB’s to Dataverse.
+I need quite a lot of dropdown/optionsets in my forms, but my SQL column is NVARCHAR (string/text)
+There is no choice column in SQL available.</p>
+<p>So how do I go around this?</p>
+<p>I’ve started thinking about the good old ‘Patch’ capability, to have a stand alone dropdown, patch the value to a field and that works.</p>
+<p>A colleague found an old optionset D365 blog post, and this is how we solved the issue:</p>
+<ul>
+<li>Create a choice in your solution. For this I’ll go with City1</li>
+<li>Add the values you need to that choice (City1)</li>
+<li>In your form, add the column you need (City2)</li>
+<li>Add a new field, choice, choose from the existing Optionset you created in the first step</li>
+<li>Double click on this new field</li>
+<li>Go to Business Rules</li>
+<li>Add a new rule</li>
+<li>If City1 field value matches “New York”</li>
+<li>Update Field Value for City2 to “New York”</li>
+</ul>
+<figure><a class="lightgallery" href="/posts/dataversechoices-sqlbackend/business%20rules.png" title="/posts/dataversechoices-sqlbackend/business%20rules.png" data-thumbnail="/posts/dataversechoices-sqlbackend/business%20rules.png" data-sub-html="<h2>Bsuiness rule - Set Field Value</h2>">
+        <img
+            
+            loading="lazy"
+            src="/posts/dataversechoices-sqlbackend/business%20rules.png"
+            srcset="/posts/dataversechoices-sqlbackend/business%20rules.png, /posts/dataversechoices-sqlbackend/business%20rules.png 1.5x, /posts/dataversechoices-sqlbackend/business%20rules.png 2x"
+            sizes="auto"
+            alt="/posts/dataversechoices-sqlbackend/business%20rules.png" height="800"  width="600" >
+    </a><figcaption class="image-caption">Bsuiness rule - Set Field Value</figcaption>
+    </figure>
+<ul>
+<li>
+<p>Hide the City2 field as it’s not needed to show, City1 will have the dropdown, City2 will do the actual upload.</p>
+<p>Now when you select New York from the dropdown in City1, it automatically does the same for City2 which is where the historical data also resides.</p>
+</li>
+</ul>
+<p>This might be a bit convoluted, if you have another way please let me know 🙏 .</p></div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-02-14</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/sql/">SQL</a>,&nbsp;<a href="/tags/virtual-tables/">Virtual Tables</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/forktobork/" class="prev" rel="prev" title="Changing the button for “Fork” into “Bork!” for Github"><i class="fas fa-angle-left fa-fw"></i>Changing the button for “Fork” into “Bork!” for Github</a>
+            <a href="/posts/boolean-in-sql/" class="next" rel="next" title="Quick tip! Boolean in SQL">Quick tip! Boolean in SQL<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.111.3">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.3.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer"></a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":null,"speed":null}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-G0R550W0TM', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-G0R550W0TM" async></script></div>
+</body>
+
+</html>

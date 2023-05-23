@@ -60,10 +60,28 @@ This can be achieved using XML Mapping in Microsoft Word. To get to the XML mapp
     <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="Power Platform Tips &amp; Tricks">Power Platform Tips &amp; Tricks</a>
+            <a href="/" title="Power Platform Tips &amp; Tricks"><img
+        class="logo"
+        loading="lazy"
+        src="/logo.png"
+        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" ><span id="desktop-header-typeit" class="typeit"></span></a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/glossary/"> Glossary </a><a class="menu-item" href="/aboutme/"> About me </a><a class="menu-item" href="/speakingengagements/"> Speaking at events </a><a class="menu-item" href="/videos/"> Videos </a><a class="menu-item" href="/contact/"> Contact </a><a class="menu-item" href="/recommended/"> Awesome people </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
                 </a></div>
         </div>
@@ -72,13 +90,36 @@ This can be achieved using XML Mapping in Microsoft Word. To get to the XML mapp
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="Power Platform Tips &amp; Tricks">Power Platform Tips &amp; Tricks</a>
+                <a href="/" title="Power Platform Tips &amp; Tricks"><img
+        class="logo"
+        loading="lazy"
+        src="/logo.png"
+        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" ><span id="mobile-header-typeit" class="typeit"></span></a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/glossary/" title="">Glossary</a><a class="menu-item" href="/aboutme/" title="">About me</a><a class="menu-item" href="/speakingengagements/" title="">Speaking at events</a><a class="menu-item" href="/videos/" title="">Videos</a><a class="menu-item" href="/contact/" title="">Contact</a><a class="menu-item" href="/recommended/" title="">Awesome people</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -135,50 +176,76 @@ To get to the XML mapping, you must first have the Developer Tab activated.</p>
 Here is where the fun starts.</p>
 <p>XML Mapping, as the name says, uses an XML file to map the words.</p>
 <ul>
-<li>Open NotePad, and copy/paste the following:</li>
-</ul>
-<p><code>&lt;?xml version=”1.0” encoding=”UTF-8” standalone=”no”?&gt; &lt;DemoXMLNode xmlns=”http://CustomDemoXML.htm”&gt; &lt;Name&gt;&lt;/Name&gt; &lt;Insertnewasyouwant&gt;&lt;/Insertnewasyouwant&gt; &lt;/DemoXMLNode&gt;</code></p>
-<p>(I got this code off of someones blog a while ago, if I remember who it was I will post it here, I promise)</p>
-<ul>
-<li>Use the &lt;&gt; and &lt;/&gt; to map your XML names.</li>
-<li>Save as .XML file.</li>
-<li>Now in Microsoft Word, on the XML Mapping pane, go to the dropdown, and click on (Add a new Part…)</li>
-<li>Select your file.</li>
-<li>It will show up as the following:</li>
-</ul>
+<li>
+<p>Open NotePad, and copy/paste the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=”1.0” encoding=”UTF-8” standalone=”no”?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;DemoXMLNode</span> <span class="na">xmlns=</span><span class="s">”http://CustomDemoXML.htm”</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;Name&gt;&lt;/Name&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;Insertnewasyouwant&gt;&lt;/Insertnewasyouwant&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/DemoXMLNode&gt;</span>
+</span></span></code></pre></div><p>(I got this code off of someones blog a while ago, if I remember who it was I will post it here, I promise)</p>
+</li>
+<li>
+<p>Use the <code>&lt;&gt;</code> and <code>&lt;/&gt;</code> to map your XML names.</p>
+</li>
+<li>
+<p>Save as .XML file.</p>
+</li>
+<li>
+<p>Now in Microsoft Word, on the XML Mapping pane, go to the dropdown, and click on (Add a new Part…)</p>
+</li>
+<li>
+<p>Select your file.</p>
+</li>
+<li>
+<p>It will show up as the following:</p>
 <figure><a class="lightgallery" href="/posts/repeatwordsinmsword/xmlmapping%20screenshot2.png" title="/posts/repeatwordsinmsword/xmlmapping%20screenshot2.png" data-thumbnail="/posts/repeatwordsinmsword/xmlmapping%20screenshot2.png" data-sub-html="<h2>Breaks start and End</h2>">
-        <img
-            
-            loading="lazy"
-            src="/posts/repeatwordsinmsword/xmlmapping%20screenshot2.png"
-            srcset="/posts/repeatwordsinmsword/xmlmapping%20screenshot2.png, /posts/repeatwordsinmsword/xmlmapping%20screenshot2.png 1.5x, /posts/repeatwordsinmsword/xmlmapping%20screenshot2.png 2x"
-            sizes="auto"
-            alt="/posts/repeatwordsinmsword/xmlmapping%20screenshot2.png" height="600"  width="800" >
-    </a><figcaption class="image-caption">Breaks start and End</figcaption>
-    </figure>
+          <img
+              
+              loading="lazy"
+              src="/posts/repeatwordsinmsword/xmlmapping%20screenshot2.png"
+              srcset="/posts/repeatwordsinmsword/xmlmapping%20screenshot2.png, /posts/repeatwordsinmsword/xmlmapping%20screenshot2.png 1.5x, /posts/repeatwordsinmsword/xmlmapping%20screenshot2.png 2x"
+              sizes="auto"
+              alt="/posts/repeatwordsinmsword/xmlmapping%20screenshot2.png" height="600"  width="800" >
+      </a><figcaption class="image-caption">Breaks start and End</figcaption>
+      </figure>
+</li>
+</ul>
 <p>I’ve used Word1 and Word2, but you can of course specify your own naming in the XML.</p>
 <p>Next step is binding this to something on your form or document.</p>
 <ul>
-<li>Make sure you’re using a content control (under the developer tab, next to the XML Mapping, you’ll find the Rich Text, Plain Text, Dates, Checkboxes etc.)</li>
-<li>Insert a Text content control</li>
-<li>Place the text in this content control</li>
-<li>Select in your Word file what you want to have repeated (The content control)</li>
-<li>Right click on Word1</li>
-<li>Select Map to selected Content control</li>
-</ul>
+<li>
+<p>Make sure you’re using a content control (under the developer tab, next to the XML Mapping, you’ll find the Rich Text, Plain Text, Dates, Checkboxes etc.)</p>
+</li>
+<li>
+<p>Insert a Text content control</p>
+</li>
+<li>
+<p>Place the text in this content control</p>
+</li>
+<li>
+<p>Select in your Word file what you want to have repeated (The content control)</p>
+</li>
+<li>
+<p>Right click on <code>Word1</code></p>
+</li>
+<li>
+<p>Select Map to selected Content control</p>
 <figure><a class="lightgallery" href="/posts/repeatwordsinmsword/xmlmapping%20screenshot3.png" title="/posts/repeatwordsinmsword/xmlmapping%20screenshot3.png" data-thumbnail="/posts/repeatwordsinmsword/xmlmapping%20screenshot3.png" data-sub-html="<h2>XML Mappings</h2>">
-        <img
-            
-            loading="lazy"
-            src="/posts/repeatwordsinmsword/xmlmapping%20screenshot3.png"
-            srcset="/posts/repeatwordsinmsword/xmlmapping%20screenshot3.png, /posts/repeatwordsinmsword/xmlmapping%20screenshot3.png 1.5x, /posts/repeatwordsinmsword/xmlmapping%20screenshot3.png 2x"
-            sizes="auto"
-            alt="/posts/repeatwordsinmsword/xmlmapping%20screenshot3.png" height="1000"  width="800" >
-    </a><figcaption class="image-caption">XML Mappings</figcaption>
-    </figure>
-<p>You have now mapped that content control, to Word1</p>
+          <img
+              
+              loading="lazy"
+              src="/posts/repeatwordsinmsword/xmlmapping%20screenshot3.png"
+              srcset="/posts/repeatwordsinmsword/xmlmapping%20screenshot3.png, /posts/repeatwordsinmsword/xmlmapping%20screenshot3.png 1.5x, /posts/repeatwordsinmsword/xmlmapping%20screenshot3.png 2x"
+              sizes="auto"
+              alt="/posts/repeatwordsinmsword/xmlmapping%20screenshot3.png" height="1000"  width="800" >
+      </a><figcaption class="image-caption">XML Mappings</figcaption>
+      </figure>
+</li>
+</ul>
+<p>You have now mapped that content control, to <code>Word1</code></p>
 <ul>
-<li>Now in your header, footer or where ever you want, Right click on Word1, Insert content control, and in this case Word1 as Plain text, and it will appear and be a repeated text from where you’re changing it.</li>
+<li>Now in your header, footer or where ever you want, Right click on <code>Word1</code>, Insert content control, and in this case <code>Word1</code> as Plain text, and it will appear and be a repeated text from where you’re changing it.</li>
 </ul>
 <p>It might take a few seconds to reflect.</p>
 <p>Hope this helps.</p>
@@ -225,7 +292,10 @@ Here is where the fun starts.</p>
         </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
             <i class="fas fa-comment fa-fw"></i>
         </a>
-    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":null,"speed":null}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-G0R550W0TM', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-G0R550W0TM" async></script></div>
 </body>
 
 </html>

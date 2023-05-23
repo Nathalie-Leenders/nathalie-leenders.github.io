@@ -27,7 +27,7 @@ In this training they explain how Github works, and how to edit an existing item
 
 <meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="http://example.org/posts/forktobork/" /><link rel="next" href="http://example.org/posts/collectvalues-choiceoptionsets/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="http://example.org/posts/forktobork/" /><link rel="prev" href="http://example.org/posts/countinvariables/" /><link rel="next" href="http://example.org/posts/dataversechoices-sqlbackend/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -38,7 +38,7 @@ In this training they explain how Github works, and how to edit an existing item
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/example.org\/posts\/forktobork\/"
-        },"genre": "posts","keywords": "Github, Muppets","wordcount":  330 ,
+        },"genre": "posts","keywords": "Github, Muppets","wordcount":  377 ,
         "url": "http:\/\/example.org\/posts\/forktobork\/","datePublished": "2023-01-13T14:27:14+00:00","dateModified": "2023-01-13T14:27:14+00:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"authors": [{
@@ -62,10 +62,28 @@ In this training they explain how Github works, and how to edit an existing item
     <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="Power Platform Tips &amp; Tricks">Power Platform Tips &amp; Tricks</a>
+            <a href="/" title="Power Platform Tips &amp; Tricks"><img
+        class="logo"
+        loading="lazy"
+        src="/logo.png"
+        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" ><span id="desktop-header-typeit" class="typeit"></span></a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/glossary/"> Glossary </a><a class="menu-item" href="/aboutme/"> About me </a><a class="menu-item" href="/speakingengagements/"> Speaking at events </a><a class="menu-item" href="/videos/"> Videos </a><a class="menu-item" href="/contact/"> Contact </a><a class="menu-item" href="/recommended/"> Awesome people </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
                 </a></div>
         </div>
@@ -74,13 +92,36 @@ In this training they explain how Github works, and how to edit an existing item
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="Power Platform Tips &amp; Tricks">Power Platform Tips &amp; Tricks</a>
+                <a href="/" title="Power Platform Tips &amp; Tricks"><img
+        class="logo"
+        loading="lazy"
+        src="/logo.png"
+        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" ><span id="mobile-header-typeit" class="typeit"></span></a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/glossary/" title="">Glossary</a><a class="menu-item" href="/aboutme/" title="">About me</a><a class="menu-item" href="/speakingengagements/" title="">Speaking at events</a><a class="menu-item" href="/videos/" title="">Videos</a><a class="menu-item" href="/contact/" title="">Contact</a><a class="menu-item" href="/recommended/" title="">Awesome people</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -96,52 +137,47 @@ In this training they explain how Github works, and how to edit an existing item
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='http://example.org/authors/nathalieleenders'>Nathalie</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/github/"><i class="far fa-folder fa-fw"></i>Github</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/how-to-doit/"><i class="far fa-list-alt fa-fw"></i>How to DoIt</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-01-13">2023-01-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-01-13">2023-01-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;330 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-01-13">2023-01-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-01-13">2023-01-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;377 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
-        src="borkbutton"
-        srcset="borkbutton, borkbutton 1.5x, borkbutton 2x"
+        src="/posts/forktobork/swedish-chef-bork.gif"
+        srcset="/posts/forktobork/swedish-chef-bork.gif, /posts/forktobork/swedish-chef-bork.gif 1.5x, /posts/forktobork/swedish-chef-bork.gif 2x"
         sizes="auto"
-        alt="borkbutton"
-        title="borkbutton" height="auto"   width="auto" ></div><div class="details toc" id="toc-static"  kept="">
+        alt="/posts/forktobork/swedish-chef-bork.gif"
+        title="/posts/forktobork/swedish-chef-bork.gif" height="640"   width="640" ></div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#and-there-you-have-it-the-button-now-says-bork-enjoy">And there you have it; the button now says Bork! Enjoy</a></li>
+  </ul>
+</nav></div>
             </div><div class="content" id="content"><p>This has to be the best thing to come out of 2023 (and yes, it’s only January so that’s saying something)</p>
 <p>My longest blog post and read to date, but I promise you it’s worth it!</p>
 <p>I was on the First Time Contributor training yesterday, one of the Sharing is Caring sessions led by David Warner and Hugo Bernier. (&lt;3) M365 &amp; Power Platform | Sharing Is Caring (pnp.github.io)</p>
 <p>In this training they explain how Github works, and how to edit an existing item using the Branches, Forks, Committing changes and how a Pull Request works. (I can highly recommend their sessions if you want to learn, there’s no recordings and it’s a safe space for all to ask questions and interrupt)</p>
 <p>Mind you, it was getting late for me, after a full workday (perks of being in The Netherlands and different timezones) so my mind kept reverting to Bork! instead of Fork. I couldn’t unhear it.</p>
 <p>So of course I shared this in the chat.</p>
-<figure><a class="lightgallery" href="MicrosoftTeams-image.png" title="MicrosoftTeams-image.png" data-thumbnail="MicrosoftTeams-image.png" data-sub-html="<h2>Teams chat</h2>">
+<figure><a class="lightgallery" href="/posts/forktobork/Microsoft-Teams%20image.png" title="/posts/forktobork/Microsoft-Teams%20image.png" data-thumbnail="/posts/forktobork/Microsoft-Teams%20image.png" data-sub-html="<h2>Chat excerpt from the Sharing is Caring session</h2>">
         <img
             
             loading="lazy"
-            src="MicrosoftTeams-image.png"
-            srcset="MicrosoftTeams-image.png, MicrosoftTeams-image.png 1.5x, MicrosoftTeams-image.png 2x"
+            src="/posts/forktobork/Microsoft-Teams%20image.png"
+            srcset="/posts/forktobork/Microsoft-Teams%20image.png, /posts/forktobork/Microsoft-Teams%20image.png 1.5x, /posts/forktobork/Microsoft-Teams%20image.png 2x"
             sizes="auto"
-            alt="MicrosoftTeams-image.png" height="1000"  width="800" >
-    </a><figcaption class="image-caption">Teams chat</figcaption>
+            alt="/posts/forktobork/Microsoft-Teams%20image.png" height="500"  width="300" >
+    </a><figcaption class="image-caption">Chat excerpt from the Sharing is Caring session</figcaption>
     </figure>
 <p>David Warner started quoting Swedish Chef, and Hugo posted that he’d make a browser extension out of it. Of course I didn’t think he’d actually do it.</p>
-<p>After the training I did a post on Twitter how awesome this training was.
-Then this happened.</p>
-<figure><a class="lightgallery" href="/posts/forktobork/hugobork.png" title="/posts/forktobork/hugobork.png" data-thumbnail="/posts/forktobork/hugobork.png" data-sub-html="<h2>Teams chat</h2>">
-        <img
-            
-            loading="lazy"
-            src="/posts/forktobork/hugobork.png"
-            srcset="/posts/forktobork/hugobork.png, /posts/forktobork/hugobork.png 1.5x, /posts/forktobork/hugobork.png 2x"
-            sizes="auto"
-            alt="/posts/forktobork/hugobork.png" height="1000"  width="800" >
-    </a><figcaption class="image-caption">Teams chat</figcaption>
-    </figure>
-<p>Find the thread here.</p>
-<!-- raw HTML omitted -->
+<p>After the training I did a post on Twitter how awesome this training was.</p>
+<p><strong>Then this happened.</strong></p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🧡After geeking out last night with <a href="https://twitter.com/bernierh?ref_src=twsrc%5Etfw">@bernierh</a> (🫶) he graciously shared how to change the Fork! button in Github to Bork! So, without further ado, the most important blogpost of the year 🤓 <a href="https://t.co/L8YpGUg7Zd">https://t.co/L8YpGUg7Zd</a> <a href="https://twitter.com/hashtag/borkborkbork?src=hash&amp;ref_src=twsrc%5Etfw">#borkborkbork</a> <a href="https://twitter.com/hashtag/extension?src=hash&amp;ref_src=twsrc%5Etfw">#extension</a> <a href="https://twitter.com/hashtag/github?src=hash&amp;ref_src=twsrc%5Etfw">#github</a> <a href="https://twitter.com/hashtag/geek?src=hash&amp;ref_src=twsrc%5Etfw">#geek</a> <a href="https://twitter.com/hashtag/sharingiscaring?src=hash&amp;ref_src=twsrc%5Etfw">#sharingiscaring</a> <a href="https://t.co/sVK0Z0D87h">pic.twitter.com/sVK0Z0D87h</a></p>&mdash; Nathalie Leenders (@NathLeenders) <a href="https://twitter.com/NathLeenders/status/1613818231600340993?ref_src=twsrc%5Etfw">January 13, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <p>So, without further ado, with full credit to Hugo Bernier for being awesome, since we were both geeking out over this, he shared with me how he did this and it’s sooo easy!</p>
 <ul>
 <li>Go to refined-github/refined-github: Browser extension that simplifies the GitHub interface and adds useful features</li>
@@ -163,8 +199,8 @@ left: 30px;
 <p>#fork-button::first-line {
 background-color: yellow;
 }`</p>
-<p>And there you have it; the button now says Bork! Enjoy</p>
-<figure><a class="lightgallery" href="/posts/forktobork/borkbutton.png" title="/posts/forktobork/borkbutton.png" data-thumbnail="/posts/forktobork/borkbutton.png" data-sub-html="<h2>Bork!</h2>">
+<h2 id="and-there-you-have-it-the-button-now-says-bork-enjoy" class="headerLink">
+    <a href="#and-there-you-have-it-the-button-now-says-bork-enjoy" class="header-mark"></a>And there you have it; the button now says Bork! Enjoy</h2><figure><a class="lightgallery" href="/posts/forktobork/borkbutton.png" title="/posts/forktobork/borkbutton.png" data-thumbnail="/posts/forktobork/borkbutton.png" data-sub-html="<h2>Bork!</h2>">
         <img
             
             loading="lazy"
@@ -199,8 +235,8 @@ background-color: yellow;
         </section>
     </div>
 
-    <div class="post-nav">
-            <a href="/posts/collectvalues-choiceoptionsets/" class="next" rel="next" title="How to get submitted values from your Choices/optionset column in Dataverse">How to get submitted values from your Choices/optionset column in Dataverse<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/posts/countinvariables/" class="prev" rel="prev" title="Adding a count to your Power Automate Flow (Integer/Increment variable)"><i class="fas fa-angle-left fa-fw"></i>Adding a count to your Power Automate Flow (Integer/Increment variable)</a>
+            <a href="/posts/dataversechoices-sqlbackend/" class="next" rel="next" title="Dataverse Choices to SQL backend- Update!">Dataverse Choices to SQL backend- Update!<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
         </main><footer class="footer">
@@ -217,7 +253,10 @@ background-color: yellow;
         </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
             <i class="fas fa-comment fa-fw"></i>
         </a>
-    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":null,"speed":null}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-G0R550W0TM', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-G0R550W0TM" async></script></div>
 </body>
 
 </html>
