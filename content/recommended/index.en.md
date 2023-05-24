@@ -30,3 +30,7 @@ And of course the rest of the Sharing is Caring community and people, check it o
 {{< friend "Keith Atherton" "https://linktr.ee/keithatherton" "https://d1fdloi71mui9q.cloudfront.net/YdOWwgncR21ShXPB3T5p_oNo2KaHT8SVG9E15" "Check out all his content!" >}} 
 
 {{< friend "Angelo Gulisano" "https://github.com/angelogulisano" "https://avatars.githubusercontent.com/u/25862526?v=4" "Check him out on Github!" >}}
+
+{{< friend "Chris Huntingford" "https://www.youtube.com/c/ChrisHuntingford" "https://yt3.googleusercontent.com/ytc/AGIKgqM5vFxZeNd600BZ_3qBdNvzLpNFQfrBDv3HHEEiLvE=s176-c-k-c0x00ffffff-no-rj" "Check out the craziest PP expert out here!" >}} 
+
+{{< friend "Frederik Bisback" "https://blog.powerplatformdude.be/" "https://blog89195.files.wordpress.com/2021/10/me_2.png?w=253" "Check out his blog!" >}}
