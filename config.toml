@@ -127,6 +127,10 @@ theme = "DoIt"
       id = "G-G0R550W0TM"
       anonymizeIP = true
 
+[params.utterances]
+repo="Nathalie-Leenders/BlogPosts" # eg: greeninja/devurandom-comments
+theme="github-dark"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
