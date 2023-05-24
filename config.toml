@@ -103,7 +103,7 @@ theme = "DoIt"
 
 [params.header.title]
       # URL of the LOGO
-      logo = "logo.png"
+      logo = "/logo.png"
       # title name
       name = "Power Platform Tips & Tricks"
       # you can add extra information before the name (HTML format is supported), such as icons
