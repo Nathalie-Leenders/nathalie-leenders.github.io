@@ -11,6 +11,8 @@
 
 {{< friend "Daniel Laskewitz" "https://github.com/Laskewitz" "https://avatars.githubusercontent.com/u/3766843?v=4" "Microsoft MVP Alumni, Senior Power Platform Advocate at Microsoft. Power Addict" >}}
 
+{{< friend "Vesa Juvonen" "https://github.com/VesaJuvonen" "https://avatars.githubusercontent.com/u/7446437?v=4" "Product Manager in Microsoft 365 platform areas. Recovering Consultant from Microsoft Consulting. Community rocks! Sharing is Caring!" >}}
+
 And of course the rest of the Sharing is Caring community and people, check it out here: https://pnp.github.io/sharing-is-caring/
 
 # My dear friends, and awesome contributors through blogs, samples and more! :pray:
