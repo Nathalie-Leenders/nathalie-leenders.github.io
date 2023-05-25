@@ -122,14 +122,20 @@ theme = "DoIt"
 # Google analytics
 [params.analytics]
     enable = true
-    # Google Analytics
-    [params.analytics.google]
-      id = "G-G0R550W0TM"
-      anonymizeIP = true
+# Google Analytics
+[params.analytics.google]
+  id = "G-G0R550W0TM"
+  anonymizeIP = true
+[params.analytics.clarity]
+  id = "h4un3ap4e1"
 
-[params.utterances]
-repo="Nathalie-Leenders/BlogPosts" # eg: greeninja/devurandom-comments
-theme="github-dark"
+[params.page.comment]
+  enable = true
+
+[params.page.comment.utterances]
+  enable = true
+  repo="Nathalie-Leenders/BlogPosts" # eg: greeninja/devurandom-comments
+  theme="github-dark"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
