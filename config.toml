@@ -132,10 +132,25 @@ theme = "DoIt"
 [params.page.comment]
   enable = true
 
-[params.page.comment.utterances]
+[page.comment.utterances]
+
   enable = true
-  repo="Nathalie-Leenders/BlogPosts" # eg: greeninja/devurandom-comments
-  theme="github-dark"
+
+  # owner/repo
+
+  repo = "Nathalie-Leenders/BlogPosts"
+
+  # issueTerm = "pathname"
+
+  label = ""
+
+  lightTheme = "github-light"
+
+  darkTheme = "github-dark"
+
+[page.comment]
+
+  enable = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

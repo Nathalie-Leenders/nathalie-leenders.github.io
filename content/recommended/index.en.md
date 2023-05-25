@@ -11,6 +11,8 @@
 
 {{< friend "Daniel Laskewitz" "https://github.com/Laskewitz" "https://avatars.githubusercontent.com/u/3766843?v=4" "Microsoft MVP Alumni, Senior Power Platform Advocate at Microsoft. Power Addict" >}}
 
+{{< friend "Vesa Juvonen" "https://github.com/VesaJuvonen" "https://avatars.githubusercontent.com/u/7446437?v=4" "Product Manager in Microsoft 365 platform areas. Recovering Consultant from Microsoft Consulting. Community rocks! Sharing is Caring!" >}}
+
 And of course the rest of the Sharing is Caring community and people, check it out here: https://pnp.github.io/sharing-is-caring/
 
 # My dear friends, and awesome contributors through blogs, samples and more! :pray:
@@ -30,3 +32,7 @@ And of course the rest of the Sharing is Caring community and people, check it o
 {{< friend "Keith Atherton" "https://linktr.ee/keithatherton" "https://d1fdloi71mui9q.cloudfront.net/YdOWwgncR21ShXPB3T5p_oNo2KaHT8SVG9E15" "Check out all his content!" >}} 
 
 {{< friend "Angelo Gulisano" "https://github.com/angelogulisano" "https://avatars.githubusercontent.com/u/25862526?v=4" "Check him out on Github!" >}}
+
+{{< friend "Chris Huntingford" "https://www.youtube.com/c/ChrisHuntingford" "https://media.licdn.com/dms/image/C4E03AQGNeLK7t4-_pA/profile-displayphoto-shrink_800_800/0/1644320870613?e=1690416000&v=beta&t=Yl6ia2ltsNfegD_l26ehDwVbZ0_6-46ZvYCNkTtchro" "Check out the craziest PP expert out here!" >}} 
+
+{{< friend "Frederik Bisback" "https://blog.powerplatformdude.be/" "https://blog89195.files.wordpress.com/2021/10/me_2.png?w=253" "Check out his blog!" >}}
