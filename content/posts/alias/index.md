@@ -25,5 +25,3 @@ redirects:
 - entry: entry230404-123532
   url: posts/repeatwordsinmsword/
 ---
-
-# Got redirected here
