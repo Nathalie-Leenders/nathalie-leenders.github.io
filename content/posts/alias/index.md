@@ -15,15 +15,15 @@ toc:
 # You need the entry and the URL
 redirects:
 - entry: entry230412-103102
-  url: /posts/quickchartiodynamic/
+  url: posts/quickchartiodynamic/
 - entry: entry230511-101930
-  url: /posts/microsoftexams-secrets
+  url: posts/microsoftexams-secrets
 - entry: entry230407-121047
-  url: /posts/restrictive-editing-word/
+  url: posts/restrictive-editing-word/
 - entry: entry230405-165513
-  url: /posts/bpf-automation/
+  url: posts/bpf-automation/
 - entry: entry230404-123532
-  url: /posts/repeatwordsinmsword/
+  url: posts/repeatwordsinmsword/
 ---
 
 # Got redirected here
