@@ -11,6 +11,9 @@ tags: ["Exams", "Vouchers"]
 categories: ["Microsoft Exams"]
 series: [how-to-doit]
 
+aliases: 
+- /posts/examsecrets
+
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
