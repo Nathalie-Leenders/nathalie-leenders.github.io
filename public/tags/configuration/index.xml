@@ -1,7 +1,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>configuration - Tag - Power Platform Tips &amp; Tricks</title>
-        <link>http://example.org/tags/configuration/</link>
+        <link>/tags/configuration/</link>
         <description>configuration - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="http://example.org/tags/configuration/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/tags/configuration/" rel="self" type="application/rss+xml" /></channel>
 </rss>

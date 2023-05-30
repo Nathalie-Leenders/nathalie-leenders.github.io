@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>PowerApps - Tag - Power Platform Tips &amp; Tricks</title>
-        <link>http://example.org/tags/powerapps/</link>
+        <link>/tags/powerapps/</link>
         <description>PowerApps - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 16 Mar 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/powerapps/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 16 Mar 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/powerapps/" rel="self" type="application/rss+xml" /><item>
     <title>Quick tip! Unmanaged layers - updates not moving through environments (ALM)</title>
-    <link>http://example.org/posts/unmanagedlayers-alm/</link>
+    <link>/posts/unmanagedlayers-alm/</link>
     <pubDate>Thu, 16 Mar 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/unmanagedlayers-alm/</guid>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/unmanagedlayers-alm/</guid>
     <description><![CDATA[I had this issue today and figured I’d write a quick tip for it.
 I’ve changed my app, modified flows, everything works fine in Dev, publish customizations, export as managed and move to Test. Verified the client can see the new app version, and asked her to test.
 Uh-oh, the flows aren’t reflecting changes. XML MappingsIssue: Changes made in one environment, don’t reflect in another environment in a managed solutionSolution/Fix: Check on your Flows, or anything not reflecting the changes, for the Solution Layers Go to your flow for example, the ellipsis (…) and check the Solution Layers.]]></description>

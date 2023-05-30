@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Microsoft Teams - Tag - Power Platform Tips &amp; Tricks</title>
-        <link>http://example.org/tags/microsoft-teams/</link>
+        <link>/tags/microsoft-teams/</link>
         <description>Microsoft Teams - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 19 Oct 2022 14:27:14 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/microsoft-teams/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 19 Oct 2022 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/microsoft-teams/" rel="self" type="application/rss+xml" /><item>
     <title>Get output from Adaptive Card choice sets</title>
-    <link>http://example.org/posts/template-copy/</link>
+    <link>/posts/adaptivecards/</link>
     <pubDate>Wed, 19 Oct 2022 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/template-copy/</guid>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/adaptivecards/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/posts/template-copy/MS_Teams_logo_ws.png" referrerpolicy="no-referrer">
+                <img src="/posts/adaptivecards/MS_Teams_logo_ws.png" referrerpolicy="no-referrer">
             </div>Adaptive cards is the name for the pop-up you can get in Teams, with custom content asking you to confirm something, or to submit a remark. One way of creating them is through Adaptive card Designer (JSON).
 Another way is to use the new Cards (preview) method in PowerApps maker - find out how here: Microsoft Learn Page - https://learn.microsoft.com/en-us/power-apps/cards/overview
 If you want to use your adaptive card as for example an approval, or you want the color choice you need to get the data that the card receives.]]></description>

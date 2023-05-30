@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Github - Tag - Power Platform Tips &amp; Tricks</title>
-        <link>http://example.org/tags/github/</link>
+        <link>/tags/github/</link>
         <description>Github - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 13 Jan 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/github/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 13 Jan 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/github/" rel="self" type="application/rss+xml" /><item>
     <title>Changing the button for “Fork” into “Bork!” for Github</title>
-    <link>http://example.org/posts/forktobork/</link>
+    <link>/posts/forktobork/</link>
     <pubDate>Fri, 13 Jan 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/forktobork/</guid>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/forktobork/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/forktobork/swedish-chef-bork.gif" referrerpolicy="no-referrer">
             </div>This has to be the best thing to come out of 2023 (and yes, it’s only January so that’s saying something)

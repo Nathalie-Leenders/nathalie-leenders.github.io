@@ -1,77 +1,77 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Categories - Category - Power Platform Tips &amp; Tricks</title>
-        <link>http://example.org/categories/</link>
+        <link>/categories/</link>
         <description>Categories - Category - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/" rel="self" type="application/rss+xml" /><item>
     <title>Microsoft Exams</title>
-    <link>http://example.org/categories/microsoft-exams/</link>
+    <link>/categories/microsoft-exams/</link>
     <pubDate>Mon, 15 May 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/microsoft-exams/</guid>
+    </author><guid>/categories/microsoft-exams/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Canvas Apps</title>
-    <link>http://example.org/categories/canvas-apps/</link>
+    <link>/categories/canvas-apps/</link>
     <pubDate>Wed, 12 Apr 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/canvas-apps/</guid>
+    </author><guid>/categories/canvas-apps/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MSWord</title>
-    <link>http://example.org/categories/msword/</link>
+    <link>/categories/msword/</link>
     <pubDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/msword/</guid>
+    </author><guid>/categories/msword/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Power Automate</title>
-    <link>http://example.org/categories/power-automate/</link>
+    <link>/categories/power-automate/</link>
     <pubDate>Wed, 29 Mar 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/power-automate/</guid>
+    </author><guid>/categories/power-automate/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Powerapps</title>
-    <link>http://example.org/categories/powerapps/</link>
+    <link>/categories/powerapps/</link>
     <pubDate>Thu, 16 Mar 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/powerapps/</guid>
+    </author><guid>/categories/powerapps/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Vouchers</title>
-    <link>http://example.org/categories/vouchers/</link>
+    <link>/categories/vouchers/</link>
     <pubDate>Tue, 28 Feb 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/vouchers/</guid>
+    </author><guid>/categories/vouchers/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Model Driven Apps</title>
-    <link>http://example.org/categories/model-driven-apps/</link>
+    <link>/categories/model-driven-apps/</link>
     <pubDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/model-driven-apps/</guid>
+    </author><guid>/categories/model-driven-apps/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Virtual Tables</title>
-    <link>http://example.org/categories/virtual-tables/</link>
+    <link>/categories/virtual-tables/</link>
     <pubDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/virtual-tables/</guid>
+    </author><guid>/categories/virtual-tables/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Github</title>
-    <link>http://example.org/categories/github/</link>
+    <link>/categories/github/</link>
     <pubDate>Fri, 13 Jan 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/github/</guid>
+    </author><guid>/categories/github/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Adaptive Cards</title>
-    <link>http://example.org/categories/adaptive-cards/</link>
+    <link>/categories/adaptive-cards/</link>
     <pubDate>Wed, 19 Oct 2022 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/categories/adaptive-cards/</guid>
+    </author><guid>/categories/adaptive-cards/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

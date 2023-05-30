@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>MSWord - Category - Power Platform Tips &amp; Tricks</title>
-        <link>http://example.org/categories/msword/</link>
+        <link>/categories/msword/</link>
         <description>MSWord - Category - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="http://example.org/categories/msword/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/msword/" rel="self" type="application/rss+xml" /><item>
     <title>Setting restrictive security on a Word Template while leaving sections open (Restrictive editing)</title>
-    <link>http://example.org/posts/restrictive-editing-word/</link>
+    <link>/posts/restrictive-editing-word/</link>
     <pubDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/restrictive-editing-word/</guid>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/restrictive-editing-word/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/restrictive-editing-word/Microsoft-Word-Logo.png" referrerpolicy="no-referrer">
             </div>Another Word tip, oh my…This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images.
@@ -15,9 +15,9 @@ It’s the most frustrating process, but I hope I can explain it clearly.
 If you find you cannot add a continuous break, but it does a page break, check out this article, or redo your document (that’s what I did)]]></description>
 </item><item>
     <title>Business Process Flow - How to automate moving through different stages</title>
-    <link>http://example.org/posts/bpf-automation/</link>
+    <link>/posts/bpf-automation/</link>
     <pubDate>Wed, 05 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/bpf-automation/</guid>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/bpf-automation/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/bpf-automation/power-autoamte-vs-flow.webp" referrerpolicy="no-referrer">
             </div>How to move stages automatically (BPF) using Power Automate (no http calls needed)Quick summary: You need to grab data from 3 different tables, link them using lookup columns, capture ID&rsquo;s, and add in conditions and use Data operations to shape the data into usable steps. Then add in a switch depending on your stage names, and add final actions updating your BPF table.
@@ -25,9 +25,9 @@ Sounds easy enough right?…..
 Beaker&rsquo;s head on fireI hope this helps, and I tried explaining it clearly, please let me know in case of any questions, feedback, other methods etc.]]></description>
 </item><item>
     <title>How to repeat words in Microsoft Word (XML Mappings)</title>
-    <link>http://example.org/posts/repeatwordsinmsword/</link>
+    <link>/posts/repeatwordsinmsword/</link>
     <pubDate>Tue, 04 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/repeatwordsinmsword/</guid>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/repeatwordsinmsword/</guid>
     <description><![CDATA[I know I usually only do Power Platform, but Microsoft Word is bound to be in your project needs someday, or combining with Power Automate, so I figured why not?
 Ever had the request to have certain words repeated, lets say in a header or footer? It can be anything, a date, name, product title, Business Unit etc etc.
 This can be achieved using XML Mapping in Microsoft Word. To get to the XML mapping, you must first have the Developer Tab activated.]]></description>

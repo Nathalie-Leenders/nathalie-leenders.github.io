@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Security - Tag - Power Platform Tips &amp; Tricks</title>
-        <link>http://example.org/tags/security/</link>
+        <link>/tags/security/</link>
         <description>Security - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/security/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/security/" rel="self" type="application/rss+xml" /><item>
     <title>Setting restrictive security on a Word Template while leaving sections open (Restrictive editing)</title>
-    <link>http://example.org/posts/restrictive-editing-word/</link>
+    <link>/posts/restrictive-editing-word/</link>
     <pubDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/restrictive-editing-word/</guid>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/restrictive-editing-word/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/restrictive-editing-word/Microsoft-Word-Logo.png" referrerpolicy="no-referrer">
             </div>Another Word tip, oh my…This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images.
@@ -15,9 +15,9 @@ It’s the most frustrating process, but I hope I can explain it clearly.
 If you find you cannot add a continuous break, but it does a page break, check out this article, or redo your document (that’s what I did)]]></description>
 </item><item>
     <title>Business Process Flow - How to automate moving through different stages</title>
-    <link>http://example.org/posts/bpf-automation/</link>
+    <link>/posts/bpf-automation/</link>
     <pubDate>Wed, 05 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/bpf-automation/</guid>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/bpf-automation/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/bpf-automation/power-autoamte-vs-flow.webp" referrerpolicy="no-referrer">
             </div>How to move stages automatically (BPF) using Power Automate (no http calls needed)Quick summary: You need to grab data from 3 different tables, link them using lookup columns, capture ID&rsquo;s, and add in conditions and use Data operations to shape the data into usable steps. Then add in a switch depending on your stage names, and add final actions updating your BPF table.

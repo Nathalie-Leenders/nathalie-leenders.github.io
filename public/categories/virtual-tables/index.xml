@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Virtual Tables - Category - Power Platform Tips &amp; Tricks</title>
-        <link>http://example.org/categories/virtual-tables/</link>
+        <link>/categories/virtual-tables/</link>
         <description>Virtual Tables - Category - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="http://example.org/categories/virtual-tables/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/virtual-tables/" rel="self" type="application/rss+xml" /><item>
     <title>Dataverse Choices to SQL backend- Update!</title>
-    <link>http://example.org/posts/dataversechoices-sqlbackend/</link>
+    <link>/posts/dataversechoices-sqlbackend/</link>
     <pubDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>http://example.org/posts/dataversechoices-sqlbackend/</guid>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/dataversechoices-sqlbackend/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/dataversechoices-sqlbackend/powerapps-logo.png" referrerpolicy="no-referrer">
             </div>A 3-part blog to display the struggles I had in making this work]]></description>

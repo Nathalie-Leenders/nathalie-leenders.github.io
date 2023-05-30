@@ -1,77 +1,77 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - Power Platform Tips &amp; Tricks</title>
-        <link>http://example.org/tags/</link>
+        <link>/tags/</link>
         <description>Tags - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Exams</title>
-    <link>http://example.org/tags/exams/</link>
+    <link>/tags/exams/</link>
     <pubDate>Mon, 15 May 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/tags/exams/</guid>
+    </author><guid>/tags/exams/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Vouchers</title>
-    <link>http://example.org/tags/vouchers/</link>
+    <link>/tags/vouchers/</link>
     <pubDate>Mon, 15 May 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/tags/vouchers/</guid>
+    </author><guid>/tags/vouchers/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>CanvasApps</title>
-    <link>http://example.org/tags/canvasapps/</link>
+    <link>/tags/canvasapps/</link>
     <pubDate>Wed, 12 Apr 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/tags/canvasapps/</guid>
+    </author><guid>/tags/canvasapps/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>QuickChartIO</title>
-    <link>http://example.org/tags/quickchartio/</link>
+    <link>/tags/quickchartio/</link>
     <pubDate>Wed, 12 Apr 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/tags/quickchartio/</guid>
+    </author><guid>/tags/quickchartio/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MSWord</title>
-    <link>http://example.org/tags/msword/</link>
+    <link>/tags/msword/</link>
     <pubDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/tags/msword/</guid>
+    </author><guid>/tags/msword/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Security</title>
-    <link>http://example.org/tags/security/</link>
+    <link>/tags/security/</link>
     <pubDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/tags/security/</guid>
+    </author><guid>/tags/security/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>XMLMappings</title>
-    <link>http://example.org/tags/xmlmappings/</link>
+    <link>/tags/xmlmappings/</link>
     <pubDate>Tue, 04 Apr 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/tags/xmlmappings/</guid>
+    </author><guid>/tags/xmlmappings/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Expressions</title>
-    <link>http://example.org/tags/expressions/</link>
+    <link>/tags/expressions/</link>
     <pubDate>Wed, 29 Mar 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/tags/expressions/</guid>
+    </author><guid>/tags/expressions/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Power Automate</title>
-    <link>http://example.org/tags/power-automate/</link>
+    <link>/tags/power-automate/</link>
     <pubDate>Wed, 29 Mar 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/tags/power-automate/</guid>
+    </author><guid>/tags/power-automate/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>PowerApps</title>
-    <link>http://example.org/tags/powerapps/</link>
+    <link>/tags/powerapps/</link>
     <pubDate>Thu, 16 Mar 2023 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://example.org/tags/powerapps/</guid>
+    </author><guid>/tags/powerapps/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
