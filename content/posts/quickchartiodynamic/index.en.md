@@ -5,7 +5,7 @@ date: 2023-04-12T14:27:14Z
 lastmod: 2023-04-12T14:27:14Z
 draft: false
 authors: [nathalieleenders]
-description: "How to use quickhcart.IO to get charts in your Canvas App and display dynamic information"
+description: "How to use quickchart.IO to get charts in your Canvas App and display dynamic information"
 
 tags: ["QuickChartIO", "CanvasApps"]
 categories: ["Canvas Apps"]

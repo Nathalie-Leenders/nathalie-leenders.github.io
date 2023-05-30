@@ -1,11 +1,11 @@
 ############################ Default configuration #########################
-baseURL = "http://example.org/"
+baseURL = "/"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"
 title = "Power Platform Tips & Tricks"
-
+canonifyurls = true
 paginate = 20
 enableEmoji = true
 
@@ -122,30 +122,20 @@ theme = "DoIt"
 # Google analytics
 [params.analytics]
     enable = true
-    # Google Analytics
-    [params.analytics.google]
-      id = "G-G0R550W0TM"
-      anonymizeIP = true
+# Google Analytics
+[params.analytics.google]
+  id = "G-G0R550W0TM"
+  anonymizeIP = true
+[params.analytics.clarity]
+  id = "h4un3ap4e1"
 
-[page.comment.utterances]
-
+[params.page.comment]
   enable = true
 
-  # owner/repo
-
-  repo = "Nathalie-Leenders/BlogPosts"
-
-  # issueTerm = "pathname"
-
-  label = ""
-
-  lightTheme = "github-light"
-
-  darkTheme = "github-dark"
-
-[page.comment]
-
+[params.page.comment.utterances]
   enable = true
+  repo="Nathalie-Leenders/BlogPosts" # eg: greeninja/devurandom-comments
+  theme="github-dark"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
