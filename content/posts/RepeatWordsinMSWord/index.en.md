@@ -9,7 +9,7 @@ description: ""
 
 tags: ["MSWord", "XMLMappings"]
 categories: ["MSWord"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

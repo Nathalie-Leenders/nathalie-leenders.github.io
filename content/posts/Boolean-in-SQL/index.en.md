@@ -9,7 +9,7 @@ description: ""
 
 tags: ["SQL", "Boolean"]
 categories: ["Power Automate"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

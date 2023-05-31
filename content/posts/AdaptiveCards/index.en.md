@@ -9,7 +9,7 @@ description: ""
 
 tags: ["Microsoft Teams", "Adaptive Cards"]
 categories: ["Power Automate","Microsoft Teams","Adaptive Cards"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

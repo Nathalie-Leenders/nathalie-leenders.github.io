@@ -9,7 +9,7 @@ description: "How to use quickchart.IO to get charts in your Canvas App and disp
 
 tags: ["QuickChartIO", "CanvasApps"]
 categories: ["Canvas Apps"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

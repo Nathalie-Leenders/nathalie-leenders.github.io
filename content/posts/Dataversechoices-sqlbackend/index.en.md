@@ -9,7 +9,7 @@ description: "A 3-part blog to display the struggles I had in making this work"
 
 tags: ["SQL", "Virtual Tables"]
 categories: ["Model Driven Apps", "Virtual Tables"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

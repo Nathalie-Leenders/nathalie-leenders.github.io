@@ -9,7 +9,7 @@ description: "How to use compose and expressions to remove blanks"
 
 tags: ["Power Automate", "Expressions"]
 categories: ["Power Automate"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

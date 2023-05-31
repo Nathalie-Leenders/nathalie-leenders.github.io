@@ -9,7 +9,7 @@ description: ""
 
 tags: ["Microsoft Exams"]
 categories: ["Microsoft exams", "Vouchers"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

@@ -9,7 +9,7 @@ description: ""
 
 tags: ["", ""]
 categories: [""]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

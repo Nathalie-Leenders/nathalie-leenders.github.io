@@ -9,7 +9,7 @@ description: ""
 
 tags: ["PowerApps", "PowerAutomate"]
 categories: ["Powerapps"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

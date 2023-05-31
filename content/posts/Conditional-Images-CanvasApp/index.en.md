@@ -9,7 +9,7 @@ description: ""
 
 tags: ["Variables", "Images"]
 categories: ["Power Automate"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

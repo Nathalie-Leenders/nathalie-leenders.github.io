@@ -9,7 +9,7 @@ description: "This explains how to set security on a Word document, restrict the
 
 tags: ["MSWord", "Security"]
 categories: ["MSWord"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

@@ -9,7 +9,7 @@ description: "This post explains how you to get Microsoft Exams for free."
 
 tags: ["Exams", "Vouchers"]
 categories: ["Microsoft Exams"]
-series: [how-to-doit]
+
 
 aliases: 
 - /posts/examsecrets

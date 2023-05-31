@@ -9,7 +9,7 @@ description: ""
 
 tags: ["Github", "Muppets"]
 categories: ["Github"]
-series: [how-to-doit]
+
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
