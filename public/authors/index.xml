@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Power Platform Tips &amp; Tricks</title>
+    <link>/authors/</link>
+    <description>Recent content in Authors on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Authors</title>
+      <link>/authors/nathalieleenders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/nathalieleenders/</guid>
+      <description>Who am I?I&amp;rsquo;ve started this site to share the knowledge I&amp;rsquo;ve gained as a Power Platform Developer. Being a former hairdresser, turned IT, no coding background, no degree and self-taught on most things, I feel it&amp;rsquo;s important to share the knowledge, so others can also learn from it.
+Me at the Power Platform Conference in Orlando Florida, 2022We&amp;rsquo;re all in this journey together, my motto is, if you can do it, so can I and vice versa.</description>
+    </item>
+    
+  </channel>
+</rss>

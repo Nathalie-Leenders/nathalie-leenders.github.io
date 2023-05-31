@@ -18,24 +18,6 @@
         </script>
     </head>
 <body>
-    {{ range $array := .Params.redirects }}
-    Entry: {{ $array.entry }}<br/>URL: {{ $array.url }}<hr/>
-    {{ end }}
-
-    <pre>
-        <code>
-            script
-
-            // Get the entry from the URL
-            var entry = window.location.search.replace("?x=entry:", "");
-    
-            {{ range $array := .Params.redirects }}
-            if (entry === '{{ $array.entry }}') {
-                window.location = '{{ absURL $array.url }}';
-            }
-            {{ end }}
-        script
-        </code>
-    </pre>
+   You page is being redirected.
 </body>
     </html>
