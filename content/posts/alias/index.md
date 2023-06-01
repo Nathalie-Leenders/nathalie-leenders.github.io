@@ -21,29 +21,29 @@ redirects:
 - entry: entry230407-121047
   url: /posts/restrictive-editing-word
 - entry: entry230405-165513
-  url: /posts/BPF-automation
+  url: /posts/bpf-automation
 - entry: entry230404-123532
-  url: /posts/RepeatWordsinMSWord
+  url: /posts/repeatwordsinmsword
 - entry: entry230329-122510
-  url: /posts/Removing-blanks-powerautomate
+  url: /posts/removing-blanks-powerautomate
 - entry: entry230316-164926
-  url: /posts/UnmanagedLayers-ALM
+  url: /posts/unmanagedLayers-alm
 - entry: entry230307-113900
-  url: /posts/CollectValues-ChoiceOptionsets
+  url: /posts/collectvalues-choiceoptionsets
 - entry: entry230228-111220
-  url: /posts/MicrosoftExamsVideo
+  url: /posts/microsoftexamsvideo
 - entry: entry230215-144216
-  url: /posts/Boolean-in-SQL
+  url: /posts/boolean-in-sql
 - entry: entry230214-141056
-  url: /posts/Dataversechoices-sqlbackend
+  url: /posts/dataversechoices-sqlbackend
 - entry: entry230113-092810
-  url: /posts/ForktoBork
+  url: /posts/forktobork
 - entry: entry230103-154803
-  url: /posts/Combinemultipledata
+  url: /posts/combinemultipledata
 - entry: entry230103-152249
-  url: /posts/CountinVariables
+  url: /posts/countinvariables
 - entry: entry221107-110905
-  url: /posts/Conditional-Images-CanvasApp
+  url: /posts/conditional-images-canvasapp
 - entry: entry221019-144801
   url: /posts/adaptivecards/
 
