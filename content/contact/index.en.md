@@ -1,4 +1,4 @@
-# My socials
+# Contact
 
 Email me at info@nathalieleenders.com
 
