@@ -1,6 +1,7 @@
 ---
 aliases : 
-- /nathalieleenders.com/glossary/
+- /glossary
+- /Glossary
 - /posts/glossary
 
 ---
