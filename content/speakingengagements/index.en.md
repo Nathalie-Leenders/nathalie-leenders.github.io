@@ -1,3 +1,8 @@
+---
+featuredimage: "speakingevents.jpg"
+
+---
+
 # My speaking engagements
 
 [My Sessionize profile](https://sessionize.com/nathalie-leenders-den-nijs)
