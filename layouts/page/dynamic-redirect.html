@@ -6,25 +6,30 @@
         <link rel="canonical" href="{{ .Permalink }}" />
         <meta name="robots" content="noindex" />
         <meta charset="utf-8" />
-<script>
-                // Get the entry from the URL
-                var entry = window.location.search.replace("?x=entry:", "");
+        <script>
+            // Get the entry from the URL
+            var entry = window.location.search.replace("?x=entry:", "").replace("?entry=","");
+            debugger;
 
-                {{ range $array:= .Params.redirects }}
-                if (entry === '{{ $array.entry }}') {
-                    window.location.replace('{{ absURL $array.url }}');
-                }
-                {{ end }}
+            {{ range $array := .Params.redirects }}
+            if (entry === '{{ $array.entry }}') {
+                window.location.replace('{{ absURL $array.url }}');
+            }
+            {{ end }}
         </script>
     </head>
-<body>
-   Your page is being redirected.
-<br>
-<br>
-   Go to <a href="https://blog.nathalieleenders.com"></a> if the redirect doesnt work, sorry!
-<br>
-<br>
-   <a href="https://blog.nathalieleenders.com"><img src="https://github.com/Nathalie-Leenders/nathalie-leenders.github.io/blob/main/assets/staycalmanimal.gif"></a>
 
-</body>
+    <body>
+        Your page is being redirected.
+        <br>
+        <br>
+        Go to <a id="redirectlink" href="https://blog.nathalieleenders.com">https://blog.nathalieleenders.com</a> if the redirect doesn't work, sorry!
+        <br>
+        <br>
+        <a href="https://blog.nathalieleenders.com"><img
+                src="staycalmanimal.gif"></a>
+        
+        </body>
+    </body>
+
     </html>

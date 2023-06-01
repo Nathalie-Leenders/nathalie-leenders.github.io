@@ -19,7 +19,7 @@ redirects:
 - entry: entry230412-103102
   url: /posts/quickchartiodynamic/
 - entry: entry230407-121047
-  url: /posts/restrictive-editing-Word
+  url: /posts/restrictive-editing-word
 - entry: entry230405-165513
   url: /posts/BPF-automation
 - entry: entry230404-123532
