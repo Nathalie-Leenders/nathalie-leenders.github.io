@@ -27,7 +27,7 @@ redirects:
 - entry: entry230329-122510
   url: /posts/removing-blanks-powerautomate
 - entry: entry230316-164926
-  url: /posts/unmanagedLayers-alm
+  url: /posts/unmanagedlayers-alm
 - entry: entry230307-113900
   url: /posts/collectvalues-choiceoptionsets
 - entry: entry230228-111220
