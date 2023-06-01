@@ -165,8 +165,6 @@ It's a tool with which you're able to transform data before using it in Powerbi,
 
 # R
 
-[This is a test]: #This-is-a-test
-
 **Ribbon Workbench**
 Add-on you can install to customize the ribbon in Dynamics365 or a Model Driven app. Official: The Ribbon Workbench was written to originally to avoid the time consuming task of editing RibbonDiff Xml. Since Dynamics CRM 2011 it has been used by tens of thousands of users to save time and effort on their Dynamics 365/CRM projects. Site.
 
