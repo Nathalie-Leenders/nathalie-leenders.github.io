@@ -10,6 +10,10 @@ aliases :
 
 # A
 
+**AI Builder**
+Use AI models to enhance your Power Automate Flow or PowerApps, for example extract values (Character recognition) from a pdf upon receiving the file in an email.
+[Check out the MS Learn article on AI Builder here](https://learn.microsoft.com/en-us/ai-builder/overview)
+
 **Alm (Application Lifecycle Management)**
 The ability to move from Dev, Test and Prod (or other defined) environments maintaining edits in a safe manner without (hopefully) breaking production. Official ALM documentation.
 
