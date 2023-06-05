@@ -1,8 +1,8 @@
 ---
 title: "Contributed to the Microsoft New Speaker Community Day 2023"
 subtitle: ""
-date: 2023-05-06T14:27:14Z
-lastmod: 2023-05-06T14:27:14Z
+date: 2023-06-05T14:27:14Z
+lastmod: 2023-06-05T14:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: "I've submitted 2 videos to aid new community speakers/bloggers on imposter syndrome, and blogging/speaking"

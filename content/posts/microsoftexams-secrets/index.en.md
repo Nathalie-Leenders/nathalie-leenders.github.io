@@ -1,8 +1,8 @@
 ---
 title: "The secret to doing Microsoft exams for free!"
 subtitle: "Learn about how to get free vouchers"
-date: 2023-05-15T14:27:14Z
-lastmod: 2023-05-15T14:27:14Z
+date: 2023-05-11T14:27:14Z
+lastmod: 2023-05-11T14:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: "This post explains how you to get Microsoft Exams for free."
