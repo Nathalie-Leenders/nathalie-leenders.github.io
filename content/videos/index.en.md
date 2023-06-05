@@ -1,3 +1,11 @@
+## [Microsoft New Speakers Community Day - 5 min video on An Introverts Tip to Handling Imposter Syndrome](https://www.youtube.com/watch?v=RFt7_jV-JT8)
+
+{{< youtube RFt7_jV-JT8 >}}
+
+## [Microsoft New Speakers Community Day - From zero to speaker/blogger in 5 min](https://www.youtube.com/watch?v=X8zewbldaPo)
+
+{{< youtube X8zewbldaPo >}}
+
 ## [Smart Cherry Thoughts](https://www.youtube.com/embed/VdJFAJcDZYw)
 
 {{< youtube VdJFAJcDZYw >}}
