@@ -31,7 +31,6 @@ When I saw the call for speakers open up for the Microsoft New Speaker Community
 
 I hope these tips help, and I am always open to talking about these topics, feel free to reach out to me if you have questions.
 
-
 ## [Microsoft New Speakers Community Day - 5 min video on An Introverts Tip to Handling Imposter Syndrome](https://www.youtube.com/watch?v=RFt7_jV-JT8)
 
 {{< youtube RFt7_jV-JT8 >}}
