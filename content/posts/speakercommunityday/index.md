@@ -1,28 +1,12 @@
 ---
 title: "Contributed to the Microsoft New Speaker Community Day 2023"
-subtitle: ""
-date: 2023-06-05T14:27:14Z
-lastmod: 2023-06-05T14:27:14Z
-draft: false
+date: 2023-06-05T11:27:41+02:00
+lastmod: 2023-06-05T11:27:41+02:00
 authors: [nathalieleenders]
-description: "I've submitted 2 videos to aid new community speakers/bloggers on imposter syndrome, and blogging/speaking"
-
+summary: "I've submitted 2 videos to aid new community speakers/bloggers on imposter syndrome, and blogging/speaking"
 tags: ["Speaking", "Blogging","Imposter Syndrome"]
 categories: ["Conferences","Microsoft User Groups","Blogging"]
-
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
 featuredImage: "banner.png"
-featuredImagePreview: ""
-
-toc:
-  enable: true
-  auto: false
-
-code:
-    maxShownLines: 100
 ---
 
 # Contributed to the Microsoft New Speaker Community Day 2023
