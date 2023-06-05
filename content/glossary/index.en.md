@@ -10,8 +10,11 @@ aliases :
 
 # A
 
-**Alm (Application Lifecycle Management)** <br>
+**Alm (Application Lifecycle Management)**
 The ability to move from Dev, Test and Prod (or other defined) environments maintaining edits in a safe manner without (hopefully) breaking production. Official ALM documentation.
+
+**Actions**
+Steps in Power Automate that follow up after a trigger, that need to be followed. You can define these actions yourself.
 
 # B
 
@@ -26,11 +29,21 @@ Defined action steps and stages to determine a business Process or follow up flo
 # C
 
 
-**Canvas app**
+**Canvas App**
 A powerapp able to have full design privileges, integrate with Power Automate or be embedded in a Model driven app.
 
 **Cards**
 Micro apps, holding information you can get through Power Automate or your app. Can be posted in teams as Teams adaptive card or regular card through the Card designer. Can also be made through AdaptiveCard.IO
+
+**Cloud Flow**
+Flows that run in Power Automate Cloud (as opposed to Desktop which are RPA Flows)
+Different types:
+- Automated Flow
+    Runs on a trigger
+- Instant Flow
+    With the press on a button
+- Scheduled Flow
+    Could be hourly, daily, monthly etc.
 
 **Community**
 Global gatherings of likeminded people, whether that's through videos, blogs, forums, conferences and many more.
@@ -109,21 +122,21 @@ Not mandatory, but often found in slides, tweets or even on this website.
 
 
 
-**Microsoft exams**
+**Microsoft Exams**
 
-Certificates you can achieve that display your level of skill for that subject.
+Certificates you can achieve that display your level of skill for that subject. Fundamentals are always valid, Associate or Expert need to be renewed every year. Renewal takes place only and is eligible to take 6 months before your expiration date.
 
 
 **Microsoft Learn**
 Microsoft Learn offers challenges, learn paths and other resources to help you upskill or get Microsoft Exam certificates.
 
 
-**Model driven app**
+**Model Driven App**
 Data driven Powerapp, possibility to include Business Process Flows, custom pages and forms and views. Only Dataverse can be used as a DataSource (or Virtual Tables)
 
 
 **MVP (Microsoft award) Most Valuable Professional.**
-Non-Microsoft employee, awarded for their work in the community. MVP Award.
+Non-Microsoft employee, awarded for their work in the technical community, given in the form of a MVP Award.
 Official explanation: The MVP Award is a global program of recognized technology experts and community leaders who actively support technical communities through unique, innovative, and consistent knowledge sharing.
 
 # N
@@ -169,7 +182,7 @@ It's a tool with which you're able to transform data before using it in Powerbi,
 **Ribbon Workbench**
 Add-on you can install to customize the ribbon in Dynamics365 or a Model Driven app. Official: The Ribbon Workbench was written to originally to avoid the time consuming task of editing RibbonDiff Xml. Since Dynamics CRM 2011 it has been used by tens of thousands of users to save time and effort on their Dynamics 365/CRM projects. Site.
 
-**RPA**
+**RPA or Desktop Flow**
 Robotic Process Automation, usually created through Power Automate Desktop (or internal RPA processes) Workflows that can mimic human actions, such as opening a local application and performing actions.
 
 # S
@@ -182,6 +195,8 @@ A type of folder in an environment, holding your apps, flows, plugins or anythin
 
 # T
 
+**Trigger**
+A way to start a Power Automate flow. You can select what 'triggers' the flow to start.
 
 **Twitter**
 Online social platform, using Hashtags to define subjects and make it easier to search.
