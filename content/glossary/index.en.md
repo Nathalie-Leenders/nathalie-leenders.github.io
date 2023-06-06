@@ -84,6 +84,10 @@ Same logic as Model Driven apps, it offers integration using Dataverse tables wi
 **Environment**
 Area within Office365 tenant which holds all flows, solutions and apps.
 
+**ERD Entity Relationship Diagram**
+Entity Relationship Diagrams map out the relationships needed within your data model structure. It can be very useful when designing or architecting a solution for a client.
+
+
 # F
 
 
@@ -182,6 +186,17 @@ It's a tool with which you're able to transform data before using it in Powerbi,
 # Q
 
 # R
+
+**Relationship types**
+You can relate data to each other, linking data tables to show other records. This can be done in Dataverse, PowerBI,through lookup tables in SharePoint or other scenarios.
+- One-to-One (1:1)
+    One record from a source, matches one record from the other source. For example, one product ID, matches one product in the other table.
+- One-To-Many (1:N)
+    One record from a source, matches many (multiple) records from the other source. For example, one product ID, matches multiple products from the other table.
+- Many-to-One (N:1)
+    Many records from a source, match one record from the other source. For example, many product ID's, match with a single product from the other table.
+-Many-To-Many (N:N)
+    Many records from a source, match many records from the other source. For example, many product ID's, match many products from the other table.            
 
 **Ribbon Workbench**
 Add-on you can install to customize the ribbon in Dynamics365 or a Model Driven app. Official: The Ribbon Workbench was written to originally to avoid the time consuming task of editing RibbonDiff Xml. Since Dynamics CRM 2011 it has been used by tens of thousands of users to save time and effort on their Dynamics 365/CRM projects. Site.
