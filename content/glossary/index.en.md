@@ -106,6 +106,9 @@ Workflow created by Power Automate, formerly named as such.
 
 # J
 
+**JSON or JavaScript Object Notation**
+Semi-structured data that can be used in for example a Teams Adaptive Card, or is an output from a Power Automate Step. You can 'Parse JSON' to get the values, or just use the 'raw json'. It's formatted in name/value pairs, and it not considered a coding language but more a way to transfer data between applications.
+
 # K
 
 # L
