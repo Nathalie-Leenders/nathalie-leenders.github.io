@@ -1,3 +1,7 @@
+## [Come Cloud with Platform - 1,5 hour panel #womenintech on the Power Platform, Community and more.](https://www.youtube.com/watch?v=z1Lwi9-4pQM)
+
+{{< youtube z1Lwi9-4pQM >}}
+
 ## [Microsoft New Speakers Community Day - 5 min video on An Introverts Tip to Handling Imposter Syndrome](https://www.youtube.com/watch?v=RFt7_jV-JT8)
 
 {{< youtube RFt7_jV-JT8 >}}
