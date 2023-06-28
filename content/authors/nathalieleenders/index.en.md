@@ -2,10 +2,12 @@
 title: Authors
 ---
 # Who am I?
-
-I've started this site to share the knowledge I've gained as a Power Platform Developer. Being a former hairdresser, turned IT, no coding background, no degree and self-taught on most things, I feel it's important to share the knowledge, so others can also learn from it.
+I've started this site to share the knowledge I've gained as a Power Platform Developer. <br> Being a former hairdresser, turned IT, no coding background, no degree and self-taught on most things, I feel it's important to share the knowledge, so others can also learn from it.
 
 I got awarded with the Microsoft MVP Award in June 2023, very excited to continue to share the knowledge!
+<br>
+<br>
+{{< image src="MVP.jpg" caption="MVP for Business Applications since June 1st" height="300" width="200">}}
 
 [Please find my MVP Profile here](https://mvp.microsoft.com/en-us/PublicProfile/5005318?fullName=Nathalie%20Leenders)
 
@@ -13,6 +15,5 @@ I got awarded with the Microsoft MVP Award in June 2023, very excited to continu
 
 **We're all in this journey together, my motto is, if you can do it, so can I and vice versa.**
 <br> 
-My focus lies with Powerbi, Powerapps and Power Automate.
 
 Check out the interview I did with Hugo and David in videos to learn a little bit about myself.

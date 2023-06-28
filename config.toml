@@ -120,6 +120,8 @@ theme = "DoIt"
     LinkedIn="nathalie-leenders-den-nijs-8853871b/"
     Github="Nathalie-Leenders"
     Email="info@nathalieleenders.com"
+    BuyMeaCoffee="NathalieLeenders"
+    CodePen="Nathalie-Leenders"
 
 # Google analytics
 [params.analytics]
