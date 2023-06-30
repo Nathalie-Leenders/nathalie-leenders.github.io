@@ -1,3 +1,7 @@
+## [Integrate Power BI with the Power Platform - Usergroup session](https://www.youtube.com/watch?v=TBHqd081GTU)
+
+{{< youtube TBHqd081GTU >}}
+
 ## [Come Cloud with Platform - 1,5 hour panel #womenintech on the Power Platform, Community and more.](https://www.youtube.com/watch?v=z1Lwi9-4pQM)
 
 {{< youtube z1Lwi9-4pQM >}}
