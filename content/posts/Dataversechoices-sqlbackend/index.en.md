@@ -92,7 +92,7 @@ A colleague found an old optionset D365 blog post, and this is how we solved the
 - If City1 field value matches “New York”
 - Update Field Value for City2 to “New York”
 
-{{< image src="business rules.png" caption="Bsuiness rule - Set Field Value" height="800" width="600">}}
+{{< image src="business rules.png" caption="Business rule - Set Field Value" height="800" width="600">}}
 
 
 - Hide the City2 field as it’s not needed to show, City1 will have the dropdown, City2 will do the actual upload.
