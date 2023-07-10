@@ -1,3 +1,7 @@
+## [#MVPbuzzChat with Nathalie Leenders](https://www.youtube.com/watch?v=a5ZW8BtcPJQ)
+
+{{< youtube a5ZW8BtcPJQ >}}
+
 ## [Integrate Power BI with the Power Platform - Usergroup session](https://www.youtube.com/watch?v=TBHqd081GTU)
 
 {{< youtube TBHqd081GTU >}}
