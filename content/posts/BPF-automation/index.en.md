@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: "This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images."
 
-tags: ["MSWord", "Security"]
-categories: ["MSWord"]
+tags: ["BPF", "Model-driven App"]
+categories: ["BPF"]
 
 
 hiddenFromHomePage: false
