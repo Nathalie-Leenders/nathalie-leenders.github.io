@@ -1,8 +1,8 @@
 ---
 title: "Setting conditions on the visible property - Canvas App"
 subtitle: "How to hide based on conditions"
-date: 2023-07-21T07:27:14Z
-lastmod: 2023-07-21T07:27:14Z
+date: 2023-07-20T07:27:14Z
+lastmod: 2023-07-20T07:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
