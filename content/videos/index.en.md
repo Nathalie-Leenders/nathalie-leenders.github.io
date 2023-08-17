@@ -1,3 +1,8 @@
+## [A girl in love with Tech - Rachel Irabor and Nathalie Leenders](https://www.youtube.com/watch?v=rx_UXiG_SfM)
+
+{{< youtube rx_UXiG_SfM >}}
+
+
 ## [#MVPbuzzChat with Nathalie Leenders](https://www.youtube.com/watch?v=a5ZW8BtcPJQ)
 
 {{< youtube a5ZW8BtcPJQ >}}
