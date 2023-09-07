@@ -46,4 +46,4 @@ When you use the CDS Data connector, you do see the tables. Take note, they will
 
 Power Query Common Data Service (Legacy) connector - Power Query | Microsoft Learn
 
-Check out this Microsoft article on more indepth explanation on it: https://learn.microsoft.com/en-us/power-query/connectors/common-data-service-legacy
+Check out this Microsoft article on more indepth explanation on it: https://learn.microsoft.com/en-us/power-query/connectors/common-data-service-legacy/?wt.mc_id=DX-MVP-5005318

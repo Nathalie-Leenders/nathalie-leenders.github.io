@@ -55,27 +55,24 @@ I have a business case, where I want to get information from my Model driven app
 * On the Action, make sure it says Run Command (Not Run Javascript)
 
 Use the following PowerFX code:
-
-```
+  ```
 Launch("mailto:" & "youremailadress" & 
        "?subject=" & "" & 
        Self.Selected.Item.'whateveryouwant' & " : " & Self.Selected.Item.'whateveryouwant'
        & "&body=" & "put your body text here" & " body text " & Self.Selected.Item.'whateveryouwant'
-)
-```
-
+`)`
+  ```
 Use 
 ```
 "%0D%0A"
 ``` 
-for line breaks. Char(10) and Char(13) wont work.
+for line breaks. `Char(10)` and `Char(13)` wont work.
 
 If you want to add a cc, do the following:
 
 After the email adres, directly put 
-```
-?cc=ccemail@email.com"
-```
+`?cc=ccemail@email.com`
+
 
 Publish and Save, Play, and test your code!
 

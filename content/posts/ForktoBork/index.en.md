@@ -56,23 +56,24 @@ So, without further ado, with full credit to Hugo Bernier for being awesome, sin
 - Enable the plugin
 - Once you install it, go to Extension Options and scroll to Custom CSS and paste the following CSS:
 
-`#fork-button::first-line {
-visibility: hidden;
-position: relative;
-}
+  ```
+  #fork-button::first-line {
+  visibility: hidden;
+  position: relative;
+  }
 
-#fork-button::after {
-content: “Bork!”;
-visibility: visible;
-position: absolute;
+  #fork-button::after {
+  content: “Bork!”;
+  visibility: visible;
+  position: absolute;
     top: 3px;
     left: 30px;
-}
+  }
 
-#fork-button::first-line {
+  #fork-button::first-line {
   background-color: yellow;
-}`
-
+  }`
+  ```
 ## And there you have it; the button now says Bork! Enjoy ##
 
 {{< image src="borkbutton.png" caption="Bork!" height="1000" width="800">}}

@@ -45,4 +45,4 @@ Uh-oh, the flows aren’t reflecting changes.
 
 If you have a managed solution, and make any edit (could also be just open a flow run and save it) it can create an edited ‘unmanaged’ layer, and this could cause your updates to not go through.
 
-Check out this Microsoft article on more indepth explanation on it: <https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm>
+Check out this Microsoft article on more indepth explanation on it: <https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm/?wt.mc_id=DX-MVP-5005318>

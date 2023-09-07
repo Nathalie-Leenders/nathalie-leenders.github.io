@@ -53,15 +53,15 @@ What this does, is if you have for example `Janedoe@Powerplatform.com` it sets y
 - On your image datacard, find the image1 field, and go to the Image Property.
 - Paste the following code to your Image property:
 
-  ```PowerFx
-  If(Form.Mode = FormMode.Edit,
+`PowerFx`
+  `If(Form.Mode = FormMode.Edit,`
 
-  Parent.Default,
+  `Parent.Default,`
 
-  VarOfficeImage=true,Office365Users.UserPhotoV2(DataCardValue1),
+  `VarOfficeImage=true,Office365Users.UserPhotoV2(DataCardValue1),`
 
-  AddPicture1.Media)
-  ```
+ ` AddPicture1.Media)`
+
 
 What this does, if that if you’re in edit mode modifying someone, it grabs the parent (existing) image, otherwise if the variable for your office image is true (if you pushed the button) to grab the user photo for the person you have specified in your email address field.
 

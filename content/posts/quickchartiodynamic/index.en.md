@@ -47,9 +47,8 @@ Add in Basic chart (courtesy of Kristine’s video):
 - In your Canvas app, add in an image.
 - In the Image property, type the following:
 
-  ```
-  "https://quickchart.io/chart?c="& EncodeUrl(" ")
-  ```
+`  "https://quickchart.io/chart?c="& EncodeUrl(" ")`
+
 
 - Between your `" "` you’ll want to paste the code from the chart URL (don’t copy `/chart?c=` as you already have that before your EncodeURL)
 
