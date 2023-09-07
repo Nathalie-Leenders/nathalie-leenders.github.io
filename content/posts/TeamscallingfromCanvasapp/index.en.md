@@ -31,9 +31,9 @@ I have a use case, where someone wants to press a button or phone icon, and that
 There are a few ways to call someone: 
 * To a defined global, context, or environment variable
 * Specific persons
-* pre defined phone number
+* Pre-defined phone number
 
-- Use the Launch command to launch a website that in turn launches MS Teams
+Use the Launch command to launch a website that in turn launches MS Teams
 
 ## To a prefined variable
 
@@ -41,7 +41,7 @@ There are a few ways to call someone:
 
 `Launch(Concatenate(https://teams.microsoft.com/l/call/0/0?users=4:,VarPhonenumber))`
 
-- VarPhonenumber in this case holds the number
+VarPhonenumber in this case holds the number
 
 ## Environment variables
 
@@ -51,9 +51,9 @@ There are a few ways to call someone:
 
 `Set(varyourvarname, LookUp('Environment Variable Definitions', 'Display Name'="YourEnvVarName").'Default Value');`
 
-- This looks up the variable, and retrieves the default value. You can also grab the current value if you want.
+This looks up the variable, and retrieves the default value. You can also grab the current value if you want.
 
-- Then do the same as for the predefined variable and add your variable there.
+Then do the same as for the predefined variable and add your variable there.
 
 ## To a specific user
 
