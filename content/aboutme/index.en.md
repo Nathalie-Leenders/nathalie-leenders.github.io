@@ -10,7 +10,7 @@ I got awarded with the Microsoft MVP Award in June 2023, very excited to continu
 
 {{< image src="PP.jpg" caption="Me at the Power Platform Conference in Orlando Florida, 2022" height="500" width="300">}}
 
-**We're all in this journey together, my motto is, if you can do it, so can I and vice versa.**
+**We're all in this journey together, my motto is, if you can do it, so can I..**
 <br> 
 
 Check out the interview I did with Hugo and David in videos to learn a little bit about myself.
