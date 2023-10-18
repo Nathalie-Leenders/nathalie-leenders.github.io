@@ -1,8 +1,8 @@
 ---
 title: "How to get a PowerBI report in an adaptive card (the hard way)"
 subtitle: "Explaining how to do this without native support"
-date: 2023-10-18T09:27:14Z
-lastmod: 2023-10-18T09:27:14Z
+date: 2023-10-17T09:27:14Z
+lastmod: 2023-10-17T09:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
