@@ -54,7 +54,7 @@ It will give you the option in the wizard to add the names in there.
 
 You can filter on virtual or regular on the add table interface, and the icon has also changed to differentiate between the types of tables, Virtual vs Dataverse
 
-{{< image src="ppfilter.png" caption=" New filter option and icons " height="800" width="600">}}
+{{< image src="ppfilter.jpg" caption=" New filter option and icons " height="800" width="600">}}
 
 ## Power Pages - Directly create a virtual table from the interface!
 
