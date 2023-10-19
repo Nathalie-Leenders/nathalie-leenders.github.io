@@ -28,7 +28,7 @@ code:
 
 As some of you may have noticed during my MPPC session, I've been honored to work together with 2 absolute rockstars within Microsoft, to fact check my Virtual Table information, and to get amazing new announcements out there!
 
-[Pranita Padalwar](https://www.linkedin.com/in/pranita225/) Principal Program Manager for Power Pages, very generously provided information I could share for Power Pages which is so amazing I cannot wait to show you here!
+[Pranita Padalwar](https://www.linkedin.com/in/pranita225/) Senior Product Manager for Power Pages, very generously provided information I could share for Power Pages which is so amazing I cannot wait to show you here!
 
 And then [Nathan Helgren](https://www.linkedin.com/in/nhelgren/) Principal Program Manager Dataverse, and allround Expert on anything Virtual Table related, also tremendously helped me with fact checking my content, making sure I captured everything I could, and provide me with his own brand new shiny screenshots and details.
 
@@ -42,14 +42,17 @@ So without further ado and introduction, here are the 2 announcements:
 
 ## ALM Coming to Virtual Tables
 
+You can now add your own environment variables during the move in ALM for Virtual Tables!
+
 {{< image src="ppenvalm0.png" caption=" New option to add environment variables " height="800" width="600">}}
+
+It will give you the option in the wizard to add the names in there.
 
 {{< image src="ppenvalm.png" caption=" Specify your database and servername in the wizard when going through ALM " height="800" width="600">}}
 
 ## Power Pages - Filter icon changed
 
-Filter on virtual or regular on the add table interface
-The icon has also changed to differentiate between the types of tables, Virtual vs Dataverse
+You can filter on virtual or regular on the add table interface, and the icon has also changed to differentiate between the types of tables, Virtual vs Dataverse
 
 {{< image src="ppfilter.png" caption=" New filter option and icons " height="800" width="600">}}
 
@@ -57,9 +60,7 @@ The icon has also changed to differentiate between the types of tables, Virtual 
 
 Currently you can add an existing virtual table to Power Pages, however….
 
-New announcements! Hot of the presses!
-
-Create a Virtual Table straight from Power Pages with SQL and Sharepoint (lists)!
+You can now create a Virtual Table straight from Power Pages with SQL and Sharepoint (lists)!
 
 You can do this through the newly added -  connect to an external table data option.
 
