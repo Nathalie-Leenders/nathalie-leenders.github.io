@@ -36,7 +36,7 @@ And then [Nathan Helgren](https://www.linkedin.com/in/nhelgren/) Principal Progr
 
 As you can imagine it was really hard to keep this quiet (but I managed, thankfully, my NDA trust is still intact, lol)
 
-Then, at MPPC, during Nathans own session, he forgot to announce something first, leaving me with the exclusive to announce during my session, and now I get to share it here as well!!
+Then, at MPPC, during Nathan's own session, he ran out of time to announce something first, leaving me with the exclusive to announce during my session, and now I get to share it here as well!!
 
 So without further ado and introduction, here are the 2 announcements:
 
