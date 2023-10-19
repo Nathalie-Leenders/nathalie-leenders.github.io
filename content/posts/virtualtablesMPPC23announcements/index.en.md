@@ -14,8 +14,8 @@ categories: ["Virtual Tables"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "Powerbivirtualtables.png"
-featuredImagePreview: "Powerbivirtualtables.png"
+featuredImage: "mppc.png"
+featuredImagePreview: "mppc.png"
 
 toc:
   enable: true
