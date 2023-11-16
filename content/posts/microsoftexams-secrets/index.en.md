@@ -42,9 +42,9 @@ For fundamentals, you can go to Microsoft Learn - Virtual training days and sign
 
 Take note, the voucher will be valid for 90 days! So you have to take exam within that period.<br><br>
 
-The other trick, is following Microsoft Ignite, Microsoft Build or other Cloud Tech Challenges.
+The other trick, is following Microsoft Ignite (changed in 2023, no more free vouchers), Microsoft Build or other Cloud Tech Challenges.
 
-*Next up, is the Microsoft Build Cloud Skill learning challenge.*<br>
+*Next up, at this time, is the Microsoft Build Cloud Skill learning challenge.*<br>
 
 Only requirement is that you attend Microsoft Build (which is awesome, you should really attend this free event virtually!) and you can do the challenge. Build is upcoming on May 23-24 online.
 
