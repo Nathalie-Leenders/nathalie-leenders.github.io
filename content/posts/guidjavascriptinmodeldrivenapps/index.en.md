@@ -1,8 +1,8 @@
 ---
 title: "How do I automatically have a GUID in my field?"
 subtitle: "Leveraging a Virtual Table SQL Backend, how do I get a GUID?"
-date: 2023-27-11T09:27:14Z
-lastmod: 2023-27-11T09:27:14Z
+date: 2023-11-27T09:27:14Z
+lastmod: 2023-11-27T09:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
