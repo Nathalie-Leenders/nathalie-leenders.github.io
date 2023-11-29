@@ -26,7 +26,7 @@ code:
 ---
 ## Usecase
 
-I am creating a Model driven app, with a Virtual Table connected to SQL. In my SQL DB I have an external primary key field. How do I get an automatic GUID? The PowerFX code GUID() is not supported.
+I am creating a Model driven app, with a Virtual Table connected to SQL. In my SQL DB I have an external primary key field. How do I get an automatic GUID? The PowerFX code GUID() is not supported on the form.
 
 So I tried to do something on the ribbon, set the field,
 
@@ -51,17 +51,17 @@ I knew from my PL400 training, that it was technically possible to run a Javascr
 
 But how?
 
-We started looking at different scripts online, which opened a call, had many different elements in it, but the function wasnt being recognised. Without having extensive knowledge of Javascript we couldt figure out at that time how to resolve it.
+We started looking at different scripts online, which opened a call, had many different elements in it, but the function wasnt being recognised. Without having extensive knowledge of Javascript we couldnt figure out at that time how to resolve it.
 
-I tried to contact someone else, but of course with it being Thansgiving the following day I gave up for that particular time.
+I tried to contact someone else, but of course with it being Thanksgiving the following day I gave up for that particular time.
 
-The following day, a friend of mine came over, and I knew he was an experienced pro-coder, so I asked him, how's your Javascript?
+The following day, a friend of mine came over, and I knew he was an experienced pro-coder, so I asked him; "How's your Javascript?"
 
 We went through the script, and through a shorter version I had. We removed the call, simplified the code, and figured out where to put the function.
 
 Then we tested with just putting a simple word in our field to test if that worked.
 
-(Pro tip, use the logical name of your field, so for example Cr3ae_fieldname)
+(Pro tip, use the logical name of your field, so for example cr3ae_fieldname)
 
 Once that worked, we came up with this script:
 
