@@ -38,9 +38,11 @@ Check this out if you want to learn how to get Microsoft exam vouchers for free!
 
 **Got your attention?**
 
-For fundamentals, you can go to Microsoft Learn - Virtual training days and sign up for a virtual session, after which you will get a voucher to take that particular exam for free! 
+~~For fundamentals, you can go to Microsoft Learn - Virtual training days and sign up for a virtual session, after which you will get a voucher to take that particular exam for free! ~~
 
-Take note, the voucher will be valid for 90 days! So you have to take exam within that period.<br><br>
+~~Take note, the voucher will be valid for 90 days! So you have to take exam within that period.<br><br>~~
+
+Fundamentals Virtual training, no longer gives out a free voucher per March 2023.
 
 The other trick, is following Microsoft Ignite (changed in 2023, no more free vouchers), Microsoft Build or other Cloud Tech Challenges.
 
