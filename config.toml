@@ -138,7 +138,7 @@ theme = "DoIt"
 
 [params.page.comment.utterances]
   enable = true
-  repo="Nathalie-Leenders/BlogPosts" # eg: greeninja/devurandom-comments
+  repo="Nathalie-Leenders/nathalie-leenders.github.io" # eg: greeninja/devurandom-comments
   theme="github-dark"
 
 [outputs]
