@@ -1,8 +1,8 @@
 ---
 title: "Filter on date column with random years on Sharepoint"
 subtitle: "How do I filter on a list, for example for birthdays?"
-date: 2024-02-2-T09:27:14Z
-lastmod: 2024-02-2-T09:27:14Z
+date: 2024-02-20T09:27:14Z
+lastmod: 2024-02-20T09:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
