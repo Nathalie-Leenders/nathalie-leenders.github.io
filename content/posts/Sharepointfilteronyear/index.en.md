@@ -68,3 +68,5 @@ This gives you the current day birthdays, including the upcoming 8 days.
 {{< image src="filterresult.png" caption="The completed view, with upcoming 8 birthdays" height="600" width="800">}}
 
 And there you have it, kind of a workaround, but it does the trick.
+
+I forgot to add, make sure to update the 2024 part of the formula on Jan 1st to 2025, it wont do it automatically.
