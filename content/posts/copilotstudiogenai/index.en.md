@@ -1,8 +1,8 @@
 ---
 title: "New options for Gen AI and Bing AI Search"
 subtitle: "How do I make my GenAI answers work? I'm getting an error it's not supported"
-date: 2024-09-04T09:27:14Z
-lastmod: 2024-09-04T09:27:14Z
+date: 2024-04-09T09:27:14Z
+lastmod: 2024-04-09T09:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
