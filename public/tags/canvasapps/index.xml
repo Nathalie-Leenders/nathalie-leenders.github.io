@@ -3,7 +3,17 @@
         <title>CanvasApps - Tag - Power Platform Tips &amp; Tricks</title>
         <link>/tags/canvasapps/</link>
         <description>CanvasApps - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 12 Apr 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/canvasapps/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Sep 2023 09:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/canvasapps/" rel="self" type="application/rss+xml" /><item>
+    <title>Calling a number in Teams from a Canvas app</title>
+    <link>/posts/teamscallingfromcanvasapp/</link>
+    <pubDate>Thu, 07 Sep 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/teamscallingfromcanvasapp/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/teamscallingfromcanvasapp/callfromcanvas.png" referrerpolicy="no-referrer">
+            </div>How do I call someone in Teams, from a canvas app?I have a use case, where someone wants to press a button or phone icon, and that teams calls a specific person, how do I do this?
+There are a few ways to call someone:
+To a defined global, context, or environment variable Specific persons Pre-defined phone number Use the Launch command to launch a website that in turn launches MS Teams]]></description>
+</item><item>
     <title>Quick tip! Using QuickChart.IO with dynamic values (Canvas app edition)</title>
     <link>/posts/quickchartiodynamic/</link>
     <pubDate>Wed, 12 Apr 2023 14:27:14 &#43;0000</pubDate><author>

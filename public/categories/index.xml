@@ -3,75 +3,75 @@
         <title>Categories - Category - Power Platform Tips &amp; Tricks</title>
         <link>/categories/</link>
         <description>Categories - Category - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Microsoft Exams</title>
-    <link>/categories/microsoft-exams/</link>
-    <pubDate>Mon, 15 May 2023 14:27:14 &#43;0000</pubDate><author>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Sharepoint</title>
+    <link>/categories/sharepoint/</link>
+    <pubDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/categories/microsoft-exams/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Canvas Apps</title>
-    <link>/categories/canvas-apps/</link>
-    <pubDate>Wed, 12 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/canvas-apps/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MSWord</title>
-    <link>/categories/msword/</link>
-    <pubDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/msword/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Power Automate</title>
-    <link>/categories/power-automate/</link>
-    <pubDate>Wed, 29 Mar 2023 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/power-automate/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Powerapps</title>
-    <link>/categories/powerapps/</link>
-    <pubDate>Thu, 16 Mar 2023 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/powerapps/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Vouchers</title>
-    <link>/categories/vouchers/</link>
-    <pubDate>Tue, 28 Feb 2023 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/vouchers/</guid>
+    </author><guid>/categories/sharepoint/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Model Driven Apps</title>
     <link>/categories/model-driven-apps/</link>
-    <pubDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</pubDate><author>
+    <pubDate>Mon, 27 Nov 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
     </author><guid>/categories/model-driven-apps/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Virtual Tables</title>
     <link>/categories/virtual-tables/</link>
-    <pubDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</pubDate><author>
+    <pubDate>Wed, 18 Oct 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
     </author><guid>/categories/virtual-tables/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Github</title>
-    <link>/categories/github/</link>
-    <pubDate>Fri, 13 Jan 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>Power Automate</title>
+    <link>/categories/power-automate/</link>
+    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/categories/github/</guid>
+    </author><guid>/categories/power-automate/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Adaptive Cards</title>
-    <link>/categories/adaptive-cards/</link>
-    <pubDate>Wed, 19 Oct 2022 14:27:14 &#43;0000</pubDate><author>
+    <title>CanvasApp</title>
+    <link>/categories/canvasapp/</link>
+    <pubDate>Thu, 07 Sep 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/categories/adaptive-cards/</guid>
+    </author><guid>/categories/canvasapp/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Command Bar</title>
+    <link>/categories/command-bar/</link>
+    <pubDate>Wed, 16 Aug 2023 14:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>/categories/command-bar/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Model Driven App</title>
+    <link>/categories/model-driven-app/</link>
+    <pubDate>Wed, 16 Aug 2023 14:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>/categories/model-driven-app/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Power FX</title>
+    <link>/categories/power-fx/</link>
+    <pubDate>Wed, 16 Aug 2023 14:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>/categories/power-fx/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Canvas App</title>
+    <link>/categories/canvas-app/</link>
+    <pubDate>Thu, 20 Jul 2023 07:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>/categories/canvas-app/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Powerapps</title>
+    <link>/categories/powerapps/</link>
+    <pubDate>Thu, 20 Jul 2023 07:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>/categories/powerapps/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

@@ -3,75 +3,75 @@
         <title>Tags - Tag - Power Platform Tips &amp; Tricks</title>
         <link>/tags/</link>
         <description>Tags - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Exams</title>
-    <link>/tags/exams/</link>
-    <pubDate>Mon, 15 May 2023 14:27:14 &#43;0000</pubDate><author>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Sharepoint</title>
+    <link>/tags/sharepoint/</link>
+    <pubDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/tags/exams/</guid>
+    </author><guid>/tags/sharepoint/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Vouchers</title>
-    <link>/tags/vouchers/</link>
-    <pubDate>Mon, 15 May 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>Dataverse</title>
+    <link>/tags/dataverse/</link>
+    <pubDate>Mon, 27 Nov 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/tags/vouchers/</guid>
+    </author><guid>/tags/dataverse/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>CanvasApps</title>
-    <link>/tags/canvasapps/</link>
-    <pubDate>Wed, 12 Apr 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>Javascript</title>
+    <link>/tags/javascript/</link>
+    <pubDate>Mon, 27 Nov 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/tags/canvasapps/</guid>
+    </author><guid>/tags/javascript/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>QuickChartIO</title>
-    <link>/tags/quickchartio/</link>
-    <pubDate>Wed, 12 Apr 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>VirtualTable</title>
+    <link>/tags/virtualtable/</link>
+    <pubDate>Mon, 27 Nov 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/tags/quickchartio/</guid>
+    </author><guid>/tags/virtualtable/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>MSWord</title>
-    <link>/tags/msword/</link>
-    <pubDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>MPPC23</title>
+    <link>/tags/mppc23/</link>
+    <pubDate>Wed, 18 Oct 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/tags/msword/</guid>
+    </author><guid>/tags/mppc23/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Security</title>
-    <link>/tags/security/</link>
-    <pubDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>Virtual Tables</title>
+    <link>/tags/virtual-tables/</link>
+    <pubDate>Wed, 18 Oct 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/tags/security/</guid>
+    </author><guid>/tags/virtual-tables/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>XMLMappings</title>
-    <link>/tags/xmlmappings/</link>
-    <pubDate>Tue, 04 Apr 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>Adaptive Cards</title>
+    <link>/tags/adaptive-cards/</link>
+    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/tags/xmlmappings/</guid>
+    </author><guid>/tags/adaptive-cards/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Expressions</title>
-    <link>/tags/expressions/</link>
-    <pubDate>Wed, 29 Mar 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>Microsoft Teams</title>
+    <link>/tags/microsoft-teams/</link>
+    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/tags/expressions/</guid>
+    </author><guid>/tags/microsoft-teams/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Power Automate</title>
-    <link>/tags/power-automate/</link>
-    <pubDate>Wed, 29 Mar 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>PowerBI</title>
+    <link>/tags/powerbi/</link>
+    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/tags/power-automate/</guid>
+    </author><guid>/tags/powerbi/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>PowerApps</title>
-    <link>/tags/powerapps/</link>
-    <pubDate>Thu, 16 Mar 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>PowerAutomate</title>
+    <link>/tags/powerautomate/</link>
+    <pubDate>Mon, 11 Sep 2023 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/tags/powerapps/</guid>
+    </author><guid>/tags/powerautomate/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

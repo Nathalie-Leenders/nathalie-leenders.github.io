@@ -3,7 +3,19 @@
         <title>PowerAutomate - Tag - Power Platform Tips &amp; Tricks</title>
         <link>/tags/powerautomate/</link>
         <description>PowerAutomate - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 16 Mar 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/powerautomate/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 11 Sep 2023 09:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/powerautomate/" rel="self" type="application/rss+xml" /><item>
+    <title>Custom document link sharing with Sharepoint and Power Automate</title>
+    <link>/posts/sharepointlibrarypermissions/</link>
+    <pubDate>Mon, 11 Sep 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/sharepointlibrarypermissions/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/sharepointlibrarypermissions/Dynamicexternalsharing.png" referrerpolicy="no-referrer">
+            </div>UsecaseYou need to share a file from sharepoint to an external user, in an automated process. No manual &lsquo;create link&rsquo; actions needed on the sharepoint site. You can then email this link to your external client.
+Default on Power automate for a sharing link for sharepoint, is to set the Link Scope to either:
+Anyone with the link (including anonymous)
+People in your organization
+This explains how you can use the &lsquo;people with existing access&rsquo; sharing type.]]></description>
+</item><item>
     <title>Quick tip! Unmanaged layers - updates not moving through environments (ALM)</title>
     <link>/posts/unmanagedlayers-alm/</link>
     <pubDate>Thu, 16 Mar 2023 14:27:14 &#43;0000</pubDate><author>

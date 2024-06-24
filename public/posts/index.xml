@@ -3,96 +3,105 @@
         <title>All Posts - Power Platform Tips &amp; Tricks</title>
         <link>/posts/</link>
         <description>All Posts | Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>The secret to doing Microsoft exams for free!</title>
-    <link>/posts/microsoftexams-secrets/</link>
-    <pubDate>Mon, 15 May 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/microsoftexams-secrets/</guid>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Filter on date column with random years on Sharepoint</title>
+    <link>/posts/sharepointfilteronyear/</link>
+    <pubDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/sharepointfilteronyear/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/posts/microsoftexams-secrets/download.webp" referrerpolicy="no-referrer">
-            </div>This post explains how you to get Microsoft Exams for free.]]></description>
+                <img src="/posts/sharepointfilteronyear/sharepointlogo.png" referrerpolicy="no-referrer">
+            </div>UsecaseYou have a sharepoint list with birthdays, on a date column, but dont know how to filter on them to show the last few days or upcoming few days if someone has (had) their birthday.
+I couldnt figure out how to do this, and then a colleague of mine Remco Bruijstens (thank you!) suggested this method, and after testing it worked. Kudos to him, and I wanted to share with you how to accomplish this.]]></description>
 </item><item>
-    <title>Quick tip! Using QuickChart.IO with dynamic values (Canvas app edition)</title>
-    <link>/posts/quickchartiodynamic/</link>
-    <pubDate>Wed, 12 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/quickchartiodynamic/</guid>
-    <description><![CDATA[(This is lengthy for a quick tip, whoops, scroll all the way down to quickly check the fix)
-First of all, FULL credit goes to Pen Warner who graciously shared his QuickchartIO code with me that he used for his app. His app is awesome, check that out here.
-He’s on Twitter here: @p3nf0ld His Blog
-I was trying to do dynamic data into a quickchart.IO code, which I learned how to do in Kristine’s video here Go check her out as well, she’s awesome!]]></description>
-</item><item>
-    <title>Setting restrictive security on a Word Template while leaving sections open (Restrictive editing)</title>
-    <link>/posts/restrictive-editing-word/</link>
-    <pubDate>Fri, 07 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/restrictive-editing-word/</guid>
+    <title>How do I automatically have a GUID in my field?</title>
+    <link>/posts/guidjavascriptinmodeldrivenapps/</link>
+    <pubDate>Mon, 27 Nov 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/guidjavascriptinmodeldrivenapps/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/posts/restrictive-editing-word/Microsoft-Word-Logo.png" referrerpolicy="no-referrer">
-            </div>Another Word tip, oh my…This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images.
-It’s the most frustrating process, but I hope I can explain it clearly.
-If you find you cannot add a continuous break, but it does a page break, check out this article, or redo your document (that’s what I did)]]></description>
+                <img src="/posts/guidjavascriptinmodeldrivenapps/guidlogo.png" referrerpolicy="no-referrer">
+            </div>UsecaseI am creating a Model driven app, with a Virtual Table connected to SQL. In my SQL DB I have an external primary key field. How do I get an automatic GUID? The PowerFX code GUID() is not supported on the form.
+So I tried to do something on the ribbon, set the field,
+With({I:Last(Werknems).TransactionID},Notify( I, NotificationType.Information));Patch(Werknems,Defaults(Werknems), //Row,{TransactionID:GUID()}) However, since my field is mandatory, and it tries to save before it runs this (of course) it was saying the field wasnt filled in.]]></description>
 </item><item>
-    <title>Business Process Flow - How to automate moving through different stages</title>
-    <link>/posts/bpf-automation/</link>
-    <pubDate>Wed, 05 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/bpf-automation/</guid>
+    <title>Virtual Tables - ALM variables announcement &amp; Power Pages</title>
+    <link>/posts/virtualtablesmppc23announcements/</link>
+    <pubDate>Wed, 18 Oct 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/virtualtablesmppc23announcements/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/posts/bpf-automation/power-autoamte-vs-flow.webp" referrerpolicy="no-referrer">
-            </div>How to move stages automatically (BPF) using Power Automate (no http calls needed)Quick summary: You need to grab data from 3 different tables, link them using lookup columns, capture ID&rsquo;s, and add in conditions and use Data operations to shape the data into usable steps. Then add in a switch depending on your stage names, and add final actions updating your BPF table.
-Sounds easy enough right?…..
-Beaker&rsquo;s head on fireI hope this helps, and I tried explaining it clearly, please let me know in case of any questions, feedback, other methods etc.]]></description>
+                <img src="/posts/virtualtablesmppc23announcements/mppc.png" referrerpolicy="no-referrer">
+            </div>MPPC 2023 - Getting to announce brand new features!As some of you may have noticed during my MPPC session, I&rsquo;ve been honored to work together with 2 absolute rockstars within Microsoft, to fact check my Virtual Table information, and to get amazing new announcements out there!
+Pranita Padalwar Senior Product Manager for Power Pages, very generously provided information I could share for Power Pages which is so amazing I cannot wait to show you here!]]></description>
 </item><item>
-    <title>How to repeat words in Microsoft Word (XML Mappings)</title>
-    <link>/posts/repeatwordsinmsword/</link>
-    <pubDate>Tue, 04 Apr 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/repeatwordsinmsword/</guid>
-    <description><![CDATA[I know I usually only do Power Platform, but Microsoft Word is bound to be in your project needs someday, or combining with Power Automate, so I figured why not?
-Ever had the request to have certain words repeated, lets say in a header or footer? It can be anything, a date, name, product title, Business Unit etc etc.
-This can be achieved using XML Mapping in Microsoft Word. To get to the XML mapping, you must first have the Developer Tab activated.]]></description>
-</item><item>
-    <title>Another quick tip! Removing blank items in a compose</title>
-    <link>/posts/removing-blanks-powerautomate/</link>
-    <pubDate>Wed, 29 Mar 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/removing-blanks-powerautomate/</guid>
-    <description><![CDATA[This is a follow-up post for my earlier blog, Combine data from multiple apply to each into a single output file (Variables and compose)
-Cat Schneider helped me tremendously on this one, full credit to her! Find her blog here
-Thank youFollowing these steps, results in some empty values also being added.
-For example, if there is an empty entry, but the item exists and you specify that item it will show up.]]></description>
-</item><item>
-    <title>Quick tip! Unmanaged layers - updates not moving through environments (ALM)</title>
-    <link>/posts/unmanagedlayers-alm/</link>
-    <pubDate>Thu, 16 Mar 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/unmanagedlayers-alm/</guid>
-    <description><![CDATA[I had this issue today and figured I’d write a quick tip for it.
-I’ve changed my app, modified flows, everything works fine in Dev, publish customizations, export as managed and move to Test. Verified the client can see the new app version, and asked her to test.
-Uh-oh, the flows aren’t reflecting changes. XML MappingsIssue: Changes made in one environment, don’t reflect in another environment in a managed solutionSolution/Fix: Check on your Flows, or anything not reflecting the changes, for the Solution Layers Go to your flow for example, the ellipsis (…) and check the Solution Layers.]]></description>
-</item><item>
-    <title>How to get submitted values from your Choices/optionset column in Dataverse</title>
-    <link>/posts/collectvalues-choiceoptionsets/</link>
-    <pubDate>Tue, 07 Mar 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/collectvalues-choiceoptionsets/</guid>
+    <title>How to get a PowerBI report in an adaptive card (the hard way) - Update!</title>
+    <link>/posts/powerbiinadaptivecards/</link>
+    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/powerbiinadaptivecards/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/posts/collectvalues-choiceoptionsets/power-autoamte-vs-flow.webp" referrerpolicy="no-referrer">
-            </div>Ever noticed that when you select your columnname, in the dynamic data, it doesnt give you the result and it stays blank?I’d like to explain how you can get the value for your dropdown.
-There is a difference between the display name, and the actual name of that value. Dataverse often uses @OData.Community.Display.V1.FormattedValue instead of the previous new_value_label.
-In your Power automate flow, either run the flow and check the body, or add a Compose step after your Get Items/Update Item etc.]]></description>
+                <img src="/posts/powerbiinadaptivecards/powerbireport.png" referrerpolicy="no-referrer">
+            </div>UsecaseYou want to show a report in Microsoft Teams, or when someone requests a sales overview of 2022, a card appears with that report in it. You can also of course set up Powerbi alerts as a trigger.
+Right now, natively, dynamic reports do not work in cards. However, at MPPC they did announce this is possibly coming!
+For now though, here is a way to make this possible.]]></description>
 </item><item>
-    <title>How to do Microsoft exams?</title>
-    <link>/posts/microsoftexamsvideo/</link>
-    <pubDate>Tue, 28 Feb 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/microsoftexamsvideo/</guid>
+    <title>Custom document link sharing with Sharepoint and Power Automate</title>
+    <link>/posts/sharepointlibrarypermissions/</link>
+    <pubDate>Mon, 11 Sep 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/sharepointlibrarypermissions/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/posts/microsoftexamsvideo/Microsoft.jpg" referrerpolicy="no-referrer">
-            </div>Check out this video that I did for testpreptraining.com, on how to become a Power Platform Analyst, some tips and how to prepare for a Microsoft exam.
-Why become Microsoft Power Platform Developer - Learn with Nathalie Leenders - https://www.youtube.com/watch?v=Vc637VyEsig
-Linkedin screenshot]]></description>
+                <img src="/posts/sharepointlibrarypermissions/Dynamicexternalsharing.png" referrerpolicy="no-referrer">
+            </div>UsecaseYou need to share a file from sharepoint to an external user, in an automated process. No manual &lsquo;create link&rsquo; actions needed on the sharepoint site. You can then email this link to your external client.
+Default on Power automate for a sharing link for sharepoint, is to set the Link Scope to either:
+Anyone with the link (including anonymous)
+People in your organization
+This explains how you can use the &lsquo;people with existing access&rsquo; sharing type.]]></description>
 </item><item>
-    <title>Quick tip! Boolean in SQL</title>
-    <link>/posts/boolean-in-sql/</link>
-    <pubDate>Wed, 15 Feb 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/boolean-in-sql/</guid>
-    <description><![CDATA[Are you looking for a boolean column in SQL? Or have a virtual table and need a toggle/checkbox in your app?If you have just a string/text field with True/False this wont work.
-You need to convert the column in SQL to BIT.
-Bit is an integer data type that can take a value of 0, 1, or NULL 1 for true, 0 for false.
-Then reload/refresh your table into your dataverse/virtual table and it can be selected with a checkbox!]]></description>
+    <title>Calling a number in Teams from a Canvas app</title>
+    <link>/posts/teamscallingfromcanvasapp/</link>
+    <pubDate>Thu, 07 Sep 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/teamscallingfromcanvasapp/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/teamscallingfromcanvasapp/callfromcanvas.png" referrerpolicy="no-referrer">
+            </div>How do I call someone in Teams, from a canvas app?I have a use case, where someone wants to press a button or phone icon, and that teams calls a specific person, how do I do this?
+There are a few ways to call someone:
+To a defined global, context, or environment variable Specific persons Pre-defined phone number Use the Launch command to launch a website that in turn launches MS Teams]]></description>
+</item><item>
+    <title>Sending an email from a Model Driven App on a command bar button</title>
+    <link>/posts/commandbarsendemail/</link>
+    <pubDate>Wed, 16 Aug 2023 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/commandbarsendemail/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/commandbarsendemail/imagecommandbar.png" referrerpolicy="no-referrer">
+            </div>What is the command bar?The command bar is the ribbon on top of your Powerapp.
+How do I edit this? Go into edit mode for your Model Driven App Right click on your table, Edit the Command Bar This opens the Command bar editor What are the 4 areas? Main Form - This is the one I&rsquo;m focusing on right now Main Grid Subgrid View Associated View Reference materialScott Durow created this and it has been adopted by Microsoft ever since.]]></description>
+</item><item>
+    <title>Setting conditions on the visible property - Canvas App</title>
+    <link>/posts/visibleproperty/</link>
+    <pubDate>Thu, 20 Jul 2023 07:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/visibleproperty/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/visibleproperty/powerappslogo.png" referrerpolicy="no-referrer">
+            </div>Setting conditions on the visible property - Canvas AppHow can I hide my items/control based on conditions?
+You can of course use an IF statement, or Switch, and work from there.
+True - shows the item False - hides the item
+But how can I do this dynamically?You can use Environment Variables. These can be changed when you move between environments (for ALM purposes) Set an environment variable in your solution, add the desired persons email address(es) and refresh your datasources in the Canvas app.]]></description>
+</item><item>
+    <title>Connecting to Virtual Tables in PowerBI</title>
+    <link>/posts/virtualtablesinpowerbi/</link>
+    <pubDate>Fri, 07 Jul 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/virtualtablesinpowerbi/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/virtualtablesinpowerbi/Powerbivirtualtables.png" referrerpolicy="no-referrer">
+            </div>Connecting to Virtual Tables in PowerBIWhen I wanted to connect to the virtual table, my first instinct was to use the Dataverse connector since they are virtual tables, on Dataverse. Opening up PowerBI, connecting to Dataverse, there were no virtual tables visible.
+Of course, the work around would be to connect to the source directly, but I did want to see if I could make it work.
+Virtual tables are only available in PowerBI through the Common Data Service (Legacy) connector.]]></description>
+</item><item>
+    <title>Dynamic content not displaying my action</title>
+    <link>/posts/dynamiccontent/</link>
+    <pubDate>Thu, 08 Jun 2023 00:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/dynamiccontent/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/dynamiccontent/power-autoamte-vs-flow.png" referrerpolicy="no-referrer">
+            </div><p>I came across this today and wanted to share. I couldnt figure out why my output from the teams adaptive card was not an option to select in my Compose (no body or anything available). 😭</p>
+<h3 id="scenario" class="headerLink">
+    <a href="#scenario" class="header-mark"></a>Scenario:</h3><p>You have an action in your flow, for example a teams adaptive card, and want to use the output somewhere. Whether thats in a compose, set variable, update row, doesnt matter. What you try and do, it wont show.</p>]]></description>
 </item></channel>
 </rss>

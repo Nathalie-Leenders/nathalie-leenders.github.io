@@ -11,7 +11,7 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/adaptivecards/MS_Teams_logo_ws.png" referrerpolicy="no-referrer">
             </div>Adaptive cards is the name for the pop-up you can get in Teams, with custom content asking you to confirm something, or to submit a remark. One way of creating them is through Adaptive card Designer (JSON).
-Another way is to use the new Cards (preview) method in PowerApps maker - find out how here: Microsoft Learn Page - https://learn.microsoft.com/en-us/power-apps/cards/overview
+Another way is to use the new Cards (preview) method in PowerApps maker - find out how here: Microsoft Learn Page - https://learn.microsoft.com/en-us/power-apps/cards/overview/?wt.mc_id=DX-MVP-5005318
 If you want to use your adaptive card as for example an approval, or you want the color choice you need to get the data that the card receives.]]></description>
 </item></channel>
 </rss>

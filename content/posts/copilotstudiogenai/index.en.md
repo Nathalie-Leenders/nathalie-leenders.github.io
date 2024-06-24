@@ -1,8 +1,8 @@
 ---
 title: "New options for Gen AI and Bing AI Search"
 subtitle: "How do I make my GenAI answers work? I'm getting an error it's not supported"
-date: 2024-04-09T09:27:14Z
-lastmod: 2024-04-09T09:27:14Z
+date: 2024-09-04T09:27:14Z
+lastmod: 2024-09-04T09:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
@@ -30,7 +30,7 @@ You're trying to use Generative AI features in Copilot Studio, however it says i
 
 ## Enable the settings for your environment
 
-You need to be a power platform admin for this.
+You need to be a Power Platform admin for this.
 
 Go to the Power Platform admin center
 

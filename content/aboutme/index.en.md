@@ -1,5 +1,6 @@
 # About me
-I've started this site to share the knowledge I've gained as a Power Platform Developer. <br> Being a former hairdresser, turned IT, no coding background, no degree and self-taught on most things, I feel it's important to share the knowledge, so others can also learn from it.
+I've started this site to share the knowledge I've gained as a Power Platform Developer. In January 2024 I started as a Consultant at Wortell, and in June I also became an MCT. <br> <br>
+Being a former hairdresser, turned IT, no coding background, no degree and self-taught on most things, I feel it's important to share the knowledge, so others can also learn from it.
 
 I got awarded with the Microsoft MVP Award in June 2023, very excited to continue to share the knowledge!
 <br>

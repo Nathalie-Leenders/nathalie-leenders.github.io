@@ -3,7 +3,26 @@
         <title>Virtual Tables - Tag - Power Platform Tips &amp; Tricks</title>
         <link>/tags/virtual-tables/</link>
         <description>Virtual Tables - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/virtual-tables/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 18 Oct 2023 09:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/virtual-tables/" rel="self" type="application/rss+xml" /><item>
+    <title>Virtual Tables - ALM variables announcement &amp; Power Pages</title>
+    <link>/posts/virtualtablesmppc23announcements/</link>
+    <pubDate>Wed, 18 Oct 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/virtualtablesmppc23announcements/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/virtualtablesmppc23announcements/mppc.png" referrerpolicy="no-referrer">
+            </div>MPPC 2023 - Getting to announce brand new features!As some of you may have noticed during my MPPC session, I&rsquo;ve been honored to work together with 2 absolute rockstars within Microsoft, to fact check my Virtual Table information, and to get amazing new announcements out there!
+Pranita Padalwar Senior Product Manager for Power Pages, very generously provided information I could share for Power Pages which is so amazing I cannot wait to show you here!]]></description>
+</item><item>
+    <title>Connecting to Virtual Tables in PowerBI</title>
+    <link>/posts/virtualtablesinpowerbi/</link>
+    <pubDate>Fri, 07 Jul 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/virtualtablesinpowerbi/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/virtualtablesinpowerbi/Powerbivirtualtables.png" referrerpolicy="no-referrer">
+            </div>Connecting to Virtual Tables in PowerBIWhen I wanted to connect to the virtual table, my first instinct was to use the Dataverse connector since they are virtual tables, on Dataverse. Opening up PowerBI, connecting to Dataverse, there were no virtual tables visible.
+Of course, the work around would be to connect to the source directly, but I did want to see if I could make it work.
+Virtual tables are only available in PowerBI through the Common Data Service (Legacy) connector.]]></description>
+</item><item>
     <title>Dataverse Choices to SQL backend- Update!</title>
     <link>/posts/dataversechoices-sqlbackend/</link>
     <pubDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</pubDate><author>

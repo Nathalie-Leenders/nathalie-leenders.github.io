@@ -3,7 +3,27 @@
         <title>Power Automate - Category - Power Platform Tips &amp; Tricks</title>
         <link>/categories/power-automate/</link>
         <description>Power Automate - Category - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Mar 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/power-automate/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/power-automate/" rel="self" type="application/rss+xml" /><item>
+    <title>How to get a PowerBI report in an adaptive card (the hard way) - Update!</title>
+    <link>/posts/powerbiinadaptivecards/</link>
+    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/powerbiinadaptivecards/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/powerbiinadaptivecards/powerbireport.png" referrerpolicy="no-referrer">
+            </div>UsecaseYou want to show a report in Microsoft Teams, or when someone requests a sales overview of 2022, a card appears with that report in it. You can also of course set up Powerbi alerts as a trigger.
+Right now, natively, dynamic reports do not work in cards. However, at MPPC they did announce this is possibly coming!
+For now though, here is a way to make this possible.]]></description>
+</item><item>
+    <title>Dynamic content not displaying my action</title>
+    <link>/posts/dynamiccontent/</link>
+    <pubDate>Thu, 08 Jun 2023 00:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/dynamiccontent/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/dynamiccontent/power-autoamte-vs-flow.png" referrerpolicy="no-referrer">
+            </div><p>I came across this today and wanted to share. I couldnt figure out why my output from the teams adaptive card was not an option to select in my Compose (no body or anything available). 😭</p>
+<h3 id="scenario" class="headerLink">
+    <a href="#scenario" class="header-mark"></a>Scenario:</h3><p>You have an action in your flow, for example a teams adaptive card, and want to use the output somewhere. Whether thats in a compose, set variable, update row, doesnt matter. What you try and do, it wont show.</p>]]></description>
+</item><item>
     <title>Another quick tip! Removing blank items in a compose</title>
     <link>/posts/removing-blanks-powerautomate/</link>
     <pubDate>Wed, 29 Mar 2023 14:27:14 &#43;0000</pubDate><author>
@@ -65,7 +85,7 @@ You work for a company called Powerplatform with their email domain @Powerplatfo
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/adaptivecards/MS_Teams_logo_ws.png" referrerpolicy="no-referrer">
             </div>Adaptive cards is the name for the pop-up you can get in Teams, with custom content asking you to confirm something, or to submit a remark. One way of creating them is through Adaptive card Designer (JSON).
-Another way is to use the new Cards (preview) method in PowerApps maker - find out how here: Microsoft Learn Page - https://learn.microsoft.com/en-us/power-apps/cards/overview
+Another way is to use the new Cards (preview) method in PowerApps maker - find out how here: Microsoft Learn Page - https://learn.microsoft.com/en-us/power-apps/cards/overview/?wt.mc_id=DX-MVP-5005318
 If you want to use your adaptive card as for example an approval, or you want the color choice you need to get the data that the card receives.]]></description>
 </item></channel>
 </rss>
