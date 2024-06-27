@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "C:/Users/NathalieLeenders/OneDrive - Particulier/C drive github/Github/blog/nathalieleenders",
+	"sourceRoot": "C:/Users/NathalieLeenders/OneDrive - Particulier/Nathalieleenders blog github/nathalie-leenders.github.io",
 	"sources": [
 		"themes/DoIt/assets/css/style.scss",
 		"themes/DoIt/assets/css/_variables.scss",
