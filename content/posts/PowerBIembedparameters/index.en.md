@@ -1,8 +1,8 @@
 ---
 title: "How to use parameters in an embedded Power BI link"
 subtitle: "Or: A quick overview - how to use parameters"
-date: 2024-07-02T14:27:14Z
-lastmod: 2024-07-02T14:27:14Z
+date: 2024-07-01T14:27:14Z
+lastmod: 2024-07-01T14:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
