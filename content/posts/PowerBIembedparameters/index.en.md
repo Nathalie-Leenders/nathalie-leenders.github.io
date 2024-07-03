@@ -24,9 +24,9 @@ toc:
 code:
     maxShownLines: 100
 ---
-## My scenario
+## My scenario:
 
-This is an addition to my earlier blog, and bit a few more parameters you can use. Credits go to https://community.fabric.microsoft.com/t5/Service/All-possible-Power-BI-Service-embed-URL-parameters/m-p/3053763 but I did want to share as well.
+This is an addition to my earlier blog, and with a few more parameters you can use. Credits go to https://community.fabric.microsoft.com/t5/Service/All-possible-Power-BI-Service-embed-URL-parameters/m-p/3053763 but I did want to share as well.
 
 I'm struggeling to fit a canvas app with a powerbi tile that has an embedded report into a teams app (gotta love it) and my report wont fully fit. I'm trying to find the magic combo of these parameters.
 
