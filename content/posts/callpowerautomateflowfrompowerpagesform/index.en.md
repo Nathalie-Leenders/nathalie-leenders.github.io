@@ -1,8 +1,8 @@
 ---
 title: "Calling a Power Automate Cloud flow, from Power Pages forms (!) using Javascript"
 subtitle: ""
-date: 2024-07-03T14:27:14Z
-lastmod: 2024-07-03T14:27:14Z
+date: 2024-07-17T14:27:14Z
+lastmod: 2024-07-17T14:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
