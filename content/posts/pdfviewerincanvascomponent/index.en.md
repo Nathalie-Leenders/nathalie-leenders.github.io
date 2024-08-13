@@ -1,8 +1,8 @@
 ---
 title: "How to use the PDF Viewer, to view PDF's in a Model Driven app from an attachment column"
 subtitle: "My PDF viewer works in the canvas app, but not when I embed it"
-date: 2024-12-08T09:27:14Z
-lastmod: 2024-12-08T09:27:14Z
+date: 2024-08-12T09:27:14Z
+lastmod: 2024-08-12T09:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
