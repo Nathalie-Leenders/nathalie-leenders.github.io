@@ -1,8 +1,8 @@
 ---
 title: "Adding a decimal count to your Power Automate Flow (Float/Increment variable)"
 subtitle: "How to use a float variable for decimal counting"
-date: 2024-11-05T14:27:14Z
-lastmod: 2024-11-05T14:27:14Z
+date: 2024-11-04T14:27:14Z
+lastmod: 2024-11-04T14:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
