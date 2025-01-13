@@ -3,9 +3,80 @@
         <title>Power Platform Tips &amp; Tricks</title>
         <link>/</link>
         <description>Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 04 Nov 2024 14:27:14 &#43;0000</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Adding a decimal count to your Power Automate Flow (Float/Increment variable)</title>
+    <link>/posts/countinvariablescont/countinvariablescont/</link>
+    <pubDate>Mon, 04 Nov 2024 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/countinvariablescont/countinvariablescont/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="count.png" referrerpolicy="no-referrer">
+            </div>I&rsquo;ve explained how to count in a variable, but how do you count in a decimal?
+I had a usecase, where we wanted to create a version number metadata field. We could of course use an integer, count using increment, and upload to the field, however that only does &lsquo;major&rsquo; counts i.e 1.0 to 2.0 to 3.0 etc.
+How do I count in minor, decimals, from 0.1 to 0.2 to 03 or even 0.]]></description>
+</item><item>
+    <title>New options for Gen AI and Bing AI Search</title>
+    <link>/posts/copilotstudiogenai/</link>
+    <pubDate>Wed, 04 Sep 2024 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/copilotstudiogenai/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/copilotstudiogenai/studio.png" referrerpolicy="no-referrer">
+            </div>UsecaseYou&rsquo;re trying to use Generative AI features in Copilot Studio, however it says it&rsquo;s not supported. How do you fix this?
+Enable the settings for your environmentYou need to be a Power Platform admin for this.
+Go to the Power Platform admin center
+CLick on your environment.
+On the lower right corner, enable these 2 settings:
+The 2 new options you need to enable as PP admin for your environmentNow you can use GenAI in your Copilot Studio bot!]]></description>
+</item><item>
+    <title>How to use the PDF Viewer, to view PDF&#39;s in a Model Driven app from an attachment column</title>
+    <link>/posts/pdfviewerincanvascomponent/</link>
+    <pubDate>Mon, 12 Aug 2024 09:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/pdfviewerincanvascomponent/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/pdfviewerincanvascomponent/pdfviewer.png" referrerpolicy="no-referrer">
+            </div>UsecaseMy PDF viewer works in the canvas app, but not when I embed it
+Show image 0/0 in MDA
+The beginningI had a need, to display a pdf from a Dataverse attachment column in a Model driven app form.
+I had looked at many different PCF Components (which are totally awesome, you should really check them out!) However these only work on Notes with attachments. My dataverse table/solution uses a files column.]]></description>
+</item><item>
+    <title>Calling a Power Automate Cloud flow, from Power Pages forms (!) using Javascript</title>
+    <link>/posts/callpowerautomateflowfrompowerpagesform/</link>
+    <pubDate>Wed, 17 Jul 2024 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/callpowerautomateflowfrompowerpagesform/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/callpowerautomateflowfrompowerpagesform/powerpagesflow.png" referrerpolicy="no-referrer">
+            </div>Calling a Power Automate flow from a dataverse form, in a Power Page formSounds easy right? Trust me it&rsquo;s not, but I hope this helps. I have had tremendous help from my colleague Laurens Hoogendoorn, who is completely awesome and helps me run with javascript (see what I did there) before learning how to crawl or walk. LOL. Laurens, you are the best!
+So, let me start at the beginning.]]></description>
+</item><item>
+    <title>How to use regex in Power Automate Cloud flows</title>
+    <link>/posts/regexinpowerautomatecloud/</link>
+    <pubDate>Thu, 11 Jul 2024 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/regexinpowerautomatecloud/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/regexinpowerautomatecloud/regex.png" referrerpolicy="no-referrer">
+            </div>I had a client scenario, where I needed to grab a 6-digit number from an incoming email subject. It wont always be in the same place, and also possibly not be the only digits. So I couldnt use trim, length or other that I could think off.
+Unfortunately, or luckily, depending on how you look at it, my dear friend Cat Schneider introduced me to regex
+When you know you know, regex isnt easy.]]></description>
+</item><item>
+    <title>How to use parameters in an embedded Power BI link</title>
+    <link>/posts/powerbiembedparameters/</link>
+    <pubDate>Mon, 01 Jul 2024 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/powerbiembedparameters/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/powerbiembedparameters/powerbitile2.png" referrerpolicy="no-referrer">
+            </div>My scenario:This is an addition to my earlier blog, and with a few more parameters you can use. Credits go to https://community.fabric.microsoft.com/t5/Service/All-possible-Power-BI-Service-embed-URL-parameters/m-p/3053763 but I did want to share as well.
+I&rsquo;m struggeling to fit a canvas app with a powerbi tile that has an embedded report into a teams app (gotta love it) and my report wont fully fit. I&rsquo;m trying to find the magic combo of these parameters.]]></description>
+</item><item>
+    <title>How to embed a Power BI report into a Canvas app, and hide the nav &amp; filter</title>
+    <link>/posts/canvasapppowerbi/</link>
+    <pubDate>Thu, 27 Jun 2024 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/canvasapppowerbi/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/canvasapppowerbi/powerbitile.png" referrerpolicy="no-referrer">
+            </div>Step 1 - Embed a Power BI report into a canvas appI dont know about you, but it took me a while to figure out why I couldnt add my report into a Power BI tile in a canvas app. I knew I did it before, but of course didnt blog about it, so I forgot (lol)
+It&rsquo;s actually really easy, and doesnt require you to reupload your pbix, add to tiles or others.]]></description>
+</item><item>
     <title>Filter on date column with random years on Sharepoint</title>
     <link>/posts/sharepointfilteronyear/</link>
     <pubDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</pubDate><author>
@@ -33,77 +104,5 @@ With({I:Last(Werknems).TransactionID},Notify( I, NotificationType.Information));
                 <img src="/posts/virtualtablesmppc23announcements/mppc.png" referrerpolicy="no-referrer">
             </div>MPPC 2023 - Getting to announce brand new features!As some of you may have noticed during my MPPC session, I&rsquo;ve been honored to work together with 2 absolute rockstars within Microsoft, to fact check my Virtual Table information, and to get amazing new announcements out there!
 Pranita Padalwar Senior Product Manager for Power Pages, very generously provided information I could share for Power Pages which is so amazing I cannot wait to show you here!]]></description>
-</item><item>
-    <title>How to get a PowerBI report in an adaptive card (the hard way) - Update!</title>
-    <link>/posts/powerbiinadaptivecards/</link>
-    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/powerbiinadaptivecards/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/powerbiinadaptivecards/powerbireport.png" referrerpolicy="no-referrer">
-            </div>UsecaseYou want to show a report in Microsoft Teams, or when someone requests a sales overview of 2022, a card appears with that report in it. You can also of course set up Powerbi alerts as a trigger.
-Right now, natively, dynamic reports do not work in cards. However, at MPPC they did announce this is possibly coming!
-For now though, here is a way to make this possible.]]></description>
-</item><item>
-    <title>Custom document link sharing with Sharepoint and Power Automate</title>
-    <link>/posts/sharepointlibrarypermissions/</link>
-    <pubDate>Mon, 11 Sep 2023 09:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/sharepointlibrarypermissions/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/sharepointlibrarypermissions/Dynamicexternalsharing.png" referrerpolicy="no-referrer">
-            </div>UsecaseYou need to share a file from sharepoint to an external user, in an automated process. No manual &lsquo;create link&rsquo; actions needed on the sharepoint site. You can then email this link to your external client.
-Default on Power automate for a sharing link for sharepoint, is to set the Link Scope to either:
-Anyone with the link (including anonymous)
-People in your organization
-This explains how you can use the &lsquo;people with existing access&rsquo; sharing type.]]></description>
-</item><item>
-    <title>Calling a number in Teams from a Canvas app</title>
-    <link>/posts/teamscallingfromcanvasapp/</link>
-    <pubDate>Thu, 07 Sep 2023 09:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/teamscallingfromcanvasapp/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/teamscallingfromcanvasapp/callfromcanvas.png" referrerpolicy="no-referrer">
-            </div>How do I call someone in Teams, from a canvas app?I have a use case, where someone wants to press a button or phone icon, and that teams calls a specific person, how do I do this?
-There are a few ways to call someone:
-To a defined global, context, or environment variable Specific persons Pre-defined phone number Use the Launch command to launch a website that in turn launches MS Teams]]></description>
-</item><item>
-    <title>Sending an email from a Model Driven App on a command bar button</title>
-    <link>/posts/commandbarsendemail/</link>
-    <pubDate>Wed, 16 Aug 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/commandbarsendemail/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/commandbarsendemail/imagecommandbar.png" referrerpolicy="no-referrer">
-            </div>What is the command bar?The command bar is the ribbon on top of your Powerapp.
-How do I edit this? Go into edit mode for your Model Driven App Right click on your table, Edit the Command Bar This opens the Command bar editor What are the 4 areas? Main Form - This is the one I&rsquo;m focusing on right now Main Grid Subgrid View Associated View Reference materialScott Durow created this and it has been adopted by Microsoft ever since.]]></description>
-</item><item>
-    <title>Setting conditions on the visible property - Canvas App</title>
-    <link>/posts/visibleproperty/</link>
-    <pubDate>Thu, 20 Jul 2023 07:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/visibleproperty/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/visibleproperty/powerappslogo.png" referrerpolicy="no-referrer">
-            </div>Setting conditions on the visible property - Canvas AppHow can I hide my items/control based on conditions?
-You can of course use an IF statement, or Switch, and work from there.
-True - shows the item False - hides the item
-But how can I do this dynamically?You can use Environment Variables. These can be changed when you move between environments (for ALM purposes) Set an environment variable in your solution, add the desired persons email address(es) and refresh your datasources in the Canvas app.]]></description>
-</item><item>
-    <title>Connecting to Virtual Tables in PowerBI</title>
-    <link>/posts/virtualtablesinpowerbi/</link>
-    <pubDate>Fri, 07 Jul 2023 09:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/virtualtablesinpowerbi/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/virtualtablesinpowerbi/Powerbivirtualtables.png" referrerpolicy="no-referrer">
-            </div>Connecting to Virtual Tables in PowerBIWhen I wanted to connect to the virtual table, my first instinct was to use the Dataverse connector since they are virtual tables, on Dataverse. Opening up PowerBI, connecting to Dataverse, there were no virtual tables visible.
-Of course, the work around would be to connect to the source directly, but I did want to see if I could make it work.
-Virtual tables are only available in PowerBI through the Common Data Service (Legacy) connector.]]></description>
-</item><item>
-    <title>Dynamic content not displaying my action</title>
-    <link>/posts/dynamiccontent/</link>
-    <pubDate>Thu, 08 Jun 2023 00:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/dynamiccontent/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/dynamiccontent/power-autoamte-vs-flow.png" referrerpolicy="no-referrer">
-            </div><p>I came across this today and wanted to share. I couldnt figure out why my output from the teams adaptive card was not an option to select in my Compose (no body or anything available). 😭</p>
-<h3 id="scenario" class="headerLink">
-    <a href="#scenario" class="header-mark"></a>Scenario:</h3><p>You have an action in your flow, for example a teams adaptive card, and want to use the output somewhere. Whether thats in a compose, set variable, update row, doesnt matter. What you try and do, it wont show.</p>]]></description>
 </item></channel>
 </rss>

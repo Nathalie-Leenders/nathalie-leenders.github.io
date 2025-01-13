@@ -29,7 +29,7 @@ I had a client scenario, where I needed to grab a 6-digit number from an incomin
 
 Unfortunately, or luckily, depending on how you look at it, my dear friend Cat Schneider introduced me to regex
 
-{{< image src="beakerfunny.gif" caption="When you know you know, regex isnt easy." height="800" width="500">}}
+{{< img src="beakerfunny.gif" caption="When you know you know, regex isnt easy." height="800" width="500">}}
 
 Thankfully someone within my company helped me guide a regex expression I could use, but I do want to share this awesome resource:
 
@@ -43,6 +43,6 @@ Full credits to them, I used their swagger, and created a custom connector with 
 
 Then I added the step in my cloud flow, added in my regex, and I could do regex filtering on my subject!
 
-{{< image src="regexscreenshot.png" caption="The action in Power Automate, able to do my regex" height="800" width="500">}}
+{{< img src="regexscreenshot.png" caption="The action in Power Automate, able to do my regex" height="800" width="500">}}
 
 I hope this helps, merely sharing for exposure, full credit to Steelcutbytes for this one!

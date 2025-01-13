@@ -32,9 +32,9 @@ You have an action in your flow, for example a teams adaptive card, and want to 
 
 <!--more-->
 
-{{< admonition type=info title="Fix" open=true >}}
+{{< alert type=info title="Fix" open=true >}}
 What I found, is that if you remove the dynamic content from your card (don't worry, you can re-add later, or copy/paste your json in a notepad file just in case) it will show!
-{{< /admonition >}}
+{{< /alert >}}
 
 
 So any dynamic content in an action, could stop your action from being shown as dynamic content itself.

@@ -39,7 +39,7 @@ To get to the XML mapping, you must first have the Developer Tab activated.
 - Enable the Developer (check the checkbox)
 - Save
 
-{{< image src="xmlmapping screenshot1.png" caption="Developer tab" height="600" width="800">}}
+{{< img src="xmlmapping screenshot1.png" caption="Developer tab" height="600" width="800">}}
 
 Now you’re able to open the Developer Tab, and in the middle you’ll find the XML Mapping.
 Here is where the fun starts.
@@ -64,7 +64,7 @@ XML Mapping, as the name says, uses an XML file to map the words.
 - Select your file.
 - It will show up as the following:
 
-  {{< image src="xmlmapping screenshot2.png" caption="Breaks start and End" height="600" width="800">}}
+  {{< img src="xmlmapping screenshot2.png" caption="Breaks start and End" height="600" width="800">}}
 
 I’ve used Word1 and Word2, but you can of course specify your own naming in the XML.
 
@@ -77,7 +77,7 @@ Next step is binding this to something on your form or document.
 - Right click on `Word1`
 - Select Map to selected Content control
 
-  {{< image src="xmlmapping screenshot3.png" caption="XML Mappings" height="1000" width="800">}}
+  {{< img src="xmlmapping screenshot3.png" caption="XML Mappings" height="1000" width="800">}}
 
 You have now mapped that content control, to `Word1`
 

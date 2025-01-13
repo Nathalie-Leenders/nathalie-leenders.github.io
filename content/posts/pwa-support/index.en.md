@@ -96,13 +96,13 @@ The offline page will be served to your visitor when they are offline.
 
 Create `offline.md` under `/content` directory and write an offline message.
 
-{{< admonition type=tip title="Permalink" open=true >}}
+{{< alert type=tip title="Permalink" open=true >}}
 You need to make sure the [Permalink](https://gohugo.io/content-management/urls/#permalinks) to the offline page is `/offline`, otherwise, you will need to modify the value of `OFFLINE_CACHE_FILES` and `OFFLINE_PAGE` in the service worker yourself.
-{{< /admonition >}}
+{{< /alert >}}
 
-{{< admonition type=warning title="i18n" open=true >}}
+{{< alert type=warning title="i18n" open=true >}}
 Currently, i18n is not supported for the offline page, consider writing the offline message in different languages if you are running a multilingual website.
-{{< /admonition >}}
+{{< /alert >}}
 
 Here is a sample offline page.
 
@@ -128,11 +128,11 @@ Go to `config.toml`, add or change the option `enablePWA = true` under `[params]
 
 Now, an install button should show up when you visit your website and you will be able to install your site as an app.
 
-{{< image src="./Install-PWA.webp" caption="Install your PWA" height="693px" width="419px">}}
+{{< img src="./Install-PWA.webp" caption="Install your PWA" height="693px" width="419px">}}
 
 After clicking "Install", your website should be installed as a native app.
 
-{{< image src="./Installed-PWA.webp" caption="Installed PWA" height="1575px" width="1321px">}}
+{{< img src="./Installed-PWA.webp" caption="Installed PWA" height="1575px" width="1321px">}}
 
 Congratulation! You have successfully turned your static site into a PWA🎉
 

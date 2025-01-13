@@ -30,9 +30,9 @@ code:
 
 <!--more-->
 
-{{< admonition type=success title="Biggest tip I can give you" open=true >}}
+{{< alert type=success title="Biggest tip I can give you" open=true >}}
 Check this out if you want to learn how to get Microsoft exam vouchers for free! :yellow_heart:
-{{< /admonition >}}
+{{< /alert >}}
 
 # I’ll be spilling the beans here, letting out the BIG secret…
 

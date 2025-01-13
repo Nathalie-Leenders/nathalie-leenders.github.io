@@ -67,13 +67,13 @@ Oh and don't forget to pray, don't include your trigger word in your reply, and 
 
 Good luck!
 
-{{< image src="sales.png" caption="PowerBI Report in an Adaptive Card" height="600" width="800">}}
+{{< img src="sales.png" caption="PowerBI Report in an Adaptive Card" height="600" width="800">}}
 
 After I posted this blog, I got in touch with Luuk Postuma, who had been trying to get this to work, and he has shared his feedback so we can all learn from it:
 
 I attended Nathalie’s session at MPPC 2023 and cam home very excited to try this out.  But, when it came to the details, I immediately ran into issues and bombarded Nathalie with a bunch of emails.  The main issue I was having (among others) was that I only have a Power BI Premium-Per-User license and I just could not get it to work.  I also have a Fabric 60-day trial, and figured that should be enough for me to use the “Export To File for Power BI Reports” 
 
-{{< image src="luuk.png" caption="I kept getting this error" height="600" width="800">}}
+{{< img src="luuk.png" caption="I kept getting this error" height="600" width="800">}}
 
 Based on some Google searches, it appeared that I would need a full Power BI Premium license, but after some more digging and trial and error, I learned that I was wrong!
 
@@ -82,13 +82,13 @@ You can use “Export to File for Power BI Reports” with a Premium-Per-User li
 Here is the step I missed:
 -  You have to create a Power BI Workspace that uses the Fabric Trial capacity.  To do this, go to your app.powerbi.com, select the settings gear at the top right and then select “Admin portal”, then select “Workspaces”.
 
-{{< image src="luuk2.png" caption="I kept getting this error" height="600" width="800">}}
+{{< img src="luuk2.png" caption="I kept getting this error" height="600" width="800">}}
 
-{{< image src="luuk3.png" caption="Find your workspace in the list, click on the dots and select “Reassign workspace”:" height="600" width="800">}}
+{{< img src="luuk3.png" caption="Find your workspace in the list, click on the dots and select “Reassign workspace”:" height="600" width="800">}}
 
 Then, select the Trial option:
 
-{{< image src="luuk4.png" caption="" height="600" width="800">}}
+{{< img src="luuk4.png" caption="" height="600" width="800">}}
 
 At this point, you should be good to test the solution until your Fabric Trial runs out.  What I’ll do then depends on how much money my company wants to spend 😉
 
@@ -96,12 +96,12 @@ Now, for a few notes on using the “Export to File for Power BI Reports” acti
 If a keyword (in this case ‘revenue’) is used in a specific Teams channel, I want it to export my Power BI revenue report to a .png file and then send it as an attachment in an email.
 At a high level, it looks like this:
 
-{{< image src="luuk5.png" caption="" height="600" width="800">}}
+{{< img src="luuk5.png" caption="" height="600" width="800">}}
 
 In the right branch, Teams simply responds to say “You will receive an email with the report in a minute” (because for me it typically takes 40 to 60 seconds).
 The left branch takes care of the .png export and emailing.  The first part (Export to File….) looks like this:
 
-{{< image src="luuk7.png" caption="" height="600" width="800">}}
+{{< img src="luuk7.png" caption="" height="600" width="800">}}
 
 The Workspace value should be a workspace that you enabled as your Fabric (or Fabric Trial) workspace.
 The Report is the Report in that workspace.
@@ -122,11 +122,11 @@ For the Pages pageName section, do not use the actual display name for the repor
 
 In the next step, I used the Send an email (V2) to send the image as an attachment, using the ‘Body’ result from the “Export to File from Power BI” step:
 
-{{< image src="luuk8.png" caption="" height="600" width="800">}}
+{{< img src="luuk8.png" caption="" height="600" width="800">}}
 
 Finally, when this is all done, I post another reply to the Teams channel indicating that the file has been sent as shown here:
 
-{{< image src="luuk9.png" caption="" height="600" width="800">}}
+{{< img src="luuk9.png" caption="" height="600" width="800">}}
 
 And that’s it!
 

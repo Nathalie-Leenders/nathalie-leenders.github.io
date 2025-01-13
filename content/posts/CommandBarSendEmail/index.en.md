@@ -76,7 +76,7 @@ After the email adres, directly put
 
 Publish and Save, Play, and test your code!
 
-{{< admonition type=warning title="Tip" open=true >}}
+
 Oh, and another tip, don't duplicate your button if you have PowerFX into it. It will throw weird errors (like no longer recognising your Self.Selected.Item.something properties) Just click New and re-do what you want.
-{{< /admonition >}}
+
 

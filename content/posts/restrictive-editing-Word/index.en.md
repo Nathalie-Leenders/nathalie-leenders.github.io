@@ -56,7 +56,7 @@ And this to be edited.
 
 If you leave it open it can be edited
 
-{{< image src="RestrictEditing-11.png" caption="Breaks start and End" height="1562" width="2400">}}
+{{< img src="RestrictEditing-11.png" caption="Breaks start and End" height="1562" width="2400">}}
 
 I make it easier for myself by giving the Section break it’s own line, so it’s easier to see where they are.
 
@@ -85,7 +85,7 @@ With me so far?
 
 This example shows how that’s enabled, perhaps that helps. (With enabled security)
 
-{{< image src="RestrictEditing-3.png" caption="Start and End of Protective sections" height="1562" width="2400">}}
+{{< img src="RestrictEditing-3.png" caption="Start and End of Protective sections" height="1562" width="2400">}}
 
 Now to enable the protection
 
@@ -98,7 +98,7 @@ Now to enable the protection
 - Enable a password (don’t forget it!)
 - Check if the start-end is reflected OK.
 
-{{< image src="RestrictEditing-2png.png" caption="Restrictive editing" height="800" width="300">}}
+{{< img src="RestrictEditing-2png.png" caption="Restrictive editing" height="800" width="300">}}
 
 Not working? Check your continuous breaks, and your sections.
 

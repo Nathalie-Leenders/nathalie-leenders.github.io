@@ -3,75 +3,75 @@
         <title>Categories - Category - Power Platform Tips &amp; Tricks</title>
         <link>/categories/</link>
         <description>Categories - Category - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Sharepoint</title>
-    <link>/categories/sharepoint/</link>
-    <pubDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/sharepoint/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Model Driven Apps</title>
-    <link>/categories/model-driven-apps/</link>
-    <pubDate>Mon, 27 Nov 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/model-driven-apps/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Virtual Tables</title>
-    <link>/categories/virtual-tables/</link>
-    <pubDate>Wed, 18 Oct 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/virtual-tables/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 04 Nov 2024 14:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/" rel="self" type="application/rss+xml" /><item>
     <title>Power Automate</title>
     <link>/categories/power-automate/</link>
-    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
+    <pubDate>Mon, 04 Nov 2024 14:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
     </author><guid>/categories/power-automate/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>CanvasApp</title>
-    <link>/categories/canvasapp/</link>
-    <pubDate>Thu, 07 Sep 2023 09:27:14 &#43;0000</pubDate><author>
+    <title>Copilot Studio</title>
+    <link>/categories/copilot-studio/</link>
+    <pubDate>Wed, 04 Sep 2024 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/categories/canvasapp/</guid>
+    </author><guid>/categories/copilot-studio/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Command Bar</title>
-    <link>/categories/command-bar/</link>
-    <pubDate>Wed, 16 Aug 2023 14:27:14 &#43;0000</pubDate><author>
+    <title>Generative answers</title>
+    <link>/categories/generative-answers/</link>
+    <pubDate>Wed, 04 Sep 2024 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/categories/command-bar/</guid>
+    </author><guid>/categories/generative-answers/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Model Driven App</title>
-    <link>/categories/model-driven-app/</link>
-    <pubDate>Wed, 16 Aug 2023 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/model-driven-app/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Power FX</title>
-    <link>/categories/power-fx/</link>
-    <pubDate>Wed, 16 Aug 2023 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/power-fx/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Canvas App</title>
+    <title>Canvas app</title>
     <link>/categories/canvas-app/</link>
-    <pubDate>Thu, 20 Jul 2023 07:27:14 &#43;0000</pubDate><author>
+    <pubDate>Mon, 12 Aug 2024 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
     </author><guid>/categories/canvas-app/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Powerapps</title>
-    <link>/categories/powerapps/</link>
-    <pubDate>Thu, 20 Jul 2023 07:27:14 &#43;0000</pubDate><author>
+    <title>Dynamics365</title>
+    <link>/categories/dynamics365/</link>
+    <pubDate>Mon, 12 Aug 2024 09:27:14 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>/categories/powerapps/</guid>
+    </author><guid>/categories/dynamics365/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Model Driven App</title>
+    <link>/categories/model-driven-app/</link>
+    <pubDate>Mon, 12 Aug 2024 09:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>/categories/model-driven-app/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Dataverse</title>
+    <link>/categories/dataverse/</link>
+    <pubDate>Wed, 17 Jul 2024 14:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>/categories/dataverse/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Javascript</title>
+    <link>/categories/javascript/</link>
+    <pubDate>Wed, 17 Jul 2024 14:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>/categories/javascript/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Power Pages</title>
+    <link>/categories/power-pages/</link>
+    <pubDate>Wed, 17 Jul 2024 14:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>/categories/power-pages/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Power BI</title>
+    <link>/categories/power-bi/</link>
+    <pubDate>Mon, 01 Jul 2024 14:27:14 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>/categories/power-bi/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

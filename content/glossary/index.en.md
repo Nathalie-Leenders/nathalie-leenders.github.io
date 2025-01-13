@@ -129,7 +129,7 @@ An export of your solution locked so it cannot be edited. Required for ALM (movi
 Not mandatory, but often found in slides, tweets or even on this website.
 
 
-{{< image src="meme.jpg" caption="To meme or not to Meme" height="800" width="800">}}
+{{< img src="meme.jpg" caption="To meme or not to Meme" height="800" width="800">}}
 
 
 

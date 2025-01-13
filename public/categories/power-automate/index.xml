@@ -3,7 +3,36 @@
         <title>Power Automate - Category - Power Platform Tips &amp; Tricks</title>
         <link>/categories/power-automate/</link>
         <description>Power Automate - Category - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/power-automate/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 04 Nov 2024 14:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/power-automate/" rel="self" type="application/rss+xml" /><item>
+    <title>Adding a decimal count to your Power Automate Flow (Float/Increment variable)</title>
+    <link>/posts/countinvariablescont/countinvariablescont/</link>
+    <pubDate>Mon, 04 Nov 2024 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/countinvariablescont/countinvariablescont/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="count.png" referrerpolicy="no-referrer">
+            </div>I&rsquo;ve explained how to count in a variable, but how do you count in a decimal?
+I had a usecase, where we wanted to create a version number metadata field. We could of course use an integer, count using increment, and upload to the field, however that only does &lsquo;major&rsquo; counts i.e 1.0 to 2.0 to 3.0 etc.
+How do I count in minor, decimals, from 0.1 to 0.2 to 03 or even 0.]]></description>
+</item><item>
+    <title>Calling a Power Automate Cloud flow, from Power Pages forms (!) using Javascript</title>
+    <link>/posts/callpowerautomateflowfrompowerpagesform/</link>
+    <pubDate>Wed, 17 Jul 2024 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/callpowerautomateflowfrompowerpagesform/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/callpowerautomateflowfrompowerpagesform/powerpagesflow.png" referrerpolicy="no-referrer">
+            </div>Calling a Power Automate flow from a dataverse form, in a Power Page formSounds easy right? Trust me it&rsquo;s not, but I hope this helps. I have had tremendous help from my colleague Laurens Hoogendoorn, who is completely awesome and helps me run with javascript (see what I did there) before learning how to crawl or walk. LOL. Laurens, you are the best!
+So, let me start at the beginning.]]></description>
+</item><item>
+    <title>How to use regex in Power Automate Cloud flows</title>
+    <link>/posts/regexinpowerautomatecloud/</link>
+    <pubDate>Thu, 11 Jul 2024 14:27:14 &#43;0000</pubDate><author>
+                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/regexinpowerautomatecloud/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/posts/regexinpowerautomatecloud/regex.png" referrerpolicy="no-referrer">
+            </div>I had a client scenario, where I needed to grab a 6-digit number from an incoming email subject. It wont always be in the same place, and also possibly not be the only digits. So I couldnt use trim, length or other that I could think off.
+Unfortunately, or luckily, depending on how you look at it, my dear friend Cat Schneider introduced me to regex
+When you know you know, regex isnt easy.]]></description>
+</item><item>
     <title>How to get a PowerBI report in an adaptive card (the hard way) - Update!</title>
     <link>/posts/powerbiinadaptivecards/</link>
     <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
@@ -69,23 +98,5 @@ On top of your flow, add an Initialize Variable Choose a name Select Type Intege
     <description><![CDATA[This was a tricky one to figure out, took me a few hours and failed attempts.
 I have log entries, and my flow is triggered to email them all that were submitted the day prior, at 8am. Getting the data into the email pulls it into an apply to each (which makes sense, but is not what I want)
 So, there is a way around the apply to each, but I’ll not get into that here.]]></description>
-</item><item>
-    <title>How to get conditional images in your Canvas app</title>
-    <link>/posts/conditional-images-canvasapp/</link>
-    <pubDate>Mon, 07 Nov 2022 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/conditional-images-canvasapp/</guid>
-    <description><![CDATA[Ever had a scenario, where someone wanted to have images in their app, but also pull them from a source somewhere?Let’s say, you want to reflect their office image in your app. But you also want to possibility to overwrite/upload your own instead.
-You can do this by using an If statement and some variables, let’s look at the following scenario.
-You work for a company called Powerplatform with their email domain @Powerplatform.]]></description>
-</item><item>
-    <title>Get output from Adaptive Card choice sets</title>
-    <link>/posts/adaptivecards/</link>
-    <pubDate>Wed, 19 Oct 2022 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/adaptivecards/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/adaptivecards/MS_Teams_logo_ws.png" referrerpolicy="no-referrer">
-            </div>Adaptive cards is the name for the pop-up you can get in Teams, with custom content asking you to confirm something, or to submit a remark. One way of creating them is through Adaptive card Designer (JSON).
-Another way is to use the new Cards (preview) method in PowerApps maker - find out how here: Microsoft Learn Page - https://learn.microsoft.com/en-us/power-apps/cards/overview/?wt.mc_id=DX-MVP-5005318
-If you want to use your adaptive card as for example an approval, or you want the color choice you need to get the data that the card receives.]]></description>
 </item></channel>
 </rss>

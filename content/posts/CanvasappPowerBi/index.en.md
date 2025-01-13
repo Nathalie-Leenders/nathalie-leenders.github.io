@@ -40,11 +40,11 @@ It's actually really easy, and doesnt require you to reupload your pbix, add to 
 * Add in or use an exisiting Power BI Tile
 * In the TileURL, paste your embedded link between the ""
 
-{{< image src="weblink.png" caption="Copy the embedded url, not the one for iFrame" height="800" width="500">}}
+{{< img src="weblink.png" caption="Copy the embedded url, not the one for iFrame" height="800" width="500">}}
 
 And there you go! No Power BI tile not seeing your dashboard, or needing to specify a tile.
 
-{{< image src="initialreport.png" caption="The original report, without hiding the nav and filter" height="800" width="500">}}
+{{< img src="initialreport.png" caption="The original report, without hiding the nav and filter" height="800" width="500">}}
 
 You may notice it grabs your navigation and filter. Here's how to hide them:
 
@@ -59,6 +59,6 @@ You may notice it grabs your navigation and filter. Here's how to hide them:
 
 The & sign specifies a new parameter, in this case we want to disable the navcontentpane, and the filterpane. We set both to false, and now they don't appear anymore!
 
-{{< image src="initialreportwithoutfilternav.png" caption="Same Tile, but now without the navs and filter." height="800" width="500">}}
+{{< img src="initialreportwithoutfilternav.png" caption="Same Tile, but now without the navs and filter." height="800" width="500">}}
 
 I hope these quick tips help.

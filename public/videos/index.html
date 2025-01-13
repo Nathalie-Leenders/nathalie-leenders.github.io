@@ -1,225 +1,427 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title></title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noodp" />
-    <title> - Power Platform Tips &amp; Tricks</title><meta name="Description" content=""><meta property="og:title" content="" />
-<meta property="og:description" content="A girl in love with Tech - Rachel Irabor and Nathalie Leenders #MVPbuzzChat with Nathalie Leenders Integrate Power BI with the Power Platform - Usergroup session Come Cloud with Platform - 1,5 hour panel #womenintech on the Power Platform, Community and more. Microsoft New Speakers Community Day - 5 min video on An Introverts Tip to Handling Imposter Syndrome Microsoft New Speakers Community Day - From zero to speaker/blogger in 5 min Smart Cherry Thoughts Microsoft Power Platform Connects - Nathalie Leenders Test Prep Training." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/videos/" /><meta property="article:section" content="" />
+<link rel="stylesheet" href="//localhost:1313/styles/application.template.scss" integrity="" />
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="A girl in love with Tech - Rachel Irabor and Nathalie Leenders #MVPbuzzChat with Nathalie Leenders Integrate Power BI with the Power Platform - Usergroup session Come Cloud with Platform - 1,5 hour panel #womenintech on the Power Platform, Community and more. Microsoft New Speakers Community Day - 5 min video on An Introverts Tip to Handling Imposter Syndrome Microsoft New Speakers Community Day - From zero to speaker/blogger in 5 min Smart Cherry Thoughts Microsoft Power Platform Connects - Nathalie Leenders Test Prep Training."/>
-<meta name="application-name" content="Power Platform Tips &amp; Tricks">
-<meta name="apple-mobile-web-app-title" content="Power Platform Tips &amp; Tricks">
 
-<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="/videos/" /><link rel="prev" href="/offline/" /><link rel="next" href="/speakingengagements/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "\/videos\/"
-        },"genre": "page","wordcount":  109 ,
-        "url": "\/videos\/","publisher": {
-            "@type": "Organization",
-            "name": "Author"},"author": {
-                "@type": "Person",
-                "name": "Author"
-            },"description": ""
-    }
-    </script><script src="//instant.page/5.1.1" defer type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
-</head>
 
-<body header-desktop="" header-mobile=""><script type="text/javascript">
-        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
-        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
-        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
-        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
-        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
-        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
-        window.switchThemeEventSet = new Set()
+
+<meta property="og:url" content="//localhost:1313/videos/">
+  <meta property="og:site_name" content="Power Platform Tips & Tricks">
+  <meta property="og:title" content="Power Platform Tips & Tricks">
+  <meta property="og:description" content="A girl in love with Tech - Rachel Irabor and Nathalie Leenders #MVPbuzzChat with Nathalie Leenders Integrate Power BI with the Power Platform - Usergroup session Come Cloud with Platform - 1,5 hour panel #womenintech on the Power Platform, Community and more. Microsoft New Speakers Community Day - 5 min video on An Introverts Tip to Handling Imposter Syndrome Microsoft New Speakers Community Day - From zero to speaker/blogger in 5 min Smart Cherry Thoughts Microsoft Power Platform Connects - Nathalie Leenders Test Prep Training.com Why become a Microsoft Power Platform Developer? Cloud Tech Townhall Tallinn Overview/Aftermovie I was featured in My demo on the Power Platform Community call">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Power Platform Tips & Tricks">
+  <meta name="twitter:description" content="A girl in love with Tech - Rachel Irabor and Nathalie Leenders #MVPbuzzChat with Nathalie Leenders Integrate Power BI with the Power Platform - Usergroup session Come Cloud with Platform - 1,5 hour panel #womenintech on the Power Platform, Community and more. Microsoft New Speakers Community Day - 5 min video on An Introverts Tip to Handling Imposter Syndrome Microsoft New Speakers Community Day - From zero to speaker/blogger in 5 min Smart Cherry Thoughts Microsoft Power Platform Connects - Nathalie Leenders Test Prep Training.com Why become a Microsoft Power Platform Developer? Cloud Tech Townhall Tallinn Overview/Aftermovie I was featured in My demo on the Power Platform Community call">
+      <meta name="twitter:site" content="@NathLeenders">
+
+    
+    
+<meta name="description" content="" />
+
+
+
+    
+
+
+
+
+
+    <script integrity="sha256-6N/HdTRW44DtfcdqA1u42Z4XgmL1dEmNmLPaA2sgp1o=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
     </script>
-    <div id="back-to-top"></div>
-    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="Power Platform Tips &amp; Tricks"><img
-        class="logo"
-        loading="lazy"
-        src="/logo.png"
-        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
-        sizes="auto"
-        alt="/logo.png"
-        title="/logo.png" ><span id="desktop-header-typeit" class="typeit"></span></a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/glossary/"> Glossary </a><a class="menu-item" href="/aboutme/"> About me </a><a class="menu-item" href="/speakingengagements/"> Speaking </a><a class="menu-item active" href="/videos/"> Videos </a><a class="menu-item" href="/contact/"> Contact </a><a class="menu-item" href="/recommended/"> Awesome people </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw"></i>
-                </a></div>
-        </div>
+    
+  </head>
+
+  <body class="type-page kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="//localhost:1313/">
+      Power Platform Tips &amp; Tricks</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="//localhost:1313/#home">Home</a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
     </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="Power Platform Tips &amp; Tricks"><img
-        class="logo"
-        loading="lazy"
-        src="/logo.png"
-        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
-        sizes="auto"
-        alt="/logo.png"
-        title="/logo.png" ><span id="mobile-header-typeit" class="typeit"></span></a>
+  </div>
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="//localhost:1313/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="//localhost:1313/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
+          </ul>
         </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/glossary/" title="">Glossary</a><a class="menu-item" href="/aboutme/" title="">About me</a><a class="menu-item" href="/speakingengagements/" title="">Speaking</a><a class="menu-item" href="/videos/" title="">Videos</a><a class="menu-item" href="/contact/" title="">Contact</a><a class="menu-item" href="/recommended/" title="">Awesome people</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw"></i>
-            </a></div>
+      </div>
     </div>
-</header>
-<div class="search-dropdown desktop">
-    <div id="search-dropdown-desktop"></div>
-</div>
-<div class="search-dropdown mobile">
-    <div id="search-dropdown-mobile"></div>
-</div>
-<main class="main">
-            <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster"></h1><div class="content" id="content"><h2 id="a-girl-in-love-with-tech---rachel-irabor-and-nathalie-leendershttpswwwyoutubecomwatchvrx_uxig_sfm" class="headerLink">
-    <a href="#a-girl-in-love-with-tech---rachel-irabor-and-nathalie-leendershttpswwwyoutubecomwatchvrx_uxig_sfm" class="header-mark"></a><a href="https://www.youtube.com/watch?v=rx_UXiG_SfM" target="_blank" rel="noopener noreferrer">A girl in love with Tech - Rachel Irabor and Nathalie Leenders</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/rx_UXiG_SfM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='//localhost:1313/images/default-avatar_hu7082271500929968185.png' alt="Author Image">
+          <h5 class="author-name"></h5>
+          <p class="text-muted">Monday, January 1, 1</p>
+        </div>
+        
+
+        <div class="title">
+          <h1></h1>
+        </div>
+
+        
+
+        
+        <div class="post-content" id="post-content">
+          <h2 id="a-girl-in-love-with-tech---rachel-irabor-and-nathalie-leendershttpswwwyoutubecomwatchvrx_uxig_sfm"><a href="https://www.youtube.com/watch?v=rx_UXiG_SfM" target="_blank" rel="noopener">A girl in love with Tech - Rachel Irabor and Nathalie Leenders</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rx_UXiG_SfM?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="mvpbuzzchat-with-nathalie-leendershttpswwwyoutubecomwatchva5zw8btcpjq"><a href="https://www.youtube.com/watch?v=a5ZW8BtcPJQ" target="_blank" rel="noopener">#MVPbuzzChat with Nathalie Leenders</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/a5ZW8BtcPJQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="integrate-power-bi-with-the-power-platform---usergroup-sessionhttpswwwyoutubecomwatchvtbhqd081gtu"><a href="https://www.youtube.com/watch?v=TBHqd081GTU" target="_blank" rel="noopener">Integrate Power BI with the Power Platform - Usergroup session</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/TBHqd081GTU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="come-cloud-with-platform---15-hour-panel-womenintech-on-the-power-platform-community-and-morehttpswwwyoutubecomwatchvz1lwi9-4pqm"><a href="https://www.youtube.com/watch?v=z1Lwi9-4pQM" target="_blank" rel="noopener">Come Cloud with Platform - 1,5 hour panel #womenintech on the Power Platform, Community and more.</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/z1Lwi9-4pQM?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="microsoft-new-speakers-community-day---5-min-video-on-an-introverts-tip-to-handling-imposter-syndromehttpswwwyoutubecomwatchvrft7_jv-jt8"><a href="https://www.youtube.com/watch?v=RFt7_jV-JT8" target="_blank" rel="noopener">Microsoft New Speakers Community Day - 5 min video on An Introverts Tip to Handling Imposter Syndrome</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RFt7_jV-JT8?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="microsoft-new-speakers-community-day---from-zero-to-speakerblogger-in-5-minhttpswwwyoutubecomwatchvx8zewbldapo"><a href="https://www.youtube.com/watch?v=X8zewbldaPo" target="_blank" rel="noopener">Microsoft New Speakers Community Day - From zero to speaker/blogger in 5 min</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/X8zewbldaPo?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="smart-cherry-thoughtshttpswwwyoutubecomembedvdjfajcdzyw"><a href="https://www.youtube.com/embed/VdJFAJcDZYw" target="_blank" rel="noopener">Smart Cherry Thoughts</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/VdJFAJcDZYw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="microsoft-power-platform-connects---nathalie-leendershttpswwwyoutubecomembedl4c3zfpo8dy"><a href="https://www.youtube.com/embed/L4c3ZFpo8dY" target="_blank" rel="noopener">Microsoft Power Platform Connects - Nathalie Leenders</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/L4c3ZFpo8dY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="test-prep-trainingcom-why-become-a-microsoft-power-platform-developerhttpswwwyoutubecomembedvc637vyesig"><a href="https://www.youtube.com/embed/Vc637VyEsig" target="_blank" rel="noopener">Test Prep Training.com Why become a Microsoft Power Platform Developer?</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Vc637VyEsig?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="cloud-tech-townhall-tallinn-overviewaftermovie-i-was-featured-inhttpswwwyoutubecomembedi6wcbqnytbe"><a href="https://www.youtube.com/embed/i6WcBqNYTbE" target="_blank" rel="noopener">Cloud Tech Townhall Tallinn Overview/Aftermovie I was featured in</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/i6WcBqNYTbE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="my-demo-on-the-power-platform-community-callhttpswwwyoutubecomembedcr9oqwqzk2a"><a href="https://www.youtube.com/embed/cr9oqwQzk2A" target="_blank" rel="noopener">My demo on the Power Platform Community call</a></h2>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/cr9oqwQzk2A?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+          </div>
+
+        
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row next-prev-navigator">
+  
+  
 </div>
 
-<h2 id="mvpbuzzchat-with-nathalie-leendershttpswwwyoutubecomwatchva5zw8btcpjq" class="headerLink">
-    <a href="#mvpbuzzchat-with-nathalie-leendershttpswwwyoutubecomwatchva5zw8btcpjq" class="header-mark"></a><a href="https://www.youtube.com/watch?v=a5ZW8BtcPJQ" target="_blank" rel="noopener noreferrer">#MVPbuzzChat with Nathalie Leenders</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/a5ZW8BtcPJQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+      <hr />
 
-<h2 id="integrate-power-bi-with-the-power-platform---usergroup-sessionhttpswwwyoutubecomwatchvtbhqd081gtu" class="headerLink">
-    <a href="#integrate-power-bi-with-the-power-platform---usergroup-sessionhttpswwwyoutubecomwatchvtbhqd081gtu" class="header-mark"></a><a href="https://www.youtube.com/watch?v=TBHqd081GTU" target="_blank" rel="noopener noreferrer">Integrate Power BI with the Power Platform - Usergroup session</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/TBHqd081GTU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+      
+      
 
-<h2 id="come-cloud-with-platform---15-hour-panel-womenintech-on-the-power-platform-community-and-morehttpswwwyoutubecomwatchvz1lwi9-4pqm" class="headerLink">
-    <a href="#come-cloud-with-platform---15-hour-panel-womenintech-on-the-power-platform-community-and-morehttpswwwyoutubecomwatchvz1lwi9-4pqm" class="header-mark"></a><a href="https://www.youtube.com/watch?v=z1Lwi9-4pQM" target="_blank" rel="noopener noreferrer">Come Cloud with Platform - 1,5 hour panel #womenintech on the Power Platform, Community and more.</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/z1Lwi9-4pQM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+      
+      
 
-<h2 id="microsoft-new-speakers-community-day---5-min-video-on-an-introverts-tip-to-handling-imposter-syndromehttpswwwyoutubecomwatchvrft7_jv-jt8" class="headerLink">
-    <a href="#microsoft-new-speakers-community-day---5-min-video-on-an-introverts-tip-to-handling-imposter-syndromehttpswwwyoutubecomwatchvrft7_jv-jt8" class="header-mark"></a><a href="https://www.youtube.com/watch?v=RFt7_jV-JT8" target="_blank" rel="noopener noreferrer">Microsoft New Speakers Community Day - 5 min video on An Introverts Tip to Handling Imposter Syndrome</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/RFt7_jV-JT8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
 
-<h2 id="microsoft-new-speakers-community-day---from-zero-to-speakerblogger-in-5-minhttpswwwyoutubecomwatchvx8zewbldapo" class="headerLink">
-    <a href="#microsoft-new-speakers-community-day---from-zero-to-speakerblogger-in-5-minhttpswwwyoutubecomwatchvx8zewbldapo" class="header-mark"></a><a href="https://www.youtube.com/watch?v=X8zewbldaPo" target="_blank" rel="noopener noreferrer">Microsoft New Speakers Community Day - From zero to speaker/blogger in 5 min</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/X8zewbldaPo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
 
-<h2 id="smart-cherry-thoughtshttpswwwyoutubecomembedvdjfajcdzyw" class="headerLink">
-    <a href="#smart-cherry-thoughtshttpswwwyoutubecomembedvdjfajcdzyw" class="header-mark"></a><a href="https://www.youtube.com/embed/VdJFAJcDZYw" target="_blank" rel="noopener noreferrer">Smart Cherry Thoughts</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/VdJFAJcDZYw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+  </section>
 
-<h2 id="microsoft-power-platform-connects---nathalie-leendershttpswwwyoutubecomembedl4c3zfpo8dy" class="headerLink">
-    <a href="#microsoft-power-platform-connects---nathalie-leendershttpswwwyoutubecomembedl4c3zfpo8dy" class="header-mark"></a><a href="https://www.youtube.com/embed/L4c3ZFpo8dY" target="_blank" rel="noopener noreferrer">Microsoft Power Platform Connects - Nathalie Leenders</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/L4c3ZFpo8dY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+    </div>
 
-<h2 id="test-prep-trainingcom-why-become-a-microsoft-power-platform-developerhttpswwwyoutubecomembedvc637vyesig" class="headerLink">
-    <a href="#test-prep-trainingcom-why-become-a-microsoft-power-platform-developerhttpswwwyoutubecomembedvc637vyesig" class="header-mark"></a><a href="https://www.youtube.com/embed/Vc637VyEsig" target="_blank" rel="noopener noreferrer">Test Prep Training.com Why become a Microsoft Power Platform Developer?</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Vc637VyEsig" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+    
+    
 
-<h2 id="cloud-tech-townhall-tallinn-overviewaftermovie-i-was-featured-inhttpswwwyoutubecomembedi6wcbqnytbe" class="headerLink">
-    <a href="#cloud-tech-townhall-tallinn-overviewaftermovie-i-was-featured-inhttpswwwyoutubecomembedi6wcbqnytbe" class="header-mark"></a><a href="https://www.youtube.com/embed/i6WcBqNYTbE" target="_blank" rel="noopener noreferrer">Cloud Tech Townhall Tallinn Overview/Aftermovie I was featured in</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/i6WcBqNYTbE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
 
-<h2 id="my-demo-on-the-power-platform-community-callhttpswwwyoutubecomembedcr9oqwqzk2a" class="headerLink">
-    <a href="#my-demo-on-the-power-platform-community-callhttpswwwyoutubecomembedcr9oqwqzk2a" class="header-mark"></a><a href="https://www.youtube.com/embed/cr9oqwQzk2A" target="_blank" rel="noopener noreferrer">My demo on the Power Platform Community call</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/cr9oqwQzk2A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
 
-</div><div id="comments"><div id="utterances"></div><noscript>
-                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
-            </noscript></div></div></div>
-        </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.111.3">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.3.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer"></a></span></div>
-            <div class="footer-line"></div>
-            <div class="footer-line">
-            </div>
-        </div></footer></div>
 
-    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
-            <i class="fas fa-arrow-up fa-fw"></i>
-        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-            <i class="fas fa-comment fa-fw"></i>
-        </a>
-    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":null,"lightTheme":"github-light","repo":"Nathalie-Leenders/nathalie-leenders.github.io"}},"data":{"desktop-header-typeit":"Power Platform Tips \u0026 Tricks","mobile-header-typeit":"Power Platform Tips \u0026 Tricks"},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":null,"speed":null}};</script><script type="text/javascript" src="/js/utterances.min.js" defer></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-G0R550W0TM', { 'anonymize_ip': true });
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-G0R550W0TM" async></script><script type="text/javascript">
-                (function(c,l,a,r,i,t,y){
-                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window, document, "clarity", "script", "h4un3ap4e1");
-    </script></div>
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+        </div>
+        
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='//localhost:1313//index.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="//localhost:1313/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2025 Copyright.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="//localhost:1313/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="//localhost:1313/scripts/application.js" integrity="" defer></script>
+
+
+    
+     
+
+    
 </body>
-
 </html>
