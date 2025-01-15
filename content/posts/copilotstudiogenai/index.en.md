@@ -14,7 +14,7 @@ categories: ["Copilot Studio", "Generative answers"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "studio.png"
+hero: "studio.png"
 featuredImagePreview: "studio.png"
 
 toc:

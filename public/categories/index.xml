@@ -1,77 +1,11 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Categories - Category - Power Platform Tips &amp; Tricks</title>
-        <link>/categories/</link>
-        <description>Categories - Category - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 04 Nov 2024 14:27:14 &#43;0000</lastBuildDate><atom:link href="/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Power Automate</title>
-    <link>/categories/power-automate/</link>
-    <pubDate>Mon, 04 Nov 2024 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/power-automate/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Copilot Studio</title>
-    <link>/categories/copilot-studio/</link>
-    <pubDate>Wed, 04 Sep 2024 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/copilot-studio/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Generative answers</title>
-    <link>/categories/generative-answers/</link>
-    <pubDate>Wed, 04 Sep 2024 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/generative-answers/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Canvas app</title>
-    <link>/categories/canvas-app/</link>
-    <pubDate>Mon, 12 Aug 2024 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/canvas-app/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Dynamics365</title>
-    <link>/categories/dynamics365/</link>
-    <pubDate>Mon, 12 Aug 2024 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/dynamics365/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Model Driven App</title>
-    <link>/categories/model-driven-app/</link>
-    <pubDate>Mon, 12 Aug 2024 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/model-driven-app/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Dataverse</title>
-    <link>/categories/dataverse/</link>
-    <pubDate>Wed, 17 Jul 2024 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/dataverse/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Javascript</title>
-    <link>/categories/javascript/</link>
-    <pubDate>Wed, 17 Jul 2024 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/javascript/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Power Pages</title>
-    <link>/categories/power-pages/</link>
-    <pubDate>Wed, 17 Jul 2024 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/power-pages/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Power BI</title>
-    <link>/categories/power-bi/</link>
-    <pubDate>Mon, 01 Jul 2024 14:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/categories/power-bi/</guid>
-    <description><![CDATA[]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Power Platform Tips &amp; Tricks</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Nov 2024 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
 </rss>

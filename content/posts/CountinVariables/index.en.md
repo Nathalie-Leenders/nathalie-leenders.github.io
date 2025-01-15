@@ -14,7 +14,7 @@ categories: ["Power Automate"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "varcount step 1.png"
+hero: "varcount step 1.png"
 featuredImagePreview: "varcount step 1.png"
 
 toc:

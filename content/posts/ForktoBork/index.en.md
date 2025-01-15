@@ -14,7 +14,7 @@ categories: ["Github"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "swedish-chef-bork.gif"
+hero: "swedish-chef-bork.gif"
 featuredImagePreview: "swedish-chef-bork.gif"
 
 toc:

@@ -14,7 +14,7 @@ categories: ["MSWord"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "Microsoft-Word-Logo.png"
+hero: "Microsoft-Word-Logo.png"
 featuredImagePreview: ""
 
 toc:

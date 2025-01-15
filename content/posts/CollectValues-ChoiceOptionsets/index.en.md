@@ -14,7 +14,7 @@ categories: ["Power Automate"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "power-autoamte-vs-flow.webp"
+hero: "power-autoamte-vs-flow.webp"
 featuredImagePreview: ""
 
 toc:

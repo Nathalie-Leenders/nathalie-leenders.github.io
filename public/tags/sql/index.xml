@@ -1,24 +1,34 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>SQL - Tag - Power Platform Tips &amp; Tricks</title>
-        <link>/tags/sql/</link>
-        <description>SQL - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 Feb 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/sql/" rel="self" type="application/rss+xml" /><item>
-    <title>Quick tip! Boolean in SQL</title>
-    <link>/posts/boolean-in-sql/</link>
-    <pubDate>Wed, 15 Feb 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/boolean-in-sql/</guid>
-    <description><![CDATA[Are you looking for a boolean column in SQL? Or have a virtual table and need a toggle/checkbox in your app?If you have just a string/text field with True/False this wont work.
-You need to convert the column in SQL to BIT.
-Bit is an integer data type that can take a value of 0, 1, or NULL 1 for true, 0 for false.
-Then reload/refresh your table into your dataverse/virtual table and it can be selected with a checkbox!]]></description>
-</item><item>
-    <title>Dataverse Choices to SQL backend- Update!</title>
-    <link>/posts/dataversechoices-sqlbackend/</link>
-    <pubDate>Tue, 14 Feb 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/dataversechoices-sqlbackend/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/dataversechoices-sqlbackend/powerapps-logo.png" referrerpolicy="no-referrer">
-            </div>A 3-part blog to display the struggles I had in making this work]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on Power Platform Tips &amp; Tricks</title>
+    <link>http://localhost:1313/tags/sql/</link>
+    <description>Recent content in SQL on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Feb 2023 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Quick tip! Boolean in SQL</title>
+      <link>http://localhost:1313/posts/boolean-in-sql/</link>
+      <pubDate>Wed, 15 Feb 2023 14:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/boolean-in-sql/</guid>
+      <description>&lt;h1 id=&#34;are-you-looking-for-a-boolean-column-in-sql-or-have-a-virtual-table-and-need-a-togglecheckbox-in-your-app&#34;&gt;Are you looking for a boolean column in SQL? Or have a virtual table and need a toggle/checkbox in your app?&lt;/h1&gt;
+&lt;p&gt;If you have just a string/text field with True/False this wont work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You need to convert the column in SQL to BIT.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bit is an integer data type that can take a value of 0, 1, or NULL
+1 for true, 0 for false.&lt;/p&gt;
+&lt;p&gt;Then reload/refresh your table into your dataverse/virtual table and it can be selected with a checkbox!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dataverse Choices to SQL backend- Update!</title>
+      <link>http://localhost:1313/posts/dataversechoices-sqlbackend/</link>
+      <pubDate>Tue, 14 Feb 2023 14:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/dataversechoices-sqlbackend/</guid>
+      <description></description>
+    </item>
+    
+    
+  </channel>
 </rss>

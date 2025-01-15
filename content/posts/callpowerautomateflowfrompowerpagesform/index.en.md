@@ -14,12 +14,10 @@ categories: ["Javascript", "Power Automate", "Power Pages", "Dataverse"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "powerpagesflow.png"
+hero: "powerpagesflow.png"
 featuredImagePreview: "powerpagesflow.png"
 
-toc:
-  enable: true
-  auto: false
+enableToc: false
 
 code:
     maxShownLines: 100

@@ -1,3 +1,7 @@
+---
+title: Videos
+---
+
 ## [A girl in love with Tech - Rachel Irabor and Nathalie Leenders](https://www.youtube.com/watch?v=rx_UXiG_SfM)
 
 {{< youtube rx_UXiG_SfM >}}

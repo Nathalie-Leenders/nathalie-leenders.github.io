@@ -14,7 +14,7 @@ categories: ["CanvasApp"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "callfromcanvas.png"
+hero: "callfromcanvas.png"
 featuredImagePreview: "callfromcanvas.png"
 
 toc:

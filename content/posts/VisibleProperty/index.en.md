@@ -14,7 +14,7 @@ categories: ["Powerapps", "Canvas App"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "powerappslogo.png"
+hero: "powerappslogo.png"
 featuredImagePreview: "powerappslogo.png"
 
 toc:

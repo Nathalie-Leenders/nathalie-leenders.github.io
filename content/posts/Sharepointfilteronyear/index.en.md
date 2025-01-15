@@ -14,7 +14,7 @@ categories: ["Sharepoint"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "sharepointlogo.png"
+hero: "sharepointlogo.png"
 featuredImagePreview: "sharepointlogo.png"
 
 toc:

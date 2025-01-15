@@ -14,7 +14,7 @@ categories: ["Model Driven Apps"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "guidlogo.png"
+hero: "guidlogo.png"
 featuredImagePreview: "guidlogo.png"
 
 toc:
