@@ -1,0 +1,159 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Power Platfrom Consultant
+# your company information
+company:
+  name: Wortell
+  url: "https://www.wortell.nl/"
+
+# a summary about you
+summary: |
+  I’ve started this site to share the knowledge I’ve gained as a Power Platform Developer. In January 2024 I started as a Consultant at Wortell, and in June I also became an MCT. Being a former hairdresser, turned IT, no coding background, no degree and self-taught on most things, I feel it’s important to share the knowledge, so others can also learn from it. 
+  
+  I was awarded with the Microsoft MVP Award for the first time in June 2023, very excited to continue to share the knowledge!
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "info@nathalieleenders.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/Nathalie-Leenders"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "#"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/NathLeenders"
+
+- name: CodePen
+  icon: "fab fa-codepen"
+  url: "https://codepen.io/Nathalie-Leenders"
+
+- name: Bluesky
+  icon: "fab fa-bluesky"
+  url: "https://bsky.app/profile/nathleenders.bsky.social"
+
+# You can put custom buttons to link your relevant resources.
+# For example, you can put link for your resume.
+# resourceLinks:
+# - title: "My Resume"
+#   url: "files/resume.pdf"
+
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+badges:
+- type: certification
+  name: Microsoft MVP
+  url: https://mvp.microsoft.com/en-US/MVP/profile/44c68199-95fb-ed11-8f6d-000d3a560942
+  badge: https://mvp.microsoft.com/Assets/UserProfile/MVP/Badge.svg
+- type: certification
+  name: Professional Scrum Master I (PSM I)
+  url: https://www.credly.com/badges/aad4c67f-5ca5-42db-a451-9905a1cdc46a
+  badge: https://images.credly.com/size/340x340/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png
+- type: certification
+  name: M365 Platform Community (PnP) Blog Author 2022
+  url: https://www.credly.com/badges/48ea6527-5a75-4ec7-a51d-f14a00cd9175
+  badge: https://images.credly.com/size/340x340/images/9ae8cabf-b251-4c57-bcaf-b203039c6bca/image.png
+- type: certification
+  name: Season of Gitting 2022 - M365 Platform Community
+  url: https://www.credly.com/badges/bd8b4c6f-191c-4434-ba12-0b1aaa72cce2
+  badge: https://images.credly.com/size/340x340/images/4617b7c7-a5bc-4264-942d-81f89d517f26/image.png
+- type: certification
+  name: Sharing is Caring Contributor 2022
+  url: https://www.credly.com/badges/5a3c7f39-1f1a-4fdc-9f7b-fddbdad7628d
+  badge: https://images.credly.com/size/340x340/images/cd965d21-e095-4678-8650-88e807aef759/image.png
+- type: certification
+  name: M365 Platform Community (PnP) Power Platform Samples - 2022
+  url: https://www.credly.com/badges/df4d888d-3ecf-41ab-9599-c1ff16a7bd51
+  badge: https://images.credly.com/size/340x340/images/59809f79-852a-4d83-98f0-101cc2e79bbe/image.png
+- type: certification
+  name: Community Call Presenter - Microsoft 365 & Power Platform Community 2022
+  url: https://www.credly.com/badges/8b8acfbb-cea5-409b-a758-6267f3cd9480
+  badge: https://images.credly.com/size/340x340/images/4c9b3429-3c63-4bbd-b324-41cba7a4f8d0/image.png
+- type: certification
+  name: Community Contributor 2022
+  url: https://www.credly.com/badges/30f05a0b-70d7-4f07-81d3-1862d89f9d39
+  badge: https://images.credly.com/size/340x340/images/4055126f-e9bc-4e01-9002-0eb0912940d7/image.png
+- type: certification
+  name: Sharing is Caring Contributor - Microsoft 365 & Power Platform Community 2023
+  url: https://www.credly.com/badges/f0fb7502-fb9c-4e10-b15a-d0f075f3e083
+  badge: https://images.credly.com/size/340x340/images/83c8c409-f2ce-46ba-a2c0-b3b2530e6b7b/image.png
+- type: certification
+  name: "MCSA: Windows 10 - Certified 2017"
+  url: https://www.credly.com/badges/57f0df0d-e8d3-4c0b-83e4-7929676fe50c
+  badge: https://images.credly.com/size/340x340/images/720e8780-a05e-4837-a6cc-0328f9921560/MCSA_Windows_10_2017-01.png
+- type: certification
+  name: "Exam 697: Configuring Windows Devices"
+  url: https://www.credly.com/badges/870e51da-abca-43ca-a218-27584246c7ce
+  badge: https://images.credly.com/size/340x340/images/df987f23-900d-4f87-8f70-f669f9aa94d5/Exam_697-01.png
+- type: certification
+  name: "Microsoft Certified: Dynamics 365 Fundamentals (CRM)"
+  url: https://www.credly.com/badges/7bb5d51b-c20f-4972-aa36-e97121420f5f
+  badge: https://images.credly.com/size/340x340/images/42992295-0ee2-4527-982d-e51efbec40fc/dynamics365-fundamentals-crm-600x600.png
+- type: certification
+  name: "PL-600: Microsoft Power Platform Solution Architect"
+  url: https://www.credly.com/badges/b7d8b444-83fc-4a13-ad67-8c43be0bcb6f
+  badge: https://images.credly.com/size/340x340/images/8f594ad4-f129-4662-87a7-9cbbf91ebfce/exam-pl600-600x600.png
+- type: certification
+  name: "Microsoft Certified: Azure AI Fundamentals"
+  url: https://www.credly.com/badges/b53a624c-9d4e-49e2-8d5b-af18b76afccf
+  badge: https://images.credly.com/size/340x340/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png
+- type: certification
+  name: Power Platform Samples - Microsoft 365 & Power Platform Community 2023
+  url: https://www.credly.com/badges/0e530010-a041-4893-b7c9-dbcc4116fe28
+  badge: https://images.credly.com/size/340x340/images/e4425872-9e18-47d9-b03c-ae3db1d34a85/image.png
+- type: certification
+  name: 2023 Microsoft Most Valuable Professional (MVP)
+  url: https://www.credly.com/badges/78965513-01e1-457a-802a-172ec180e5ba
+  badge: https://images.credly.com/size/340x340/images/5c687ffb-7ab6-4fd5-bf8c-14f0178acd21/image.png
+- type: certification
+  name: Community Contributor 2023
+  url: https://www.credly.com/badges/3ed217b4-a772-48b8-9d83-3adb36ba1493
+  badge: https://images.credly.com/size/340x340/images/166c85a3-1649-4fe6-bdab-daf203cb064a/image.png
+- type: certification
+  name: Season of Gitting 2023 - Microsoft 365 & Power Platform Community
+  url: https://www.credly.com/badges/07d3fd04-4e9e-4f1c-bcd6-0ae2601298f3
+  badge: https://images.credly.com/size/340x340/images/5b5c6cd6-8e09-4325-9935-f6116b312259/image.png
+- type: certification
+  name: Slice of Samples Contributor 2023 - Microsoft 365 & Power Platform Community
+  url: https://www.credly.com/badges/0b8a7b05-4e07-4d59-9e14-ee5017862664
+  badge: https://images.credly.com/size/340x340/images/9a41271f-2a73-403c-8d37-beac78fa6b8c/image.png
+- type: certification
+  name: PSL Latte-Commits Contributor 2023 - Microsoft 365 & Power Platform Community
+  url: https://www.credly.com/badges/18240c16-6223-4603-afd0-d7580f8d00df
+  badge: https://images.credly.com/size/340x340/images/71e69c0c-f445-43a2-9c0d-644a9d443dc5/image.png
+# - type: soft-skill-indicator
+#   name: Leadership
+#   percentage: 85
+#   color: blue
+
+# - type: soft-skill-indicator
+#   name: Team Work
+#   percentage: 90
+#   color: yellow
+
+# - type: soft-skill-indicator
+#   name: Hard Working
+#   percentage: 85
+#   color: orange
+
+# you can also provide color code instead of the color name
+# - type: soft-skill-indicator
+#   name: Example 1
+#   percentage: 75
+#   color: "#00adb5"

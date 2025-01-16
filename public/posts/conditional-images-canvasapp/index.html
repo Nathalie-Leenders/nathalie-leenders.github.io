@@ -6,13 +6,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="//localhost:1313/styles/application.template.scss" integrity="" />
+<link rel="stylesheet" href="/application.83336b94aa95722a64c7f77d97b1ab664226417ccff4cf02153293844604ba17.css" integrity="sha256-gzNrlKqVcipkx/d9l7GrZkImQXzP9M8CFTKThEYEuhc=" />
 
 
 
 
 
-<meta property="og:url" content="//localhost:1313/posts/conditional-images-canvasapp/">
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu9433149453350490282.png" />
+
+<meta property="og:url" content="http://localhost:1313/posts/conditional-images-canvasapp/">
   <meta property="og:site_name" content="Power Platform Tips & Tricks">
   <meta property="og:title" content="How to get conditional images in your Canvas app">
   <meta property="og:description" content="Ever had a scenario, where someone wanted to have images in their app, but also pull them from a source somewhere? Let’s say, you want to reflect their office image in your app. But you also want to possibility to overwrite/upload your own instead.
@@ -32,7 +43,6 @@ You work for a company called Powerplatform with their email domain @Powerplatfo
   <meta name="twitter:description" content="Ever had a scenario, where someone wanted to have images in their app, but also pull them from a source somewhere? Let’s say, you want to reflect their office image in your app. But you also want to possibility to overwrite/upload your own instead.
 You can do this by using an If statement and some variables, let’s look at the following scenario.
 You work for a company called Powerplatform with their email domain @Powerplatform.com">
-      <meta name="twitter:site" content="@NathLeenders">
 
     
     
@@ -42,23 +52,22 @@ You work for a company called Powerplatform with their email domain @Powerplatfo
 
     
 
-
-
-
-
-    <script integrity="sha256-6N/HdTRW44DtfcdqA1u42Z4XgmL1dEmNmLPaA2sgp1o=">
-     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
-if (theme === 'system') {
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    theme = 'dark'
-  } else {
-    theme = 'light'
-  }
-}
-document.documentElement.setAttribute('data-theme', theme)
-
-    </script>
     
+
+
+
+
+<script>
+      theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    </script>
   </head>
 
   <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
@@ -81,6 +90,27 @@ document.documentElement.setAttribute('data-theme', theme)
 
 
 
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
 
 
 
@@ -88,13 +118,12 @@ document.documentElement.setAttribute('data-theme', theme)
 
 
 
+  
 
 
 
 
-
-
-
+  
 
 
 
@@ -109,7 +138,9 @@ document.documentElement.setAttribute('data-theme', theme)
       <i data-feather="sidebar"></i>
     </button>
     
-    <a class="navbar-brand" href="//localhost:1313/">
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu9433149453350490282.png" id="logo" alt="Logo">
       Power Platform Tips &amp; Tricks</a>
     <button
       class="navbar-toggler navbar-light"
@@ -125,21 +156,108 @@ document.documentElement.setAttribute('data-theme', theme)
     <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
       <ul class="nav navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="//localhost:1313/#home">Home</a>
+          <a class="nav-link" href="/#home">Home</a>
         </li>
         
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+              
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
         
         
         
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/glossary">Glossary</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/speakingengagements">Speaking</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/videos">Videos</a>
+              </li>
+            
         
         
         
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
         
       </ul>
     </div>
   </div>
   
   
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
   
 </nav>
 
@@ -150,12 +268,12 @@ document.documentElement.setAttribute('data-theme', theme)
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
-        <form class="mx-auto" method="get" action="//localhost:1313/search">
+        <form class="mx-auto" method="get" action="/search">
           <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="//localhost:1313/posts/" data-filter="all">Posts</a></li>
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
             <div class="subtree">
                 
 
@@ -179,11 +297,7 @@ document.documentElement.setAttribute('data-theme', theme)
       
       <div class="page-content">
         
-        <div class="author-profile ms-auto align-self-lg-center">
-          <img class="rounded-circle" src='//localhost:1313/images/default-avatar_hu7082271500929968185.png' alt="Author Image">
-          <h5 class="author-name"></h5>
-          <p class="text-muted">Monday, November 7, 2022</p>
-        </div>
+        <div style="margin-bottom: 80px;"></div>
         
 
         <div class="title">
@@ -191,6 +305,23 @@ document.documentElement.setAttribute('data-theme', theme)
         </div>
 
         
+        <div class="author-profile ms-auto align-self-lg-center">
+          <p class="text-muted">Monday, November 7, 2022 | 2 minutes</p>
+        </div>
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/variables/" class="btn btn-sm btn-info">Variables</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/images/" class="btn btn-sm btn-info">Images</a></li>
+    
+  </ul>
+</div>
 
         
         <div class="post-content" id="post-content">
@@ -246,9 +377,51 @@ Set(VarOfficeImage,true),Set(VarOfficeImage,false));
         
           <div class="col-md-6 share-buttons">
           
+            <strong>Share on:</strong>
+            
+            
+            
+            
+            
+            
+                <a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fconditional-images-canvasapp%2f&title=How%20to%20get%20conditional%20images%20in%20your%20Canvas%20app" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            
+            
+             
+            
+                 <a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text=How%20to%20get%20conditional%20images%20in%20your%20Canvas%20app http%3a%2f%2flocalhost%3a1313%2fposts%2fconditional-images-canvasapp%2f" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+            
+            
+            <a class="btn icon-button bg-bluesky" href="https://bsky.app/intent/compose?text=How%20to%20get%20conditional%20images%20in%20your%20Canvas%20app http%3a%2f%2flocalhost%3a1313%2fposts%2fconditional-images-canvasapp%2f"
+              target="_blank">
+              <i class="fab fa-bluesky"></i>
+            </a>
+            
+            
+                <a class="btn icon-button" href="mailto:?subject=How%20to%20get%20conditional%20images%20in%20your%20Canvas%20app&body=http%3a%2f%2flocalhost%3a1313%2fposts%2fconditional-images-canvasapp%2f" target="_blank">
+                  <i class="fas fa-envelope-open-text"></i>
+                </a>
+            
+          
           </div>
 
         
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/Nathalie-Leenders/nathalie-leenders.github.io/edit/main/content/posts%5cConditional-Images-CanvasApp%5cindex.en.md" title="Improve this page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
         
         </div>
 
@@ -277,6 +450,35 @@ Set(VarOfficeImage,true),Set(VarOfficeImage,false));
       <hr />
 
       
+      
+        
+    
+
+
+
+
+<div id="utteranc_thread"></div>
+<div id="comments" class="comments">
+    <div id="comments-container"></div>
+</div>
+<script type="text/javascript">
+    (function() {
+        var utterances = document.createElement('script');
+        utterances.type = 'text/javascript';
+        utterances.async = true;
+        utterances.setAttribute('repo','Nathalie-Leenders\/nathalie-leenders.github.io')
+        utterances.setAttribute('issue-term','title')
+        utterances.setAttribute('theme','github-dark')
+        utterances.crossorigin = 'anonymous';
+        utterances.src = 'https://utteranc.es/client.js';
+
+        document.getElementById('comments-container').appendChild(utterances);
+    })();
+</script>
+
+
+
+
       
 
       
@@ -316,14 +518,25 @@ Set(VarOfficeImage,true),Set(VarOfficeImage,false));
 
   
   
-
-  
-  
-
-  
+    
   
 
   
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
   
 
 
@@ -353,26 +566,83 @@ Set(VarOfficeImage,true),Set(VarOfficeImage,false));
         <div class="col-md-4 col-sm-12">
           <h5>Navigation</h5>
           
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
+                </li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/tags">Tags</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/glossary">Glossary</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/speakingengagements">Speaking</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/videos">Videos</a>
+                    </li>
+                
+              
+            
+          </ul>
+          
         </div>
         
         
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:info@nathalieleenders.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>info@nathalieleenders.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/Nathalie-Leenders target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>Nathalie-Leenders</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/nathalie-leenders-den-nijs-8853871b target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Nathalie Leenders</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
         
         
-          
-          <div class="col-md-4 col-sm-12">
-            <p>Stay up to date with email notification</p>
-            
-              <form method='post' action='https://blogtrottr.com'>
-              <div class="form-group">
-              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
-              <input type='hidden' name='btr_url' value='//localhost:1313//index.xml' />
-              <input type='hidden' name='schedule_type' value='1' />
-              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
-              <button type="submit" class="btn btn-info"> Submit </button>
-              </div>
-              </form>
-            
-          </div>
         
       </div>
     </div>
@@ -383,15 +653,15 @@ Set(VarOfficeImage,true),Set(VarOfficeImage,false));
       <div class="row text-start">
         <div class="col-md-4">
           <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
-            <img src="//localhost:1313/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2025 Copyright.</div>
+        <div class="col-md-4 text-center">© 2025 Copyright Nathalie Leenders. All Rights Reserved.</div>
         <div class="col-md-4 text-end">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
-            src="//localhost:1313/images/hugo-logo.svg"
+            src="/images/hugo-logo.svg"
             alt="Hugo Logo"
             height="18"
           />
@@ -403,12 +673,23 @@ Set(VarOfficeImage,true),Set(VarOfficeImage,false));
   </footer>
 
 
-    <script src="//localhost:1313/scripts/application.js" integrity="" defer></script>
+    <script src="/application.61604d518cd78ddb6c4b9c980f9543455b6eded6a4c0aa98925caf512161e119.js" integrity="sha256-YWBNUYzXjdtsS5yYD5VDRVtu3takwKqYklyvUSFh4Rk=" defer></script>
 
 
     
      
 
     
+    
+        
+        
+        
+        
+                      
+          <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="NathalieLeenders" data-description="Buy me a coffee!" data-message="Buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="10" data-y_margin="18"></script>
+        
+        
+    
+
 </body>
 </html>

@@ -14,7 +14,7 @@ categories: ["Canvas app", "Model Driven app", "Dynamics365"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "pdfviewer.png"
+hero: "pdfviewer.png"
 featuredImagePreview: "pdfviewer.png"
 
 toc:

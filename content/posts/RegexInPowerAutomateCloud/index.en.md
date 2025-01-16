@@ -14,7 +14,7 @@ categories: ["Power Automate"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "regex.png"
+hero: "regex.png"
 featuredImagePreview: "regex.png"
 
 toc:

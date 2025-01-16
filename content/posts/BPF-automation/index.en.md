@@ -14,12 +14,12 @@ categories: ["BPF"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "power-autoamte-vs-flow.webp"
+hero: "power-autoamte-vs-flow.webp"
 featuredImagePreview: ""
+hero: "power-autoamte-vs-flow.webp"
 
-toc:
-  enable: true
-  auto: false
+
+enableToc: false
 
 code:
     maxShownLines: 100

@@ -13,7 +13,7 @@ categories: ["Power Automate"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "power-autoamte-vs-flow.png"
+hero: "power-autoamte-vs-flow.png"
 featuredImagePreview: "power-autoamte-vs-flow.png"
 
 toc:

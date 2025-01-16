@@ -17,7 +17,7 @@ aliases:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "free.webp"
+hero: "free.webp"
 featuredImagePreview: "download.webp"
 
 toc:

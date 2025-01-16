@@ -6,7 +6,7 @@ authors: [nathalieleenders]
 summary: "I've submitted 2 videos to aid new community speakers/bloggers on imposter syndrome, and blogging/speaking"
 tags: ["Speaking", "Blogging","Imposter Syndrome"]
 categories: ["Conferences","Microsoft User Groups","Blogging"]
-featuredImage: "banner.png"
+hero: "banner.png"
 ---
 
 # Contributed to the Microsoft New Speaker Community Day 2023

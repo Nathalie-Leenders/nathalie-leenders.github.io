@@ -14,7 +14,7 @@ categories: ["Virtual Tables"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "mppc.png"
+hero: "mppc.png"
 featuredImagePreview: "mppc.png"
 
 toc:

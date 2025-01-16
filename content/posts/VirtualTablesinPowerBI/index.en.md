@@ -14,7 +14,7 @@ categories: ["PowerBI"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "Powerbivirtualtables.png"
+hero: "Powerbivirtualtables.png"
 featuredImagePreview: "Powerbivirtualtables.png"
 
 toc:

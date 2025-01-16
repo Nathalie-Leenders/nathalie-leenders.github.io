@@ -14,7 +14,7 @@ categories: ["Model Driven Apps", "Virtual Tables"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "powerapps-logo.png"
+hero: "powerapps-logo.png"
 featuredImagePreview: "powerapps-logo.png"
 
 toc:

@@ -14,7 +14,7 @@ categories: ["Model Driven App", "Power FX", "Command Bar"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "imagecommandbar.png"
+hero: "imagecommandbar.png"
 featuredImagePreview: "imagecommandbar.png"
 
 toc:

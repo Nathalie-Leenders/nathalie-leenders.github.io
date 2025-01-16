@@ -14,7 +14,7 @@ categories: ["Sharepoint"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "Dynamicexternalsharing.png"
+hero: "Dynamicexternalsharing.png"
 featuredImagePreview: "Dynamicexternalsharing.png"
 
 toc:

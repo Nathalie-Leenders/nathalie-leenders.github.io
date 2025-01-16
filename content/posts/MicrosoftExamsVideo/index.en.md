@@ -14,7 +14,7 @@ categories: ["Microsoft exams", "Vouchers"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "Microsoft.jpg"
+hero: "Microsoft.jpg"
 featuredImagePreview: "Microsoft.jpg"
 
 toc:

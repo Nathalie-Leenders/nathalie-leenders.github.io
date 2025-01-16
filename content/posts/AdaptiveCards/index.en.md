@@ -14,12 +14,10 @@ categories: ["Power Automate","Microsoft Teams","Adaptive Cards"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "MS_Teams_logo_ws.png"
+hero: "MS_Teams_logo_ws.png"
 featuredImagePreview: "MS_Teams_logo_ws.png"
 
-toc:
-  enable: true
-  auto: false
+enableToc: false
 
 code:
     maxShownLines: 100
