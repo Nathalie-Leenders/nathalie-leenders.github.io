@@ -5,16 +5,6 @@
     <link>http://localhost:1313/tags/exams/</link>
     <description>Recent content in Exams on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 11 May 2023 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/exams/index.xml" rel="self" type="application/rss+xml" /><item>
-      <title>The secret to doing Microsoft exams for free!</title>
-      <link>http://localhost:1313/posts/microsoftexams-secrets/</link>
-      <pubDate>Thu, 11 May 2023 14:27:14 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/microsoftexams-secrets/</guid>
-      <description></description>
-    </item>
-    
-    
+    <language>en</language><atom:link href="http://localhost:1313/tags/exams/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

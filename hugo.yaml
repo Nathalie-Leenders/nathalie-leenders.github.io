@@ -28,6 +28,7 @@ languages:
   nl:
     languageCode: nl
     languageName: Nederlands
+    disabled: true
     title: "Power Platform Tips & Trucs"
     weight: 2
 # default language for the content

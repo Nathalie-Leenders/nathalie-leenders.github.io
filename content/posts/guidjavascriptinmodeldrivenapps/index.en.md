@@ -7,7 +7,7 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["VirtualTable", "Dataverse","Javascript"]
+tags: ["Virtual Tables", "Dataverse","Javascript"]
 categories: ["Model Driven Apps"]
 
 

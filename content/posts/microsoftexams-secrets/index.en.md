@@ -7,7 +7,7 @@ draft: false
 authors: [nathalieleenders]
 description: "This post explains how you to get Microsoft Exams for free."
 
-tags: ["Exams", "Vouchers"]
+tags: ["Microsoft Exams", "Vouchers"]
 categories: ["Microsoft Exams"]
 
 
