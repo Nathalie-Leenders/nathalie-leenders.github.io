@@ -14,7 +14,7 @@ categories: ["Power Automate", "Microsoft Teams"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: ""
+hero: ""
 featuredImagePreview: ""
 
 toc:

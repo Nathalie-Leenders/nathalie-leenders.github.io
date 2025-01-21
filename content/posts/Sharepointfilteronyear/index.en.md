@@ -14,7 +14,7 @@ categories: ["Sharepoint"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "sharepointlogo.png"
+hero: "sharepointlogo.png"
 featuredImagePreview: "sharepointlogo.png"
 
 toc:
@@ -41,7 +41,7 @@ Kudos to him, and I wanted to share with you how to accomplish this.
 
 Datum in this case is the Date column of which my birtday dates are in.
 
-{{< image src="calculatedcolumn.png" caption="Example of a calculated column called Jarig with Datum as the Birthday column" height="600" width="800">}}
+{{< img src="calculatedcolumn.png" caption="Example of a calculated column called Jarig with Datum as the Birthday column" height="600" width="800">}}
 
 ## what does this do?
 
@@ -51,7 +51,7 @@ This creates a column, with your Month and Day from the Birthday column, with th
 
 Go to your list settings, to the view, and on filtering add the following:
 
-{{< image src="filter.png" caption="Example of a filter with Jarig as the columnname" height="600" width="800">}}
+{{< img src="filter.png" caption="Example of a filter with Jarig as the columnname" height="600" width="800">}}
 
 Show when items when column:
 
@@ -65,7 +65,7 @@ Show when items when column:
 
 This gives you the current day birthdays, including the upcoming 8 days.
 
-{{< image src="filterresult.png" caption="The completed view, with upcoming 8 birthdays" height="600" width="800">}}
+{{< img src="filterresult.png" caption="The completed view, with upcoming 8 birthdays" height="600" width="800">}}
 
 And there you have it, kind of a workaround, but it does the trick.
 

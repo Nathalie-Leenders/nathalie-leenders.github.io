@@ -14,7 +14,7 @@ categories: ["CanvasApp"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "callfromcanvas.png"
+hero: "callfromcanvas.png"
 featuredImagePreview: "callfromcanvas.png"
 
 toc:
@@ -59,6 +59,6 @@ Then do the same as for the predefined variable and add your variable there.
 
 `Launch(https://teams.microsoft.com/l/call/0/0?users=user1,user2)`
 
-{{< admonition type=tip title="Tip" open=true >}}
+{{< alert type=tip title="Tip" open=true >}}
 Take note of your organization setting with prefixes, if they already have a +1 prefix through teams (or your other area number) you dont need to add this in your code/variable
-{{< /admonition >}}
+{{< /alert >}}

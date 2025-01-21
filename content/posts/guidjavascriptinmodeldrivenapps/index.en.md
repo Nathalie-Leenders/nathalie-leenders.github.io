@@ -7,14 +7,14 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["VirtualTable", "Dataverse","Javascript"]
+tags: ["Virtual Tables", "Dataverse","Javascript"]
 categories: ["Model Driven Apps"]
 
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "guidlogo.png"
+hero: "guidlogo.png"
 featuredImagePreview: "guidlogo.png"
 
 toc:
@@ -101,13 +101,13 @@ Once this is done, save your file.
 * Onload behavior
 * Upload this as your Web resource (Javascript) library
 
-{{< image src="eventhandler.png" caption="How I configured mine" height="1000" width="800">}}
+{{< img src="eventhandler.png" caption="How I configured mine" height="1000" width="800">}}
 
 Specify the function name as guifunction (or your own name of course)
 Enable the setting ; Pass execution context as first parameter
 
 Save, publish, and test your app.
 
-{{< image src="guidfield.png" caption="My working GUID field" height="1000" width="800">}}
+{{< img src="guidfield.png" caption="My working GUID field" height="1000" width="800">}}
 
 So with great help from 2 dear friends, I present to you, how to get a GUID in a Model Driven app using Javascript.

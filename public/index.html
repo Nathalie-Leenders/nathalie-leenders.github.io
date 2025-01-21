@@ -1,484 +1,1125 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.140.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Power Platform Tips &amp; Tricks</title>
+    
+    
+      
+      
+        
+      
+    
+    <meta name="description" content="Personal blog of Nathalie Leenders." />
+    
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-	<meta name="generator" content="Hugo 0.111.3">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noodp" />
-    <title>Power Platform Tips &amp; Tricks</title><meta name="Description" content=""><meta property="og:title" content="Power Platform Tips &amp; Tricks" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Power Platform Tips &amp; Tricks"/>
-<meta name="twitter:description" content=""/>
-<meta name="application-name" content="Power Platform Tips &amp; Tricks">
-<meta name="apple-mobile-web-app-title" content="Power Platform Tips &amp; Tricks">
+<link rel="stylesheet" href="/application.83336b94aa95722a64c7f77d97b1ab664226417ccff4cf02153293844604ba17.css" integrity="sha256-gzNrlKqVcipkx/d9l7GrZkImQXzP9M8CFTKThEYEuhc=" />
 
-<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="Power Platform Tips &amp; Tricks">
-    <link rel="feed" href="/index.xml" type="application/rss+xml" title="Power Platform Tips &amp; Tricks"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "WebSite",
-        "url": "\/","inLanguage": "en","name": "Power Platform Tips \u0026 Tricks"
-    }
-    </script><script src="//instant.page/5.1.1" defer type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
-</head>
 
-<body header-desktop="" header-mobile=""><script type="text/javascript">
-        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
-        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
-        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
-        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
-        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
-        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
-        window.switchThemeEventSet = new Set()
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu9433149453350490282.png" />
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Power Platform Tips &amp; Tricks"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="Personal blog of Nathalie Leenders."/>
+<meta property="og:image" content="/images/author/nat.png">
+<meta property="og:url" content="https://blog.nathalieleenders.com/">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Power Platform Tips & Tricks">
+
+
+
+    
+
+
+
+
+<script>
+      theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
     </script>
-    <div id="back-to-top"></div>
-    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="Power Platform Tips &amp; Tricks"><img
-        class="logo"
-        loading="lazy"
-        src="/logo.png"
-        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
-        sizes="auto"
-        alt="/logo.png"
-        title="/logo.png" ><span id="desktop-header-typeit" class="typeit"></span></a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/glossary/"> Glossary </a><a class="menu-item" href="/aboutme/"> About me </a><a class="menu-item" href="/speakingengagements/"> Speaking </a><a class="menu-item" href="/videos/"> Videos </a><a class="menu-item" href="/contact/"> Contact </a><a class="menu-item" href="/recommended/"> Awesome people </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw"></i>
-                </a></div>
-        </div>
-    </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="Power Platform Tips &amp; Tricks"><img
-        class="logo"
-        loading="lazy"
-        src="/logo.png"
-        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
-        sizes="auto"
-        alt="/logo.png"
-        title="/logo.png" ><span id="mobile-header-typeit" class="typeit"></span></a>
-            </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/glossary/" title="">Glossary</a><a class="menu-item" href="/aboutme/" title="">About me</a><a class="menu-item" href="/speakingengagements/" title="">Speaking</a><a class="menu-item" href="/videos/" title="">Videos</a><a class="menu-item" href="/contact/" title="">Contact</a><a class="menu-item" href="/recommended/" title="">Awesome people</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw"></i>
-            </a></div>
-    </div>
-</header>
-<div class="search-dropdown desktop">
-    <div id="search-dropdown-desktop"></div>
-</div>
-<div class="search-dropdown mobile">
-    <div id="search-dropdown-mobile"></div>
-</div>
-<main class="main">
-            <div class="container"><div class="page home" posts><div class="home-profile"><div class="home-avatar"><a href="/aboutme" title="Posts"><img
-        
-        loading="eager"
-        src="/image.jpg"
-        srcset="/image.jpg, /image.jpg 1.5x, /image.jpg 2x"
-        sizes="auto"
-        alt="/image.jpg"
-        title="/image.jpg" height="100"   width="100" ></a></div><div class="links"><a href="https://github.com/Nathalie-Leenders" title="GitHub" target="_blank" rel="noopener noreferrer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/nathalie-leenders-den-nijs-8853871b/" title="LinkedIn" target="_blank" rel="noopener noreferrer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://twitter.com/@NathLeenders" title="Twitter" target="_blank" rel="noopener noreferrer me"><i class="fab fa-twitter fa-fw"></i></a><a href="https://codepen.io/Nathalie-Leenders" title="CodePen" target="_blank" rel="noopener noreferrer me"><i class="fab fa-codepen fa-fw"></i></a><a href="https://www.buymeacoffee.com/NathalieLeenders" title="BuyMeaCoffee" target="_blank" rel="noopener noreferrer me"><i data-svg-src="/lib/simple-icons/icons/buymeacoffee.min.svg"></i></a><a href="mailto:info@nathalieleenders.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/sharepointfilteronyear/" aria-label=Filter&#32;on&#32;date&#32;column&#32;with&#32;random&#32;years&#32;on&#32;Sharepoint><img
-        
-        loading="eager"
-        src="/posts/sharepointfilteronyear/sharepointlogo.png"
-        srcset="/posts/sharepointfilteronyear/sharepointlogo.png, /posts/sharepointfilteronyear/sharepointlogo.png 1.5x, /posts/sharepointfilteronyear/sharepointlogo.png 2x"
-        sizes="auto"
-        alt="/posts/sharepointfilteronyear/sharepointlogo.png"
-        title="/posts/sharepointfilteronyear/sharepointlogo.png" height="207"   width="640" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/sharepointfilteronyear/">Filter on date column with random years on Sharepoint</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-20">2024-02-20</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/sharepoint/"><i class="far fa-folder fa-fw"></i>Sharepoint</a></span></div><div class="content">UsecaseYou have a sharepoint list with birthdays, on a date column, but dont know how to filter on them to show the last few days or upcoming few days if someone has (had) their birthday.
-I couldnt figure out how to do this, and then a colleague of mine Remco Bruijstens (thank you!) suggested this method, and after testing it worked. Kudos to him, and I wanted to share with you how to accomplish this.</div><div class="post-footer">
-        <a href="/posts/sharepointfilteronyear/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/sharepoint/">Sharepoint</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/guidjavascriptinmodeldrivenapps/" aria-label=How&#32;do&#32;I&#32;automatically&#32;have&#32;a&#32;GUID&#32;in&#32;my&#32;field?><img
-        
-        loading="eager"
-        src="/posts/guidjavascriptinmodeldrivenapps/guidlogo.png"
-        srcset="/posts/guidjavascriptinmodeldrivenapps/guidlogo.png, /posts/guidjavascriptinmodeldrivenapps/guidlogo.png 1.5x, /posts/guidjavascriptinmodeldrivenapps/guidlogo.png 2x"
-        sizes="auto"
-        alt="/posts/guidjavascriptinmodeldrivenapps/guidlogo.png"
-        title="/posts/guidjavascriptinmodeldrivenapps/guidlogo.png" height="207"   width="640" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/guidjavascriptinmodeldrivenapps/">How do I automatically have a GUID in my field?</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-11-27">2023-11-27</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/model-driven-apps/"><i class="far fa-folder fa-fw"></i>Model Driven Apps</a></span></div><div class="content">UsecaseI am creating a Model driven app, with a Virtual Table connected to SQL. In my SQL DB I have an external primary key field. How do I get an automatic GUID? The PowerFX code GUID() is not supported on the form.
-So I tried to do something on the ribbon, set the field,
-With({I:Last(Werknems).TransactionID},Notify( I, NotificationType.Information));Patch(Werknems,Defaults(Werknems), //Row,{TransactionID:GUID()}) However, since my field is mandatory, and it tries to save before it runs this (of course) it was saying the field wasnt filled in.</div><div class="post-footer">
-        <a href="/posts/guidjavascriptinmodeldrivenapps/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/virtualtable/">VirtualTable</a>,&nbsp;<a href="/tags/dataverse/">Dataverse</a>,&nbsp;<a href="/tags/javascript/">Javascript</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/virtualtablesmppc23announcements/" aria-label=Virtual&#32;Tables&#32;-&#32;ALM&#32;variables&#32;announcement&#32;&amp;&#32;Power&#32;Pages><img
-        
-        loading="eager"
-        src="/posts/virtualtablesmppc23announcements/mppc.png"
-        srcset="/posts/virtualtablesmppc23announcements/mppc.png, /posts/virtualtablesmppc23announcements/mppc.png 1.5x, /posts/virtualtablesmppc23announcements/mppc.png 2x"
-        sizes="auto"
-        alt="/posts/virtualtablesmppc23announcements/mppc.png"
-        title="/posts/virtualtablesmppc23announcements/mppc.png" height="338"   width="618" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/virtualtablesmppc23announcements/">Virtual Tables - ALM variables announcement &amp; Power Pages</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-18">2023-10-18</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/virtual-tables/"><i class="far fa-folder fa-fw"></i>Virtual Tables</a></span></div><div class="content">MPPC 2023 - Getting to announce brand new features!As some of you may have noticed during my MPPC session, I&rsquo;ve been honored to work together with 2 absolute rockstars within Microsoft, to fact check my Virtual Table information, and to get amazing new announcements out there!
-Pranita Padalwar Senior Product Manager for Power Pages, very generously provided information I could share for Power Pages which is so amazing I cannot wait to show you here!</div><div class="post-footer">
-        <a href="/posts/virtualtablesmppc23announcements/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mppc23/">MPPC23</a>,&nbsp;<a href="/tags/virtual-tables/">Virtual Tables</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/powerbiinadaptivecards/" aria-label=How&#32;to&#32;get&#32;a&#32;PowerBI&#32;report&#32;in&#32;an&#32;adaptive&#32;card&#32;(the&#32;hard&#32;way)&#32;-&#32;Update!><img
-        
-        loading="eager"
-        src="/posts/powerbiinadaptivecards/powerbireport.png"
-        srcset="/posts/powerbiinadaptivecards/powerbireport.png, /posts/powerbiinadaptivecards/powerbireport.png 1.5x, /posts/powerbiinadaptivecards/powerbireport.png 2x"
-        sizes="auto"
-        alt="/posts/powerbiinadaptivecards/powerbireport.png"
-        title="/posts/powerbiinadaptivecards/powerbireport.png" height="225"   width="433" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/powerbiinadaptivecards/">How to get a PowerBI report in an adaptive card (the hard way) - Update!</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-17">2023-10-17</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/power-automate/"><i class="far fa-folder fa-fw"></i>Power Automate</a></span></div><div class="content">UsecaseYou want to show a report in Microsoft Teams, or when someone requests a sales overview of 2022, a card appears with that report in it. You can also of course set up Powerbi alerts as a trigger.
-Right now, natively, dynamic reports do not work in cards. However, at MPPC they did announce this is possibly coming!
-For now though, here is a way to make this possible.</div><div class="post-footer">
-        <a href="/posts/powerbiinadaptivecards/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powerbi/">PowerBI</a>,&nbsp;<a href="/tags/microsoft-teams/">Microsoft Teams</a>,&nbsp;<a href="/tags/adaptive-cards/">Adaptive Cards</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/sharepointlibrarypermissions/" aria-label=Custom&#32;document&#32;link&#32;sharing&#32;with&#32;Sharepoint&#32;and&#32;Power&#32;Automate><img
-        
-        loading="eager"
-        src="/posts/sharepointlibrarypermissions/Dynamicexternalsharing.png"
-        srcset="/posts/sharepointlibrarypermissions/Dynamicexternalsharing.png, /posts/sharepointlibrarypermissions/Dynamicexternalsharing.png 1.5x, /posts/sharepointlibrarypermissions/Dynamicexternalsharing.png 2x"
-        sizes="auto"
-        alt="/posts/sharepointlibrarypermissions/Dynamicexternalsharing.png"
-        title="/posts/sharepointlibrarypermissions/Dynamicexternalsharing.png" height="225"   width="433" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/sharepointlibrarypermissions/">Custom document link sharing with Sharepoint and Power Automate</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-09-11">2023-09-11</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/sharepoint/"><i class="far fa-folder fa-fw"></i>Sharepoint</a></span></div><div class="content">UsecaseYou need to share a file from sharepoint to an external user, in an automated process. No manual &lsquo;create link&rsquo; actions needed on the sharepoint site. You can then email this link to your external client.
-Default on Power automate for a sharing link for sharepoint, is to set the Link Scope to either:
-Anyone with the link (including anonymous)
-People in your organization
-This explains how you can use the &lsquo;people with existing access&rsquo; sharing type.</div><div class="post-footer">
-        <a href="/posts/sharepointlibrarypermissions/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powerautomate/">PowerAutomate</a>,&nbsp;<a href="/tags/powershell/">Powershell</a>,&nbsp;<a href="/tags/sharepoint/">Sharepoint</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/teamscallingfromcanvasapp/" aria-label=Calling&#32;a&#32;number&#32;in&#32;Teams&#32;from&#32;a&#32;Canvas&#32;app><img
-        
-        loading="eager"
-        src="/posts/teamscallingfromcanvasapp/callfromcanvas.png"
-        srcset="/posts/teamscallingfromcanvasapp/callfromcanvas.png, /posts/teamscallingfromcanvasapp/callfromcanvas.png 1.5x, /posts/teamscallingfromcanvasapp/callfromcanvas.png 2x"
-        sizes="auto"
-        alt="/posts/teamscallingfromcanvasapp/callfromcanvas.png"
-        title="/posts/teamscallingfromcanvasapp/callfromcanvas.png" height="225"   width="433" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/teamscallingfromcanvasapp/">Calling a number in Teams from a Canvas app</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-09-07">2023-09-07</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/canvasapp/"><i class="far fa-folder fa-fw"></i>CanvasApp</a></span></div><div class="content">How do I call someone in Teams, from a canvas app?I have a use case, where someone wants to press a button or phone icon, and that teams calls a specific person, how do I do this?
-There are a few ways to call someone:
-To a defined global, context, or environment variable Specific persons Pre-defined phone number Use the Launch command to launch a website that in turn launches MS Teams</div><div class="post-footer">
-        <a href="/posts/teamscallingfromcanvasapp/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/canvasapps/">CanvasApps</a>,&nbsp;<a href="/tags/microsoftteams/">MicrosoftTeams</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/commandbarsendemail/" aria-label=Sending&#32;an&#32;email&#32;from&#32;a&#32;Model&#32;Driven&#32;App&#32;on&#32;a&#32;command&#32;bar&#32;button><img
-        
-        loading="eager"
-        src="/posts/commandbarsendemail/imagecommandbar.png"
-        srcset="/posts/commandbarsendemail/imagecommandbar.png, /posts/commandbarsendemail/imagecommandbar.png 1.5x, /posts/commandbarsendemail/imagecommandbar.png 2x"
-        sizes="auto"
-        alt="/posts/commandbarsendemail/imagecommandbar.png"
-        title="/posts/commandbarsendemail/imagecommandbar.png" height="225"   width="433" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/commandbarsendemail/">Sending an email from a Model Driven App on a command bar button</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-08-16">2023-08-16</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/model-driven-app/"><i class="far fa-folder fa-fw"></i>Model Driven App</a>&nbsp;<a href="/categories/power-fx/"><i class="far fa-folder fa-fw"></i>Power FX</a>&nbsp;<a href="/categories/command-bar/"><i class="far fa-folder fa-fw"></i>Command Bar</a></span></div><div class="content">What is the command bar?The command bar is the ribbon on top of your Powerapp.
-How do I edit this? Go into edit mode for your Model Driven App Right click on your table, Edit the Command Bar This opens the Command bar editor What are the 4 areas? Main Form - This is the one I&rsquo;m focusing on right now Main Grid Subgrid View Associated View Reference materialScott Durow created this and it has been adopted by Microsoft ever since.</div><div class="post-footer">
-        <a href="/posts/commandbarsendemail/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/model-driven-app/">Model-driven App</a>,&nbsp;<a href="/tags/power-fx/">Power FX</a>,&nbsp;<a href="/tags/command-bar/">Command Bar</a>,&nbsp;<a href="/tags/custom-emails/">Custom emails</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/visibleproperty/" aria-label=Setting&#32;conditions&#32;on&#32;the&#32;visible&#32;property&#32;-&#32;Canvas&#32;App><img
-        
-        loading="eager"
-        src="/posts/visibleproperty/powerappslogo.png"
-        srcset="/posts/visibleproperty/powerappslogo.png, /posts/visibleproperty/powerappslogo.png 1.5x, /posts/visibleproperty/powerappslogo.png 2x"
-        sizes="auto"
-        alt="/posts/visibleproperty/powerappslogo.png"
-        title="/posts/visibleproperty/powerappslogo.png" height="211"   width="433" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/visibleproperty/">Setting conditions on the visible property - Canvas App</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-07-20">2023-07-20</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/powerapps/"><i class="far fa-folder fa-fw"></i>Powerapps</a>&nbsp;<a href="/categories/canvas-app/"><i class="far fa-folder fa-fw"></i>Canvas App</a></span></div><div class="content">Setting conditions on the visible property - Canvas AppHow can I hide my items/control based on conditions?
-You can of course use an IF statement, or Switch, and work from there.
-True - shows the item False - hides the item
-But how can I do this dynamically?You can use Environment Variables. These can be changed when you move between environments (for ALM purposes) Set an environment variable in your solution, add the desired persons email address(es) and refresh your datasources in the Canvas app.</div><div class="post-footer">
-        <a href="/posts/visibleproperty/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powerapps/">PowerApps</a>,&nbsp;<a href="/tags/canvas-app/">Canvas App</a>,&nbsp;<a href="/tags/conditions/">Conditions</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/virtualtablesinpowerbi/" aria-label=Connecting&#32;to&#32;Virtual&#32;Tables&#32;in&#32;PowerBI><img
-        
-        loading="eager"
-        src="/posts/virtualtablesinpowerbi/Powerbivirtualtables.png"
-        srcset="/posts/virtualtablesinpowerbi/Powerbivirtualtables.png, /posts/virtualtablesinpowerbi/Powerbivirtualtables.png 1.5x, /posts/virtualtablesinpowerbi/Powerbivirtualtables.png 2x"
-        sizes="auto"
-        alt="/posts/virtualtablesinpowerbi/Powerbivirtualtables.png"
-        title="/posts/virtualtablesinpowerbi/Powerbivirtualtables.png" height="184"   width="433" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/virtualtablesinpowerbi/">Connecting to Virtual Tables in PowerBI</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-07-07">2023-07-07</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/powerbi/"><i class="far fa-folder fa-fw"></i>PowerBI</a></span></div><div class="content">Connecting to Virtual Tables in PowerBIWhen I wanted to connect to the virtual table, my first instinct was to use the Dataverse connector since they are virtual tables, on Dataverse. Opening up PowerBI, connecting to Dataverse, there were no virtual tables visible.
-Of course, the work around would be to connect to the source directly, but I did want to see if I could make it work.
-Virtual tables are only available in PowerBI through the Common Data Service (Legacy) connector.</div><div class="post-footer">
-        <a href="/posts/virtualtablesinpowerbi/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powerbi/">PowerBI</a>,&nbsp;<a href="/tags/dynamics365ci/">Dynamics365CI</a>,&nbsp;<a href="/tags/virtual-tables/">Virtual Tables</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/dynamiccontent/" aria-label=Dynamic&#32;content&#32;not&#32;displaying&#32;my&#32;action><img
-        
-        loading="eager"
-        src="/posts/dynamiccontent/power-autoamte-vs-flow.png"
-        srcset="/posts/dynamiccontent/power-autoamte-vs-flow.png, /posts/dynamiccontent/power-autoamte-vs-flow.png 1.5x, /posts/dynamiccontent/power-autoamte-vs-flow.png 2x"
-        sizes="auto"
-        alt="/posts/dynamiccontent/power-autoamte-vs-flow.png"
-        title="/posts/dynamiccontent/power-autoamte-vs-flow.png" height="154"   width="489" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/dynamiccontent/">Dynamic content not displaying my action</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-08">2023-06-08</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/power-automate/"><i class="far fa-folder fa-fw"></i>Power Automate</a></span></div><div class="content"><p>I came across this today and wanted to share. I couldnt figure out why my output from the teams adaptive card was not an option to select in my Compose (no body or anything available). 😭</p>
-<h3 id="scenario" class="headerLink">
-    <a href="#scenario" class="header-mark"></a>Scenario:</h3><p>You have an action in your flow, for example a teams adaptive card, and want to use the output somewhere. Whether thats in a compose, set variable, update row, doesnt matter. What you try and do, it wont show.</p></div><div class="post-footer">
-        <a href="/posts/dynamiccontent/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/power-automate/">Power Automate</a>,&nbsp;<a href="/tags/microsoft-teams/">Microsoft Teams</a>,&nbsp;<a href="/tags/adaptive-cards/">Adaptive Cards</a>,&nbsp;<a href="/tags/data-operations/">Data operations</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/speakercommunityday/" aria-label=Contributed&#32;to&#32;the&#32;Microsoft&#32;New&#32;Speaker&#32;Community&#32;Day&#32;2023><img
-        
-        loading="eager"
-        src="/posts/speakercommunityday/banner.png"
-        srcset="/posts/speakercommunityday/banner.png, /posts/speakercommunityday/banner.png 1.5x, /posts/speakercommunityday/banner.png 2x"
-        sizes="auto"
-        alt="/posts/speakercommunityday/banner.png"
-        title="/posts/speakercommunityday/banner.png" height="201"   width="637" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/speakercommunityday/">Contributed to the Microsoft New Speaker Community Day 2023</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-05">2023-06-05</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/conferences/"><i class="far fa-folder fa-fw"></i>Conferences</a>&nbsp;<a href="/categories/microsoft-user-groups/"><i class="far fa-folder fa-fw"></i>Microsoft User Groups</a>&nbsp;<a href="/categories/blogging/"><i class="far fa-folder fa-fw"></i>Blogging</a></span></div><div class="content">I&rsquo;ve submitted 2 videos to aid new community speakers/bloggers on imposter syndrome, and blogging/speaking</div><div class="post-footer">
-        <a href="/posts/speakercommunityday/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/speaking/">Speaking</a>,&nbsp;<a href="/tags/blogging/">Blogging</a>,&nbsp;<a href="/tags/imposter-syndrome/">Imposter Syndrome</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/microsoftexams-secrets/" aria-label=The&#32;secret&#32;to&#32;doing&#32;Microsoft&#32;exams&#32;for&#32;free!><img
-        
-        loading="eager"
-        src="/posts/microsoftexams-secrets/download.webp"
-        srcset="/posts/microsoftexams-secrets/download.webp, /posts/microsoftexams-secrets/download.webp 1.5x, /posts/microsoftexams-secrets/download.webp 2x"
-        sizes="auto"
-        alt="/posts/microsoftexams-secrets/download.webp"
-        title="This post explains how you to get Microsoft Exams for free." height="1226"   width="1080" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/microsoftexams-secrets/">The secret to doing Microsoft exams for free!</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-05-11">2023-05-11</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/microsoft-exams/"><i class="far fa-folder fa-fw"></i>Microsoft Exams</a></span></div><div class="content">This post explains how you to get Microsoft Exams for free.</div><div class="post-footer">
-        <a href="/posts/microsoftexams-secrets/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/exams/">Exams</a>,&nbsp;<a href="/tags/vouchers/">Vouchers</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/quickchartiodynamic/">Quick tip! Using QuickChart.IO with dynamic values (Canvas app edition)</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-04-12">2023-04-12</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/canvas-apps/"><i class="far fa-folder fa-fw"></i>Canvas Apps</a></span></div><div class="content">(This is lengthy for a quick tip, whoops, scroll all the way down to quickly check the fix)
-First of all, FULL credit goes to Pen Warner who graciously shared his QuickchartIO code with me that he used for his app. His app is awesome, check that out here.
-He’s on Twitter here: @p3nf0ld His Blog
-I was trying to do dynamic data into a quickchart.IO code, which I learned how to do in Kristine’s video here Go check her out as well, she’s awesome!</div><div class="post-footer">
-        <a href="/posts/quickchartiodynamic/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/quickchartio/">QuickChartIO</a>,&nbsp;<a href="/tags/canvasapps/">CanvasApps</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/restrictive-editing-word/" aria-label=Setting&#32;restrictive&#32;security&#32;on&#32;a&#32;Word&#32;Template&#32;while&#32;leaving&#32;sections&#32;open&#32;(Restrictive&#32;editing)><img
-        
-        loading="eager"
-        src="/posts/restrictive-editing-word/Microsoft-Word-Logo.png"
-        srcset="/posts/restrictive-editing-word/Microsoft-Word-Logo.png, /posts/restrictive-editing-word/Microsoft-Word-Logo.png 1.5x, /posts/restrictive-editing-word/Microsoft-Word-Logo.png 2x"
-        sizes="auto"
-        alt="/posts/restrictive-editing-word/Microsoft-Word-Logo.png"
-        title="This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images." height="2160"   width="3840" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/restrictive-editing-word/">Setting restrictive security on a Word Template while leaving sections open (Restrictive editing)</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-04-07">2023-04-07</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/msword/"><i class="far fa-folder fa-fw"></i>MSWord</a></span></div><div class="content">Another Word tip, oh my…This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images.
-It’s the most frustrating process, but I hope I can explain it clearly.
-If you find you cannot add a continuous break, but it does a page break, check out this article, or redo your document (that’s what I did)</div><div class="post-footer">
-        <a href="/posts/restrictive-editing-word/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/msword/">MSWord</a>,&nbsp;<a href="/tags/security/">Security</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/bpf-automation/" aria-label=Business&#32;Process&#32;Flow&#32;-&#32;How&#32;to&#32;automate&#32;moving&#32;through&#32;different&#32;stages><img
-        
-        loading="eager"
-        src="/posts/bpf-automation/power-autoamte-vs-flow.webp"
-        srcset="/posts/bpf-automation/power-autoamte-vs-flow.webp, /posts/bpf-automation/power-autoamte-vs-flow.webp 1.5x, /posts/bpf-automation/power-autoamte-vs-flow.webp 2x"
-        sizes="auto"
-        alt="/posts/bpf-automation/power-autoamte-vs-flow.webp"
-        title="This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images." height="360"   width="600" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/bpf-automation/">Business Process Flow - How to automate moving through different stages</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-04-05">2023-04-05</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/bpf/"><i class="far fa-folder fa-fw"></i>BPF</a></span></div><div class="content">How to move stages automatically (BPF) using Power Automate (no http calls needed)Quick summary: You need to grab data from 3 different tables, link them using lookup columns, capture ID&rsquo;s, and add in conditions and use Data operations to shape the data into usable steps. Then add in a switch depending on your stage names, and add final actions updating your BPF table.
-Sounds easy enough right?…..
-Beaker&rsquo;s head on fireI hope this helps, and I tried explaining it clearly, please let me know in case of any questions, feedback, other methods etc.</div><div class="post-footer">
-        <a href="/posts/bpf-automation/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/bpf/">BPF</a>,&nbsp;<a href="/tags/model-driven-app/">Model-driven App</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/repeatwordsinmsword/">How to repeat words in Microsoft Word (XML Mappings)</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-04-04">2023-04-04</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/msword/"><i class="far fa-folder fa-fw"></i>MSWord</a></span></div><div class="content">I know I usually only do Power Platform, but Microsoft Word is bound to be in your project needs someday, or combining with Power Automate, so I figured why not?
-Ever had the request to have certain words repeated, lets say in a header or footer? It can be anything, a date, name, product title, Business Unit etc etc.
-This can be achieved using XML Mapping in Microsoft Word. To get to the XML mapping, you must first have the Developer Tab activated.</div><div class="post-footer">
-        <a href="/posts/repeatwordsinmsword/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/msword/">MSWord</a>,&nbsp;<a href="/tags/xmlmappings/">XMLMappings</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/removing-blanks-powerautomate/">Another quick tip! Removing blank items in a compose</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-03-29">2023-03-29</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/power-automate/"><i class="far fa-folder fa-fw"></i>Power Automate</a></span></div><div class="content">This is a follow-up post for my earlier blog, Combine data from multiple apply to each into a single output file (Variables and compose)
-Cat Schneider helped me tremendously on this one, full credit to her! Find her blog here
-Thank youFollowing these steps, results in some empty values also being added.
-For example, if there is an empty entry, but the item exists and you specify that item it will show up.</div><div class="post-footer">
-        <a href="/posts/removing-blanks-powerautomate/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/power-automate/">Power Automate</a>,&nbsp;<a href="/tags/expressions/">Expressions</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/unmanagedlayers-alm/">Quick tip! Unmanaged layers - updates not moving through environments (ALM)</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-03-16">2023-03-16</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/powerapps/"><i class="far fa-folder fa-fw"></i>Powerapps</a></span></div><div class="content">I had this issue today and figured I’d write a quick tip for it.
-I’ve changed my app, modified flows, everything works fine in Dev, publish customizations, export as managed and move to Test. Verified the client can see the new app version, and asked her to test.
-Uh-oh, the flows aren’t reflecting changes. XML MappingsIssue: Changes made in one environment, don’t reflect in another environment in a managed solutionSolution/Fix: Check on your Flows, or anything not reflecting the changes, for the Solution Layers Go to your flow for example, the ellipsis (…) and check the Solution Layers.</div><div class="post-footer">
-        <a href="/posts/unmanagedlayers-alm/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/powerapps/">PowerApps</a>,&nbsp;<a href="/tags/powerautomate/">PowerAutomate</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/collectvalues-choiceoptionsets/" aria-label=How&#32;to&#32;get&#32;submitted&#32;values&#32;from&#32;your&#32;Choices/optionset&#32;column&#32;in&#32;Dataverse><img
-        
-        loading="eager"
-        src="/posts/collectvalues-choiceoptionsets/power-autoamte-vs-flow.webp"
-        srcset="/posts/collectvalues-choiceoptionsets/power-autoamte-vs-flow.webp, /posts/collectvalues-choiceoptionsets/power-autoamte-vs-flow.webp 1.5x, /posts/collectvalues-choiceoptionsets/power-autoamte-vs-flow.webp 2x"
-        sizes="auto"
-        alt="/posts/collectvalues-choiceoptionsets/power-autoamte-vs-flow.webp"
-        title="/posts/collectvalues-choiceoptionsets/power-autoamte-vs-flow.webp" height="360"   width="600" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/collectvalues-choiceoptionsets/">How to get submitted values from your Choices/optionset column in Dataverse</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-03-07">2023-03-07</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/power-automate/"><i class="far fa-folder fa-fw"></i>Power Automate</a></span></div><div class="content">Ever noticed that when you select your columnname, in the dynamic data, it doesnt give you the result and it stays blank?I’d like to explain how you can get the value for your dropdown.
-There is a difference between the display name, and the actual name of that value. Dataverse often uses @OData.Community.Display.V1.FormattedValue instead of the previous new_value_label.
-In your Power automate flow, either run the flow and check the body, or add a Compose step after your Get Items/Update Item etc.</div><div class="post-footer">
-        <a href="/posts/collectvalues-choiceoptionsets/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/power-automate/">Power Automate</a>,&nbsp;<a href="/tags/">Tags</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/microsoftexamsvideo/" aria-label=How&#32;to&#32;do&#32;Microsoft&#32;exams?><img
-        
-        loading="eager"
-        src="/posts/microsoftexamsvideo/Microsoft.jpg"
-        srcset="/posts/microsoftexamsvideo/Microsoft.jpg, /posts/microsoftexamsvideo/Microsoft.jpg 1.5x, /posts/microsoftexamsvideo/Microsoft.jpg 2x"
-        sizes="auto"
-        alt="/posts/microsoftexamsvideo/Microsoft.jpg"
-        title="/posts/microsoftexamsvideo/Microsoft.jpg" height="238"   width="412" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/microsoftexamsvideo/">How to do Microsoft exams?</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/microsoft-exams/"><i class="far fa-folder fa-fw"></i>Microsoft Exams</a>&nbsp;<a href="/categories/vouchers/"><i class="far fa-folder fa-fw"></i>Vouchers</a></span></div><div class="content">Check out this video that I did for testpreptraining.com, on how to become a Power Platform Analyst, some tips and how to prepare for a Microsoft exam.
-Why become Microsoft Power Platform Developer - Learn with Nathalie Leenders - https://www.youtube.com/watch?v=Vc637VyEsig
-Linkedin screenshot</div><div class="post-footer">
-        <a href="/posts/microsoftexamsvideo/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/microsoft-exams/">Microsoft Exams</a></div></div>
-</article><ul class="pagination"><li class="page-item active">
-                    <span class="page-link">
-                        <a href="/">1</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/page/2/">2</a>
-                    </span>
-                </li></ul></div></div>
-        </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.111.3">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.3.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer"></a></span></div>
-            <div class="footer-line"></div>
-            <div class="footer-line">
-            </div>
-        </div></footer></div>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#top-navbar" data-bs-offset="100">
 
-    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
-            <i class="fas fa-arrow-up fa-fw"></i>
-        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-            <i class="fas fa-comment fa-fw"></i>
-        </a>
-    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"data":{"desktop-header-typeit":"Power Platform Tips \u0026 Tricks","mobile-header-typeit":"Power Platform Tips \u0026 Tricks"},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":null,"speed":null}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-G0R550W0TM', { 'anonymize_ip': true });
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-G0R550W0TM" async></script><script type="text/javascript">
-                (function(c,l,a,r,i,t,y){
-                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window, document, "clarity", "script", "h4un3ap4e1");
-    </script></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow transparent-navbar homepage" id="top-navbar">
+  <div class="container">
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu9433149453350490282.png" id="logo" alt="Logo">
+      Power Platform Tips &amp; Tricks</a>
+    <button
+      class="navbar-toggler navbar-dark"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+              
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/glossary">Glossary</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/speakingengagements">Speaking</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/videos">Videos</a>
+              </li>
+            
+        
+        
+        
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid home" id="home">
+  <style>
+     
+    #homePageBackgroundImageDivStyled {
+      background-image: url('/images/site/canal-114290_1920_hu11586831769574414949.jpg');
+    }
+     
+    @media (min-width: 500px) and (max-width: 800px) {  
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('/images/site/canal-114290_1920_hu10346391517436995629.jpg');
+        }
+    }
+    @media (min-width: 801px) and (max-width: 1200px) {  
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('/images/site/canal-114290_1920_hu2039929461808500023.jpg');
+        }
+    }
+    @media (min-width: 1201px) and (max-width: 1500px) {  
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('/images/site/canal-114290_1920_hu484949599290269096.jpg');
+        }
+    }
+    @media (min-width: 1501px) {  
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('/images/site/canal-114290_1920.jpg');
+        }
+    }
+    </style>
+    <span class="on-the-fly-behavior"></span>
+  <div
+    id="homePageBackgroundImageDivStyled"
+    class="background container-fluid"
+  ></div>
+  <div class="container content text-center">
+    <img src="/images/author/nat_hu15474593977328421965.png"
+      class="rounded-circle mx-auto d-block img-fluid"
+      alt="Author Image"
+    />
+    <h1 class="greeting"> Hi, I am Nathalie</h1>
+    
+    <div class="typing-carousel">
+      <span id="ityped" class="ityped"></span>
+      <span class="ityped-cursor"></span>
+    </div>
+    <ul id="typing-carousel-data">
+      
+        
+          <li>Power Platform Consultant</li>
+        
+          <li>Microsoft MVP</li>
+        
+          <li>Microsoft MCT</li>
+        
+          <li>I love to teach others.</li>
+        
+          <li>I love traveling, trying new things and living life to the fullest.</li>
+        
+      
+    </ul>
+    
+      
+        
+        
+          
+        
+        <a href="#about" class="arrow-center" aria-label="Read More - Nathalie"><i class="arrow bounce fa fa-chevron-down"></i></a>
+      
+    
+  </div>
+</div>
+
+    
+    
+      
+    
+
+    
+      
+      
+        
+          <div class="container-fluid section-holder d-flex bg-primary">
+            
+
+  
+
+
+
+
+  
+
+
+<div class="container anchor p-lg-5 about-section" id="about">
+  <div class="row pt-sm-2 pt-md-4 align-self-center">
+    
+    
+     <div class="col-sm-6"> 
+      <h3 class="p-1">Nathalie Leenders</h3>
+      
+      <h5 class="p-1">
+        Power Platfrom Consultant
+        
+        at <a href="https://www.wortell.nl/" title="Wortell" target="_blank" rel="noopener">Wortell</a>
+        
+      </h5>
+      
+      <p class="p-1 text-justify">
+        <p>I’ve started this site to share the knowledge I’ve gained initially as a Power Platform Developer. In January 2024 I started as a Consultant at Wortell, and in June I also became an MCT. Being a former hairdresser, turned IT, no coding background, no degree and self-taught on most things, I feel it’s important to share the knowledge, so others can also learn from it.</p>
+<p>I was awarded with the Microsoft MVP Award for the first time in June 2023, and re-awarded in 2024.
+Still very excited to continue to share the knowledge!</p>
+<p>My most recent engagement was in Prague where I did a workshop on Power Automate together with the amazing Hugo Bernier, a Women in Tech panel with Angie and Valerie, and spoke on Virtual Tables.</p>
+
+      </p>
+      <div class="text-container ms-auto">
+        <ul class="social-link d-flex">
+          
+          <li>
+            
+              <a href="mailto:info@nathalieleenders.com" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
+            
+          </li>
+          
+          <li>
+            
+              <a href="https://github.com/Nathalie-Leenders" title="Github" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            
+          </li>
+          
+          <li>
+            
+              <a href="#" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            
+          </li>
+          
+          <li>
+            
+              <a href="https://twitter.com/NathLeenders" title="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            
+          </li>
+          
+          <li>
+            
+              <a href="https://codepen.io/Nathalie-Leenders" title="CodePen" target="_blank" rel="noopener"><i class="fab fa-codepen"></i></a>
+            
+          </li>
+          
+          <li>
+            
+              <a href="https://bsky.app/profile/nathleenders.bsky.social" title="Bluesky" target="_blank" rel="noopener"><i class="fab fa-bluesky"></i></a>
+            
+          </li>
+          
+        </ul>
+      </div>
+      
+      
+    </div>
+    
+    <div class="col-sm-6 pt-5 ps-md-4 ps-sm-3 pt-sm-0">
+      <div class="row">
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://mvp.microsoft.com/en-US/MVP/profile/44c68199-95fb-ed11-8f6d-000d3a560942" target="_blank" rel="noopener noreferrer">
+       <img src="https://techchirag.com/wp-content/uploads/2024/10/2024-microsoft-most-valuable-professional-mvp.png" alt="Microsoft MVP" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://learn.microsoft.com/en-us/users/leendersnathalie/transcript/vm90wazy4yykk6g?tab=tab-other" target="_blank" rel="noopener noreferrer">
+       <img src="https://techchirag.com/wp-content/uploads/2024/02/mct-program-badge.png?w=415" alt="Microsoft MCT" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://www.credly.com/badges/aad4c67f-5ca5-42db-a451-9905a1cdc46a" target="_blank" rel="noopener noreferrer">
+       <img src="https://images.credly.com/size/340x340/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png" alt="Professional Scrum Master I (PSM I)" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://www.credly.com/badges/b29dcd20-1c5e-4d23-a3bc-c1b62271508b/linked_in_profile" target="_blank" rel="noopener noreferrer">
+       <img src="https://images.credly.com/size/340x340/images/60030167-ab95-46aa-8391-c069102e5602/power-platform-app-maker-600x600.png" alt="Microsoft Certified PL100 Power Platform App Maker Associate" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://www.credly.com/earner/earned/badge/ba26aa2a-34f0-4565-902f-102ae8e46502" target="_blank" rel="noopener noreferrer">
+       <img src="https://img-c.udemycdn.com/open-badges/v2/badge-class/1865831775/power-platform-functional-consultant-600x600__1_9804707801011186150.png" alt="Microsoft Certified PL200 Power Platform Functional Consultant Associate" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://www.credly.com/earner/earned/badge/9b60d06c-2b34-4f4d-91d2-cdc78d9f1652" target="_blank" rel="noopener noreferrer">
+       <img src="https://images.credly.com/size/340x340/images/619f60f8-4f63-4772-910e-dc31c6f2f7e8/image.png" alt="Microsoft Certified PL300 Power BI Data Analyst Associate" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://www.credly.com/earner/earned/badge/ba26aa2a-34f0-4565-902f-102ae8e46502" target="_blank" rel="noopener noreferrer">
+       <img src="https://images.credly.com/size/340x340/images/2723937e-7860-4f43-bd2b-3c143b913c3b/power-platform-developer-600x600.png" alt="Microsoft Certified PL400 Power Platform Developer Associate" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://www.credly.com/earner/earned/badge/42bfe553-ae4c-4811-9305-e36cc05eee8c" target="_blank" rel="noopener noreferrer">
+       <img src="https://opsgility.com/wp-content/uploads/2024/08/Group-18323-min-300x300.webp" alt="Microsoft Certified PL500 Power Automate RPA Developer Associate" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://www.credly.com/earner/earned/badge/42bfe553-ae4c-4811-9305-e36cc05eee8c" target="_blank" rel="noopener noreferrer">
+       <img src="https://images.credly.com/size/340x340/images/72eb3ccc-c40c-4e41-84b1-689e58af16f9/power-platform-solutions-architect-expert-600x600.png" alt="Microsoft Certified PL600 Power Platform Solution Architect" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://www.credly.com/earner/earned/badge/42bfe553-ae4c-4811-9305-e36cc05eee8c" target="_blank" rel="noopener noreferrer">
+       <img src="https://www.signon.nl/wp-content/uploads/2020/04/Fundamentals-Power-Platform.png" alt="Microsoft Certified PL900 Power Platform Fundamentals" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://www.credly.com/badges/7bb5d51b-c20f-4972-aa36-e97121420f5f" target="_blank" rel="noopener noreferrer">
+       <img src="https://images.credly.com/size/340x340/images/42992295-0ee2-4527-982d-e51efbec40fc/dynamics365-fundamentals-crm-600x600.png" alt="Microsoft Certified: Dynamics 365 Fundamentals (CRM)" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    <div class="certificate-badge">
+      <a href="https://www.credly.com/badges/b53a624c-9d4e-49e2-8d5b-af18b76afccf" target="_blank" rel="noopener noreferrer">
+       <img src="https://images.credly.com/size/340x340/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" alt="Microsoft Certified: Azure AI Fundamentals" />
+      </a>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    <div class="circular-progress blue">
+    <span class="circular-progress-left">
+        <span
+        class="circular-progress-bar circular-progress-percentage-50  circular-progress-percentage-50-delay"
+        
+        ></span>
+    </span>
+    <span class="circular-progress-right">
+        <span
+        class="circular-progress-bar circular-progress-percentage-50"
+        
+        ></span>
+    </span>
+    <div class="circular-progress-value">Low Code Developer</div>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    
+    
+    
+    
+    
+    <div class="circular-progress yellow">
+    <span class="circular-progress-left">
+        <span
+        class="circular-progress-bar circular-progress-percentage-0  circular-progress-percentage-50-delay"
+        
+        ></span>
+    </span>
+    <span class="circular-progress-right">
+        <span
+        class="circular-progress-bar circular-progress-percentage-35"
+        
+        ></span>
+    </span>
+    <div class="circular-progress-value">Pro-Code (learning)</div>
+    </div>
+
+</div>
+
+        
+          <div class="col-6 col-lg-4 p-2">
+
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    <div class="circular-progress orange">
+    <span class="circular-progress-left">
+        <span
+        class="circular-progress-bar circular-progress-percentage-50  circular-progress-percentage-50-delay"
+        
+        ></span>
+    </span>
+    <span class="circular-progress-right">
+        <span
+        class="circular-progress-bar circular-progress-percentage-50"
+        
+        ></span>
+    </span>
+    <div class="circular-progress-value">Badger 🦡</div>
+    </div>
+
+</div>
+
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+          
+            
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <div class="container-fluid section-holder d-flex bg-secondary">
+            
+
+  
+
+
+<div class="container-fluid anchor pb-5 recent-posts-section">
+  
+    <h1 class="text-center">
+        <span id="featured-posts"></span>Featured Posts</h1>
+  
+  <div class="container">
+    <div class="row" id="recent-post-cards">
+      
+        
+      
+        
+      
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+          
+            
+          
+        
+      
+        
+          <div class="container-fluid section-holder d-flex bg-primary">
+            
+
+  
+
+
+
+
+
+
+<div class="container-fluid anchor pb-5 recent-posts-section">
+  
+    <h1 class="text-center">
+        <span id="recent-posts"></span>Recent Posts</h1>
+  
+  <div class="container">
+    <div class="row" id="recent-post-cards">
+      
+        <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/countinvariablescont/countinvariablescont/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/countinvariablescont/countinvariablescont/" class="post-card-link">
+        <h5 class="card-title">Adding a decimal count to your Power Automate Flow (Float/Increment variable)</h5>
+        <p class="card-text post-summary">I&rsquo;ve explained how to count in a variable, but how do you count in a decimal?
+I had a usecase, where we wanted to create a version number metadata field. We could of course use an integer, count using increment, and upload to the field, however that only does &lsquo;major&rsquo; counts i.e 1.0 to 2.0 to 3.0 etc.
+How do I count in minor, decimals, from 0.1 to 0.2 to 03 or even 0.01 to 0.02? To do this, you can follow the same logic, but use a float value instead of integer.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/variables/" class="btn btn-sm btn-info">Variables</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/power-automate/" class="btn btn-sm btn-info">Power Automate</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Monday, November 4, 2024
+           | 1 minute </span>
+      <a
+      href="/posts/countinvariablescont/countinvariablescont/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+      
+        <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/copilotstudiogenai/" class="post-card-link">
+        <img class="card-img-top" src='/posts/copilotstudiogenai/studio.png' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/copilotstudiogenai/" class="post-card-link">
+        <h5 class="card-title">New options for Gen AI and Bing AI Search</h5>
+        <p class="card-text post-summary">Usecase You&rsquo;re trying to use Generative AI features in Copilot Studio, however it says it&rsquo;s not supported. How do you fix this?
+Enable the settings for your environment You need to be a Power Platform admin for this.
+Go to the Power Platform admin center
+CLick on your environment.
+On the lower right corner, enable these 2 settings:
+Now you can use GenAI in your Copilot Studio bot!
+It worked before (about a month ago at the time of this post) but it&rsquo;s not been adding to these options.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/copilot-studio/" class="btn btn-sm btn-info">Copilot Studio</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/generative-answers/" class="btn btn-sm btn-info">Generative answers</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Wednesday, September 4, 2024
+           | 1 minute </span>
+      <a
+      href="/posts/copilotstudiogenai/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+      
+        <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/pdfviewerincanvascomponent/" class="post-card-link">
+        <img class="card-img-top" src='/posts/pdfviewerincanvascomponent/pdfviewer.png' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/pdfviewerincanvascomponent/" class="post-card-link">
+        <h5 class="card-title">How to use the PDF Viewer, to view PDF&#39;s in a Model Driven app from an attachment column</h5>
+        <p class="card-text post-summary">Usecase My PDF viewer works in the canvas app, but not when I embed it
+Show image 0/0 in MDA
+The beginning I had a need, to display a pdf from a Dataverse attachment column in a Model driven app form.
+I had looked at many different PCF Components (which are totally awesome, you should really check them out!) However these only work on Notes with attachments. My dataverse table/solution uses a files column.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/canvas-app/" class="btn btn-sm btn-info">Canvas app</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/model-driven-app/" class="btn btn-sm btn-info">Model Driven app</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/dynamics365/" class="btn btn-sm btn-info">Dynamics365</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Monday, August 12, 2024
+           | 3 minutes </span>
+      <a
+      href="/posts/pdfviewerincanvascomponent/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+  
+</div>
+
+          </div>
+          
+          
+            
+          
+        
+      
+        
+      
+        
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
+                </li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/tags">Tags</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/glossary">Glossary</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/speakingengagements">Speaking</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/videos">Videos</a>
+                    </li>
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><span>Bluesky: </span> <span>nathleenders.bsky.social</span></li>
+              
+            
+              
+                <li><a href=mailto:info@nathalieleenders.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>info@nathalieleenders.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/Nathalie-Leenders target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>Nathalie-Leenders</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/nathalie-leenders-den-nijs-8853871b target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Nathalie Leenders</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2025 Copyright Nathalie Leenders. All Rights Reserved.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.089b1e5ab519613ac52aac42fe5008b37065cf7d3ec4e61cd93eb90c4a246ec1.js" integrity="sha256-CJseWrUZYTrFKqxC/lAIs3Blz30&#43;xOYc2T65DEokbsE=" defer></script>
+
+
+    
+    
+        
+        
+        
+        
+                      
+          <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="NathalieLeenders" data-description="Buy me a coffee!" data-message="Buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="10" data-y_margin="18"></script>
+        
+        
+    
+
 </body>
-
 </html>

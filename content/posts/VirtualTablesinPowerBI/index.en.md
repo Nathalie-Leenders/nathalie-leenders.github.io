@@ -14,7 +14,7 @@ categories: ["PowerBI"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "Powerbivirtualtables.png"
+hero: "Powerbivirtualtables.png"
 featuredImagePreview: "Powerbivirtualtables.png"
 
 toc:
@@ -42,7 +42,7 @@ You cannot use the Dataverse connector, it wont display the tables.
 
 When you use the CDS Data connector, you do see the tables. Take note, they will have a prefix, and then table name. Depending in method of importing, it will either be prefix_dbo_name or prefix_name.
 
-{{< image src="VirtualTabletoPowerbi.png" caption="Virtual Table through CDS Connector " height="800" width="600">}}
+{{< img src="VirtualTabletoPowerbi.png" caption="Virtual Table through CDS Connector " height="800" width="600">}}
 
 Power Query Common Data Service (Legacy) connector - Power Query | Microsoft Learn
 

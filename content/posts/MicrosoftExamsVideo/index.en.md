@@ -14,7 +14,7 @@ categories: ["Microsoft exams", "Vouchers"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "Microsoft.jpg"
+hero: "Microsoft.jpg"
 featuredImagePreview: "Microsoft.jpg"
 
 toc:
@@ -29,4 +29,4 @@ Check out this video that I did for testpreptraining.com, on how to become a Pow
 
 Why become Microsoft Power Platform Developer - Learn with Nathalie Leenders - https://www.youtube.com/watch?v=Vc637VyEsig
 
-{{< image src="microsoftexam.png" caption="Linkedin screenshot" height="1000" width="500">}}
+{{< img src="microsoftexam.png" caption="Linkedin screenshot" height="1000" width="500">}}

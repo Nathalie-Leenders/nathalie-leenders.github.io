@@ -1,0 +1,130 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Power Platfrom Consultant
+# your company information
+company:
+  name: Wortell
+  url: "https://www.wortell.nl/"
+
+# a summary about you
+summary: |
+  I’ve started this site to share the knowledge I’ve gained initially as a Power Platform Developer. In January 2024 I started as a Consultant at Wortell, and in June I also became an MCT. Being a former hairdresser, turned IT, no coding background, no degree and self-taught on most things, I feel it’s important to share the knowledge, so others can also learn from it. 
+  
+  I was awarded with the Microsoft MVP Award for the first time in June 2023, and re-awarded in 2024. 
+  Still very excited to continue to share the knowledge!
+
+  My most recent engagement was in Prague where I did a workshop on Power Automate together with the amazing Hugo Bernier, a Women in Tech panel with Angie and Valerie, and spoke on Virtual Tables.
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "info@nathalieleenders.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/Nathalie-Leenders"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "#"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/NathLeenders"
+
+- name: CodePen
+  icon: "fab fa-codepen"
+  url: "https://codepen.io/Nathalie-Leenders"
+
+- name: Bluesky
+  icon: "fab fa-bluesky"
+  url: "https://bsky.app/profile/nathleenders.bsky.social"
+
+# You can put custom buttons to link your relevant resources.
+# For example, you can put link for your resume.
+# resourceLinks:
+# - title: "My Resume"
+#   url: "files/resume.pdf"
+
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+badges:
+- type: certification
+  name: Microsoft MVP
+  url: https://mvp.microsoft.com/en-US/MVP/profile/44c68199-95fb-ed11-8f6d-000d3a560942
+  badge: https://techchirag.com/wp-content/uploads/2024/10/2024-microsoft-most-valuable-professional-mvp.png
+- type: certification
+  name: Microsoft MCT
+  url: https://learn.microsoft.com/en-us/users/leendersnathalie/transcript/vm90wazy4yykk6g?tab=tab-other
+  badge: https://techchirag.com/wp-content/uploads/2024/02/mct-program-badge.png?w=415
+- type: certification
+  name: Professional Scrum Master I (PSM I)
+  url: https://www.credly.com/badges/aad4c67f-5ca5-42db-a451-9905a1cdc46a
+  badge: https://images.credly.com/size/340x340/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png
+- type: certification
+  name: Microsoft Certified PL100 Power Platform App Maker Associate
+  url: https://www.credly.com/badges/b29dcd20-1c5e-4d23-a3bc-c1b62271508b/linked_in_profile
+  badge: https://images.credly.com/size/340x340/images/60030167-ab95-46aa-8391-c069102e5602/power-platform-app-maker-600x600.png
+- type: certification
+  name: Microsoft Certified PL200 Power Platform Functional Consultant Associate
+  url: https://www.credly.com/earner/earned/badge/ba26aa2a-34f0-4565-902f-102ae8e46502
+  badge: https://img-c.udemycdn.com/open-badges/v2/badge-class/1865831775/power-platform-functional-consultant-600x600__1_9804707801011186150.png
+- type: certification
+  name: Microsoft Certified PL300 Power BI Data Analyst Associate
+  url: https://www.credly.com/earner/earned/badge/9b60d06c-2b34-4f4d-91d2-cdc78d9f1652
+  badge: https://images.credly.com/size/340x340/images/619f60f8-4f63-4772-910e-dc31c6f2f7e8/image.png
+- type: certification
+  name: Microsoft Certified PL400 Power Platform Developer Associate
+  url: https://www.credly.com/earner/earned/badge/ba26aa2a-34f0-4565-902f-102ae8e46502
+  badge: https://images.credly.com/size/340x340/images/2723937e-7860-4f43-bd2b-3c143b913c3b/power-platform-developer-600x600.png
+- type: certification
+  name: Microsoft Certified PL500 Power Automate RPA Developer Associate
+  url: https://www.credly.com/earner/earned/badge/42bfe553-ae4c-4811-9305-e36cc05eee8c
+  badge: https://opsgility.com/wp-content/uploads/2024/08/Group-18323-min-300x300.webp
+- type: certification
+  name: Microsoft Certified PL600 Power Platform Solution Architect
+  url: https://www.credly.com/earner/earned/badge/42bfe553-ae4c-4811-9305-e36cc05eee8c
+  badge: https://images.credly.com/size/340x340/images/72eb3ccc-c40c-4e41-84b1-689e58af16f9/power-platform-solutions-architect-expert-600x600.png
+- type: certification
+  name: Microsoft Certified PL900 Power Platform Fundamentals
+  url: https://www.credly.com/earner/earned/badge/42bfe553-ae4c-4811-9305-e36cc05eee8c
+  badge: https://www.signon.nl/wp-content/uploads/2020/04/Fundamentals-Power-Platform.png
+- type: certification
+  name: "Microsoft Certified: Dynamics 365 Fundamentals (CRM)"
+  url: https://www.credly.com/badges/7bb5d51b-c20f-4972-aa36-e97121420f5f
+  badge: https://images.credly.com/size/340x340/images/42992295-0ee2-4527-982d-e51efbec40fc/dynamics365-fundamentals-crm-600x600.png
+- type: certification
+  name: "Microsoft Certified: Azure AI Fundamentals"
+  url: https://www.credly.com/badges/b53a624c-9d4e-49e2-8d5b-af18b76afccf
+  badge: https://images.credly.com/size/340x340/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png
+- type: soft-skill-indicator
+  name: Low Code Developer
+  percentage: 100
+  color: blue
+
+- type: soft-skill-indicator
+  name: Pro-Code (learning)
+  percentage: 35
+  color: yellow
+
+- type: soft-skill-indicator
+  name: Badger 🦡
+  percentage: 100
+  color: orange
+
+# you can also provide color code instead of the color name
+# - type: soft-skill-indicator
+#   name: Example 1
+#   percentage: 75
+#   color: "#00adb5"

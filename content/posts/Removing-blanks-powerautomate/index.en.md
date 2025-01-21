@@ -14,7 +14,7 @@ categories: ["Power Automate"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: ""
+hero: ""
 featuredImagePreview: ""
 
 toc:
@@ -29,7 +29,7 @@ This is a follow-up post for my earlier blog, [Combine data from multiple apply 
 
 [Cat Schneider](https://yerawizardcat.com/) helped me tremendously on this one, full credit to her! Find her blog here
 
-{{< image src="pusheenthankyou.gif" caption="Thank you" height="1000" width="800">}}
+{{< img src="pusheenthankyou.gif" caption="Thank you" height="1000" width="800">}}
 
 Following these steps, results in some empty values also being added.
 

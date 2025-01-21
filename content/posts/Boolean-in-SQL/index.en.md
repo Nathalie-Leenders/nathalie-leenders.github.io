@@ -14,12 +14,10 @@ categories: ["Power Automate"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: ""
+hero: ""
 featuredImagePreview: ""
 
-toc:
-  enable: true
-  auto: false
+enableToc: false
 
 code:
     maxShownLines: 100

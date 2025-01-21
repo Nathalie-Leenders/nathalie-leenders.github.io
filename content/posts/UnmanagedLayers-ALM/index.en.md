@@ -14,7 +14,7 @@ categories: ["Powerapps"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: ""
+hero: ""
 featuredImagePreview: ""
 
 toc:
@@ -30,7 +30,7 @@ I had this issue today and figured I’d write a quick tip for it.
 I’ve changed my app, modified flows, everything works fine in Dev, publish customizations, export as managed and move to Test. Verified the client can see the new app version, and asked her to test.
 
 Uh-oh, the flows aren’t reflecting changes.
-{{< image src="giphy.gif" caption="XML Mappings" height="1000" width="800">}}
+{{< img src="giphy.gif" caption="XML Mappings" height="1000" width="800">}}
 
 ## Issue: Changes made in one environment, don’t reflect in another environment in a managed solution
 

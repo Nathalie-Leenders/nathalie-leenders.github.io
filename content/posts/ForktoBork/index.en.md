@@ -14,7 +14,7 @@ categories: ["Github"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "swedish-chef-bork.gif"
+hero: "swedish-chef-bork.gif"
 featuredImagePreview: "swedish-chef-bork.gif"
 
 toc:
@@ -38,7 +38,7 @@ Mind you, it was getting late for me, after a full workday (perks of being in Th
 
 So of course I shared this in the chat.
 
-{{< image src="Microsoft-Teams image.png" caption="Chat excerpt from the Sharing is Caring session" height="500" width="300">}}
+{{< img src="Microsoft-Teams image.png" caption="Chat excerpt from the Sharing is Caring session" height="500" width="300">}}
 
 
 David Warner started quoting Swedish Chef, and Hugo posted that he’d make a browser extension out of it. Of course I didn’t think he’d actually do it.
@@ -76,4 +76,4 @@ So, without further ado, with full credit to Hugo Bernier for being awesome, sin
   ```
 ## And there you have it; the button now says Bork! Enjoy ##
 
-{{< image src="borkbutton.png" caption="Bork!" height="1000" width="800">}}
+{{< img src="borkbutton.png" caption="Bork!" height="1000" width="800">}}

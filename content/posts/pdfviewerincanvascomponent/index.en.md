@@ -14,7 +14,7 @@ categories: ["Canvas app", "Model Driven app", "Dynamics365"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "pdfviewer.png"
+hero: "pdfviewer.png"
 featuredImagePreview: "pdfviewer.png"
 
 toc:
@@ -46,17 +46,17 @@ In the canvas app itself it's perfectly fine, and gets the pdf from the [@ModelD
 
 When I was on a call with the amazing Hugo Bernier, I asked him about it, and this error popped up:
 
-{{< image src="troubleshooting1.png" caption="JSON Parsing error: expected 'array' but got 'object'" height="600" width="800">}}
+{{< img src="troubleshooting1.png" caption="JSON Parsing error: expected 'array' but got 'object'" height="600" width="800">}}
 
 Hugo prompted me to check the array vs object, and that there might be different behavior expected.
 
 In the meantime I also found an article explaining the different security permissions needed, and in particular this one:
 
-{{< image src="security.png" caption="Under custom identities, you need to enable CanvasApp Extended Metadata" height="600" width="800">}}
+{{< img src="security.png" caption="Under custom identities, you need to enable CanvasApp Extended Metadata" height="600" width="800">}}
 
 After doing this I was able to see text labels in my app that I put in as a test, with values, but not yet the actual invoice.
 
-{{< image src="troubleshooting.png" caption="Still getting an error, o/o, but at least it got some values" height="600" width="800">}}
+{{< img src="troubleshooting.png" caption="Still getting an error, o/o, but at least it got some values" height="600" width="800">}}
 
 ## The solution
 

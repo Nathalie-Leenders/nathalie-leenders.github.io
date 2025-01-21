@@ -14,7 +14,7 @@ categories: ["Power Automate"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "varcount step 1.png"
+hero: "varcount step 1.png"
 featuredImagePreview: "varcount step 1.png"
 
 toc:
@@ -39,5 +39,5 @@ Add the following steps:
 
 Add the variable after your Apply to each step wherever you want, and it will give you the count.
 
-{{< image src="increment step 2.png" caption="Count per Apply to Each with 1" height="800" width="800">}}
+{{< img src="increment step 2.png" caption="Count per Apply to Each with 1" height="800" width="800">}}
 

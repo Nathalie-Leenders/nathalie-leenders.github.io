@@ -14,7 +14,7 @@ categories: ["Power BI"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "powerbitile2.png"
+hero: "powerbitile2.png"
 featuredImagePreview: "powerbitile2.png"
 
 toc:

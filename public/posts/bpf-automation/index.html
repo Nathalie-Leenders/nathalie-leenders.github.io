@@ -1,187 +1,350 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Business Process Flow - How to automate moving through different stages</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noodp" />
-    <title>Business Process Flow - How to automate moving through different stages - Power Platform Tips &amp; Tricks</title><meta name="Description" content="This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images."><meta property="og:title" content="Business Process Flow - How to automate moving through different stages" />
-<meta property="og:description" content="This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/bpf-automation/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-04-05T14:27:14+00:00" />
-<meta property="article:modified_time" content="2023-04-05T14:27:14+00:00" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Business Process Flow - How to automate moving through different stages"/>
-<meta name="twitter:description" content="This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images."/>
-<meta name="application-name" content="Power Platform Tips &amp; Tricks">
-<meta name="apple-mobile-web-app-title" content="Power Platform Tips &amp; Tricks">
+<link rel="stylesheet" href="/application.83336b94aa95722a64c7f77d97b1ab664226417ccff4cf02153293844604ba17.css" integrity="sha256-gzNrlKqVcipkx/d9l7GrZkImQXzP9M8CFTKThEYEuhc=" />
 
-<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="/posts/bpf-automation/" /><link rel="prev" href="/posts/repeatwordsinmsword/" /><link rel="next" href="/posts/restrictive-editing-word/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "Business Process Flow - How to automate moving through different stages",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "\/posts\/bpf-automation\/"
-        },"genre": "posts","keywords": "BPF, Model-driven App","wordcount":  498 ,
-        "url": "\/posts\/bpf-automation\/","datePublished": "2023-04-05T14:27:14+00:00","dateModified": "2023-04-05T14:27:14+00:00","publisher": {
-            "@type": "Organization",
-            "name": "Author"},"authors": [{
-                        "@type": "Person",
-                        "name": "nathalieleenders"                    
-                    }],"description": "This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images."
-    }
-    </script><script src="//instant.page/5.1.1" defer type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
-</head>
 
-<body header-desktop="" header-mobile=""><script type="text/javascript">
-        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
-        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
-        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
-        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
-        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
-        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
-        window.switchThemeEventSet = new Set()
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu9433149453350490282.png" />
+
+<meta property="og:url" content="http://localhost:1313/posts/bpf-automation/">
+  <meta property="og:site_name" content="Power Platform Tips & Tricks">
+  <meta property="og:title" content="Business Process Flow - How to automate moving through different stages">
+  <meta property="og:description" content="This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-04-05T14:27:14+00:00">
+    <meta property="article:modified_time" content="2023-04-05T14:27:14+00:00">
+    <meta property="article:tag" content="BPF">
+    <meta property="article:tag" content="Model Driven App">
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Business Process Flow - How to automate moving through different stages">
+  <meta name="twitter:description" content="This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images.">
+
+    
+    
+<meta name="description" content="This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images." />
+
+
+
+    
+
+    
+
+
+
+
+<script>
+      theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
     </script>
-    <div id="back-to-top"></div>
-    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="Power Platform Tips &amp; Tricks"><img
-        class="logo"
-        loading="lazy"
-        src="/logo.png"
-        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
-        sizes="auto"
-        alt="/logo.png"
-        title="/logo.png" ><span id="desktop-header-typeit" class="typeit"></span></a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/glossary/"> Glossary </a><a class="menu-item" href="/aboutme/"> About me </a><a class="menu-item" href="/speakingengagements/"> Speaking </a><a class="menu-item" href="/videos/"> Videos </a><a class="menu-item" href="/contact/"> Contact </a><a class="menu-item" href="/recommended/"> Awesome people </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw"></i>
-                </a></div>
-        </div>
-    </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="Power Platform Tips &amp; Tricks"><img
-        class="logo"
-        loading="lazy"
-        src="/logo.png"
-        srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
-        sizes="auto"
-        alt="/logo.png"
-        title="/logo.png" ><span id="mobile-header-typeit" class="typeit"></span></a>
-            </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/glossary/" title="">Glossary</a><a class="menu-item" href="/aboutme/" title="">About me</a><a class="menu-item" href="/speakingengagements/" title="">Speaking</a><a class="menu-item" href="/videos/" title="">Videos</a><a class="menu-item" href="/contact/" title="">Contact</a><a class="menu-item" href="/recommended/" title="">Awesome people</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw"></i>
-            </a></div>
-    </div>
-</header>
-<div class="search-dropdown desktop">
-    <div id="search-dropdown-desktop"></div>
-</div>
-<div class="search-dropdown mobile">
-    <div id="search-dropdown-mobile"></div>
-</div>
-<main class="main">
-            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Business Process Flow - How to automate moving through different stages</h1><h2 class="single-subtitle">How to automate the steps in a BPF</h2><div class="post-meta">
-            <div class="post-meta-line">
-                <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='/authors/nathalieleenders'>Nathalie</a></span>
-                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/bpf/"><i class="far fa-folder fa-fw"></i>BPF</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-04-05">2023-04-05</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-04-05">2023-04-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;498 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
+  </head>
+
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu9433149453350490282.png" id="logo" alt="Logo">
+      Power Platform Tips &amp; Tricks</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">Home</a>
+        </li>
         
-        loading="eager"
-        src="/posts/bpf-automation/power-autoamte-vs-flow.webp"
-        srcset="/posts/bpf-automation/power-autoamte-vs-flow.webp, /posts/bpf-automation/power-autoamte-vs-flow.webp 1.5x, /posts/bpf-automation/power-autoamte-vs-flow.webp 2x"
-        sizes="auto"
-        alt="/posts/bpf-automation/power-autoamte-vs-flow.webp"
-        title="This explains how to set security on a Word document, restrict the editing, but allow forms to be filled out, and certain sections to be edited. For example, to add in attachments or images." height="360"   width="600" ></div><div class="details toc" id="toc-static"  kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#how-to-move-stages-automatically-bpf-using-power-automate-no-http-calls-needed">How to move stages automatically (BPF) using Power Automate (no http calls needed)</a></li>
-    <li><a href="#table-structures-needed">Table structures needed</a></li>
-    <li><a href="#set-relationship-by-doing-lookup-fields">Set relationship by doing lookup fields</a></li>
-    <li><a href="#search-for-your-request-id-in-the-bpn-table-using-the-lookup-columns">Search for your request ID in the BPN table (using the lookup columns)</a></li>
-    <li><a href="#get-all-process-stage-names">Get all process stage names</a></li>
-    <li><a href="#setting-your-variables-to-capture-the-process-ids">Setting your variables to capture the Process ID&rsquo;s</a>
-      <ul>
-        <li><a href="#what-does-this-do">What does this do?</a></li>
-        <li><a href="#what-does-this-do-1">What does this do?</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><h2 id="how-to-move-stages-automatically-bpf-using-power-automate-no-http-calls-needed" class="headerLink">
-    <a href="#how-to-move-stages-automatically-bpf-using-power-automate-no-http-calls-needed" class="header-mark"></a>How to move stages automatically (BPF) using Power Automate (no http calls needed)</h2><p>Quick summary: You need to grab data from 3 different tables, link them using lookup columns, capture ID&rsquo;s, and add in conditions and use Data operations to shape the data into usable steps. Then add in a switch depending on your stage names, and add final actions updating your BPF table.</p>
-<p>Sounds easy enough right?…..</p>
-<figure><a class="lightgallery" href="/posts/bpf-automation/download.gif" title="/posts/bpf-automation/download.gif" data-thumbnail="/posts/bpf-automation/download.gif" data-sub-html="<h2>Beaker&rsquo;s head on fire</h2>">
-        <img
+          
+          
             
-            loading="lazy"
-            src="/posts/bpf-automation/download.gif"
-            srcset="/posts/bpf-automation/download.gif, /posts/bpf-automation/download.gif 1.5x, /posts/bpf-automation/download.gif 2x"
-            sizes="auto"
-            alt="/posts/bpf-automation/download.gif" height="400"  width="150" >
-    </a><figcaption class="image-caption">Beaker&rsquo;s head on fire</figcaption>
-    </figure>
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+              
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/glossary">Glossary</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/speakingengagements">Speaking</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/videos">Videos</a>
+              </li>
+            
+        
+        
+        
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/posts/bpf-automation/power-autoamte-vs-flow.webp);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div style="margin-bottom: 80px;"></div>
+        
+
+        <div class="title">
+          <h1>Business Process Flow - How to automate moving through different stages</h1>
+        </div>
+
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <p class="text-muted">Wednesday, April 5, 2023 | 3 minutes</p>
+        </div>
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/bpf/" class="btn btn-sm btn-info">BPF</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/model-driven-app/" class="btn btn-sm btn-info">Model-driven App</a></li>
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <h2 id="how-to-move-stages-automatically-bpf-using-power-automate-no-http-calls-needed">How to move stages automatically (BPF) using Power Automate (no http calls needed)</h2>
+<p>Quick summary: You need to grab data from 3 different tables, link them using lookup columns, capture ID&rsquo;s, and add in conditions and use Data operations to shape the data into usable steps. Then add in a switch depending on your stage names, and add final actions updating your BPF table.</p>
+<p>Sounds easy enough right?…..</p>
+<img src="download.gif"
+    
+    
+        width="150"
+    
+    
+        height="400"
+    
+    
+    
+>
+
 <p>I hope this helps, and I tried explaining it clearly, please let me know in case of any questions, feedback, other methods etc. For me this worked.</p>
-<h2 id="table-structures-needed" class="headerLink">
-    <a href="#table-structures-needed" class="header-mark"></a>Table structures needed</h2><ul>
+<h2 id="table-structures-needed">Table structures needed</h2>
+<ul>
 <li>Main Table</li>
 <li>Business process flow table (automatically created once you add a Process and save it, bring into your solution)</li>
 <li>Process Stages table (In Default Solution)</li>
 </ul>
-<h2 id="set-relationship-by-doing-lookup-fields" class="headerLink">
-    <a href="#set-relationship-by-doing-lookup-fields" class="header-mark"></a>Set relationship by doing lookup fields</h2><p>In Main Table; set lookup columns:</p>
+<h2 id="set-relationship-by-doing-lookup-fields">Set relationship by doing lookup fields</h2>
+<p>In Main Table; set lookup columns:</p>
 <ul>
 <li>Active Stage</li>
 <li>Admin_Request</li>
@@ -204,17 +367,19 @@
 <li>List rows – Table: Main Table</li>
 <li>Row ID: <code>triggerOutputs()?['body/_bpf_new_requestid_value']</code></li>
 </ul>
-<h2 id="search-for-your-request-id-in-the-bpn-table-using-the-lookup-columns" class="headerLink">
-    <a href="#search-for-your-request-id-in-the-bpn-table-using-the-lookup-columns" class="header-mark"></a>Search for your request ID in the BPN table (using the lookup columns)</h2><figure><a class="lightgallery" href="/posts/bpf-automation/Process%20Stages%20screenshot%202.png" title="/posts/bpf-automation/Process%20Stages%20screenshot%202.png" data-thumbnail="/posts/bpf-automation/Process%20Stages%20screenshot%202.png" data-sub-html="<h2>Beaker&rsquo;s head on fire</h2>">
-        <img
-            
-            loading="lazy"
-            src="/posts/bpf-automation/Process%20Stages%20screenshot%202.png"
-            srcset="/posts/bpf-automation/Process%20Stages%20screenshot%202.png, /posts/bpf-automation/Process%20Stages%20screenshot%202.png 1.5x, /posts/bpf-automation/Process%20Stages%20screenshot%202.png 2x"
-            sizes="auto"
-            alt="/posts/bpf-automation/Process%20Stages%20screenshot%202.png" height="800"  width="500" >
-    </a><figcaption class="image-caption">Beaker&rsquo;s head on fire</figcaption>
-    </figure>
+<h2 id="search-for-your-request-id-in-the-bpn-table-using-the-lookup-columns">Search for your request ID in the BPN table (using the lookup columns)</h2>
+<img src="Process%20Stages%20screenshot%202.png"
+    
+    
+        width="500"
+    
+    
+        height="800"
+    
+    
+    
+>
+
 <ul>
 <li>
 <p>Get Process Stages (Gets active stage)</p>
@@ -233,20 +398,22 @@
 </li>
 <li>
 <p>Filter Rows: <code>_processid_value eq outputs('Get_process_Stages')?['body/_processid_value']</code></p>
-<figure><a class="lightgallery" href="/posts/bpf-automation/process%20stages%20Screenshot%203.png" title="/posts/bpf-automation/process%20stages%20Screenshot%203.png" data-thumbnail="/posts/bpf-automation/process%20stages%20Screenshot%203.png" data-sub-html="<h2>Beaker&rsquo;s head on fire</h2>">
-          <img
-              
-              loading="lazy"
-              src="/posts/bpf-automation/process%20stages%20Screenshot%203.png"
-              srcset="/posts/bpf-automation/process%20stages%20Screenshot%203.png, /posts/bpf-automation/process%20stages%20Screenshot%203.png 1.5x, /posts/bpf-automation/process%20stages%20Screenshot%203.png 2x"
-              sizes="auto"
-              alt="/posts/bpf-automation/process%20stages%20Screenshot%203.png" height="800"  width="500" >
-      </a><figcaption class="image-caption">Beaker&rsquo;s head on fire</figcaption>
-      </figure>
+<img src="process%20stages%20Screenshot%203.png"
+      
+      
+          width="500"
+      
+      
+          height="800"
+      
+      
+      
+  >
+
 </li>
 </ul>
-<h2 id="get-all-process-stage-names" class="headerLink">
-    <a href="#get-all-process-stage-names" class="header-mark"></a>Get all process stage names</h2><ul>
+<h2 id="get-all-process-stage-names">Get all process stage names</h2>
+<ul>
 <li>Set an Apply to each</li>
 <li>Output:  <code>outputs('List_rows_-_all_process_stages')?['body/value']</code></li>
 <li>Compose action: get all body from process stages</li>
@@ -258,28 +425,30 @@
 <li>Content: <code>outputs('Compose_-_get_all_body_from_Process_Stages')</code></li>
 <li>Schema: Click on Generate from Sample, and use the output body as grabbed in the earlier step</li>
 </ul>
-<h2 id="setting-your-variables-to-capture-the-process-ids" class="headerLink">
-    <a href="#setting-your-variables-to-capture-the-process-ids" class="header-mark"></a>Setting your variables to capture the Process ID&rsquo;s</h2><ul>
+<h2 id="setting-your-variables-to-capture-the-process-ids">Setting your variables to capture the Process ID&rsquo;s</h2>
+<ul>
 <li>
 <p>Create a Scope – Set variables</p>
 </li>
 <li>
 <p>Append your string variables with the following code:</p>
 <pre tabindex="0"><code class="language-PowerFx" data-lang="PowerFx">if(equals(body(&#39;Parse_JSON&#39;)?[&#39;stagename&#39;],&#39;New Stage&#39;),body(&#39;Parse_JSON&#39;)?[&#39;processstageid&#39;],&#39;&#39;)
-</code></pre><figure><a class="lightgallery" href="/posts/bpf-automation/screenshot%205.png" title="/posts/bpf-automation/screenshot%205.png" data-thumbnail="/posts/bpf-automation/screenshot%205.png" data-sub-html="<h2>Beaker&rsquo;s head on fire</h2>">
-          <img
-              
-              loading="lazy"
-              src="/posts/bpf-automation/screenshot%205.png"
-              srcset="/posts/bpf-automation/screenshot%205.png, /posts/bpf-automation/screenshot%205.png 1.5x, /posts/bpf-automation/screenshot%205.png 2x"
-              sizes="auto"
-              alt="/posts/bpf-automation/screenshot%205.png" height="800"  width="500" >
-      </a><figcaption class="image-caption">Beaker&rsquo;s head on fire</figcaption>
-      </figure>
+</code></pre><img src="screenshot%205.png"
+      
+      
+          width="500"
+      
+      
+          height="800"
+      
+      
+      
+  >
+
 </li>
 </ul>
-<h3 id="what-does-this-do" class="headerLink">
-    <a href="#what-does-this-do" class="header-mark"></a>What does this do?</h3><p>It checks in each apply to each, if the name matches the stagename, and then appends the ID into your string variable.</p>
+<h3 id="what-does-this-do">What does this do?</h3>
+<p>It checks in each apply to each, if the name matches the stagename, and then appends the ID into your string variable.</p>
 <p>Switch for each Stage – On: <code>outputs('Get_process_Stages')?['body/stagename']</code></p>
 <ul>
 <li>
@@ -302,77 +471,349 @@
 </li>
 <li>
 <p>Completed On: <code>utcNow()</code></p>
-<figure><a class="lightgallery" href="/posts/bpf-automation/screenshot%206.png" title="/posts/bpf-automation/screenshot%206.png" data-thumbnail="/posts/bpf-automation/screenshot%206.png" data-sub-html="<h2>Beaker&rsquo;s head on fire</h2>">
-          <img
-              
-              loading="lazy"
-              src="/posts/bpf-automation/screenshot%206.png"
-              srcset="/posts/bpf-automation/screenshot%206.png, /posts/bpf-automation/screenshot%206.png 1.5x, /posts/bpf-automation/screenshot%206.png 2x"
-              sizes="auto"
-              alt="/posts/bpf-automation/screenshot%206.png" height="800"  width="500" >
-      </a><figcaption class="image-caption">Beaker&rsquo;s head on fire</figcaption>
-      </figure>
+<img src="screenshot%206.png"
+      
+      
+          width="500"
+      
+      
+          height="800"
+      
+      
+      
+  >
+
 </li>
 </ul>
-<h3 id="what-does-this-do-1" class="headerLink">
-    <a href="#what-does-this-do-1" class="header-mark"></a>What does this do?</h3><p>This identifies the current stage, and moves it to the next using the process ID which you specified in your variable, date now.</p>
+<h3 id="what-does-this-do-1">What does this do?</h3>
+<p>This identifies the current stage, and moves it to the next using the process ID which you specified in your variable, date now.</p>
 <p>You can of course add in conditions, if it has the correct data, but in essence, this is how it moves (for me).</p>
 <p>Open to any and all suggestions.</p>
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+            <strong>Share on:</strong>
+            
+            
+            
+            
+            
+            
+                <a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fbpf-automation%2f&title=Business%20Process%20Flow%20-%20How%20to%20automate%20moving%20through%20different%20stages" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            
+            
+             
+            
+                 <a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text=Business%20Process%20Flow%20-%20How%20to%20automate%20moving%20through%20different%20stages http%3a%2f%2flocalhost%3a1313%2fposts%2fbpf-automation%2f" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+            
+            
+            <a class="btn icon-button bg-bluesky" href="https://bsky.app/intent/compose?text=Business%20Process%20Flow%20-%20How%20to%20automate%20moving%20through%20different%20stages http%3a%2f%2flocalhost%3a1313%2fposts%2fbpf-automation%2f"
+              target="_blank">
+              <i class="fab fa-bluesky"></i>
+            </a>
+            
+            
+                <a class="btn icon-button" href="mailto:?subject=Business%20Process%20Flow%20-%20How%20to%20automate%20moving%20through%20different%20stages&body=http%3a%2f%2flocalhost%3a1313%2fposts%2fbpf-automation%2f" target="_blank">
+                  <i class="fas fa-envelope-open-text"></i>
+                </a>
+            
+          
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/Nathalie-Leenders/nathalie-leenders.github.io/edit/main/content/posts%5cBPF-automation%5cindex.en.md" title="Improve this page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row next-prev-navigator">
+  
+  
 </div>
 
-        <div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2023-04-05</span>
-            </div>
-            <div class="post-info-license"></div>
-        </div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
-        </div>
-    </div>
+      <hr />
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/bpf/">BPF</a>,&nbsp;<a href="/tags/model-driven-app/">Model-driven App</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
+      
+      
+        
+    
 
-    <div class="post-nav"><a href="/posts/repeatwordsinmsword/" class="prev" rel="prev" title="How to repeat words in Microsoft Word (XML Mappings)"><i class="fas fa-angle-left fa-fw"></i>How to repeat words in Microsoft Word (XML Mappings)</a>
-            <a href="/posts/restrictive-editing-word/" class="next" rel="next" title="Setting restrictive security on a Word Template while leaving sections open (Restrictive editing)">Setting restrictive security on a Word Template while leaving sections open (Restrictive editing)<i class="fas fa-angle-right fa-fw"></i></a></div>
+
+
+
+<div id="utteranc_thread"></div>
+<div id="comments" class="comments">
+    <div id="comments-container"></div>
 </div>
-<div id="comments"><div id="utterances"></div><noscript>
-                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
-            </noscript></div></article></div>
-        </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.111.3">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.3.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer"></a></span></div>
-            <div class="footer-line"></div>
-            <div class="footer-line">
-            </div>
-        </div></footer></div>
+<script type="text/javascript">
+    (function() {
+        var utterances = document.createElement('script');
+        utterances.type = 'text/javascript';
+        utterances.async = true;
+        utterances.setAttribute('repo','Nathalie-Leenders\/nathalie-leenders.github.io')
+        utterances.setAttribute('issue-term','title')
+        utterances.setAttribute('theme','github-dark')
+        utterances.crossorigin = 'anonymous';
+        utterances.src = 'https://utteranc.es/client.js';
 
-    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
-            <i class="fas fa-arrow-up fa-fw"></i>
-        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-            <i class="fas fa-comment fa-fw"></i>
-        </a>
-    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":null,"lightTheme":"github-light","repo":"Nathalie-Leenders/nathalie-leenders.github.io"}},"data":{"desktop-header-typeit":"Power Platform Tips \u0026 Tricks","mobile-header-typeit":"Power Platform Tips \u0026 Tricks"},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":null,"speed":null}};</script><script type="text/javascript" src="/js/utterances.min.js" defer></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-G0R550W0TM', { 'anonymize_ip': true });
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-G0R550W0TM" async></script><script type="text/javascript">
-                (function(c,l,a,r,i,t,y){
-                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window, document, "clarity", "script", "h4un3ap4e1");
-    </script></div>
+        document.getElementById('comments-container').appendChild(utterances);
+    })();
+</script>
+
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
+                </li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/tags">Tags</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/glossary">Glossary</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/speakingengagements">Speaking</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/videos">Videos</a>
+                    </li>
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><span>Bluesky: </span> <span>nathleenders.bsky.social</span></li>
+              
+            
+              
+                <li><a href=mailto:info@nathalieleenders.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>info@nathalieleenders.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/Nathalie-Leenders target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>Nathalie-Leenders</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/nathalie-leenders-den-nijs-8853871b target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Nathalie Leenders</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2025 Copyright Nathalie Leenders. All Rights Reserved.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.089b1e5ab519613ac52aac42fe5008b37065cf7d3ec4e61cd93eb90c4a246ec1.js" integrity="sha256-CJseWrUZYTrFKqxC/lAIs3Blz30&#43;xOYc2T65DEokbsE=" defer></script>
+
+
+    
+     
+
+    
+    
+        
+        
+        
+        
+                      
+          <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="NathalieLeenders" data-description="Buy me a coffee!" data-message="Buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="10" data-y_margin="18"></script>
+        
+        
+    
+
 </body>
-
 </html>

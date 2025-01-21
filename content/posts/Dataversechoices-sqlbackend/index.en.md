@@ -14,7 +14,7 @@ categories: ["Model Driven Apps", "Virtual Tables"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "powerapps-logo.png"
+hero: "powerapps-logo.png"
 featuredImagePreview: "powerapps-logo.png"
 
 toc:
@@ -27,17 +27,15 @@ code:
 
 <!--more-->
 
-{{< admonition type=warning title="Warning" open=true >}}
+{{< alert type=warning title="Warning" open=true >}}
 This is a lenghty tale of the whole adventure getting this to work
-{{< /admonition >}}
+{{< /alert >}}
 
 Yannick Reekmans has helped me tremendously!! :pray:
 
-{{< friend "Yannick Reekmans" "https://github.com/YannickRe" "https://avatars.githubusercontent.com/u/9973962?v=4" "Check him out on Github!" >}}
-
 We tested plugins, to make sure the form doesnt see the choice field, then map using either a java script or business rule to the value field, but even if we tell the plugin to ignore the attribute for the choice field, it would still try and submit it, and throw the error the virtual entity needed to be updated for the optionset. :upside_down_face:
 
-{{< admonition type=success title="Success" open=true >}}
+{{< alert type=success title="Success" open=true >}}
 This shows how to get around the whole issue, recap, choices arent supported
 
 Yannick proposed I use a PCF Component, to wrap around the value field, to make it behave like a dropdown.
@@ -51,15 +49,15 @@ I used https://pcf.gallery/csv-dropdown-control/ from https://pcf.gallery/author
 - Under the properties add in your csv values (use delimiter ; ) (I had to dive into the .js code for that one)
 
 Now it’s a value field, that behaves like a dropdown, but is still being seen as the value field, and not a foreign body trying to be updated.
-{{< /admonition >}}
+{{< /alert >}}
 
 **Now onto the fun part:**
 
 # Old content - Disclaimer - This does not work!
 
-{{< admonition type=warning title="Warning" open=true >}}
+{{< alert type=warning title="Warning" open=true >}}
 Hold on, scratch that, ignore all below. This does not work!
-{{< /admonition >}}
+{{< /alert >}}
 
 
 
@@ -68,7 +66,7 @@ I’ve consulted with Microsoft support. and currently SQL virtual connector doe
 
 I’ll try and find a way around this, and let you know once I do. Microsoft will change their documentation to reflect this…
 
-{{< image src="zoe-muppets.gif" caption="Bummer!" height="800" width="600">}}
+{{< img src="zoe-muppets.gif" caption="Bummer!" height="800" width="600">}}
 
 #### Old content - Disclaimer - This does not work! Old blogpost for reference only, or, how to use business rules to fill a field value ####
 
@@ -92,7 +90,7 @@ A colleague found an old optionset D365 blog post, and this is how we solved the
 - If City1 field value matches “New York”
 - Update Field Value for City2 to “New York”
 
-{{< image src="business rules.png" caption="Business rule - Set Field Value" height="800" width="600">}}
+{{< img src="business rules.png" caption="Business rule - Set Field Value" height="800" width="600">}}
 
 
 - Hide the City2 field as it’s not needed to show, City1 will have the dropdown, City2 will do the actual upload.

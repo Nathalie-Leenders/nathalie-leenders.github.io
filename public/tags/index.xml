@@ -1,77 +1,11 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Tags - Tag - Power Platform Tips &amp; Tricks</title>
-        <link>/tags/</link>
-        <description>Tags - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Sharepoint</title>
-    <link>/tags/sharepoint/</link>
-    <pubDate>Tue, 20 Feb 2024 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/tags/sharepoint/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Dataverse</title>
-    <link>/tags/dataverse/</link>
-    <pubDate>Mon, 27 Nov 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/tags/dataverse/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Javascript</title>
-    <link>/tags/javascript/</link>
-    <pubDate>Mon, 27 Nov 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/tags/javascript/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>VirtualTable</title>
-    <link>/tags/virtualtable/</link>
-    <pubDate>Mon, 27 Nov 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/tags/virtualtable/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>MPPC23</title>
-    <link>/tags/mppc23/</link>
-    <pubDate>Wed, 18 Oct 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/tags/mppc23/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Virtual Tables</title>
-    <link>/tags/virtual-tables/</link>
-    <pubDate>Wed, 18 Oct 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/tags/virtual-tables/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Adaptive Cards</title>
-    <link>/tags/adaptive-cards/</link>
-    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/tags/adaptive-cards/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Microsoft Teams</title>
-    <link>/tags/microsoft-teams/</link>
-    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/tags/microsoft-teams/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>PowerBI</title>
-    <link>/tags/powerbi/</link>
-    <pubDate>Tue, 17 Oct 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/tags/powerbi/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>PowerAutomate</title>
-    <link>/tags/powerautomate/</link>
-    <pubDate>Mon, 11 Sep 2023 09:27:14 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>/tags/powerautomate/</guid>
-    <description><![CDATA[]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Power Platform Tips &amp; Tricks</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Nov 2024 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
 </rss>

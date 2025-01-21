@@ -14,12 +14,12 @@ categories: ["BPF"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "power-autoamte-vs-flow.webp"
+hero: "power-autoamte-vs-flow.webp"
 featuredImagePreview: ""
+hero: "power-autoamte-vs-flow.webp"
 
-toc:
-  enable: true
-  auto: false
+
+enableToc: false
 
 code:
     maxShownLines: 100
@@ -31,7 +31,7 @@ Quick summary: You need to grab data from 3 different tables, link them using lo
 
 Sounds easy enough right?…..
 
-{{< image src="download.gif" caption="Beaker's head on fire" height="400" width="150">}}
+{{< img src="download.gif" caption="Beaker's head on fire" height="400" width="150">}}
 
 I hope this helps, and I tried explaining it clearly, please let me know in case of any questions, feedback, other methods etc. For me this worked.
 
@@ -68,7 +68,7 @@ Getting the data from your tables
 
 ## Search for your request ID in the BPN table (using the lookup columns)
 
-{{< image src="Process Stages screenshot 2.png" caption="Beaker's head on fire" height="800" width="500">}}
+{{< img src="Process Stages screenshot 2.png" caption="Beaker's head on fire" height="800" width="500">}}
 
 - Get Process Stages (Gets active stage)
 - List rows – Table:Process Stages (This exists in the Default Solution)
@@ -77,7 +77,7 @@ Getting the data from your tables
 - List rows – Table: Process Stages
 - Filter Rows: `_processid_value eq outputs('Get_process_Stages')?['body/_processid_value']`
 
-  {{< image src="process stages Screenshot 3.png" caption="Beaker's head on fire" height="800" width="500">}}
+  {{< img src="process stages Screenshot 3.png" caption="Beaker's head on fire" height="800" width="500">}}
 
 ## Get all process stage names
 
@@ -101,7 +101,7 @@ Getting the data from your tables
   if(equals(body('Parse_JSON')?['stagename'],'New Stage'),body('Parse_JSON')?['processstageid'],'')
   ```
 
-  {{< image src="screenshot 5.png" caption="Beaker's head on fire" height="800" width="500">}}
+  {{< img src="screenshot 5.png" caption="Beaker's head on fire" height="800" width="500">}}
 
 ### What does this do?
 
@@ -117,7 +117,7 @@ Switch for each Stage – On: `outputs('Get_process_Stages')?['body/stagename']`
 - On the Active Process stage: `/processstages/@{variables('NewStage')}`
 - Completed On: `utcNow()`
 
-  {{< image src="screenshot 6.png" caption="Beaker's head on fire" height="800" width="500">}}
+  {{< img src="screenshot 6.png" caption="Beaker's head on fire" height="800" width="500">}}
 
 
 ### What does this do?

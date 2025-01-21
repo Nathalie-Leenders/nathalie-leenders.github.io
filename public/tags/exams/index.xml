@@ -1,15 +1,10 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Exams - Tag - Power Platform Tips &amp; Tricks</title>
-        <link>/tags/exams/</link>
-        <description>Exams - Tag - Power Platform Tips &amp; Tricks</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 11 May 2023 14:27:14 &#43;0000</lastBuildDate><atom:link href="/tags/exams/" rel="self" type="application/rss+xml" /><item>
-    <title>The secret to doing Microsoft exams for free!</title>
-    <link>/posts/microsoftexams-secrets/</link>
-    <pubDate>Thu, 11 May 2023 14:27:14 &#43;0000</pubDate><author>
-                        <name>Nathalie</name><uri>https://nathalieleenders.com</uri><email>info@nathalieleenders.com</email></author><guid>/posts/microsoftexams-secrets/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/microsoftexams-secrets/download.webp" referrerpolicy="no-referrer">
-            </div>This post explains how you to get Microsoft Exams for free.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exams on Power Platform Tips &amp; Tricks</title>
+    <link>http://localhost:1313/tags/exams/</link>
+    <description>Recent content in Exams on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost:1313/tags/exams/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
 </rss>

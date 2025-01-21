@@ -14,12 +14,10 @@ categories: ["Javascript", "Power Automate", "Power Pages", "Dataverse"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "powerpagesflow.png"
+hero: "powerpagesflow.png"
 featuredImagePreview: "powerpagesflow.png"
 
-toc:
-  enable: true
-  auto: false
+enableToc: false
 
 code:
     maxShownLines: 100
@@ -39,7 +37,7 @@ There are a few steps needed, first to understand how Power Pages works with for
 
 ## My power Automate flow
 
-{{< image src="flow.png" caption="Here you'll see my begin step, which is getting values from Power Pages, it uses the msn weather connector to grab the values, and returns them to Power Pages" height="800" width="500">}}
+{{< img src="flow.png" caption="Here you'll see my begin step, which is getting values from Power Pages, it uses the msn weather connector to grab the values, and returns them to Power Pages" height="800" width="500">}}
 
 
 Once you've followed the steps, take note of the CSRF token. You'll need to remember that.
@@ -154,7 +152,7 @@ document.addEventListener('DOMContentLoaded', setupTemperatureFieldListener);
   * Call your javascript function, in my case: setupTemperatureFieldListener() and do another ctrl-z
   * Type something in your field, and see if it returns the value from your Power Automate flow into your description.
 
-  {{< image src="powerpagesresult.png" caption="In here you'll see the result of the temperature currently in Breda, which is quite cold, in metrics that has been returned from my flow run" height="800" width="500">}}
+  {{< img src="powerpagesresult.png" caption="In here you'll see the result of the temperature currently in Breda, which is quite cold, in metrics that has been returned from my flow run" height="800" width="500">}}
 
 
   ## Implement the script

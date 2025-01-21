@@ -1,137 +1,193 @@
-{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+{{ define "header" }}
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" />
+{{ with .Params.relcanonical }}
+<link rel="canonical" href="{{ . | relLangURL }}" itemprop="url" />
+{{ end }}
+{{ end }}
 
-{{- define "content" -}}
-{{- $params := .Scratch.Get "params" -}}
-{{- $toc := $params.toc -}}
-{{- if eq $toc true -}}
-{{- $toc = .Site.Params.page.toc | default dict -}}
-{{- else if eq $toc false -}}
-{{- $toc = dict "enable" false -}}
-{{- end -}}
+{{ define "navbar" }}
+    {{ partial "navigators/navbar.html" . }}
+{{ end }}
 
-
-{{- /* Auto TOC */ -}}
-{{- if $toc.enable | and (eq $toc.keepStatic false) -}}
-<div class="toc" id="toc-auto">
-    <h2 class="toc-title">{{ T "contents" }}</h2>
-    <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}" id="toc-content-auto">
-        {{- dict "Content" .TableOfContents "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome"
-        $params.fontawesome | partial "function/content.html" | safeHTML -}}
-    </div>
-</div>
-{{- end -}}
-
-{{- /* TOC Style */ -}}
-{{- if eq $toc.enable true -}}
-{{- if eq $toc.keepStatic true -}}
-<script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script>
-{{- else -}}
-<script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script>
-{{- end -}}
-{{- else if eq $toc.enable false -}}
-<script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script>
-{{- end -}}
-
-<article class="page single">
-    {{- /* Title */ -}}
-    <h1 class="single-title animate__animated animate__flipInX">{{ .Title }}</h1>
-
-    {{- /* Subtitle */ -}}
-    {{- with $params.subtitle -}}
-    <h2 class="single-subtitle">{{ . }}</h2>
-    {{- end -}}
-
-    {{- /* Featured image */ -}}
-    {{- $image := $params.featuredimage -}}
-    {{- $width := "auto" -}}
-    {{- $height := "auto" -}}
-    {{- with .Resources.GetMatch (printf "**%s" $params.featuredimage) -}}
-    {{- if eq .ResourceType "image" -}}
-    {{- $image = .RelPermalink -}}
-    {{- $width = .Width -}}
-    {{- $height = .Height -}}
-    {{- else -}}
-    {{- warnf "invalid featured image detected!" -}}
-    {{- end -}}
-    {{- end -}}
-    {{- with .Resources.GetMatch "featured-image" -}}
-    {{- $image = .RelPermalink -}}
-    {{- $width = .Width -}}
-    {{- $height = .Height -}}
-    {{- end -}}
-    {{- with $image -}}
-    <div class="featured-image">
-        {{- dict "Src" . "Title" $.Description "Resources" $.Resources "Width" $width "Height" $height "Loading" "eager"
-        | partial "plugin/image.html" -}}
-    </div>
-    {{- end -}}
-    {{- /* Series list */ -}}
-    {{- if $params.series | and $params.seriesNavigation -}}
-    {{- range $key, $value := .Site.Taxonomies.series -}}
-    {{- range $params.series -}}
-    {{- if . | urlize | eq ($key | urlize) -}}
-    {{- $term := $.Site.GetPage "series" $key -}}
-    <div class="details series-nav open">
-        <div class="details-summary series-title">
-            <span>{{ T "series" }} - {{ $term.Title }}</span>
-            <span><i class="details-icon fas fa-angle-right"></i></span>
+{{ define "sidebar" }}
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="{{ "search" | relLangURL }}">
+          <input type="text" name="keyword" value="" placeholder="{{ i18n "search" }}" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="{{ "/posts/" | relLangURL }}" data-filter="all">{{ i18n "posts" }}</a></li>
+            <div class="subtree">
+                {{ partial "navigators/sidebar.html" (dict "menuName" "sidebar" "menuItems" site.Menus.sidebar "ctx" .) }}
+            </div>
+          </ul>
         </div>
-        <div class="details-content series-content">
-            <nav>
-                <ul>
-                    {{- range $value.Pages -}}
-                    {{- if .LinkTitle | eq $.Title -}}
-                    <li><span class="active">{{ .LinkTitle }}</span></li>
-                    {{- else }}
-                    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-                    {{- end }}
-                    {{- end -}}
-                </ul>
-            </nav>
-        </div>
+      </div>
     </div>
-    {{- end -}}
-    {{- end -}}
-    {{- end -}}
-    {{- end -}}
+  </section>
+{{ end }}
 
-    {{- /* Static TOC */ -}}
-    {{- if $toc.enable -}}
-    <div class="details toc" id="toc-static" kept="{{ if $toc.keepStatic }}true{{ end }}">
-        <div class="details-summary toc-title">
-            <span>{{ T "contents" }}</span>
-            <span><i class="details-icon fas fa-angle-right"></i></span>
+{{ define "content" }}
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      <!--Hero Area-->
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ partial "helpers/get-hero.html" . }});'>
+      </div>
+
+      <!--Content Start-->
+      <div class="page-content">
+        {{ if site.Params.features.blog.showAuthor | default true }}
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='{{ partial "helpers/get-author-image.html" . }}' alt="Author Image">
+          <h5 class="author-name">{{ partial "helpers/get-author-name.html" . }}</h5>
+          <p class="text-muted">{{ .Page.Date | time.Format ":date_full" }}{{ if site.Params.features.readingTime }} | {{ .ReadingTime }} {{i18n "minute" .ReadingTime }}{{ end }}</p>
         </div>
-        <div class="details-content toc-content" id="toc-content-static">
-            {{- dict "Content" .TableOfContents "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome"
-            $params.fontawesome | partial "function/content.html" | safeHTML -}}
+        {{ else }}
+        <div style="margin-bottom: 80px;"></div>
+        {{ end }}
+
+        <div class="title">
+          <h1>{{ .Page.Title }}</h1>
         </div>
+
+        {{ if not (site.Params.features.blog.showAuthor | default true) }}
+        <div class="author-profile ms-auto align-self-lg-center">
+          <p class="text-muted">{{ .Page.Date | time.Format ":date_full" }}{{ if site.Params.features.readingTime }} | {{ .ReadingTime }} {{i18n "minute" .ReadingTime }}{{ end }}</p>
+        </div>
+        {{ end }}
+
+        {{ if site.Params.features.tags.enable }}
+          {{partial "misc/tags.html" .Params.tags }}
+        {{ end }}
+        <div class="post-content" id="post-content">
+          {{ .Page.Content }}
+
+            <script type="text/javascript"
+                src="https://sessionize.com/api/speaker/events/a228ca55-9d76-4c62-8f5f-c88a127fc6a1/0x1xe9ff00x"></script>
+        </div>
+        
+
+        <!-- Share or Contribute -->
+        <div class="row ps-3 pe-3">
+        <!--Social Media Share Buttons-->
+          <div class="col-md-6 share-buttons">
+          {{ if site.Params.features.blog.shareButtons }}
+            <strong>{{ i18n "share_on" }}:</strong>
+            {{ if site.Params.features.blog.shareButtons.facebook }}
+            <a class="btn icon-button bg-facebook" href="https://www.facebook.com/sharer.php?u={{ .Permalink }}" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            {{ end }}
+            {{ if site.Params.features.blog.shareButtons.twitter }}
+                <a class="btn icon-button bg-twitter" href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via={{- site.Title -}}" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+            {{ end }}
+            {{ if site.Params.features.blog.shareButtons.reddit }}
+                <a  class="btn icon-button bg-reddit" href="https://reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}" target="_blank">
+                  <i class="fab fa-reddit"></i>
+                </a>
+            {{ end }}
+            {{ if site.Params.features.blog.shareButtons.tumblr }}
+                <a class="btn icon-button bg-tumblr" href="https://www.tumblr.com/share/link?url={{ .Permalink }}&name={{ .Title }}{{- with .Params.description -}}&description={{- . -}}{{- end -}}" target="_blank">
+                  <i class="fab fa-tumblr"></i>
+                </a>
+            {{ end }}
+            {{ if site.Params.features.blog.shareButtons.pocket }}
+                <a class="btn icon-button bg-pocket" href="https://getpocket.com/save?url={{ .Permalink }}&title={{ .Title }}" target="_blank">
+                  <i class="fab fa-get-pocket"></i>
+                </a>
+            {{ end }}
+            {{ if site.Params.features.blog.shareButtons.linkedin }}
+                <a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            {{ end }}
+            {{ if site.Params.features.blog.shareButtons.diaspora }}
+                <a class="btn icon-button bg-diaspora" href="https://share.diasporafoundation.org/?title={{ .Title }}&url={{ .Permalink }}" rel="nofollow" target="_blank">
+                  <i class="fab fa-diaspora"></i>
+                </a>
+            {{ end }}
+             {{ if site.Params.features.blog.shareButtons.mastodon }}
+                <a class="btn icon-button bg-mastodon" href="https://mastodon.social/share?text={{ .Title }} - {{ .Permalink }}" target="_blank">
+                  <i class="fab fa-mastodon"></i>
+                </a>
+            {{ end }}
+            {{ if site.Params.features.blog.shareButtons.whatsapp }}
+                 <a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text={{ .Title }} {{ .Permalink }}" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+            {{ end }}
+            {{ if site.Params.features.blog.shareButtons.email }}
+                <a class="btn icon-button" href="mailto:?subject={{ .Title }}&body={{ .Permalink }}" target="_blank">
+                  <i class="fas fa-envelope-open-text"></i>
+                </a>
+            {{ end }}
+          {{ end }}
+          </div>
+
+        <!--- Improve this page button --->
+        {{ if site.Params.GitRepo }}
+          {{ if site.Params.GitBranch }}
+            {{ .Scratch.Set "GitBranch" site.Params.GitBranch }}
+          {{ else }}
+            {{ .Scratch.Set "GitBranch" "main" }}
+          {{ end }}
+          <div class="col-md-6 btn-improve-page">
+            {{ if ( eq site.Params.GitForge "gitlab" ) }}
+              <a href="{{ site.Params.GitRepo }}/-/edit/{{ .Scratch.Get "GitBranch" }}/content/{{ .File.Path }}" title="{{ i18n "improve_this_page" }}" target="_blank" rel="noopener">
+            {{ else if ( eq site.Params.GitForge "gitea" ) }}
+              <a href="{{ site.Params.GitRepo }}/_edit/{{ .Scratch.Get "GitBranch" }}/content/{{ .File.Path }}" title="{{ i18n "improve_this_page" }}" target="_blank" rel="noopener">
+            {{ else }} <!--- Make Github-style the default -->
+               <a href="{{ site.Params.GitRepo }}/edit/{{ .Scratch.Get "GitBranch" }}/content/{{ .File.Path }}" title="{{ i18n "improve_this_page" }}" target="_blank" rel="noopener">
+            {{ end }}
+                <i class="fas fa-code-branch"></i>
+                {{ i18n "improve_this_page" }}
+              </a>
+          </div>
+        {{ end }}
+        </div>
+
+
+
+      <!---Next and Previous Navigator -->
+      <hr />
+        {{ partial "navigators/next-prev-navigator.html" . }}
+      <hr />
+
+      <!----- Add comment support  ----->
+      {{ if site.Params.features.comment.enable }}
+        {{ partial "comments.html" site.Params.features.comment.services }}
+      {{ end }}
+
+      <!-- Keep backward compatibility with old config.yaml -->
+      {{ if .Site.Config.Services.Disqus.Shortname }}
+        {{ partial "comments/disqus.html" (dict (slice "disqus" "shortName")  .Site.Config.Services.Disqus.Shortname) }}
+      {{ end }}
+
+      </div>
     </div>
-    {{- end -}}
+  </div>
+  <!--scroll back to top-->
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+{{ end }}
 
-    {{- /* Content */ -}}
-    <div class="content" id="content">
-        {{- /* Outdated Article Reminder */ -}}
-        {{- partial "single/outdatedArticleReminder.html" . -}}
-        {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome |
-        partial "function/content.html" | safeHTML -}}
+{{ define "toc" }}
+  <section class="toc-section" id="toc-section">
+    {{ if and site.Params.features.toc.enable ( .Params.enableTOC | default true ) }}
+    <div class="toc-holder">
+      <h5 class="text-center ps-3">{{ i18n "toc_heading" }}</h5>
+      <hr>
+      <div class="toc">
+        {{ .TableOfContents }}
+      </div>
     </div>
-
-    <script type="text/javascript"
-        src="https://sessionize.com/api/speaker/events/a228ca55-9d76-4c62-8f5f-c88a127fc6a1/0x1xe9ff00x"></script>
-
-    {{/* Related Content */}}
-    {{- if $params.related.enable -}}
-    {{- partial "related.html" . -}}
-    {{- end -}}
-
-    {{/* Sponsor */}}
-    {{- partial "single/sponsor.html" . -}}
-
-    {{- /* Footer */ -}}
-    {{- partial "single/footer.html" . -}}
-
-    {{- /* Comment */ -}}
-    {{- partial "comment.html" . -}}
-</article>
-{{- end -}}
+    {{ end }}
+  </section>
+{{ end }}

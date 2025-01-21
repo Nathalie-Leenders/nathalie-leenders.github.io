@@ -14,7 +14,7 @@ categories: ["Power Automate"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "power-autoamte-vs-flow.webp"
+hero: "power-autoamte-vs-flow.webp"
 featuredImagePreview: ""
 
 toc:
@@ -40,7 +40,7 @@ In your Power automate flow, either run the flow and check the body, or add a Co
 - Run your flow
 - Copy the contents of your compose into notepad
 
-  {{< image src="compose step.png" caption="Compose example" height="800" width="600">}}
+  {{< img src="compose step.png" caption="Compose example" height="800" width="600">}}
 
 - Check out the values for the column you want, for example I have a simple dropdown for City.
 
@@ -58,9 +58,9 @@ In your Power automate flow, either run the flow and check the body, or add a Co
 - Modify the cr215_city  into cr215_city@OData.Community.Display.V1.FormattedValue
 - Paste into the expression area, where you want the value to come into.
 
-{{< image src="old.png" caption="Old" height="1000" width="800">}}
+{{< img src="old.png" caption="Old" height="1000" width="800">}}
 
-{{< image src="new.png" caption="New" height="1000" width="800">}}
+{{< img src="new.png" caption="New" height="1000" width="800">}}
 
 - Run your flow and it should display the correct name/value for you.
 

@@ -14,7 +14,7 @@ categories: ["Copilot Studio", "Generative answers"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "studio.png"
+hero: "studio.png"
 featuredImagePreview: "studio.png"
 
 toc:
@@ -38,7 +38,7 @@ CLick on your environment.
 
 On the lower right corner, enable these 2 settings:
 
-{{< image src="genai.png" caption="The 2 new options you need to enable as PP admin for your environment" height="600" width="800">}}
+{{< img src="genai.png" caption="The 2 new options you need to enable as PP admin for your environment" height="600" width="800">}}
 
 Now you can use GenAI in your Copilot Studio bot!
 

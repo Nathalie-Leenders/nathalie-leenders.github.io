@@ -7,7 +7,7 @@ draft: false
 authors: [nathalieleenders]
 description: "This post explains how you to get Microsoft Exams for free."
 
-tags: ["Exams", "Vouchers"]
+tags: ["Microsoft Exams", "Vouchers"]
 categories: ["Microsoft Exams"]
 
 
@@ -17,7 +17,7 @@ aliases:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: "free.webp"
+hero: "free.webp"
 featuredImagePreview: "download.webp"
 
 toc:
@@ -30,9 +30,9 @@ code:
 
 <!--more-->
 
-{{< admonition type=success title="Biggest tip I can give you" open=true >}}
+{{< alert type=success title="Biggest tip I can give you" open=true >}}
 Check this out if you want to learn how to get Microsoft exam vouchers for free! :yellow_heart:
-{{< /admonition >}}
+{{< /alert >}}
 
 # I’ll be spilling the beans here, letting out the BIG secret…
 

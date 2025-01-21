@@ -14,7 +14,7 @@ categories: ["Power Automate"]
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: ""
+hero: ""
 featuredImagePreview: ""
 
 toc:
@@ -52,4 +52,4 @@ By using append, it adds onto the variable, so each time the action is selected 
 
 Now add the variable wherever you want (email, teams card, update rows etc)
 
-{{< image src="variable.png" caption="Combining data" height="800" width="800">}}
+{{< img src="variable.png" caption="Combining data" height="800" width="800">}}
