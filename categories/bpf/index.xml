@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BPF on Power Platform Tips &amp; Tricks</title><link>https://blog.nathalieleenders.com/categories/bpf/</link><description>Recent content in BPF on Power Platform Tips &amp; Tricks</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 05 Apr 2023 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/bpf/index.xml" rel="self" type="application/rss+xml"/><item><title>Business Process Flow - How to automate moving through different stages</title><link>https://blog.nathalieleenders.com/posts/bpf-automation/</link><pubDate>Wed, 05 Apr 2023 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/bpf-automation/</guid><description>&lt;h2 id="how-to-move-stages-automatically-bpf-using-power-automate-no-http-calls-needed">How to move stages automatically (BPF) using Power Automate (no http calls needed)&lt;/h2>
+&lt;p>Quick summary: You need to grab data from 3 different tables, link them using lookup columns, capture ID&amp;rsquo;s, and add in conditions and use Data operations to shape the data into usable steps. Then add in a switch depending on your stage names, and add final actions updating your BPF table.&lt;/p>
+&lt;p>Sounds easy enough right?…..&lt;/p>
+&lt;img src="download.gif"
+width="150"
+height="400"
+>
+&lt;p>I hope this helps, and I tried explaining it clearly, please let me know in case of any questions, feedback, other methods etc. For me this worked.&lt;/p></description></item></channel></rss>

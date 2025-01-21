@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PowerAutomate on Power Platform Tips &amp; Tricks</title><link>https://blog.nathalieleenders.com/tags/powerautomate/</link><description>Recent content in PowerAutomate on Power Platform Tips &amp; Tricks</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 11 Sep 2023 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/powerautomate/index.xml" rel="self" type="application/rss+xml"/><item><title>Custom document link sharing with Sharepoint and Power Automate</title><link>https://blog.nathalieleenders.com/posts/sharepointlibrarypermissions/</link><pubDate>Mon, 11 Sep 2023 09:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/sharepointlibrarypermissions/</guid><description>&lt;h2 id="usecase">Usecase&lt;/h2>
+&lt;p>You need to share a file from sharepoint to an external user, in an automated process. No manual &amp;lsquo;create link&amp;rsquo; actions needed on the sharepoint site. You can then email this link to your external client.&lt;/p>
+&lt;p>Default on Power automate for a sharing link for sharepoint, is to set the Link Scope to either:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Anyone with the link (including anonymous)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>People in your organization&lt;/p>
+&lt;p>This explains how you can use the &amp;lsquo;people with existing access&amp;rsquo; sharing type.&lt;/p></description></item><item><title>Quick tip! Unmanaged layers - updates not moving through environments (ALM)</title><link>https://blog.nathalieleenders.com/posts/unmanagedlayers-alm/</link><pubDate>Thu, 16 Mar 2023 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/unmanagedlayers-alm/</guid><description>&lt;p>I had this issue today and figured I’d write a quick tip for it.&lt;/p>
+&lt;p>I’ve changed my app, modified flows, everything works fine in Dev, publish customizations, export as managed and move to Test. Verified the client can see the new app version, and asked her to test.&lt;/p>
+&lt;p>Uh-oh, the flows aren’t reflecting changes.
+&lt;img src="giphy.gif"
+width="800"
+height="1000"
+>
+&lt;/p>
+&lt;h2 id="issue-changes-made-in-one-environment-dont-reflect-in-another-environment-in-a-managed-solution">Issue: Changes made in one environment, don’t reflect in another environment in a managed solution&lt;/h2>
+&lt;h2 id="solutionfix-check-on-your-flows-or-anything-not-reflecting-the-changes-for-the-solution-layers">Solution/Fix: Check on your Flows, or anything not reflecting the changes, for the Solution Layers&lt;/h2>
+&lt;ul>
+&lt;li>Go to your flow for example, the ellipsis (…) and check the Solution Layers.&lt;/li>
+&lt;li>Check if there is an Unmanaged layer there.&lt;/li>
+&lt;li>Remove this layer, and reimport your package.&lt;/li>
+&lt;li>Test and it should have updated, if not, check for more unmanaged layers.&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-are-unmanaged-layers-and-why-do-they-occur">What are unmanaged layers and why do they occur?&lt;/h2>
+&lt;p>If you have a managed solution, and make any edit (could also be just open a flow run and save it) it can create an edited ‘unmanaged’ layer, and this could cause your updates to not go through.&lt;/p></description></item></channel></rss>

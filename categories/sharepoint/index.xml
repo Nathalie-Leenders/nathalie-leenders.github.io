@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sharepoint on Power Platform Tips &amp; Tricks</title><link>https://blog.nathalieleenders.com/categories/sharepoint/</link><description>Recent content in Sharepoint on Power Platform Tips &amp; Tricks</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 Feb 2024 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/sharepoint/index.xml" rel="self" type="application/rss+xml"/><item><title>Filter on date column with random years on Sharepoint</title><link>https://blog.nathalieleenders.com/posts/sharepointfilteronyear/</link><pubDate>Tue, 20 Feb 2024 09:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/sharepointfilteronyear/</guid><description>&lt;h2 id="usecase">Usecase&lt;/h2>
+&lt;p>You have a sharepoint list with birthdays, on a date column, but dont know how to filter on them to show the last few days or upcoming few days if someone has (had) their birthday.&lt;/p>
+&lt;p>I couldnt figure out how to do this, and then a colleague of mine Remco Bruijstens (thank you!) suggested this method, and after testing it worked.
+Kudos to him, and I wanted to share with you how to accomplish this.&lt;/p></description></item><item><title>Custom document link sharing with Sharepoint and Power Automate</title><link>https://blog.nathalieleenders.com/posts/sharepointlibrarypermissions/</link><pubDate>Mon, 11 Sep 2023 09:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/sharepointlibrarypermissions/</guid><description>&lt;h2 id="usecase">Usecase&lt;/h2>
+&lt;p>You need to share a file from sharepoint to an external user, in an automated process. No manual &amp;lsquo;create link&amp;rsquo; actions needed on the sharepoint site. You can then email this link to your external client.&lt;/p>
+&lt;p>Default on Power automate for a sharing link for sharepoint, is to set the Link Scope to either:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Anyone with the link (including anonymous)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>People in your organization&lt;/p>
+&lt;p>This explains how you can use the &amp;lsquo;people with existing access&amp;rsquo; sharing type.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RegEx on Power Platform Tips &amp; Tricks</title><link>https://blog.nathalieleenders.com/tags/regex/</link><description>Recent content in RegEx on Power Platform Tips &amp; Tricks</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 11 Jul 2024 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/regex/index.xml" rel="self" type="application/rss+xml"/><item><title>How to use regex in Power Automate Cloud flows</title><link>https://blog.nathalieleenders.com/posts/regexinpowerautomatecloud/</link><pubDate>Thu, 11 Jul 2024 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/regexinpowerautomatecloud/</guid><description>&lt;p>I had a client scenario, where I needed to grab a 6-digit number from an incoming email subject. It wont always be in the same place, and also possibly not be the only digits. So I couldnt use trim, length or other that I could think off.&lt;/p>
+&lt;p>Unfortunately, or luckily, depending on how you look at it, my dear friend Cat Schneider introduced me to regex&lt;/p>
+&lt;img src="beakerfunny.gif"
+width="500"
+height="800"
+>
+&lt;p>Thankfully someone within my company helped me guide a regex expression I could use, but I do want to share this awesome resource:&lt;/p></description></item></channel></rss>

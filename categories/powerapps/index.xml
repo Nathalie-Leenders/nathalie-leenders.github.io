@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Powerapps on Power Platform Tips &amp; Tricks</title><link>https://blog.nathalieleenders.com/categories/powerapps/</link><description>Recent content in Powerapps on Power Platform Tips &amp; Tricks</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 20 Jul 2023 07:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/powerapps/index.xml" rel="self" type="application/rss+xml"/><item><title>Setting conditions on the visible property - Canvas App</title><link>https://blog.nathalieleenders.com/posts/visibleproperty/</link><pubDate>Thu, 20 Jul 2023 07:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/visibleproperty/</guid><description>&lt;h1 id="setting-conditions-on-the-visible-property---canvas-app">Setting conditions on the visible property - Canvas App&lt;/h1>
+&lt;p>How can I hide my items/control based on conditions?&lt;/p>
+&lt;p>You can of course use an IF statement, or Switch, and work from there.&lt;/p>
+&lt;p>True - shows the item
+False - hides the item&lt;/p>
+&lt;h1 id="but-how-can-i-do-this-dynamically">But how can I do this dynamically?&lt;/h1>
+&lt;p>You can use Environment Variables. These can be changed when you move between environments (for ALM purposes)
+Set an environment variable in your solution, add the desired persons email address(es) and refresh your datasources in the Canvas app.&lt;/p></description></item><item><title>Quick tip! Unmanaged layers - updates not moving through environments (ALM)</title><link>https://blog.nathalieleenders.com/posts/unmanagedlayers-alm/</link><pubDate>Thu, 16 Mar 2023 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/unmanagedlayers-alm/</guid><description>&lt;p>I had this issue today and figured I’d write a quick tip for it.&lt;/p>
+&lt;p>I’ve changed my app, modified flows, everything works fine in Dev, publish customizations, export as managed and move to Test. Verified the client can see the new app version, and asked her to test.&lt;/p>
+&lt;p>Uh-oh, the flows aren’t reflecting changes.
+&lt;img src="giphy.gif"
+width="800"
+height="1000"
+>
+&lt;/p>
+&lt;h2 id="issue-changes-made-in-one-environment-dont-reflect-in-another-environment-in-a-managed-solution">Issue: Changes made in one environment, don’t reflect in another environment in a managed solution&lt;/h2>
+&lt;h2 id="solutionfix-check-on-your-flows-or-anything-not-reflecting-the-changes-for-the-solution-layers">Solution/Fix: Check on your Flows, or anything not reflecting the changes, for the Solution Layers&lt;/h2>
+&lt;ul>
+&lt;li>Go to your flow for example, the ellipsis (…) and check the Solution Layers.&lt;/li>
+&lt;li>Check if there is an Unmanaged layer there.&lt;/li>
+&lt;li>Remove this layer, and reimport your package.&lt;/li>
+&lt;li>Test and it should have updated, if not, check for more unmanaged layers.&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-are-unmanaged-layers-and-why-do-they-occur">What are unmanaged layers and why do they occur?&lt;/h2>
+&lt;p>If you have a managed solution, and make any edit (could also be just open a flow run and save it) it can create an edited ‘unmanaged’ layer, and this could cause your updates to not go through.&lt;/p></description></item></channel></rss>

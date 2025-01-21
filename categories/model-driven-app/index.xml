@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Model Driven App on Power Platform Tips &amp; Tricks</title><link>https://blog.nathalieleenders.com/categories/model-driven-app/</link><description>Recent content in Model Driven App on Power Platform Tips &amp; Tricks</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 12 Aug 2024 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/model-driven-app/index.xml" rel="self" type="application/rss+xml"/><item><title>How to use the PDF Viewer, to view PDF's in a Model Driven app from an attachment column</title><link>https://blog.nathalieleenders.com/posts/pdfviewerincanvascomponent/</link><pubDate>Mon, 12 Aug 2024 09:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/pdfviewerincanvascomponent/</guid><description>&lt;h2 id="usecase">Usecase&lt;/h2>
+&lt;p>My PDF viewer works in the canvas app, but not when I embed it&lt;/p>
+&lt;p>Show image 0/0 in MDA&lt;/p>
+&lt;h2 id="the-beginning">The beginning&lt;/h2>
+&lt;p>I had a need, to display a pdf from a Dataverse attachment column in a Model driven app form.&lt;/p>
+&lt;p>I had looked at many different PCF Components (which are totally awesome, you should really check them out!)
+However these only work on Notes with attachments. My dataverse table/solution uses a files column.&lt;/p></description></item><item><title>Sending an email from a Model Driven App on a command bar button</title><link>https://blog.nathalieleenders.com/posts/commandbarsendemail/</link><pubDate>Wed, 16 Aug 2023 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/commandbarsendemail/</guid><description>&lt;h1 id="what-is-the-command-bar">What is the command bar?&lt;/h1>
+&lt;p>The command bar is the ribbon on top of your Powerapp.&lt;/p>
+&lt;h1 id="how-do-i-edit-this">How do I edit this?&lt;/h1>
+&lt;ul>
+&lt;li>Go into edit mode for your Model Driven App&lt;/li>
+&lt;li>Right click on your table, Edit the Command Bar&lt;/li>
+&lt;li>This opens the Command bar editor&lt;/li>
+&lt;/ul>
+&lt;h1 id="what-are-the-4-areas">What are the 4 areas?&lt;/h1>
+&lt;ol>
+&lt;li>Main Form - This is the one I&amp;rsquo;m focusing on right now&lt;/li>
+&lt;li>Main Grid&lt;/li>
+&lt;li>Subgrid View&lt;/li>
+&lt;li>Associated View&lt;/li>
+&lt;/ol>
+&lt;h1 id="reference-material">Reference material&lt;/h1>
+&lt;p>Scott Durow created this and it has been adopted by Microsoft ever since. If you need any information on all of the functionality, he has awesome video&amp;rsquo;s and sessions on it.&lt;/p></description></item></channel></rss>

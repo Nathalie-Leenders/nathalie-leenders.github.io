@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Canvas App on Power Platform Tips &amp; Tricks</title><link>https://blog.nathalieleenders.com/categories/canvas-app/</link><description>Recent content in Canvas App on Power Platform Tips &amp; Tricks</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 12 Aug 2024 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/canvas-app/index.xml" rel="self" type="application/rss+xml"/><item><title>How to use the PDF Viewer, to view PDF's in a Model Driven app from an attachment column</title><link>https://blog.nathalieleenders.com/posts/pdfviewerincanvascomponent/</link><pubDate>Mon, 12 Aug 2024 09:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/pdfviewerincanvascomponent/</guid><description>&lt;h2 id="usecase">Usecase&lt;/h2>
+&lt;p>My PDF viewer works in the canvas app, but not when I embed it&lt;/p>
+&lt;p>Show image 0/0 in MDA&lt;/p>
+&lt;h2 id="the-beginning">The beginning&lt;/h2>
+&lt;p>I had a need, to display a pdf from a Dataverse attachment column in a Model driven app form.&lt;/p>
+&lt;p>I had looked at many different PCF Components (which are totally awesome, you should really check them out!)
+However these only work on Notes with attachments. My dataverse table/solution uses a files column.&lt;/p></description></item><item><title>Setting conditions on the visible property - Canvas App</title><link>https://blog.nathalieleenders.com/posts/visibleproperty/</link><pubDate>Thu, 20 Jul 2023 07:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/visibleproperty/</guid><description>&lt;h1 id="setting-conditions-on-the-visible-property---canvas-app">Setting conditions on the visible property - Canvas App&lt;/h1>
+&lt;p>How can I hide my items/control based on conditions?&lt;/p>
+&lt;p>You can of course use an IF statement, or Switch, and work from there.&lt;/p>
+&lt;p>True - shows the item
+False - hides the item&lt;/p>
+&lt;h1 id="but-how-can-i-do-this-dynamically">But how can I do this dynamically?&lt;/h1>
+&lt;p>You can use Environment Variables. These can be changed when you move between environments (for ALM purposes)
+Set an environment variable in your solution, add the desired persons email address(es) and refresh your datasources in the Canvas app.&lt;/p></description></item></channel></rss>

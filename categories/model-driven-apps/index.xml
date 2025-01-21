@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Model Driven Apps on Power Platform Tips &amp; Tricks</title><link>https://blog.nathalieleenders.com/categories/model-driven-apps/</link><description>Recent content in Model Driven Apps on Power Platform Tips &amp; Tricks</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Nov 2023 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/model-driven-apps/index.xml" rel="self" type="application/rss+xml"/><item><title>How do I automatically have a GUID in my field?</title><link>https://blog.nathalieleenders.com/posts/guidjavascriptinmodeldrivenapps/</link><pubDate>Mon, 27 Nov 2023 09:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/guidjavascriptinmodeldrivenapps/</guid><description>&lt;h2 id="usecase">Usecase&lt;/h2>
+&lt;p>I am creating a Model driven app, with a Virtual Table connected to SQL. In my SQL DB I have an external primary key field. How do I get an automatic GUID? The PowerFX code GUID() is not supported on the form.&lt;/p>
+&lt;p>So I tried to do something on the ribbon, set the field,&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-PowerFX" data-lang="PowerFX">With({I:Last(Werknems).TransactionID},Notify( I, NotificationType.Information));
+Patch(
+Werknems,
+Defaults(Werknems), //Row,
+{TransactionID:GUID()
+}
+)
+&lt;/code>&lt;/pre>&lt;p>However, since my field is mandatory, and it tries to save before it runs this (of course) it was saying the field wasnt filled in. So this didnt work.&lt;/p></description></item><item><title>Dataverse Choices to SQL backend- Update!</title><link>https://blog.nathalieleenders.com/posts/dataversechoices-sqlbackend/</link><pubDate>Tue, 14 Feb 2023 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/dataversechoices-sqlbackend/</guid><description/></item></channel></rss>

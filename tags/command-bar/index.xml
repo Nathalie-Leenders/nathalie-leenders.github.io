@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Command Bar on Power Platform Tips &amp; Tricks</title><link>https://blog.nathalieleenders.com/tags/command-bar/</link><description>Recent content in Command Bar on Power Platform Tips &amp; Tricks</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 16 Aug 2023 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/command-bar/index.xml" rel="self" type="application/rss+xml"/><item><title>Sending an email from a Model Driven App on a command bar button</title><link>https://blog.nathalieleenders.com/posts/commandbarsendemail/</link><pubDate>Wed, 16 Aug 2023 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/commandbarsendemail/</guid><description>&lt;h1 id="what-is-the-command-bar">What is the command bar?&lt;/h1>
+&lt;p>The command bar is the ribbon on top of your Powerapp.&lt;/p>
+&lt;h1 id="how-do-i-edit-this">How do I edit this?&lt;/h1>
+&lt;ul>
+&lt;li>Go into edit mode for your Model Driven App&lt;/li>
+&lt;li>Right click on your table, Edit the Command Bar&lt;/li>
+&lt;li>This opens the Command bar editor&lt;/li>
+&lt;/ul>
+&lt;h1 id="what-are-the-4-areas">What are the 4 areas?&lt;/h1>
+&lt;ol>
+&lt;li>Main Form - This is the one I&amp;rsquo;m focusing on right now&lt;/li>
+&lt;li>Main Grid&lt;/li>
+&lt;li>Subgrid View&lt;/li>
+&lt;li>Associated View&lt;/li>
+&lt;/ol>
+&lt;h1 id="reference-material">Reference material&lt;/h1>
+&lt;p>Scott Durow created this and it has been adopted by Microsoft ever since. If you need any information on all of the functionality, he has awesome video&amp;rsquo;s and sessions on it.&lt;/p></description></item></channel></rss>

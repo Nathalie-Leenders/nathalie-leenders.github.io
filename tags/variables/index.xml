@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Variables on Power Platform Tips &amp; Tricks</title><link>https://blog.nathalieleenders.com/tags/variables/</link><description>Recent content in Variables on Power Platform Tips &amp; Tricks</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 04 Nov 2024 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/variables/index.xml" rel="self" type="application/rss+xml"/><item><title>Adding a decimal count to your Power Automate Flow (Float/Increment variable)</title><link>https://blog.nathalieleenders.com/posts/countinvariablescont/countinvariablescont/</link><pubDate>Mon, 04 Nov 2024 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/countinvariablescont/countinvariablescont/</guid><description>&lt;p>I&amp;rsquo;ve explained how to count in a variable, but how do you count in a decimal?&lt;/p>
+&lt;p>I had a usecase, where we wanted to create a version number metadata field. We could of course use an integer, count using increment, and upload to the field, however that only does &amp;lsquo;major&amp;rsquo; counts i.e 1.0 to 2.0 to 3.0 etc.&lt;/p>
+&lt;h2 id="how-do-i-count-in-minor-decimals-from-01-to-02-to-03-or-even-001-to-002">How do I count in minor, decimals, from 0.1 to 0.2 to 03 or even 0.01 to 0.02?&lt;/h2>
+&lt;p>To do this, you can follow the same logic, but use a float value instead of integer.&lt;/p></description></item><item><title>Adding a count to your Power Automate Flow (Integer/Increment variable)</title><link>https://blog.nathalieleenders.com/posts/countinvariables/</link><pubDate>Tue, 03 Jan 2023 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/countinvariables/</guid><description>&lt;p>Starting with an intro to variables, I want to explain how you can use a very simple counter to your Power Automate flow.
+Let’s say you have an Apply to each, like 5 entries, and after this you email your client with the combined data from those 5 entries.&lt;/p>
+&lt;p>Add the following steps:&lt;/p>
+&lt;ul>
+&lt;li>On top of your flow, add an Initialize Variable&lt;/li>
+&lt;li>Choose a name&lt;/li>
+&lt;li>Select Type Integer&lt;/li>
+&lt;li>Leave Initial value blank (or select a starting count)&lt;/li>
+&lt;li>In your Apply to each, add an Increment Variable (Increment means to add/change the count)&lt;/li>
+&lt;li>Increment the variable you’ve created on top with 1 in the value.&lt;/li>
+&lt;/ul>
+&lt;p>Add the variable after your Apply to each step wherever you want, and it will give you the count.&lt;/p></description></item><item><title>Combine data from multiple apply to each into a single output file (Variables and compose)</title><link>https://blog.nathalieleenders.com/posts/combinemultipledata/</link><pubDate>Tue, 03 Jan 2023 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/combinemultipledata/</guid><description>&lt;p>This was a tricky one to figure out, took me a few hours and failed attempts.&lt;/p>
+&lt;p>I have log entries, and my flow is triggered to email them all that were submitted the day prior, at 8am.
+Getting the data into the email pulls it into an apply to each (which makes sense, but is not what I want)&lt;/p>
+&lt;p>So, there is a way around the apply to each, but I’ll not get into that here.&lt;/p></description></item><item><title>How to get conditional images in your Canvas app</title><link>https://blog.nathalieleenders.com/posts/conditional-images-canvasapp/</link><pubDate>Mon, 07 Nov 2022 14:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/conditional-images-canvasapp/</guid><description>&lt;h1 id="ever-had-a-scenario-where-someone-wanted-to-have-images-in-their-app-but-also-pull-them-from-a-source-somewhere">Ever had a scenario, where someone wanted to have images in their app, but also pull them from a source somewhere?&lt;/h1>
+&lt;p>Let’s say, you want to reflect their office image in your app. But you also want to possibility to overwrite/upload your own instead.&lt;/p>
+&lt;p>You can do this by using an If statement and some variables, let’s look at the following scenario.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>You work for a company called Powerplatform with their email domain @Powerplatform.com&lt;/p></description></item></channel></rss>
