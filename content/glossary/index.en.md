@@ -21,6 +21,12 @@ The ability to move from Dev, Test and Prod (or other defined) environments main
 **Actions**
 Steps in Power Automate that follow up after a trigger, that need to be followed. You can define these actions yourself.
 
+**Adaptive Cards** 
+A way to present richly formatted content in a card format within Power Platform applications.
+
+**API Management**
+A service that allows you to create, publish, and manage APIs.
+
 ## B
 
 **Blog**
@@ -28,6 +34,9 @@ Website containing information in different posts, often defined by categories.
 
 **Business Process Flows**
 Defined action steps and stages to determine a business Process or follow up flows, data needed to proceed or ability to visually display process steps.
+
+**Business rules**
+Rules that can be applied to forms in a Model Driven App to enforce business logic. Not supported in Power Pages (yet)
 
 ## C
 
@@ -60,6 +69,15 @@ Canvas pages that can be integrated within a Model Driven app.
 **CSS**
 Cascade Style Sheets. With CSS, you can add custom fonts, colors, backgrounds, borders, and other visual effects to your Power Platform applications. Read how that works with Power Apps Portal Studio here.
 
+**Common Data Model (CDM)**
+A standardized data model that allows data and its meaning to be shared across applications and business processes.
+
+**Connectors**
+Pre-built integrations that allow you to connect to various data sources and services.
+
+**Common Data Service (CDS)**
+Former name for Dataverse, still present in the interface sometimes.
+
 ## D
 
 **Datasource**
@@ -67,6 +85,10 @@ Data backend which can be used to connect in your app or portal, or just to stor
 
 **Dataverse**
 Tables with a (custom) defined column structure, holding data which can be leveraged throughout the Power Platform. Requires security groups to be accessed.
+
+**Dataflows**
+ETL (Extract, Transform, Load) processes that allow you to ingest, transform, and load data into Dataverse or other destinations.
+E
 
 **Dax Code**
 Programming language used by PowerBI
@@ -82,6 +104,9 @@ Area within Office365 tenant which holds all flows, solutions and apps.
 **ERD Entity Relationship Diagram**
 Entity Relationship Diagrams map out the relationships needed within your data model structure. It can be very useful when designing or architecting a solution for a client.
 
+**Entity**
+ A table in Dataverse that stores data.
+
 ## F
 
 **Forms**
@@ -90,20 +115,38 @@ Page used for displaying or inputting information, different forms can be create
 **Flow**
 Workflow created by Power Automate, formerly named as such.
 
+**Function Apps** 
+Azure service that allows you to run small pieces of code (functions) in the cloud.
+
 ## G
+
+**Gateway**
+A bridge that provides quick data transfer and secure access between on-premises data and Power Platform services.
 
 ## H
 
+**HTTP request**
+A method to interact with web services and APIs. (more information in blog series incoming)
+
 ## I
+
+**Integration**
+The process of connecting different systems and applications to work together.
 
 ## J
 
 **JSON or JavaScript Object Notation**
 Semi-structured data that can be used in for example a Teams Adaptive Card, or is an output from a Power Automate Step. You can 'Parse JSON' to get the values, or just use the 'raw json'. It's formatted in name/value pairs, and it not considered a coding language but more a way to transfer data between applications.
 
+**Javascript**
+A programming language that can be used to add custom logic to Model Driven Apps.
+
 ## K
 
 ## L
+
+**Logic-Apps**
+Azure service that allows you to automate workflows and integrate apps, data, and services.
 
 **Low Code (No Code)**
 Build apps and automations without any prior coding knowledge. The Power Platform offers an intuitive way to directly tell a button or form (or gallery, or image etc etc) what to do without needing to dive into a programming language such as C#, HTML, CSS. It uses PowerFX.
@@ -142,6 +185,9 @@ Official explanation: The MVP Award is a global program of recognized technology
 **Office365**
 Office365 is a subscription-based online suite of software and services offered by Microsoft that allows users to access popular office tools such as Word, Excel, PowerPoint, and Outlook on the cloud. It also provides tools for online communication, collaboration, file storage, and sharing.
 
+**Oauth**
+An open standard for access delegation, commonly used for token-based authentication (like SSO, Single sign-on)
+
 ## P
 
 **Pipelines**
@@ -168,7 +214,13 @@ Full management portal for your entire Office/Power Platform infrastructure. Cli
 **Power Query**
 It's a tool with which you're able to transform data before using it in Powerbi, Excel or in a Dataset/DataFlow. It uses M Language. Official documentation.
 
+**Powershell**
+A task automation and configuration management framework from Microsoft.
+
 ## Q
+
+**Query**
+A request for data or information from a database.
 
 ## R
 
@@ -200,6 +252,9 @@ A type of folder in an environment, holding your apps, flows, plugins or anythin
 
 ## T
 
+**Templates**
+Pre-built configurations that can be used to quickly create apps, flows, or other components.
+
 **Trigger**
 A way to start a Power Automate flow. You can select what 'triggers' the flow to start.
 
@@ -223,6 +278,9 @@ An export from a solution able to be fully edited, only used from one dev enviro
 
 ## V
 
+**Variables**
+Storage locations that hold data values which can be used and manipulated in Power Automate flows. In the Power Platform there are many kinds of variables depending on what you need them for.
+
 **Virtual Agents**
 Chatbots that can be programmed to provide specified FAQ information.
 
@@ -240,5 +298,8 @@ A virtual Entity or connector, possible to map Dataverse to an existing SQL, Exc
 External created toolkit (by Tanguy Touzard) in which you can leverage the variety of tools and plugins in a model driven app, Dataverse or Dynamics365 environment. Official site
 
 ## Y
+
+**YAML**
+A human-readable data serialization standard that can be used in configuration files.
 
 ## Z
