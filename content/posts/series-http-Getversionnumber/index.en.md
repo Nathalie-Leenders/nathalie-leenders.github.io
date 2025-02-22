@@ -28,13 +28,16 @@ code:
 Fetching a Specific Item from a SharePoint List
 
 ## Objective
-You want to retrieve the details of a specific item from a SharePoint list based on the list name and item ID stored in variables.
+Get a specific item from sharepoint, with all the metadata, that you can then re-use in your flow. In my example we're going with version number.
 
 ### Steps:
 
-  - Identify the List and Item: You have a SharePoint site with multiple lists, and you need to fetch the details of a specific item from a list. The list name and item ID are stored in variables `VarListname` and `VarItemID` respectively.
+  - Identify the List and Item: You have a SharePoint site with multiple lists, and you need to fetch the details of a specific item from a list. The list name and item ID are stored in variables `VarListname` and `VarItemID` but you can of course use your own naming method.
+
   - Construct the HTTP Request: Use the SharePoint REST API to get the item details by specifying the list name and item ID in the URL.
+
   - Execute the HTTP Request: Make an HTTP GET request to the SharePoint REST API endpoint with the appropriate query parameters.
+
   - Set the value from the needed column in a variable.
 
 ```markdown
@@ -46,7 +49,9 @@ Headers:
   Accept: application/json;odata=verbose
   Content-type: application/json;odata=verbose
 ```
+Short summary, get the list by title, and grab everything from that specific item.
 
+You can then grab the value from the body, for example, nameofyourstep?['body']?['versionnumber']
 
 Bonus, how to do the same in Javascript:
 

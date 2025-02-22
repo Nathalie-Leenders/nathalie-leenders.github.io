@@ -28,23 +28,22 @@ code:
 Breaking Role Inheritance for a Specific Item in a SharePoint List
 
 **Objective:**
-You want to break the role inheritance for a specific item in a SharePoint list, copying the existing role assignments and clearing subscopes.
+You want to break the role inheritance for a specific item in a SharePoint list, for example when you need to set your own permissions on a file.
 
 **Steps:**
 
 1. **Identify the List and Item:**
-   You have a SharePoint site with multiple lists, and you need to break the role inheritance for a specific item in a list. The list name and item ID are stored in variables `VarListname` and `VarItemID` respectively.
+   You have a SharePoint site with multiple lists, and you need to break the role inheritance for a specific item in a list. I have the list name and item ID stored in variables `VarListname` and `VarItemID` , but you're welcome to use your own names of course.
 
-2. **Construct the HTTP Request:**
+2. **The HTTP Request:**
    Use the SharePoint REST API to break the role inheritance by specifying the list name and item ID in the URL, and setting the parameters to copy role assignments and clear subscopes.
-
-3. **Execute the HTTP Request:**
-   Make an HTTP POST request to the SharePoint REST API endpoint with the appropriate query parameters.
 
 **HTTP Request:**
 ```http
 POST https://your-sharepoint-site-url/_api/web/lists/getbytitle('@{variables('VarListname')}')/items(@{variables('VarItemID')})/BreakRoleInheritance(copyRoleAssignments=true, clearSubscopes=true)
 ```
+
+It gets the list by name/title, then the item by id and breaks the role inheritance. I've set the copyroleassignments to true, but if false it wont keep the parent permissions/groups.
 
 **Example Code (JavaScript):**
 ```javascript
@@ -76,15 +75,8 @@ fetch(`${siteUrl}/_api/web/lists/getbytitle('${listName}')/items(${itemId})/Brea
 - The `getbytitle` method is used to specify the list by its title.
 - The `items` method is used to specify the item by its ID.
 - The `BreakRoleInheritance` method is used to break the role inheritance for the item, with parameters to copy existing role assignments and clear subscopes.
-- The `X-RequestDigest` header is required for POST requests to SharePoint REST API to prevent cross-site request forgery (CSRF) attacks.
+- The `X-RequestDigest` header is required for POST requests to SharePoint REST API to prevent cross-site request forgery (CSRF) attacks. Or in lament terms, sort of an authentication method so the site recognises you.
 - The response is checked for success, and the result is logged to the console.
 
 This scenario demonstrates how to use the SharePoint REST API to break the role inheritance for a specific item in a list, copying the existing role assignments and clearing subscopes.
-
-
-Method: POST
-Uri: _api/web/lists/getbytitle('@{variables('VarListname')}')/items(@{variables('VarItemID')})/BreakRoleInheritance(copyRoleAssignments=true, clearSubscopes=true)
-
-Headers:	Accept	application/json
-  Content-Type	application/json
 

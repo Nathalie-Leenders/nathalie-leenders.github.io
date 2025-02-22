@@ -25,24 +25,22 @@ code:
     maxShownLines: 100
 ---
 ### Scenario: 
-Validating and Updating a Specific Item in a SharePoint List
+You have a metadata column you want to update, but how to do this?
 
 ###  Objective: 
-You want to validate and update the details of a specific item in a SharePoint list based on the list name and item ID stored in variables.
+You want to update the status field, with a new status from that term set.
 
 # Steps
 
 ### Identify the List and Item
 
-You have a SharePoint site with multiple lists, and you need to validate and update a specific item in a list. The list name and item ID are stored in variables VarListname and VarItemID respectively.
-
-### Construct the HTTP Request
-
-Use the SharePoint REST API to validate and update the item details by specifying the list name and item ID in the URL.
+Like always, I'll use varsitename in the URL, and in the URI Varlistname and VaritemID.
 
 ### Execute the HTTP Request 
 
-Make an HTTP POST request to the SharePoint REST API endpoint with the appropriate query parameters and payload.
+With this request, I'm updating the name_status field. I will have to have queried the term store before, to get the filter array for the status field I want to have it updated to.
+
+I unfortunately cannot simply say status:newstatus.
 
 ```markdown
 Method: POST
@@ -60,8 +58,4 @@ Body:
  ]
 }
 ```
-
-
-
-
  {{< img src="list.png" caption="Http call" height="283" width="610">}}

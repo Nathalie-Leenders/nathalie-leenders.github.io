@@ -32,9 +32,13 @@ You want to retrieve the ID and Title of a specific SharePoint list whose title 
 
 # Steps:
 
-  - Identify the List Title: You have a SharePoint site with multiple lists, and you need to fetch the ID and Title of a list named "Project Documents".
-  - Construct the HTTP Request: Use the SharePoint REST API to filter the lists by title and select only the ID and Title fields.
-  - Execute the HTTP Request: Make an HTTP GET request to the SharePoint REST API endpoint with the appropriate query parameters.
+  - Identify the List Title: You have a SharePoint site with multiple lists, and you need to fetch the ID and Title of a list named 'name' or of course add your own name.
+  - Construct the HTTP Request: You can filter on the name, by adding a ?$filter=title to your query. This uses oData filtering.
+  You can filter on other things as well, you can use basic filtering such as lt (less than) le (less than or equal) gt (greater then) ge (greater or equal) eq (equal) or ne(not equal).
+
+  Also, `Startswith, substringof, and date time functions are supported.
+
+Check beforehand for any operators supported or not. You also dont want to over complicate the call. You can always filter later in Power Automate if needed.
 
 
 ```markdown

@@ -26,7 +26,7 @@ code:
 ---
 # Using the SharePoint REST API to Update Metadata Fields
 
-When working with SharePoint REST API, you might need to update a metadata field that originates from a content type. To do this, you first need to get the type value from your library. This type value is essential for making the correct HTTP call to update the metadata field.
+When working with SharePoint REST API, you might need to update a metadata field that originates from a content type. To do this, you first need to get the type value from your library. This type value is essential for making the correct HTTP call to update the metadata field. I dont fully understand the inner workings of sharepoint, but without this field being accurate your call wont work.
 
 # Step 1: Get the Library Type Value
 After making a GET request to your library API, you will receive a response body that contains various details about your library. One of the key values you need to extract is the type, which is usually in the format SP.Data.listname. This type value is required to update the metadata field.

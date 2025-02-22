@@ -31,14 +31,13 @@ You want to retrieve the details of a specific item from a SharePoint list based
 
 ### Steps:
 
-Identify the List Title and Item ID: You have a SharePoint site with multiple lists, and you need to fetch the details of a specific item from a list. The list title is known, and the item ID is specified.
+This call is very similar to getting the list item information, but instead of using Get, we use Post, to be able to update our item.
 
-### Construct the HTTP Request
-Use the SharePoint REST API to get the item details by specifying the list title and item ID in the URL.
+In the body, you can then specify what you want to update.
 
-### Execute the HTTP Request
-Make an HTTP GET request to the SharePoint REST API endpoint with the appropriate query parameters.
+Take note, the URI is identical to a Get call, but whats in the headers and body is the most important. For a Get, you wont need the X-RequestDigest.
 
+Do the Post, and in your body, type the metadata field, and which column value you want to update.
 
 ```markdown
 ### Method: POST
@@ -50,6 +49,12 @@ Headers:
   Accept: application/json;odata=verbose
   Content-Type: application/json;odata=verbose
   X-RequestDigest: <form-digest-value>
+
+Body
+  {
+  "__metadata": { "type": "SP.Data.<your-list-title>ListItem" },
+  "Title": "<new-title>"
+}
 ```
 
 

@@ -30,7 +30,7 @@ When working with the SharePoint API, handling folders can sometimes be tricky, 
 
 # Dynamically Grabbing the File Location
 
-To work with folders in the SharePoint API, you need to use the full path. This ensures that you can dynamically grab the file location, no matter how deep it is within the root or folder structure. Here's a step-by-step guide:
+To work with folders in the SharePoint API, you need to use the full path. This ensures that you can dynamically grab the file location, no matter how deep it is within the root or folder structure. 
 
 # Get the Path Output from the Body
 
@@ -46,12 +46,4 @@ GET https://your-sharepoint-site/_api/web/GetFolderByServerRelativeUrl('/sites/y
 
 In this example, replace '/sites/your-site/Shared Documents/FolderName' with the path you extracted from the response body.
 
-# Check the File Path
-
-Ensure that the file path is correct. Double-check for any extra slashes (/) or missing segments in the path.
-
-# Verify Permissions
-
-Make sure that you have the necessary permissions to access the folder or file. If you're using an app or service account, ensure that it has the appropriate permissions.
-
-If you encounter a permission error, it's most likely a mistake in your path. Carefully review the path and make sure it's accurate.
+You can either select Path or Full Path from your output. I've used Fullpath before, and it worked in querying my data.
