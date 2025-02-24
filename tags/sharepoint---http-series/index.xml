@@ -8,7 +8,7 @@
 &lt;p>You want to retrieve all terms from a specific term set within a term store in SharePoint. The term store and term set are identified by their unique GUIDs.&lt;/p>
 &lt;p>Steps:&lt;/p>
 &lt;h3 id="identify-the-term-store-and-term-set-guids">Identify the Term Store and Term Set GUIDs&lt;/h3>
-&lt;p>You have a SharePoint site with managed metadata, and you need to fetch all terms from a specific term set. For example, all labels from the Status metadata column.&lt;/p></description></item><item><title>Blog series - HTTP calls to Sharepoint - Best practises</title><link>https://blog.nathalieleenders.com/posts/series-http-best-practises/</link><pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/series-http-best-practises/</guid><description>&lt;h1 id="best-practises">Best practises&lt;/h1>
+&lt;p>You have a SharePoint site with managed metadata, and you need to fetch all terms from a specific term set. For example, all labels from the Status metadata column.&lt;/p></description></item><item><title>Blog series - HTTP calls to Sharepoint - Best practises</title><link>https://blog.nathalieleenders.com/posts/series-http-best-practices/</link><pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate><guid>https://blog.nathalieleenders.com/posts/series-http-best-practices/</guid><description>&lt;h1 id="best-practises">Best practises&lt;/h1>
 &lt;p>Here are some best practises I found either online or discovered myself.&lt;/p>
 &lt;h2 id="use-the-appropriate-http-method">Use the Appropriate HTTP Method&lt;/h2>
 &lt;p>Use GET for retrieving data, POST for creating new resources, PUT for updating existing resources, and DELETE for removing resources.&lt;/p>
