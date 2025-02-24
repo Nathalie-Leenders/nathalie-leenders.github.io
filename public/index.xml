@@ -35,20 +35,6 @@
     </item>
     
     <item>
-      <title>Blog series - HTTP calls to Sharepoint - Best practises</title>
-      <link>http://localhost:1313/posts/series-http-best-practises/</link>
-      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/series-http-best-practises/</guid>
-      <description>&lt;h1 id=&#34;best-practises&#34;&gt;Best practises&lt;/h1&gt;
-&lt;p&gt;Here are some best practises I found either online or discovered myself.&lt;/p&gt;
-&lt;h2 id=&#34;use-the-appropriate-http-method&#34;&gt;Use the Appropriate HTTP Method&lt;/h2&gt;
-&lt;p&gt;Use GET for retrieving data, POST for creating new resources, PUT for updating existing resources, and DELETE for removing resources.&lt;/p&gt;
-&lt;h2 id=&#34;set-proper-permissions&#34;&gt;Set Proper Permissions&lt;/h2&gt;
-&lt;p&gt;Ensure that you have the necessary permissions for the operations you intend to perform. This includes configuring the appropriate access levels for users and applications. Proper permissions help prevent unauthorized access and maintain data security.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Blog series - HTTP calls to Sharepoint - Call a flow from a button</title>
       <link>http://localhost:1313/posts/series-http-callflowfrombutton/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
