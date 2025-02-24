@@ -1,5 +1,4 @@
 ---
-```markdown
 title: "Blog series - HTTP calls to Sharepoint - Call a flow from a button"
 subtitle: ""
 date: 2025-02-20T09:27:14Z
@@ -145,5 +144,4 @@ Or with a red background -
     }
   ]
 }
-```
 ```

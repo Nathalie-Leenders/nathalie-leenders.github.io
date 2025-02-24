@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.83336b94aa95722a64c7f77d97b1ab664226417ccff4cf02153293844604ba17.css" integrity="sha256-gzNrlKqVcipkx/d9l7GrZkImQXzP9M8CFTKThEYEuhc=" />
+<link rel="stylesheet" href="/styles/application.template.scss" integrity="" />
 
 
 
@@ -299,7 +299,7 @@ Alm (Application Lifecycle Management) The ability to move from Dev, Test and Pr
 
         
         <div class="author-profile ms-auto align-self-lg-center">
-          <p class="text-muted">Monday, January 1, 1 | 8 minutes</p>
+          <p class="text-muted">Monday, January 1, 1 | 10 minutes</p>
         </div>
         
 
@@ -321,11 +321,17 @@ Use AI models to enhance your Power Automate Flow or PowerApps, for example extr
 The ability to move from Dev, Test and Prod (or other defined) environments maintaining edits in a safe manner without (hopefully) breaking production. Official ALM documentation.</p>
 <p><strong>Actions</strong>
 Steps in Power Automate that follow up after a trigger, that need to be followed. You can define these actions yourself.</p>
+<p><strong>Adaptive Cards</strong>
+A way to present richly formatted content in a card format within Power Platform applications.</p>
+<p><strong>API Management</strong>
+A service that allows you to create, publish, and manage APIs.</p>
 <h2 id="b">B</h2>
 <p><strong>Blog</strong>
 Website containing information in different posts, often defined by categories.</p>
 <p><strong>Business Process Flows</strong>
 Defined action steps and stages to determine a business Process or follow up flows, data needed to proceed or ability to visually display process steps.</p>
+<p><strong>Business rules</strong>
+Rules that can be applied to forms in a Model Driven App to enforce business logic. Not supported in Power Pages (yet)</p>
 <h2 id="c">C</h2>
 <p><strong>Canvas App</strong>
 A PowerApp able to have full design privileges, integrate with Power Automate or be embedded in a Model driven app.</p>
@@ -350,11 +356,20 @@ Created by the Microsoft CAT team, with custom controls you can leverage in your
 Canvas pages that can be integrated within a Model Driven app.</p>
 <p><strong>CSS</strong>
 Cascade Style Sheets. With CSS, you can add custom fonts, colors, backgrounds, borders, and other visual effects to your Power Platform applications. Read how that works with Power Apps Portal Studio here.</p>
+<p><strong>Common Data Model (CDM)</strong>
+A standardized data model that allows data and its meaning to be shared across applications and business processes.</p>
+<p><strong>Connectors</strong>
+Pre-built integrations that allow you to connect to various data sources and services.</p>
+<p><strong>Common Data Service (CDS)</strong>
+Former name for Dataverse, still present in the interface sometimes.</p>
 <h2 id="d">D</h2>
 <p><strong>Datasource</strong>
 Data backend which can be used to connect in your app or portal, or just to store information.</p>
 <p><strong>Dataverse</strong>
 Tables with a (custom) defined column structure, holding data which can be leveraged throughout the Power Platform. Requires security groups to be accessed.</p>
+<p><strong>Dataflows</strong>
+ETL (Extract, Transform, Load) processes that allow you to ingest, transform, and load data into Dataverse or other destinations.
+E</p>
 <p><strong>Dax Code</strong>
 Programming language used by PowerBI</p>
 <p><strong>Dynamics365</strong>
@@ -364,19 +379,33 @@ Same logic as Model Driven apps, it offers integration using Dataverse tables wi
 Area within Office365 tenant which holds all flows, solutions and apps.</p>
 <p><strong>ERD Entity Relationship Diagram</strong>
 Entity Relationship Diagrams map out the relationships needed within your data model structure. It can be very useful when designing or architecting a solution for a client.</p>
+<p><strong>Entity</strong>
+A table in Dataverse that stores data.</p>
 <h2 id="f">F</h2>
 <p><strong>Forms</strong>
 Page used for displaying or inputting information, different forms can be created for different audiences</p>
 <p><strong>Flow</strong>
 Workflow created by Power Automate, formerly named as such.</p>
+<p><strong>Function Apps</strong>
+Azure service that allows you to run small pieces of code (functions) in the cloud.</p>
 <h2 id="g">G</h2>
+<p><strong>Gateway</strong>
+A bridge that provides quick data transfer and secure access between on-premises data and Power Platform services.</p>
 <h2 id="h">H</h2>
+<p><strong>HTTP request</strong>
+A method to interact with web services and APIs. (more information in blog series incoming)</p>
 <h2 id="i">I</h2>
+<p><strong>Integration</strong>
+The process of connecting different systems and applications to work together.</p>
 <h2 id="j">J</h2>
 <p><strong>JSON or JavaScript Object Notation</strong>
 Semi-structured data that can be used in for example a Teams Adaptive Card, or is an output from a Power Automate Step. You can &lsquo;Parse JSON&rsquo; to get the values, or just use the &lsquo;raw json&rsquo;. It&rsquo;s formatted in name/value pairs, and it not considered a coding language but more a way to transfer data between applications.</p>
+<p><strong>Javascript</strong>
+A programming language that can be used to add custom logic to Model Driven Apps.</p>
 <h2 id="k">K</h2>
 <h2 id="l">L</h2>
+<p><strong>Logic-Apps</strong>
+Azure service that allows you to automate workflows and integrate apps, data, and services.</p>
 <p><strong>Low Code (No Code)</strong>
 Build apps and automations without any prior coding knowledge. The Power Platform offers an intuitive way to directly tell a button or form (or gallery, or image etc etc) what to do without needing to dive into a programming language such as C#, HTML, CSS. It uses PowerFX.</p>
 <h2 id="m">M</h2>
@@ -411,6 +440,8 @@ Official explanation: The MVP Award is a global program of recognized technology
 <h2 id="o">O</h2>
 <p><strong>Office365</strong>
 Office365 is a subscription-based online suite of software and services offered by Microsoft that allows users to access popular office tools such as Word, Excel, PowerPoint, and Outlook on the cloud. It also provides tools for online communication, collaboration, file storage, and sharing.</p>
+<p><strong>Oauth</strong>
+An open standard for access delegation, commonly used for token-based authentication (like SSO, Single sign-on)</p>
 <h2 id="p">P</h2>
 <p><strong>Pipelines</strong>
 Power Platform Pipelines provide low-code access to ALM processes without the need for Azure Dev Ops. Move solutions, environment variables, connections or connection references. (Data within Dataverse tables not included)</p>
@@ -428,7 +459,11 @@ Create an external webpage, similar to SharePoint, but can be viewed by external
 Full management portal for your entire Office/Power Platform infrastructure. Click here for more information.</p>
 <p><strong>Power Query</strong>
 It&rsquo;s a tool with which you&rsquo;re able to transform data before using it in Powerbi, Excel or in a Dataset/DataFlow. It uses M Language. Official documentation.</p>
+<p><strong>Powershell</strong>
+A task automation and configuration management framework from Microsoft.</p>
 <h2 id="q">Q</h2>
+<p><strong>Query</strong>
+A request for data or information from a database.</p>
 <h2 id="r">R</h2>
 <p><strong>Relationship types</strong>
 You can relate data to each other, linking data tables to show other records. This can be done in Dataverse, PowerBI,through lookup tables in SharePoint or other scenarios.</p>
@@ -452,6 +487,8 @@ A security group can be created to determine access to a table (dataverse), busi
 <p><strong>Solution</strong>
 A type of folder in an environment, holding your apps, flows, plugins or anything else pertaining to your design.</p>
 <h2 id="t">T</h2>
+<p><strong>Templates</strong>
+Pre-built configurations that can be used to quickly create apps, flows, or other components.</p>
 <p><strong>Trigger</strong>
 A way to start a Power Automate flow. You can select what &rsquo;triggers&rsquo; the flow to start.</p>
 <p><strong>Twitter</strong>
@@ -469,6 +506,8 @@ A portion within a managed solution which holds edits, can prevent your app from
 <p><strong>Unmanaged solution</strong>
 An export from a solution able to be fully edited, only used from one dev environment to another, or import to leverage.</p>
 <h2 id="v">V</h2>
+<p><strong>Variables</strong>
+Storage locations that hold data values which can be used and manipulated in Power Automate flows. In the Power Platform there are many kinds of variables depending on what you need them for.</p>
 <p><strong>Virtual Agents</strong>
 Chatbots that can be programmed to provide specified FAQ information.</p>
 <p><strong>Views</strong>
@@ -480,6 +519,8 @@ A virtual Entity or connector, possible to map Dataverse to an existing SQL, Exc
 <p><strong>XRM toolkit</strong>
 External created toolkit (by Tanguy Touzard) in which you can leverage the variety of tools and plugins in a model driven app, Dataverse or Dynamics365 environment. Official site</p>
 <h2 id="y">Y</h2>
+<p><strong>YAML</strong>
+A human-readable data serialization standard that can be used in configuration files.</p>
 <h2 id="z">Z</h2>
 
         </div>
@@ -789,7 +830,7 @@ External created toolkit (by Tanguy Touzard) in which you can leverage the varie
   </footer>
 
 
-    <script src="/application.089b1e5ab519613ac52aac42fe5008b37065cf7d3ec4e61cd93eb90c4a246ec1.js" integrity="sha256-CJseWrUZYTrFKqxC/lAIs3Blz30&#43;xOYc2T65DEokbsE=" defer></script>
+    <script src="/scripts/application.js" integrity="" defer></script>
 
 
     

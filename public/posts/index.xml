@@ -6,7 +6,334 @@
     <description>Recent content in Posts on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Nov 2024 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Thu, 20 Feb 2025 09:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Blog series - Conclusion</title>
+      <link>http://localhost:1313/posts/series-http-conclusion/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-conclusion/</guid>
+      <description>&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;So, there are a lot of HTTP calls that can be done. I&amp;rsquo;ve touched upon a few, hopefully you&amp;rsquo;ve gained a bit more insight in how these work.&lt;/p&gt;
+&lt;h2 id=&#34;some-takeaways&#34;&gt;Some takeaways&lt;/h2&gt;
+&lt;p&gt;If you do a lot of HTTP calls in a single flow, there might be a cache issue poking around, resulting in double updates.&lt;/p&gt;
+&lt;p&gt;When you use Term Store values to update, it wont show in the version history. (work around is to append them to a multiple line text field, but this results in a double entry in version history)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - Get term store (for content types)?</title>
+      <link>http://localhost:1313/posts/series-http-gettermstoreitems/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-gettermstoreitems/</guid>
+      <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario:&lt;/h3&gt;
+&lt;p&gt;Fetching Terms from a Specific Term Set in a Term Store&lt;/p&gt;
+&lt;h3 id=&#34;objective&#34;&gt;Objective&lt;/h3&gt;
+&lt;p&gt;You want to retrieve all terms from a specific term set within a term store in SharePoint. The term store and term set are identified by their unique GUIDs.&lt;/p&gt;
+&lt;p&gt;Steps:&lt;/p&gt;
+&lt;h3 id=&#34;identify-the-term-store-and-term-set-guids&#34;&gt;Identify the Term Store and Term Set GUIDs&lt;/h3&gt;
+&lt;p&gt;You have a SharePoint site with managed metadata, and you need to fetch all terms from a specific term set. For example, all labels from the Status metadata column.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - HTTP calls to Sharepoint - Best practises</title>
+      <link>http://localhost:1313/posts/series-http-best-practises/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-best-practises/</guid>
+      <description>&lt;h1 id=&#34;best-practises&#34;&gt;Best practises&lt;/h1&gt;
+&lt;p&gt;Here are some best practises I found either online or discovered myself.&lt;/p&gt;
+&lt;h2 id=&#34;use-the-appropriate-http-method&#34;&gt;Use the Appropriate HTTP Method&lt;/h2&gt;
+&lt;p&gt;Use GET for retrieving data, POST for creating new resources, PUT for updating existing resources, and DELETE for removing resources.&lt;/p&gt;
+&lt;h2 id=&#34;set-proper-permissions&#34;&gt;Set Proper Permissions&lt;/h2&gt;
+&lt;p&gt;Ensure that you have the necessary permissions for the operations you intend to perform. This includes configuring the appropriate access levels for users and applications. Proper permissions help prevent unauthorized access and maintain data security.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - HTTP calls to Sharepoint - Call a flow from a button</title>
+      <link>http://localhost:1313/posts/series-http-callflowfrombutton/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-callflowfrombutton/</guid>
+      <description>&lt;h1 id=&#34;json-formatting-on-a-sharepoint-list&#34;&gt;JSON formatting on a sharepoint list?&lt;/h1&gt;
+&lt;p&gt;In this blog post, we&amp;rsquo;ll explore the powerful capabilities of JSON list formatting in SharePoint. JSON formatting allows you to customize the appearance of your lists and libraries, making them more user-friendly and visually appealing. We&amp;rsquo;ll cover how to get a flow identifier, add a column, set JSON formatting code, and additional button formatting options such as showing/hiding based on fields and permissions.&lt;/p&gt;
+&lt;h2 id=&#34;get-flow-identifier&#34;&gt;Get Flow Identifier&lt;/h2&gt;
+&lt;p&gt;To begin, you&amp;rsquo;ll need to get the flow identifier for the specific flow you want to use. This identifier is essential for linking your JSON formatting to the flow. You can find the flow identifier in the URL of your flow in Power Automate. Simply navigate to your flow, and copy the identifier from the URL. Or click on Export, Get flow identifier.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - HTTP calls to Sharepoint - Fetching Specific List Information</title>
+      <link>http://localhost:1313/posts/series-http-getlistbyname/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-getlistbyname/</guid>
+      <description>&lt;h1 id=&#34;scenario&#34;&gt;Scenario&lt;/h1&gt;
+&lt;p&gt;Fetching Specific List Information&lt;/p&gt;
+&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
+&lt;p&gt;You want to retrieve the ID and Title of a specific SharePoint list whose title matches a given name.&lt;/p&gt;
+&lt;h1 id=&#34;steps&#34;&gt;Steps:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Identify the List Title: You have a SharePoint site with multiple lists, and you need to fetch the ID and Title of a list named &amp;rsquo;name&amp;rsquo; or of course add your own name.&lt;/li&gt;
+&lt;li&gt;Construct the HTTP Request: You can filter on the name, by adding a ?$filter=title to your query. This uses oData filtering.
+You can filter on other things as well, you can use basic filtering such as lt (less than) le (less than or equal) gt (greater then) ge (greater or equal) eq (equal) or ne(not equal).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also, `Startswith, substringof, and date time functions are supported.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - HTTP calls to Sharepoint - Free vs Premium?</title>
+      <link>http://localhost:1313/posts/series-http-freevspremium/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-freevspremium/</guid>
+      <description>&lt;h1 id=&#34;short-overview---when-to-need-a-premium-license-and-when-not&#34;&gt;Short overview - when to need a premium license and when not&lt;/h1&gt;
+&lt;p&gt;When can you get away with Power Automate free, and when do you need premium when working with http calls?&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Feature&lt;/th&gt;
+          &lt;th&gt;Free&lt;/th&gt;
+          &lt;th&gt;Premium&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sharepoint HTTP request&lt;/td&gt;
+          &lt;td&gt;X&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Triggers&lt;/td&gt;
+          &lt;td&gt;X&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;For a selected item&lt;/td&gt;
+          &lt;td&gt;x&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;For a selected file&lt;/td&gt;
+          &lt;td&gt;X&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;When an HTTP request is received&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;X&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;HTTP request&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;X&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - HTTP calls to Sharepoint - Get - Http get library id by GUID?</title>
+      <link>http://localhost:1313/posts/series-http-getlibraryidbyguid/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-getlibraryidbyguid/</guid>
+      <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;Fetching a Specific List by Library ID&lt;/p&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;You want to retrieve the details of a specific SharePoint list using its unique Library ID stored in a variable.&lt;/p&gt;
+&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;
+&lt;h2 id=&#34;identify-the-library-id&#34;&gt;Identify the Library ID&lt;/h2&gt;
+&lt;p&gt;You have a SharePoint site with multiple lists, and you need to fetch the details of a list using its unique Library ID. The Library ID is stored in the variable VarLibraryID.&lt;/p&gt;
+&lt;h2 id=&#34;construct-the-http-request&#34;&gt;Construct the HTTP Request&lt;/h2&gt;
+&lt;p&gt;Use the SharePoint REST API to get the list details by specifying the Library ID in the URL.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - HTTP calls to Sharepoint - Get - Http get version number</title>
+      <link>http://localhost:1313/posts/series-http-getversionnumber/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-getversionnumber/</guid>
+      <description>&lt;h2 id=&#34;scenario&#34;&gt;Scenario&lt;/h2&gt;
+&lt;p&gt;Fetching a Specific Item from a SharePoint List&lt;/p&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;Get a specific item from sharepoint, with all the metadata, that you can then re-use in your flow. In my example we&amp;rsquo;re going with version number.&lt;/p&gt;
+&lt;h3 id=&#34;steps&#34;&gt;Steps:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Identify the List and Item: You have a SharePoint site with multiple lists, and you need to fetch the details of a specific item from a list. The list name and item ID are stored in variables &lt;code&gt;VarListname&lt;/code&gt; and &lt;code&gt;VarItemID&lt;/code&gt; but you can of course use your own naming method.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - HTTP calls to Sharepoint - Permissions</title>
+      <link>http://localhost:1313/posts/series-http-permissionsneeded/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-permissionsneeded/</guid>
+      <description>&lt;h1 id=&#34;permissions-needed&#34;&gt;Permissions needed&lt;/h1&gt;
+&lt;p&gt;During my testing, I had SharePoint administrator access with full control on the lists, so I could do anything. For most of the calls, I recommend getting SharePoint administrator access to avoid any issues.&lt;/p&gt;
+&lt;h3 id=&#34;known-error&#34;&gt;Known Error:&lt;/h3&gt;
+&lt;p&gt;If the API call throws an error indicating that you&amp;rsquo;re not authorized, it doesn&amp;rsquo;t always mean you don’t have the correct permissions. It could mean you&amp;rsquo;re attempting to make an API call to an area of SharePoint that’s not allowed to be called. For example, if you&amp;rsquo;ve made a typo somewhere or aren&amp;rsquo;t using the correct type of call.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - HTTP calls to Sharepoint - Types in Sharepoint</title>
+      <link>http://localhost:1313/posts/series-http-typesinsharepoint/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-typesinsharepoint/</guid>
+      <description>&lt;h1 id=&#34;using-the-sharepoint-rest-api-to-update-metadata-fields&#34;&gt;Using the SharePoint REST API to Update Metadata Fields&lt;/h1&gt;
+&lt;p&gt;When working with SharePoint REST API, you might need to update a metadata field that originates from a content type. To do this, you first need to get the type value from your library. This type value is essential for making the correct HTTP call to update the metadata field. I dont fully understand the inner workings of sharepoint, but without this field being accurate your call wont work.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - HTTP calls to Sharepoint - Why do I need X-request-digest?</title>
+      <link>http://localhost:1313/posts/series-http-xrequestdigest/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-xrequestdigest/</guid>
+      <description>&lt;h1 id=&#34;what-is-it-and-why-do-i-need-it&#34;&gt;What is it, and why do I need it?&lt;/h1&gt;
+&lt;p&gt;Think of it as a type of token, that allows you, or permits you, to modify files on Sharepoint through an HTTP request.&lt;/p&gt;
+&lt;p&gt;When you use POST as your method, and need to use Merge in your header, you also need to include a request digest value.&lt;/p&gt;
+&lt;p&gt;Without it, you&amp;rsquo;re not authorized to do this action.&lt;/p&gt;
+&lt;img src=&#34;httpcall.png&#34;
+     
+     
+         width=&#34;619&#34;
+     
+     
+         height=&#34;288&#34;
+     
+     
+     
+ &gt;
+
+&lt;p&gt;What it will look like to use it in a call;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - HTTP calls to Sharepoint - Working with folders</title>
+      <link>http://localhost:1313/posts/series-http-workingwithfolders/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-workingwithfolders/</guid>
+      <description>&lt;h1 id=&#34;working-with-folders-and-the-sharepoint-api&#34;&gt;Working with folders and the Sharepoint API&lt;/h1&gt;
+&lt;p&gt;When working with the SharePoint API, handling folders can sometimes be tricky, especially when dealing with deeply nested structures. In this post, we&amp;rsquo;ll explore how to dynamically grab the file location regardless of how deep it is in the root or folder structure. We&amp;rsquo;ll also cover how to handle common issues like permission errors.&lt;/p&gt;
+&lt;h1 id=&#34;dynamically-grabbing-the-file-location&#34;&gt;Dynamically Grabbing the File Location&lt;/h1&gt;
+&lt;p&gt;To work with folders in the SharePoint API, you need to use the full path. This ensures that you can dynamically grab the file location, no matter how deep it is within the root or folder structure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - Post - Breaking Role Inheritance for a Specific Item in a SharePoint List</title>
+      <link>http://localhost:1313/posts/series-http-breakinheritance/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-breakinheritance/</guid>
+      <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;Breaking Role Inheritance for a Specific Item in a SharePoint List&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt;
+You want to break the role inheritance for a specific item in a SharePoint list, for example when you need to set your own permissions on a file.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Steps:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Identify the List and Item:&lt;/strong&gt;
+You have a SharePoint site with multiple lists, and you need to break the role inheritance for a specific item in a list. I have the list name and item ID stored in variables &lt;code&gt;VarListname&lt;/code&gt; and &lt;code&gt;VarItemID&lt;/code&gt; , but you&amp;rsquo;re welcome to use your own names of course.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - Post - Copying a File to a New Location in SharePoint?</title>
+      <link>http://localhost:1313/posts/series-http-copylistitem/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-copylistitem/</guid>
+      <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;Copying a File to a New Location in SharePoint&lt;/p&gt;
+&lt;h3 id=&#34;objective&#34;&gt;Objective&lt;/h3&gt;
+&lt;p&gt;You want to copy a file from one location to another within a SharePoint site. The source file URL and the destination file URL are known or in variables to use.&lt;/p&gt;
+&lt;h3 id=&#34;steps&#34;&gt;Steps:&lt;/h3&gt;
+&lt;h3 id=&#34;construct-the-http-request&#34;&gt;Construct the HTTP Request&lt;/h3&gt;
+&lt;p&gt;Use the SharePoint REST API to copy the file by specifying the source file URL and the destination file URL in the URL.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - Post - Fetching a Specific Item from a SharePoint List by Title and Item ID?</title>
+      <link>http://localhost:1313/posts/series-http-updatelistitem/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-updatelistitem/</guid>
+      <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;Fetching a Specific Item from a SharePoint List by Title and Item ID&lt;/p&gt;
+&lt;h3 id=&#34;objective&#34;&gt;Objective&lt;/h3&gt;
+&lt;p&gt;You want to retrieve the details of a specific item from a SharePoint list based on the list title and item ID.&lt;/p&gt;
+&lt;h3 id=&#34;steps&#34;&gt;Steps:&lt;/h3&gt;
+&lt;p&gt;This call is very similar to getting the list item information, but instead of using Get, we use Post, to be able to update our item.&lt;/p&gt;
+&lt;p&gt;In the body, you can then specify what you want to update.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - Post - HTTP Update list item term store?</title>
+      <link>http://localhost:1313/posts/series-http-updateitemfromtermstore/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-updateitemfromtermstore/</guid>
+      <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario:&lt;/h3&gt;
+&lt;p&gt;You have a metadata column you want to update, but how to do this?&lt;/p&gt;
+&lt;h3 id=&#34;objective&#34;&gt;Objective:&lt;/h3&gt;
+&lt;p&gt;You want to update the status field, with a new status from that term set.&lt;/p&gt;
+&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
+&lt;h3 id=&#34;identify-the-list-and-item&#34;&gt;Identify the List and Item&lt;/h3&gt;
+&lt;p&gt;Like always, I&amp;rsquo;ll use varsitename in the URL, and in the URI Varlistname and VaritemID.&lt;/p&gt;
+&lt;h3 id=&#34;execute-the-http-request&#34;&gt;Execute the HTTP Request&lt;/h3&gt;
+&lt;p&gt;With this request, I&amp;rsquo;m updating the name_status field. I will have to have queried the term store before, to get the filter array for the status field I want to have it updated to.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog series - Post - Revoke permissions to a document through the API</title>
+      <link>http://localhost:1313/posts/series-http-setpermissionstoread/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-setpermissionstoread/</guid>
+      <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
+&lt;p&gt;Revoke permissions to a document through the API.&lt;/p&gt;
+&lt;p&gt;Here comes the tricky part. There are 2 kind (that I found) role types on Sharepoint.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Roles from the Roletypekind&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;None (Role = 0)&lt;/strong&gt;: No permissions assigned.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Guest (Role = 1)&lt;/strong&gt;: Limited access, typically read-only.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reader (Role = 2)&lt;/strong&gt;: Can view items but not make changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Contributor (Role = 3)&lt;/strong&gt;: Can add and edit items.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WebDesigner (Role = 4)&lt;/strong&gt;: Can design and manage site content.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Administrator (Role = 5)&lt;/strong&gt;: Full control over the site.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Role (UserRoleAssignment).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;View (Role = 1)&lt;/strong&gt;: Grants read-only access to the document.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit (Role = 2)&lt;/strong&gt;: Allows the user to edit the document.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Owner (Role = 3)&lt;/strong&gt;: Grants full control over the document, including the ability to manage permissions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;None (Role = 0)&lt;/strong&gt;: Removes any previously assigned permissions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;step-1---you-need-to-have-broken-inheritance-first-otherwise-this-wont-work&#34;&gt;Step 1 - You need to have broken inheritance first, otherwise this won&amp;rsquo;t work.&lt;/h3&gt;
+&lt;h2 id=&#34;api-call-1---get-all-the-groups-from-sharepoint&#34;&gt;API call 1 - Get all the groups from Sharepoint&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Method: Post
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;URI: _api/web/lists/getbytitle(&amp;#39;@{variables(&amp;#39;VarListname&amp;#39;)}&amp;#39;)/items(@{variables(&amp;#39;VarItemID&amp;#39;)})/UpdateDocumentSharingInfo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/posts/series-http-setpermissionstoread/list0.png&#34; alt=&#34;Http call&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Introduction to blog series - HTTP calls to Sharepoint</title>
+      <link>http://localhost:1313/posts/series-http-introduction/</link>
+      <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/series-http-introduction/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Welcome to my blog post series on HTTP SharePoint calls.&lt;/p&gt;
+&lt;p&gt;In this series, we&amp;rsquo;ll dive into the different types of HTTP calls you can make to SharePoint, including GET, POST, PUT, and DELETE. We&amp;rsquo;ll explore the necessary permissions required for these calls and how to set them up correctly. Additionally, we&amp;rsquo;ll cover the essential components of an HTTP request, such as headers and body, and explain how to structure them for successful communication with SharePoint.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Adding a decimal count to your Power Automate Flow (Float/Increment variable)</title>
       <link>http://localhost:1313/posts/countinvariablescont/countinvariablescont/</link>
       <pubDate>Mon, 04 Nov 2024 14:27:14 +0000</pubDate>
