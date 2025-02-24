@@ -300,6 +300,6 @@ External created toolkit (by Tanguy Touzard) in which you can leverage the varie
 ## Y
 
 **YAML**
-A human-readable data serialization standard that can be used in configuration files.
+Yaml is an easy (easier) to read programming language similar to JSON, but can both be understoond by humands and computers.
 
 ## Z
