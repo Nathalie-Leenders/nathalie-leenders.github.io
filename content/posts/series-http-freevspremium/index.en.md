@@ -1,5 +1,5 @@
 ---
-title: "Blog series - HTTP calls to Sharepoint - Free vs Premium?"
+title: "Blog series - HTTP calls to SharePoint - Free vs Premium?"
 subtitle: ""
 date: 2025-02-20T09:27:14Z
 lastmod: 2025-02-20T09:27:14Z
@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint - HTTP series"]
-categories: ["Sharepoint"]
+tags: ["SharePoint HTTP series"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
@@ -31,7 +31,7 @@ When can you get away with Power Automate free, and when do you need premium whe
 
   | Feature                          | Free | Premium |
   |----------------------------------|------|---------|
-  | Sharepoint HTTP request          | X    |         |
+  | SharePoint HTTP request          | X    |         |
   | Triggers                         | X    |         |
   | For a selected item              | x    |        |
   | For a selected file              | X    |         |

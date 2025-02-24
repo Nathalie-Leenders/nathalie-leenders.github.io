@@ -1,5 +1,5 @@
 ---
-title: "Blog series - HTTP calls to Sharepoint - Working with folders"
+title: "Blog series - HTTP calls to SharePoint - Working with folders"
 subtitle: ""
 date: 2025-02-20T09:27:14Z
 lastmod: 2025-02-20T09:27:14Z
@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint - HTTP series"]
-categories: ["Sharepoint"]
+tags: ["SharePoint HTTP series"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
@@ -24,7 +24,7 @@ toc:
 code:
     maxShownLines: 100
 ---
-# Working with folders and the Sharepoint API
+# Working with folders and the SharePoint API
 
 When working with the SharePoint API, handling folders can sometimes be tricky, especially when dealing with deeply nested structures. In this post, we'll explore how to dynamically grab the file location regardless of how deep it is in the root or folder structure. We'll also cover how to handle common issues like permission errors.
 
@@ -41,7 +41,7 @@ When you make a request to the SharePoint API, the response body will contain th
 Once you have the path, you can use it in your subsequent HTTP requests. This allows you to navigate through the folder structure dynamically. Here's an example of how to do this:
 
 ```http
-GET https://your-sharepoint-site/_api/web/GetFolderByServerRelativeUrl('/sites/your-site/Shared Documents/FolderName')/Files
+GET https://your-SharePoint-site/_api/web/GetFolderByServerRelativeUrl('/sites/your-site/Shared Documents/FolderName')/Files
 ```
 
 In this example, replace '/sites/your-site/Shared Documents/FolderName' with the path you extracted from the response body.

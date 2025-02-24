@@ -1,5 +1,5 @@
 ---
-title: "Filter on date column with random years on Sharepoint"
+title: "Filter on date column with random years on SharePoint"
 subtitle: "How do I filter on a list, for example for birthdays?"
 date: 2024-02-20T09:27:14Z
 lastmod: 2024-02-20T09:27:14Z
@@ -7,15 +7,15 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint"]
-categories: ["Sharepoint"]
+tags: ["SharePoint"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-hero: "sharepointlogo.png"
-featuredImagePreview: "sharepointlogo.png"
+hero: "SharePointlogo.png"
+featuredImagePreview: "SharePointlogo.png"
 
 toc:
   enable: true
@@ -26,7 +26,7 @@ code:
 ---
 ## Usecase
 
-You have a sharepoint list with birthdays, on a date column, but dont know how to filter on them to show the last few days or upcoming few days if someone has (had) their birthday.
+You have a SharePoint list with birthdays, on a date column, but dont know how to filter on them to show the last few days or upcoming few days if someone has (had) their birthday.
 
 I couldnt figure out how to do this, and then a colleague of mine Remco Bruijstens (thank you!) suggested this method, and after testing it worked. 
 Kudos to him, and I wanted to share with you how to accomplish this.

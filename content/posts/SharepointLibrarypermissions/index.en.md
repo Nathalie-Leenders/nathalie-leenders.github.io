@@ -1,5 +1,5 @@
 ---
-title: "Custom document link sharing with Sharepoint and Power Automate"
+title: "Custom document link sharing with SharePoint and Power Automate"
 subtitle: "How do I leverage the other permissions, and send a sharing link to external?"
 date: 2023-09-11T09:27:14Z
 lastmod: 2023-09-11T09:27:14Z
@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["PowerAutomate", "Powershell","Sharepoint"]
-categories: ["Sharepoint"]
+tags: ["PowerAutomate", "Powershell","SharePoint"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
@@ -26,9 +26,9 @@ code:
 ---
 ## Usecase
 
-You need to share a file from sharepoint to an external user, in an automated process. No manual 'create link' actions needed on the sharepoint site. You can then email this link to your external client.
+You need to share a file from SharePoint to an external user, in an automated process. No manual 'create link' actions needed on the SharePoint site. You can then email this link to your external client.
 
-Default on Power automate for a sharing link for sharepoint, is to set the Link Scope to either:
+Default on Power automate for a sharing link for SharePoint, is to set the Link Scope to either:
 1. Anyone with the link (including anonymous)
 2. People in your organization
 
@@ -39,15 +39,15 @@ Default on Power automate for a sharing link for sharepoint, is to set the Link 
 3. Align with your client/business/security if this is OK because you need to open up external sharing!
 You can emphasize this reduces the risk that otherwise you'd have with the 'Anyone with the link (including anonymous)'option.
 
-## Open up external access to your sharepoint site
+## Open up external access to your SharePoint site
 4. First start with setting up your library, and to have it receive external clients.
-5. We had a sharepoint admin who did this for us, check out this article on how this works:
+5. We had a SharePoint admin who did this for us, check out this article on how this works:
 
-    [Microsoft Learn - External sharing overview](https://learn.microsoft.com/en-us/sharepoint/external-sharing-overview//?wt.mc_id=DX-MVP-5005318)
+    [Microsoft Learn - External sharing overview](https://learn.microsoft.com/en-us/SharePoint/external-sharing-overview//?wt.mc_id=DX-MVP-5005318)
 
 
-## Set the Sharepoint Library default permissions
-6. Next, add your external user to your sharepoint site and library (make sure to break parent inheritance if you need to set per individual library), (oh and don't remove your own access...lol)
+## Set the SharePoint Library default permissions
+6. Next, add your external user to your SharePoint site and library (make sure to break parent inheritance if you need to set per individual library), (oh and don't remove your own access...lol)
 
 ## Add permissions to Library
 
@@ -76,4 +76,4 @@ You can emphasize this reduces the risk that otherwise you'd have with the 'Anyo
 18. Update with your variable to your External URL column
 
 
-You can now reuse the link, and your sharepoint site has been set up for external access, and you're creating an item thats able to be shared externally!
+You can now reuse the link, and your SharePoint site has been set up for external access, and you're creating an item thats able to be shared externally!

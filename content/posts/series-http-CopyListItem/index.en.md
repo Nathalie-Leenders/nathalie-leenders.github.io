@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint - HTTP series"]
-categories: ["Sharepoint"]
+tags: ["SharePoint HTTP series"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false

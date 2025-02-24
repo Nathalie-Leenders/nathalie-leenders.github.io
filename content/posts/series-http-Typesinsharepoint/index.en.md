@@ -1,5 +1,5 @@
 ---
-title: "Blog series - HTTP calls to Sharepoint - Types in Sharepoint"
+title: "Blog series - HTTP calls to SharePoint - Types in SharePoint"
 subtitle: ""
 date: 2025-02-20T09:27:14Z
 lastmod: 2025-02-20T09:27:14Z
@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint - HTTP series"]
-categories: ["Sharepoint"]
+tags: ["SharePoint HTTP series"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
@@ -26,7 +26,7 @@ code:
 ---
 # Using the SharePoint REST API to Update Metadata Fields
 
-When working with SharePoint REST API, you might need to update a metadata field that originates from a content type. To do this, you first need to get the type value from your library. This type value is essential for making the correct HTTP call to update the metadata field. I dont fully understand the inner workings of sharepoint, but without this field being accurate your call wont work.
+When working with SharePoint REST API, you might need to update a metadata field that originates from a content type. To do this, you first need to get the type value from your library. This type value is essential for making the correct HTTP call to update the metadata field. I dont fully understand the inner workings of SharePoint, but without this field being accurate your call wont work.
 
 # Step 1: Get the Library Type Value
 After making a GET request to your library API, you will receive a response body that contains various details about your library. One of the key values you need to extract is the type, which is usually in the format SP.Data.listname. This type value is required to update the metadata field.
@@ -53,7 +53,7 @@ Here is a complete example of how you can achieve this:
 Make a GET request to retrieve the library details:
 
 ```http
-GET https://yoursharepointsite/_api/web/lists/getbytitle('YourListName')
+GET https://yourSharePointsite/_api/web/lists/getbytitle('YourListName')
 ```
 
 
@@ -76,7 +76,7 @@ var varType = response.d.__metadata.type;
 
 Make a POST request to update the metadata field using the type value
 ```http
-POST https://yoursharepointsite/_api/web/lists/getbytitle('YourListName')/items(1)
+POST https://yourSharePointsite/_api/web/lists/getbytitle('YourListName')/items(1)
 
 {
   "__metadata": {
@@ -104,7 +104,7 @@ When you make a request to the SharePoint API, the response body will contain th
 Once you have the path, you can use it in your subsequent HTTP requests. This allows you to navigate through the folder structure dynamically. Here's an example of how to do this:
 
 ```http
-GET https://your-sharepoint-site/_api/web/GetFolderByServerRelativeUrl('/sites/your-site/Shared Documents/FolderName')/Files
+GET https://your-SharePoint-site/_api/web/GetFolderByServerRelativeUrl('/sites/your-site/Shared Documents/FolderName')/Files
 ```
 
 In this example, replace '/sites/your-site/Shared Documents/FolderName' with the path you extracted from the response body.

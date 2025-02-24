@@ -1,5 +1,5 @@
 ---
-title: "Blog series - HTTP calls to Sharepoint - Call a flow from a button"
+title: "Blog series - HTTP calls to SharePoint - Call a flow from a button"
 subtitle: ""
 date: 2025-02-20T09:27:14Z
 lastmod: 2025-02-20T09:27:14Z
@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint - HTTP series"]
-categories: ["Sharepoint"]
+tags: ["SharePoint HTTP series"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
@@ -24,7 +24,7 @@ toc:
 code:
     maxShownLines: 100
 ---
-# JSON formatting on a sharepoint list?
+# JSON formatting on a SharePoint list?
 
 In this blog post, we'll explore the powerful capabilities of JSON list formatting in SharePoint. JSON formatting allows you to customize the appearance of your lists and libraries, making them more user-friendly and visually appealing. We'll cover how to get a flow identifier, add a column, set JSON formatting code, and additional button formatting options such as showing/hiding based on fields and permissions.
 

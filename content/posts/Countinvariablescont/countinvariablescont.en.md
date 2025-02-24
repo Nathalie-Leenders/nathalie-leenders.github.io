@@ -40,7 +40,7 @@ Float can be used for decimal values, so 0,01 (or 0.01)
 * Increment the variable, by 0.01 for a count from 0.01 to 0.02 for example
 * Or increment by 0.1, to go up from for example 0.1 to 0.2.
 
-If you wish to up an already existing value, set the variable to that value (perhaps from sharepoint)
+If you wish to up an already existing value, set the variable to that value (perhaps from SharePoint)
 Then use the same count method
 Then use that variable, to update your column value.
 

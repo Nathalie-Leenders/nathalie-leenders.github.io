@@ -1,5 +1,5 @@
 ---
-title: "Blog series - HTTP calls to Sharepoint - Get - Http get version number"
+title: "Blog series - HTTP calls to SharePoint - Get - Http get version number"
 subtitle: ""
 date: 2025-02-20T09:27:14Z
 lastmod: 2025-02-20T09:27:14Z
@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint - HTTP series"]
-categories: ["Sharepoint"]
+tags: ["SharePoint HTTP series"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
@@ -28,7 +28,7 @@ code:
 Fetching a Specific Item from a SharePoint List
 
 ## Objective
-Get a specific item from sharepoint, with all the metadata, that you can then re-use in your flow. In my example we're going with version number.
+Get a specific item from SharePoint, with all the metadata, that you can then re-use in your flow. In my example we're going with version number.
 
 ### Steps:
 
@@ -56,7 +56,7 @@ You can then grab the value from the body, for example, nameofyourstep?['body']?
 Bonus, how to do the same in Javascript:
 
 ```javascript
-const siteUrl = "https://your-sharepoint-site-url";
+const siteUrl = "https://your-SharePoint-site-url";
 const listName = "Project Documents"; // Example list name
 const itemId = 1; // Example item ID
 

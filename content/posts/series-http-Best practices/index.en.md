@@ -1,5 +1,5 @@
 ---
-title: "Blog series - HTTP calls to Sharepoint - Best practises"
+title: "Blog series - HTTP calls to SharePoint - Best practises"
 subtitle: ""
 date: 2025-02-20T09:27:14Z
 lastmod: 2025-02-20T09:27:14Z
@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint - HTTP series"]
-categories: ["Sharepoint"]
+tags: ["SharePoint HTTP series"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
@@ -38,7 +38,7 @@ Ensure that you have the necessary permissions for the operations you intend to 
 HTTP headers play a crucial role in SharePoint calls. Always include essential headers such as Authorization, Accept, and Content-Type. These headers help authenticate requests, specify the expected response format, and indicate the type of data being sent.
 
 ## Structure the Request Body Correctly
-When making POST or PUT requests, ensure that the request body is being handled by Sharepoint correctly. If not, your request wont get processed, or not in the way you intend it to.
+When making POST or PUT requests, ensure that the request body is being handled by SharePoint correctly. If not, your request wont get processed, or not in the way you intend it to.
 
 ## Error handling
 Implement Scopes in your flow, with run after scenarios to capture and send your error data to your account.

@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint - HTTP series"]
-categories: ["Sharepoint"]
+tags: ["SharePoint HTTP series"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
@@ -28,7 +28,7 @@ code:
 ### Scenario
 Revoke permissions to a document through the API.
 
-Here comes the tricky part. There are 2 kind (that I found) role types on Sharepoint.
+Here comes the tricky part. There are 2 kind (that I found) role types on SharePoint.
 
   1. Roles from the Roletypekind
   - **None (Role = 0)**: No permissions assigned.
@@ -46,7 +46,7 @@ Here comes the tricky part. There are 2 kind (that I found) role types on Sharep
 
 ### Step 1 - You need to have broken inheritance first, otherwise this won't work.
 
-## API call 1 - Get all the groups from Sharepoint
+## API call 1 - Get all the groups from SharePoint
 
 ```markdown
 Method: Post
@@ -56,7 +56,7 @@ URI: _api/web/lists/getbytitle('@{variables('VarListname')}')/items(@{variables(
 ![Http call](list0.png)
 
 
-### Step 3 - API call 2 - Get the Group ID from all the groups on Sharepoint
+### Step 3 - API call 2 - Get the Group ID from all the groups on SharePoint
 
 Method: Get
 

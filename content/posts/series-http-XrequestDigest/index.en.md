@@ -1,5 +1,5 @@
 ---
-title: "Blog series - HTTP calls to Sharepoint - Why do I need X-request-digest?"
+title: "Blog series - HTTP calls to SharePoint - Why do I need X-request-digest?"
 subtitle: ""
 date: 2025-02-20T09:27:14Z
 lastmod: 2025-02-20T09:27:14Z
@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint - HTTP series"]
-categories: ["Sharepoint"]
+tags: ["SharePoint HTTP series"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
@@ -27,7 +27,7 @@ code:
 # What is it, and why do I need it?
 
 
-Think of it as a type of token, that allows you, or permits you, to modify files on Sharepoint through an HTTP request.
+Think of it as a type of token, that allows you, or permits you, to modify files on SharePoint through an HTTP request.
 
 When you use POST as your method, and need to use Merge in your header, you also need to include a request digest value.
 
@@ -51,13 +51,13 @@ This endpoint returns a form digest value that you can use in subsequent request
 
 ```markdown
 HTTP Method: POST
-URI: https://<your-sharepoint-site>/_api/contextinfo
+URI: https://<your-SharePoint-site>/_api/contextinfo
 Headers:
   Accept: application/json;odata=verbose
 ```
 Example Request
 ```http
-POST https://<your-sharepoint-site>/_api/contextinfo
+POST https://<your-SharePoint-site>/_api/contextinfo
 Accept: application/json;odata=verbose
 ```
 
@@ -69,11 +69,11 @@ Example Response
       "FormDigestTimeoutSeconds": 1800,
       "FormDigestValue": "0x123456789ABCDEF...",
       "LibraryVersion": "16.0.0.12345",
-      "SiteFullUrl": "https://<your-sharepoint-site>",
+      "SiteFullUrl": "https://<your-SharePoint-site>",
       "SupportedSchemaVersions": {
         "results": ["14.0.0.0", "15.0.0.0"]
       },
-      "WebFullUrl": "https://<your-sharepoint-site>"
+      "WebFullUrl": "https://<your-SharePoint-site>"
     }
   }
 }

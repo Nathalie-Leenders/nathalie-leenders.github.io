@@ -7,8 +7,8 @@ draft: false
 authors: [nathalieleenders]
 description: ""
 
-tags: ["Sharepoint - HTTP series"]
-categories: ["Sharepoint"]
+tags: ["SharePoint HTTP series"]
+categories: ["SharePoint"]
 
 
 hiddenFromHomePage: false
@@ -40,14 +40,14 @@ You want to break the role inheritance for a specific item in a SharePoint list,
 
 **HTTP Request:**
 ```http
-POST https://your-sharepoint-site-url/_api/web/lists/getbytitle('@{variables('VarListname')}')/items(@{variables('VarItemID')})/BreakRoleInheritance(copyRoleAssignments=true, clearSubscopes=true)
+POST https://your-SharePoint-site-url/_api/web/lists/getbytitle('@{variables('VarListname')}')/items(@{variables('VarItemID')})/BreakRoleInheritance(copyRoleAssignments=true, clearSubscopes=true)
 ```
 
 It gets the list by name/title, then the item by id and breaks the role inheritance. I've set the copyroleassignments to true, but if false it wont keep the parent permissions/groups.
 
 **Example Code (JavaScript):**
 ```javascript
-const siteUrl = "https://your-sharepoint-site-url";
+const siteUrl = "https://your-SharePoint-site-url";
 const listName = "Project Documents"; // Example list name
 const itemId = 1; // Example item ID
 

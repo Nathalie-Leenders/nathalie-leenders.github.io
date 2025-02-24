@@ -60,7 +60,7 @@ You can filter on virtual or regular on the add table interface, and the icon ha
 
 Currently you can add an existing virtual table to Power Pages, however….
 
-You can now create a Virtual Table straight from Power Pages with SQL and Sharepoint (lists)!
+You can now create a Virtual Table straight from Power Pages with SQL and SharePoint (lists)!
 
 You can do this through the newly added -  connect to an external table data option.
 
