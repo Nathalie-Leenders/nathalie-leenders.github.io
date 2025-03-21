@@ -405,7 +405,7 @@
           
             
           
-          <li><a class="taxonomy-term " href="http://localhost:1313/categories/sharepoint/" data-taxonomy-term="sharepoint"><span class="taxonomy-label">Sharepoint</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/categories/sharepoint/" data-taxonomy-term="sharepoint"><span class="taxonomy-label">SharePoint</span></a></li>
         
           
             
@@ -450,7 +450,7 @@
         <h5 class="card-title">How do I automatically have a GUID in my field?</h5>
         <p class="card-text post-summary">Usecase I am creating a Model driven app, with a Virtual Table connected to SQL. In my SQL DB I have an external primary key field. How do I get an automatic GUID? The PowerFX code GUID() is not supported on the form.
 So I tried to do something on the ribbon, set the field,
-With({I:Last(Werknems).TransactionID},Notify( I, NotificationType.Information));Patch(Werknems,Defaults(Werknems), //Row,{TransactionID:GUID()}) However, since my field is mandatory, and it tries to save before it runs this (of course) it was saying the field wasnt filled in. So this didnt work.
+With({I:Last(Werknems).TransactionID},Notify( I, NotificationType.Information)); Patch( Werknems, Defaults(Werknems), //Row, {TransactionID:GUID() } ) However, since my field is mandatory, and it tries to save before it runs this (of course) it was saying the field wasnt filled in. So this didnt work.
 </p>
       </a>
       
