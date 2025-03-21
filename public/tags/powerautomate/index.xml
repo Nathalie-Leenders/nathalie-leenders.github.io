@@ -7,14 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Sep 2023 09:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/powerautomate/index.xml" rel="self" type="application/rss+xml" /><item>
-      <title>Custom document link sharing with Sharepoint and Power Automate</title>
+      <title>Custom document link sharing with SharePoint and Power Automate</title>
       <link>http://localhost:1313/posts/sharepointlibrarypermissions/</link>
       <pubDate>Mon, 11 Sep 2023 09:27:14 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/sharepointlibrarypermissions/</guid>
       <description>&lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
-&lt;p&gt;You need to share a file from sharepoint to an external user, in an automated process. No manual &amp;lsquo;create link&amp;rsquo; actions needed on the sharepoint site. You can then email this link to your external client.&lt;/p&gt;
-&lt;p&gt;Default on Power automate for a sharing link for sharepoint, is to set the Link Scope to either:&lt;/p&gt;
+&lt;p&gt;You need to share a file from SharePoint to an external user, in an automated process. No manual &amp;lsquo;create link&amp;rsquo; actions needed on the SharePoint site. You can then email this link to your external client.&lt;/p&gt;
+&lt;p&gt;Default on Power automate for a sharing link for SharePoint, is to set the Link Scope to either:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Anyone with the link (including anonymous)&lt;/p&gt;
