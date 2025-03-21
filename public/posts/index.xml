@@ -334,6 +334,15 @@ You have a SharePoint site with multiple lists, and you need to break the role i
     </item>
     
     <item>
+      <title>How do I mention someone, through the &#39;post a message to Teams&#39; option in Power Automate?</title>
+      <link>http://localhost:1313/posts/teamsmentions/</link>
+      <pubDate>Tue, 05 Nov 2024 14:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/teamsmentions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Adding a decimal count to your Power Automate Flow (Float/Increment variable)</title>
       <link>http://localhost:1313/posts/countinvariablescont/countinvariablescont/</link>
       <pubDate>Mon, 04 Nov 2024 14:27:14 +0000</pubDate>
@@ -604,6 +613,16 @@ Opening up PowerBI, connecting to Dataverse, there were no virtual tables visibl
     </item>
     
     <item>
+      <title>test</title>
+      <link>http://localhost:1313/posts/template-copy/</link>
+      <pubDate>Wed, 07 Jun 2023 14:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/template-copy/</guid>
+      <description>&lt;p&gt;tst page&lt;/p&gt;
+&lt;p&gt;zasfasfasfasfasf&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Contributed to the Microsoft New Speaker Community Day 2023</title>
       <link>http://localhost:1313/posts/speakercommunityday/</link>
       <pubDate>Mon, 05 Jun 2023 11:27:41 +0200</pubDate>
@@ -633,6 +652,15 @@ Opening up PowerBI, connecting to Dataverse, there were no virtual tables visibl
 His Blog&lt;/p&gt;
 &lt;p&gt;I was trying to do dynamic data into a quickchart.IO code, which I learned how to do in Kristine’s video here
 Go check her out as well, she’s awesome!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/template/</link>
+      <pubDate>Fri, 07 Apr 2023 14:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/template/</guid>
+      <description></description>
     </item>
     
     <item>
