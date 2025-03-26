@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerBI on Power Platform Tips &amp; Tricks</title>
+    <link>https://blog.nathalieleenders.com/categories/powerbi/</link>
+    <description>Recent content in PowerBI on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Jul 2023 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/powerbi/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Connecting to Virtual Tables in PowerBI</title>
+      <link>https://blog.nathalieleenders.com/posts/virtualtablesinpowerbi/</link>
+      <pubDate>Fri, 07 Jul 2023 09:27:14 +0000</pubDate>
+      
+      <guid>https://blog.nathalieleenders.com/posts/virtualtablesinpowerbi/</guid>
+      <description>&lt;h2 id=&#34;connecting-to-virtual-tables-in-powerbi&#34;&gt;Connecting to Virtual Tables in PowerBI&lt;/h2&gt;
+&lt;p&gt;When I wanted to connect to the virtual table, my first instinct was to use the Dataverse connector since they are virtual tables, on Dataverse.
+Opening up PowerBI, connecting to Dataverse, there were no virtual tables visible.&lt;/p&gt;
+&lt;p&gt;Of course, the work around would be to connect to the source directly, but I did want to see if I could make it work.&lt;/p&gt;
+&lt;h2 id=&#34;virtual-tables-are-only-available-in-powerbi-through-the-common-data-service-legacy-connector&#34;&gt;Virtual tables are only available in PowerBI through the Common Data Service (Legacy) connector.&lt;/h2&gt;
+&lt;p&gt;This connector is available for:&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

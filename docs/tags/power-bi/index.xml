@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Power BI on Power Platform Tips &amp; Tricks</title>
+    <link>https://blog.nathalieleenders.com/tags/power-bi/</link>
+    <description>Recent content in Power BI on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jul 2024 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/power-bi/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>How to use parameters in an embedded Power BI link</title>
+      <link>https://blog.nathalieleenders.com/posts/powerbiembedparameters/</link>
+      <pubDate>Mon, 01 Jul 2024 14:27:14 +0000</pubDate>
+      
+      <guid>https://blog.nathalieleenders.com/posts/powerbiembedparameters/</guid>
+      <description>&lt;h2 id=&#34;my-scenario&#34;&gt;My scenario:&lt;/h2&gt;
+&lt;p&gt;This is an addition to my earlier blog, and with a few more parameters you can use. Credits go to &lt;a href=&#34;https://community.fabric.microsoft.com/t5/Service/All-possible-Power-BI-Service-embed-URL-parameters/m-p/3053763&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://community.fabric.microsoft.com/t5/Service/All-possible-Power-BI-Service-embed-URL-parameters/m-p/3053763&lt;/a&gt; but I did want to share as well.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m struggeling to fit a canvas app with a powerbi tile that has an embedded report into a teams app (gotta love it) and my report wont fully fit. I&amp;rsquo;m trying to find the magic combo of these parameters.&lt;/p&gt;
+&lt;h2 id=&#34;how-do-i-use-these-parameters&#34;&gt;How do I use these parameters?&lt;/h2&gt;
+&lt;p&gt;Get the embedded URL from your report (Go to export, and copy the embed link)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to embed a Power BI report into a Canvas app, and hide the nav &amp; filter</title>
+      <link>https://blog.nathalieleenders.com/posts/canvasapppowerbi/</link>
+      <pubDate>Thu, 27 Jun 2024 14:27:14 +0000</pubDate>
+      
+      <guid>https://blog.nathalieleenders.com/posts/canvasapppowerbi/</guid>
+      <description>&lt;h2 id=&#34;step-1---embed-a-power-bi-report-into-a-canvas-app&#34;&gt;Step 1 - Embed a Power BI report into a canvas app&lt;/h2&gt;
+&lt;p&gt;I dont know about you, but it took me a while to figure out why I couldnt add my report into a Power BI tile in a canvas app.
+I knew I did it before, but of course didnt blog about it, so I forgot (lol)&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s actually really easy, and doesnt require you to reupload your pbix, add to tiles or others.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

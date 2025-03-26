@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Copilot Studio on Power Platform Tips &amp; Tricks</title>
+    <link>https://blog.nathalieleenders.com/categories/copilot-studio/</link>
+    <description>Recent content in Copilot Studio on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 04 Sep 2024 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/copilot-studio/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>New options for Gen AI and Bing AI Search</title>
+      <link>https://blog.nathalieleenders.com/posts/copilotstudiogenai/</link>
+      <pubDate>Wed, 04 Sep 2024 09:27:14 +0000</pubDate>
+      
+      <guid>https://blog.nathalieleenders.com/posts/copilotstudiogenai/</guid>
+      <description>&lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;re trying to use Generative AI features in Copilot Studio, however it says it&amp;rsquo;s not supported. How do you fix this?&lt;/p&gt;
+&lt;h2 id=&#34;enable-the-settings-for-your-environment&#34;&gt;Enable the settings for your environment&lt;/h2&gt;
+&lt;p&gt;You need to be a Power Platform admin for this.&lt;/p&gt;
+&lt;p&gt;Go to the Power Platform admin center&lt;/p&gt;
+&lt;p&gt;CLick on your environment.&lt;/p&gt;
+&lt;p&gt;On the lower right corner, enable these 2 settings:&lt;/p&gt;
+&lt;img src=&#34;genai.png&#34;
+    
+    
+        width=&#34;800&#34;
+    
+    
+        height=&#34;600&#34;
+    
+    
+    
+&gt;
+
+&lt;p&gt;Now you can use GenAI in your Copilot Studio bot!&lt;/p&gt;
+&lt;p&gt;It worked before (about a month ago at the time of this post) but it&amp;rsquo;s not been adding to these options.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

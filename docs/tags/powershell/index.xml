@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powershell on Power Platform Tips &amp; Tricks</title>
+    <link>https://blog.nathalieleenders.com/tags/powershell/</link>
+    <description>Recent content in Powershell on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Sep 2023 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/powershell/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Custom document link sharing with SharePoint and Power Automate</title>
+      <link>https://blog.nathalieleenders.com/posts/sharepointlibrarypermissions/</link>
+      <pubDate>Mon, 11 Sep 2023 09:27:14 +0000</pubDate>
+      
+      <guid>https://blog.nathalieleenders.com/posts/sharepointlibrarypermissions/</guid>
+      <description>&lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
+&lt;p&gt;You need to share a file from SharePoint to an external user, in an automated process. No manual &amp;lsquo;create link&amp;rsquo; actions needed on the SharePoint site. You can then email this link to your external client.&lt;/p&gt;
+&lt;p&gt;Default on Power automate for a sharing link for SharePoint, is to set the Link Scope to either:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Anyone with the link (including anonymous)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;People in your organization&lt;/p&gt;
+&lt;p&gt;This explains how you can use the &amp;lsquo;people with existing access&amp;rsquo; sharing type.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

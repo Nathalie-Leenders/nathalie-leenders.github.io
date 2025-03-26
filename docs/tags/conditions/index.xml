@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conditions on Power Platform Tips &amp; Tricks</title>
+    <link>https://blog.nathalieleenders.com/tags/conditions/</link>
+    <description>Recent content in Conditions on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Jul 2023 07:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/conditions/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Setting conditions on the visible property - Canvas App</title>
+      <link>https://blog.nathalieleenders.com/posts/visibleproperty/</link>
+      <pubDate>Thu, 20 Jul 2023 07:27:14 +0000</pubDate>
+      
+      <guid>https://blog.nathalieleenders.com/posts/visibleproperty/</guid>
+      <description>&lt;h1 id=&#34;setting-conditions-on-the-visible-property---canvas-app&#34;&gt;Setting conditions on the visible property - Canvas App&lt;/h1&gt;
+&lt;p&gt;How can I hide my items/control based on conditions?&lt;/p&gt;
+&lt;p&gt;You can of course use an IF statement, or Switch, and work from there.&lt;/p&gt;
+&lt;p&gt;True - shows the item
+False - hides the item&lt;/p&gt;
+&lt;h1 id=&#34;but-how-can-i-do-this-dynamically&#34;&gt;But how can I do this dynamically?&lt;/h1&gt;
+&lt;p&gt;You can use Environment Variables. These can be changed when you move between environments (for ALM purposes)
+Set an environment variable in your solution, add the desired persons email address(es) and refresh your datasources in the Canvas app.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

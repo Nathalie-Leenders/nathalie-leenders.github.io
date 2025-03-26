@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Power FX on Power Platform Tips &amp; Tricks</title>
+    <link>https://blog.nathalieleenders.com/tags/power-fx/</link>
+    <description>Recent content in Power FX on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 16 Aug 2023 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/power-fx/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Sending an email from a Model Driven App on a command bar button</title>
+      <link>https://blog.nathalieleenders.com/posts/commandbarsendemail/</link>
+      <pubDate>Wed, 16 Aug 2023 14:27:14 +0000</pubDate>
+      
+      <guid>https://blog.nathalieleenders.com/posts/commandbarsendemail/</guid>
+      <description>&lt;h1 id=&#34;what-is-the-command-bar&#34;&gt;What is the command bar?&lt;/h1&gt;
+&lt;p&gt;The command bar is the ribbon on top of your Powerapp.&lt;/p&gt;
+&lt;h1 id=&#34;how-do-i-edit-this&#34;&gt;How do I edit this?&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Go into edit mode for your Model Driven App&lt;/li&gt;
+&lt;li&gt;Right click on your table, Edit the Command Bar&lt;/li&gt;
+&lt;li&gt;This opens the Command bar editor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;what-are-the-4-areas&#34;&gt;What are the 4 areas?&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Main Form - This is the one I&amp;rsquo;m focusing on right now&lt;/li&gt;
+&lt;li&gt;Main Grid&lt;/li&gt;
+&lt;li&gt;Subgrid View&lt;/li&gt;
+&lt;li&gt;Associated View&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;reference-material&#34;&gt;Reference material&lt;/h1&gt;
+&lt;p&gt;Scott Durow created this and it has been adopted by Microsoft ever since. If you need any information on all of the functionality, he has awesome video&amp;rsquo;s and sessions on it.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

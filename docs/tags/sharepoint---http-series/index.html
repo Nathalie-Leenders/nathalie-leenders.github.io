@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Sharepoint - HTTP Series</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.83336b94aa95722a64c7f77d97b1ab664226417ccff4cf02153293844604ba17.css" integrity="sha256-gzNrlKqVcipkx/d9l7GrZkImQXzP9M8CFTKThEYEuhc=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu9433149453350490282.png" />
+
+<meta property="og:url" content="http://localhost:1313/tags/sharepoint---http-series/">
+  <meta property="og:site_name" content="Power Platform Tips & Tricks">
+  <meta property="og:title" content="Sharepoint - HTTP Series">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sharepoint - HTTP Series">
+
+    
+     
+
+    
+
+    
+
+
+
+
+<script>
+      theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    </script>
+  </head>
+
+  <body class="type-tags kind-term" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu9433149453350490282.png" id="logo" alt="Logo">
+      Power Platform Tips &amp; Tricks</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">Home</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+              
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/glossary">Glossary</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/speakingengagements">Speaking</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/videos">Videos</a>
+              </li>
+            
+        
+        
+        
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  
+  
+
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/tags" data-filter="all">Tags</a></li>
+            <div class="subtree taxonomy-terms">
+              
+              
+
+
+
+  
+  
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/adaptive-cards/" data-taxonomy-term="adaptive-cards"><span class="taxonomy-label">Adaptive Cards</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/blogging/" data-taxonomy-term="blogging"><span class="taxonomy-label">Blogging</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/boolean/" data-taxonomy-term="boolean"><span class="taxonomy-label">Boolean</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/bpf/" data-taxonomy-term="bpf"><span class="taxonomy-label">BPF</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/canvas-app/" data-taxonomy-term="canvas-app"><span class="taxonomy-label">Canvas App</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/canvasapps/" data-taxonomy-term="canvasapps"><span class="taxonomy-label">Canvasapps</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/command-bar/" data-taxonomy-term="command-bar"><span class="taxonomy-label">Command Bar</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/conditions/" data-taxonomy-term="conditions"><span class="taxonomy-label">Conditions</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/copilot-studio/" data-taxonomy-term="copilot-studio"><span class="taxonomy-label">Copilot Studio</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/custom-emails/" data-taxonomy-term="custom-emails"><span class="taxonomy-label">Custom Emails</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/data-operations/" data-taxonomy-term="data-operations"><span class="taxonomy-label">Data Operations</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/dataverse/" data-taxonomy-term="dataverse"><span class="taxonomy-label">Dataverse</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/dynamics365/" data-taxonomy-term="dynamics365"><span class="taxonomy-label">Dynamics365</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/dynamics365ci/" data-taxonomy-term="dynamics365ci"><span class="taxonomy-label">Dynamics365CI</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/expressions/" data-taxonomy-term="expressions"><span class="taxonomy-label">Expressions</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/generative-answers/" data-taxonomy-term="generative-answers"><span class="taxonomy-label">Generative Answers</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/github/" data-taxonomy-term="github"><span class="taxonomy-label">Github</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/images/" data-taxonomy-term="images"><span class="taxonomy-label">Images</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/imposter-syndrome/" data-taxonomy-term="imposter-syndrome"><span class="taxonomy-label">Imposter Syndrome</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/javascript/" data-taxonomy-term="javascript"><span class="taxonomy-label">Javascript</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/microsoft-exams/" data-taxonomy-term="microsoft-exams"><span class="taxonomy-label">Microsoft Exams</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/microsoft-teams/" data-taxonomy-term="microsoft-teams"><span class="taxonomy-label">Microsoft Teams</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/microsoftteams/" data-taxonomy-term="microsoftteams"><span class="taxonomy-label">MicrosoftTeams</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/model-driven-app/" data-taxonomy-term="model-driven-app"><span class="taxonomy-label">Model Driven App</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/mppc23/" data-taxonomy-term="mppc23"><span class="taxonomy-label">MPPC23</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/msword/" data-taxonomy-term="msword"><span class="taxonomy-label">MSWord</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/muppets/" data-taxonomy-term="muppets"><span class="taxonomy-label">Muppets</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/power-automate/" data-taxonomy-term="power-automate"><span class="taxonomy-label">Power Automate</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/power-bi/" data-taxonomy-term="power-bi"><span class="taxonomy-label">Power BI</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/power-fx/" data-taxonomy-term="power-fx"><span class="taxonomy-label">Power FX</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/power-pages/" data-taxonomy-term="power-pages"><span class="taxonomy-label">Power Pages</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/powerapps/" data-taxonomy-term="powerapps"><span class="taxonomy-label">PowerApps</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/powerautomate/" data-taxonomy-term="powerautomate"><span class="taxonomy-label">PowerAutomate</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/powerbi/" data-taxonomy-term="powerbi"><span class="taxonomy-label">PowerBI</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/powershell/" data-taxonomy-term="powershell"><span class="taxonomy-label">Powershell</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/quickchartio/" data-taxonomy-term="quickchartio"><span class="taxonomy-label">QuickChartIO</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/regex/" data-taxonomy-term="regex"><span class="taxonomy-label">RegEx</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/sharepoint/" data-taxonomy-term="sharepoint"><span class="taxonomy-label">Sharepoint</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term active" href="http://localhost:1313/tags/sharepoint---http-series/" data-taxonomy-term="sharepoint-http-series"><span class="taxonomy-label">Sharepoint - HTTP Series</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/speaking/" data-taxonomy-term="speaking"><span class="taxonomy-label">Speaking</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/sql/" data-taxonomy-term="sql"><span class="taxonomy-label">SQL</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/variables/" data-taxonomy-term="variables"><span class="taxonomy-label">Variables</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/virtual-tables/" data-taxonomy-term="virtual-tables"><span class="taxonomy-label">Virtual Tables</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/vouchers/" data-taxonomy-term="vouchers"><span class="taxonomy-label">Vouchers</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/xmlmappings/" data-taxonomy-term="xmlmappings"><span class="taxonomy-label">XMLMappings</span></a></li>
+        
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid post-card-holder" id="post-card-holder">
+      
+      
+      
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-conclusion/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-conclusion/" class="post-card-link">
+        <h5 class="card-title">Blog series - Conclusion</h5>
+        <p class="card-text post-summary">Conclusion So, there are a lot of HTTP calls that can be done. I&rsquo;ve touched upon a few, hopefully you&rsquo;ve gained a bit more insight in how these work.
+Some takeaways If you do a lot of HTTP calls in a single flow, there might be a cache issue poking around, resulting in double updates.
+When you use Term Store values to update, it wont show in the version history. (work around is to append them to a multiple line text field, but this results in a double entry in version history)
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 1 minute </span>
+      <a
+      href="/posts/series-http-conclusion/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-gettermstoreitems/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-gettermstoreitems/" class="post-card-link">
+        <h5 class="card-title">Blog series - Get term store (for content types)?</h5>
+        <p class="card-text post-summary">Scenario: Fetching Terms from a Specific Term Set in a Term Store
+Objective You want to retrieve all terms from a specific term set within a term store in SharePoint. The term store and term set are identified by their unique GUIDs.
+Steps:
+Identify the Term Store and Term Set GUIDs You have a SharePoint site with managed metadata, and you need to fetch all terms from a specific term set. For example, all labels from the Status metadata column.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 2 minutes </span>
+      <a
+      href="/posts/series-http-gettermstoreitems/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-best-practises/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-best-practises/" class="post-card-link">
+        <h5 class="card-title">Blog series - HTTP calls to Sharepoint - Best practises</h5>
+        <p class="card-text post-summary">Best practises Here are some best practises I found either online or discovered myself.
+Use the Appropriate HTTP Method Use GET for retrieving data, POST for creating new resources, PUT for updating existing resources, and DELETE for removing resources.
+Set Proper Permissions Ensure that you have the necessary permissions for the operations you intend to perform. This includes configuring the appropriate access levels for users and applications. Proper permissions help prevent unauthorized access and maintain data security.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 2 minutes </span>
+      <a
+      href="/posts/series-http-best-practises/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-callflowfrombutton/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-callflowfrombutton/" class="post-card-link">
+        <h5 class="card-title">Blog series - HTTP calls to Sharepoint - Call a flow from a button</h5>
+        <p class="card-text post-summary">JSON formatting on a sharepoint list? In this blog post, we&rsquo;ll explore the powerful capabilities of JSON list formatting in SharePoint. JSON formatting allows you to customize the appearance of your lists and libraries, making them more user-friendly and visually appealing. We&rsquo;ll cover how to get a flow identifier, add a column, set JSON formatting code, and additional button formatting options such as showing/hiding based on fields and permissions.
+Get Flow Identifier To begin, you&rsquo;ll need to get the flow identifier for the specific flow you want to use. This identifier is essential for linking your JSON formatting to the flow. You can find the flow identifier in the URL of your flow in Power Automate. Simply navigate to your flow, and copy the identifier from the URL. Or click on Export, Get flow identifier.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 3 minutes </span>
+      <a
+      href="/posts/series-http-callflowfrombutton/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-getlistbyname/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-getlistbyname/" class="post-card-link">
+        <h5 class="card-title">Blog series - HTTP calls to Sharepoint - Fetching Specific List Information</h5>
+        <p class="card-text post-summary">Scenario Fetching Specific List Information
+Objective You want to retrieve the ID and Title of a specific SharePoint list whose title matches a given name.
+Steps: Identify the List Title: You have a SharePoint site with multiple lists, and you need to fetch the ID and Title of a list named &rsquo;name&rsquo; or of course add your own name. Construct the HTTP Request: You can filter on the name, by adding a ?$filter=title to your query. This uses oData filtering. You can filter on other things as well, you can use basic filtering such as lt (less than) le (less than or equal) gt (greater then) ge (greater or equal) eq (equal) or ne(not equal). Also, `Startswith, substringof, and date time functions are supported.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 1 minute </span>
+      <a
+      href="/posts/series-http-getlistbyname/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-freevspremium/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-freevspremium/" class="post-card-link">
+        <h5 class="card-title">Blog series - HTTP calls to Sharepoint - Free vs Premium?</h5>
+        <p class="card-text post-summary">Short overview - when to need a premium license and when not When can you get away with Power Automate free, and when do you need premium when working with http calls?
+Feature Free Premium Sharepoint HTTP request X Triggers X For a selected item x For a selected file X When an HTTP request is received X HTTP request X </p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 1 minute </span>
+      <a
+      href="/posts/series-http-freevspremium/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-getlibraryidbyguid/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-getlibraryidbyguid/" class="post-card-link">
+        <h5 class="card-title">Blog series - HTTP calls to Sharepoint - Get - Http get library id by GUID?</h5>
+        <p class="card-text post-summary">Scenario Fetching a Specific List by Library ID
+Objective You want to retrieve the details of a specific SharePoint list using its unique Library ID stored in a variable.
+Steps Identify the Library ID You have a SharePoint site with multiple lists, and you need to fetch the details of a list using its unique Library ID. The Library ID is stored in the variable VarLibraryID.
+Construct the HTTP Request Use the SharePoint REST API to get the list details by specifying the Library ID in the URL.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 1 minute </span>
+      <a
+      href="/posts/series-http-getlibraryidbyguid/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-getversionnumber/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-getversionnumber/" class="post-card-link">
+        <h5 class="card-title">Blog series - HTTP calls to Sharepoint - Get - Http get version number</h5>
+        <p class="card-text post-summary">Scenario Fetching a Specific Item from a SharePoint List
+Objective Get a specific item from sharepoint, with all the metadata, that you can then re-use in your flow. In my example we&rsquo;re going with version number.
+Steps: Identify the List and Item: You have a SharePoint site with multiple lists, and you need to fetch the details of a specific item from a list. The list name and item ID are stored in variables VarListname and VarItemID but you can of course use your own naming method.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 2 minutes </span>
+      <a
+      href="/posts/series-http-getversionnumber/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-permissionsneeded/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-permissionsneeded/" class="post-card-link">
+        <h5 class="card-title">Blog series - HTTP calls to Sharepoint - Permissions</h5>
+        <p class="card-text post-summary">Permissions needed During my testing, I had SharePoint administrator access with full control on the lists, so I could do anything. For most of the calls, I recommend getting SharePoint administrator access to avoid any issues.
+Known Error: If the API call throws an error indicating that you&rsquo;re not authorized, it doesn&rsquo;t always mean you don’t have the correct permissions. It could mean you&rsquo;re attempting to make an API call to an area of SharePoint that’s not allowed to be called. For example, if you&rsquo;ve made a typo somewhere or aren&rsquo;t using the correct type of call.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 1 minute </span>
+      <a
+      href="/posts/series-http-permissionsneeded/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-typesinsharepoint/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-typesinsharepoint/" class="post-card-link">
+        <h5 class="card-title">Blog series - HTTP calls to Sharepoint - Types in Sharepoint</h5>
+        <p class="card-text post-summary">Using the SharePoint REST API to Update Metadata Fields When working with SharePoint REST API, you might need to update a metadata field that originates from a content type. To do this, you first need to get the type value from your library. This type value is essential for making the correct HTTP call to update the metadata field. I dont fully understand the inner workings of sharepoint, but without this field being accurate your call wont work.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 4 minutes </span>
+      <a
+      href="/posts/series-http-typesinsharepoint/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-xrequestdigest/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-xrequestdigest/" class="post-card-link">
+        <h5 class="card-title">Blog series - HTTP calls to Sharepoint - Why do I need X-request-digest?</h5>
+        <p class="card-text post-summary">What is it, and why do I need it? Think of it as a type of token, that allows you, or permits you, to modify files on Sharepoint through an HTTP request.
+When you use POST as your method, and need to use Merge in your header, you also need to include a request digest value.
+Without it, you&rsquo;re not authorized to do this action.
+What it will look like to use it in a call;
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 2 minutes </span>
+      <a
+      href="/posts/series-http-xrequestdigest/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/series-http-workingwithfolders/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/series-http-workingwithfolders/" class="post-card-link">
+        <h5 class="card-title">Blog series - HTTP calls to Sharepoint - Working with folders</h5>
+        <p class="card-text post-summary">Working with folders and the Sharepoint API When working with the SharePoint API, handling folders can sometimes be tricky, especially when dealing with deeply nested structures. In this post, we&rsquo;ll explore how to dynamically grab the file location regardless of how deep it is in the root or folder structure. We&rsquo;ll also cover how to handle common issues like permission errors.
+Dynamically Grabbing the File Location To work with folders in the SharePoint API, you need to use the full path. This ensures that you can dynamically grab the file location, no matter how deep it is within the root or folder structure.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Thursday, February 20, 2025
+           | 2 minutes </span>
+      <a
+      href="/posts/series-http-workingwithfolders/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+    </div>
+    <div class="paginator">
+      
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/sharepoint---http-series/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/sharepoint---http-series/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/sharepoint---http-series/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+    </div>
+  </div>
+</section>
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
+                </li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/tags">Tags</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/glossary">Glossary</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/speakingengagements">Speaking</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/videos">Videos</a>
+                    </li>
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><span>Bluesky: </span> <span>nathleenders.bsky.social</span></li>
+              
+            
+              
+                <li><a href=mailto:info@nathalieleenders.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>info@nathalieleenders.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/Nathalie-Leenders target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>Nathalie-Leenders</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/nathalie-leenders-den-nijs-8853871b target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Nathalie Leenders</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2025 Copyright Nathalie Leenders. All Rights Reserved.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.be67475c076ea3ab2e5fde3d035e8d02f57a6b1b262d0696844c79f2cbf67bde.js" integrity="sha256-vmdHXAduo6suX949A16NAvV6axsmLQaWhEx58sv2e94=" defer></script>
+
+
+    
+     
+
+    
+    
+        
+        
+        
+        
+                      
+          <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="NathalieLeenders" data-description="Buy me a coffee!" data-message="Buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="10" data-y_margin="18"></script>
+        
+        
+    
+
+</body>
+</html>

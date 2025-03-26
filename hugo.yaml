@@ -2,6 +2,7 @@ baseURL: https://blog.nathalieleenders.com/
 
 languageCode: en
 title: "Power Platform Tips & Tricks"
+publishDir: "docs"
 
 # Use Hugo modules to add theme
 module:

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dataverse on Power Platform Tips &amp; Tricks</title>
+    <link>https://blog.nathalieleenders.com/categories/dataverse/</link>
+    <description>Recent content in Dataverse on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 17 Jul 2024 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/dataverse/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Calling a Power Automate Cloud flow, from Power Pages forms (!) using Javascript</title>
+      <link>https://blog.nathalieleenders.com/posts/callpowerautomateflowfrompowerpagesform/</link>
+      <pubDate>Wed, 17 Jul 2024 14:27:14 +0000</pubDate>
+      
+      <guid>https://blog.nathalieleenders.com/posts/callpowerautomateflowfrompowerpagesform/</guid>
+      <description>&lt;h2 id=&#34;calling-a-power-automate-flow-from-a-dataverse-form-in-a-power-page-form&#34;&gt;Calling a Power Automate flow from a dataverse form, in a Power Page form&lt;/h2&gt;
+&lt;p&gt;Sounds easy right? Trust me it&amp;rsquo;s not, but I hope this helps. I have had tremendous help from my colleague Laurens Hoogendoorn, who is completely awesome and helps me run with javascript (see what I did there) before learning how to crawl or walk. LOL. Laurens, you are the best!&lt;/p&gt;
+&lt;p&gt;So, let me start at the beginning.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog series - Post - Revoke permissions to a document through the API</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.c907d646076f1b03ced4c049049820ed8ebb2004402c43b75b656fd95b2900fd.css" integrity="sha256-yQfWRgdvGwPO1MBJBJgg7Y67IARALEO3W2Vv2VspAP0=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu9433149453350490282.png" />
+
+<meta property="og:url" content="https://blog.nathalieleenders.com/posts/series-http-setpermissionstoread/">
+  <meta property="og:site_name" content="Power Platform Tips & Tricks">
+  <meta property="og:title" content="Blog series - Post - Revoke permissions to a document through the API">
+  <meta property="og:description" content="Scenario Revoke permissions to a document through the API.
+Here comes the tricky part. There are 2 kind (that I found) role types on SharePoint.
+Roles from the Roletypekind None (Role = 0): No permissions assigned. Guest (Role = 1): Limited access, typically read-only. Reader (Role = 2): Can view items but not make changes. Contributor (Role = 3): Can add and edit items. WebDesigner (Role = 4): Can design and manage site content. Administrator (Role = 5): Full control over the site. Role (UserRoleAssignment). View (Role = 1): Grants read-only access to the document. Edit (Role = 2): Allows the user to edit the document. Owner (Role = 3): Grants full control over the document, including the ability to manage permissions. None (Role = 0): Removes any previously assigned permissions. Step 1 - You need to have broken inheritance first, otherwise this won’t work. API call 1 - Get all the groups from SharePoint Method: Post URI: _api/web/lists/getbytitle(&#39;@{variables(&#39;VarListname&#39;)}&#39;)/items(@{variables(&#39;VarItemID&#39;)})/UpdateDocumentSharingInfo">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-20T09:27:14+00:00">
+    <meta property="article:modified_time" content="2025-02-20T09:27:14+00:00">
+    <meta property="article:tag" content="SharePoint HTTP Series">
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blog series - Post - Revoke permissions to a document through the API">
+  <meta name="twitter:description" content="Scenario Revoke permissions to a document through the API.
+Here comes the tricky part. There are 2 kind (that I found) role types on SharePoint.
+Roles from the Roletypekind None (Role = 0): No permissions assigned. Guest (Role = 1): Limited access, typically read-only. Reader (Role = 2): Can view items but not make changes. Contributor (Role = 3): Can add and edit items. WebDesigner (Role = 4): Can design and manage site content. Administrator (Role = 5): Full control over the site. Role (UserRoleAssignment). View (Role = 1): Grants read-only access to the document. Edit (Role = 2): Allows the user to edit the document. Owner (Role = 3): Grants full control over the document, including the ability to manage permissions. None (Role = 0): Removes any previously assigned permissions. Step 1 - You need to have broken inheritance first, otherwise this won’t work. API call 1 - Get all the groups from SharePoint Method: Post URI: _api/web/lists/getbytitle(&#39;@{variables(&#39;VarListname&#39;)}&#39;)/items(@{variables(&#39;VarItemID&#39;)})/UpdateDocumentSharingInfo">
+
+    
+    
+<meta name="description" content="Blog series - Post - Revoke permissions to a document through the API" />
+
+
+
+    
+
+    
+
+
+
+
+<script>
+      theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    </script>
+  </head>
+
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu9433149453350490282.png" id="logo" alt="Logo">
+      Power Platform Tips &amp; Tricks</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">Home</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+              
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/glossary">Glossary</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/speakingengagements">Speaking</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/videos">Videos</a>
+              </li>
+            
+        
+        
+        
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div style="margin-bottom: 80px;"></div>
+        
+
+        <div class="title">
+          <h1>Blog series - Post - Revoke permissions to a document through the API</h1>
+        </div>
+
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <p class="text-muted">Thursday, February 20, 2025 | 2 minutes</p>
+        </div>
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">SharePoint HTTP series</a></li>
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <h3 id="scenario">Scenario</h3>
+<p>Revoke permissions to a document through the API.</p>
+<p>Here comes the tricky part. There are 2 kind (that I found) role types on SharePoint.</p>
+<ol>
+<li>Roles from the Roletypekind</li>
+</ol>
+<ul>
+<li><strong>None (Role = 0)</strong>: No permissions assigned.</li>
+<li><strong>Guest (Role = 1)</strong>: Limited access, typically read-only.</li>
+<li><strong>Reader (Role = 2)</strong>: Can view items but not make changes.</li>
+<li><strong>Contributor (Role = 3)</strong>: Can add and edit items.</li>
+<li><strong>WebDesigner (Role = 4)</strong>: Can design and manage site content.</li>
+<li><strong>Administrator (Role = 5)</strong>: Full control over the site.</li>
+</ul>
+<ol start="2">
+<li>Role (UserRoleAssignment).</li>
+</ol>
+<ul>
+<li><strong>View (Role = 1)</strong>: Grants read-only access to the document.</li>
+<li><strong>Edit (Role = 2)</strong>: Allows the user to edit the document.</li>
+<li><strong>Owner (Role = 3)</strong>: Grants full control over the document, including the ability to manage permissions.</li>
+<li><strong>None (Role = 0)</strong>: Removes any previously assigned permissions.</li>
+</ul>
+<h3 id="step-1---you-need-to-have-broken-inheritance-first-otherwise-this-wont-work">Step 1 - You need to have broken inheritance first, otherwise this won&rsquo;t work.</h3>
+<h2 id="api-call-1---get-all-the-groups-from-sharepoint">API call 1 - Get all the groups from SharePoint</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Method: Post
+</span></span><span style="display:flex;"><span>URI: _api/web/lists/getbytitle(&#39;@{variables(&#39;VarListname&#39;)}&#39;)/items(@{variables(&#39;VarItemID&#39;)})/UpdateDocumentSharingInfo
+</span></span></code></pre></div><p><img src="/posts/series-http-setpermissionstoread/list0.png" alt="Http call"></p>
+<h3 id="step-3---api-call-2---get-the-group-id-from-all-the-groups-on-sharepoint">Step 3 - API call 2 - Get the Group ID from all the groups on SharePoint</h3>
+<p>Method: Get</p>
+<p><img src="/posts/series-http-setpermissionstoread/list1.png" alt="Http call"></p>
+<h3 id="step-4">Step 4</h3>
+<p>I add a compose, and then a condition;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>if body(&#39;Send_an_HTTP_request_to_SharePoint_-_by_group_id_2&#39;)?[&#39;d&#39;]?[&#39;results&#39;][0]?[&#39;RoleTypeKind&#39;] is equal to 5 (Full control/Administrator) to not do anything.
+</span></span></code></pre></div><p>If the group does not have full control, revoke by changing to Read.</p>
+<p><img src="/posts/series-http-setpermissionstoread/list2.png" alt="Http call"></p>
+<h3 id="step-5---api-call-3---if-no-role-nr-5-full-control---do-this-action">Step 5 - API call 3 - If no role nr 5 (full control) - do this action</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Method: Post
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Uri: _api/web/lists/getbytitle(&#39;@{variables(&#39;VarListname&#39;)}&#39;)/items(@{variables(&#39;VarItemID&#39;)})/UpdateDocumentSharingInfo
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Headers: none
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Body:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  &#34;userRoleAssignments&#34;: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      &#34;UserId&#34;: &#34;@{items(&#39;Apply_to_each&#39;)?[&#39;LoginName&#39;]}&#34;,
+</span></span><span style="display:flex;"><span>      &#34;Role&#34;: 1
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  &#34;validateExistingPermissions&#34;: false,
+</span></span><span style="display:flex;"><span>  &#34;additiveMode&#34;: false,
+</span></span><span style="display:flex;"><span>  &#34;sendServerManagedNotification&#34;: false,
+</span></span><span style="display:flex;"><span>  &#34;customMessage&#34;: null,
+</span></span><span style="display:flex;"><span>  &#34;includeAnonymousLinksInNotification&#34;: false,
+</span></span><span style="display:flex;"><span>  &#34;propagateAcl&#34;: true
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><img src="/posts/series-http-setpermissionstoread/list3.png" alt="Http call"></p>
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+            <strong>Share on:</strong>
+            
+            
+            
+            
+            
+            
+                <a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fblog.nathalieleenders.com%2fposts%2fseries-http-setpermissionstoread%2f&title=Blog%20series%20-%20Post%20-%20Revoke%20permissions%20to%20a%20document%20through%20the%20API" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            
+            
+             
+            
+                 <a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text=Blog%20series%20-%20Post%20-%20Revoke%20permissions%20to%20a%20document%20through%20the%20API https%3a%2f%2fblog.nathalieleenders.com%2fposts%2fseries-http-setpermissionstoread%2f" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+            
+            
+            <a class="btn icon-button bg-bluesky" href="https://bsky.app/intent/compose?text=Blog%20series%20-%20Post%20-%20Revoke%20permissions%20to%20a%20document%20through%20the%20API https%3a%2f%2fblog.nathalieleenders.com%2fposts%2fseries-http-setpermissionstoread%2f"
+              target="_blank">
+              <i class="fab fa-bluesky"></i>
+            </a>
+            
+            
+                <a class="btn icon-button" href="mailto:?subject=Blog%20series%20-%20Post%20-%20Revoke%20permissions%20to%20a%20document%20through%20the%20API&body=https%3a%2f%2fblog.nathalieleenders.com%2fposts%2fseries-http-setpermissionstoread%2f" target="_blank">
+                  <i class="fas fa-envelope-open-text"></i>
+                </a>
+            
+          
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/Nathalie-Leenders/nathalie-leenders.github.io/edit/main/content/posts%5cseries-http-SetpermissionstoRead%5cindex.en.md" title="Improve this page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row next-prev-navigator">
+  
+  
+</div>
+
+      <hr />
+
+      
+      
+        
+    
+
+
+
+
+<div id="utteranc_thread"></div>
+<div id="comments" class="comments">
+    <div id="comments-container"></div>
+</div>
+<script type="text/javascript">
+    (function() {
+        var utterances = document.createElement('script');
+        utterances.type = 'text/javascript';
+        utterances.async = true;
+        utterances.setAttribute('repo','Nathalie-Leenders\/nathalie-leenders.github.io')
+        utterances.setAttribute('issue-term','title')
+        utterances.setAttribute('theme','github-dark')
+        utterances.crossorigin = 'anonymous';
+        utterances.src = 'https://utteranc.es/client.js';
+
+        document.getElementById('comments-container').appendChild(utterances);
+    })();
+</script>
+
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://blog.nathalieleenders.com/#about">About</a>
+                </li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/tags">Tags</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/glossary">Glossary</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/speakingengagements">Speaking</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/videos">Videos</a>
+                    </li>
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><span>Bluesky: </span> <span>nathleenders.bsky.social</span></li>
+              
+            
+              
+                <li><a href=mailto:info@nathalieleenders.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>info@nathalieleenders.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/Nathalie-Leenders target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>Nathalie-Leenders</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/nathalie-leenders-den-nijs-8853871b target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Nathalie Leenders</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2025 Copyright Nathalie Leenders. All Rights Reserved.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.5fb9b7fb051257336144cd5ed60f8e0a23d21f25118292999caae2cf15c4c00b.js" integrity="sha256-X7m3&#43;wUSVzNhRM1e1g&#43;OCiPSHyURgpKZnKrizxXEwAs=" defer></script>
+
+
+    
+     
+
+    
+    
+        
+        
+        
+        
+                      
+          <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="NathalieLeenders" data-description="Buy me a coffee!" data-message="Buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="10" data-y_margin="18"></script>
+        
+        
+    
+
+</body>
+</html>
