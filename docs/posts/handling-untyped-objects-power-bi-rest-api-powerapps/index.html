@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>How to embed a Power BI report into a Canvas app, and hide the nav &amp; filter</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.83336b94aa95722a64c7f77d97b1ab664226417ccff4cf02153293844604ba17.css" integrity="sha256-gzNrlKqVcipkx/d9l7GrZkImQXzP9M8CFTKThEYEuhc=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu9433149453350490282.png" />
+
+<meta property="og:url" content="http://localhost:1313/posts/handling-untyped-objects-power-bi-rest-api-powerapps/">
+  <meta property="og:site_name" content="Power Platform Tips & Tricks">
+  <meta property="og:title" content="How to embed a Power BI report into a Canvas app, and hide the nav & filter">
+  <meta property="og:description" content="When working with the Power BI REST API in Power Apps, you’ll often encounter untyped objects that can cause frustrating “Invalid argument type (Dynamic). Expecting a Text value instead” errors. In this post, I’ll show you how to properly handle these dynamic values and share a common Gallery gotcha that can break your filtering logic.
+The Problem: Untyped Objects When you call the Power BI REST API using something like PowerBIRest.GetReports(), you get back a response that looks like this:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-27T14:27:14+00:00">
+    <meta property="article:modified_time" content="2024-06-27T14:27:14+00:00">
+    <meta property="article:tag" content="PowerApps">
+    <meta property="article:tag" content="Power BI">
+    <meta property="article:tag" content="REST API">
+    <meta property="article:tag" content="PowerFx">
+    <meta property="article:tag" content="Untyped Objects">
+    <meta property="article:tag" content="Troubleshooting">
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to embed a Power BI report into a Canvas app, and hide the nav & filter">
+  <meta name="twitter:description" content="When working with the Power BI REST API in Power Apps, you’ll often encounter untyped objects that can cause frustrating “Invalid argument type (Dynamic). Expecting a Text value instead” errors. In this post, I’ll show you how to properly handle these dynamic values and share a common Gallery gotcha that can break your filtering logic.
+The Problem: Untyped Objects When you call the Power BI REST API using something like PowerBIRest.GetReports(), you get back a response that looks like this:">
+
+    
+    
+<meta name="description" content="How to embed a Power BI report into a Canvas app, and hide the nav &amp; filter" />
+
+
+
+    
+
+    
+
+        
+        
+<div id="cookie-consent-banner" class="cookie-consent-banner" style="display: none;">
+    <div class="cookie-consent-container">
+        <div class="cookie-consent-content">
+            <h4>🍪 Cookie Preferences</h4>
+            <p>We use cookies to improve your experience and analyze site usage. You can choose which types of cookies to accept:</p>
+            
+            <div class="cookie-preferences">
+                <div class="cookie-category">
+                    <label class="cookie-label">
+                        <input type="checkbox" id="analytics-consent" checked>
+                        <span class="checkmark"></span>
+                        <strong>Analytics Cookies</strong>
+                    </label>
+                    <p class="cookie-description">Help us understand how visitors interact with our website by collecting anonymous information.</p>
+                </div>
+                
+                <div class="cookie-category">
+                    <label class="cookie-label">
+                        <input type="checkbox" id="advertising-consent">
+                        <span class="checkmark"></span>
+                        <strong>Advertising Cookies</strong>
+                    </label>
+                    <p class="cookie-description">Used to make advertising messages more relevant to you and your interests.</p>
+                </div>
+            </div>
+            
+            <div class="cookie-consent-buttons">
+                <button id="accept-all-cookies" class="btn btn-primary">Accept All</button>
+                <button id="accept-selected-cookies" class="btn btn-outline-primary">Accept Selected</button>
+                <button id="reject-all-cookies" class="btn btn-secondary">Reject All</button>
+            </div>
+            
+            <p class="cookie-consent-note">
+                You can change your preferences anytime by clicking on the cookie settings icon in the bottom right corner.
+            </p>
+        </div>
+        
+        <button id="close-consent-banner" class="cookie-consent-close" aria-label="Close cookie banner">&times;</button>
+    </div>
+</div>
+
+
+<div id="cookie-settings-button" class="cookie-settings-btn" title="Cookie Settings">
+    🍪
+</div>
+
+<style>
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    padding: 20px;
+    z-index: 10000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.cookie-consent-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cookie-consent-content h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.cookie-consent-content p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.cookie-preferences {
+    margin: 20px 0;
+}
+
+.cookie-category {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.cookie-label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.cookie-label input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.cookie-description {
+    margin: 5px 0 0 25px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.cookie-consent-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cookie-consent-buttons .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.cookie-consent-note {
+    font-size: 0.8em;
+    color: #ccc;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.cookie-consent-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.cookie-consent-close:hover {
+    color: #ccc;
+}
+
+.cookie-settings-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.cookie-settings-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+ 
+@media (max-width: 768px) {
+    .cookie-consent-banner {
+        padding: 15px;
+    }
+    
+    .cookie-consent-buttons {
+        flex-direction: column;
+    }
+    
+    .cookie-consent-buttons .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .cookie-settings-btn {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+</style>
+        
+        
+        <script type="text/javascript" src="/js/consent-management.js" defer></script>
+
+        
+            
+            
+                
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0R550W0TM"></script>
+      <script>
+        var doNotTrack = false;
+        if ( null ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-G0R550W0TM');
+        }
+      </script>
+            
+
+            
+
+<script type="text/javascript">
+    
+    (function() {
+        
+        window.clarityId = "h4un3ap4e1";
+        
+        
+        function hasAnalyticsConsent() {
+            try {
+                const stored = localStorage.getItem('clarity_consent_preferences');
+                if (stored) {
+                    const preferences = JSON.parse(stored);
+                    return preferences.analytics_storage === true;
+                }
+            } catch (e) {
+                console.warn('Could not check consent preferences:', e);
+            }
+            return false;
+        }
+        
+        
+        function initClarity() {
+            if (typeof window.clarity === 'undefined') {
+                (function (c, l, a, r, i, t, y) {
+                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                    t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+                })(window, document, "clarity", "script", window.clarityId);
+                
+                console.log('Clarity initialized with consent');
+            }
+        }
+        
+        
+        if (hasAnalyticsConsent()) {
+            initClarity();
+        }
+        
+        
+        window.addEventListener('clarityConsentUpdated', function(event) {
+            if (event.detail.analytics_storage === true) {
+                initClarity();
+                
+                
+                setTimeout(function() {
+                    if (typeof window.clarity === 'function') {
+                        window.clarity('consentv2', {
+                            analytics_storage: "granted",
+                            ad_storage: event.detail.ad_storage ? "granted" : "denied"
+                        });
+                    }
+                }, 100);
+            } else if (event.detail.analytics_storage === false) {
+                
+                if (typeof window.clarity === 'function') {
+                    window.clarity('consent', false);
+                }
+            }
+        });
+    })();
+</script>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+
+            
+
+            
+        
+    
+
+
+
+
+<script>
+      theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    </script>
+  </head>
+
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu9433149453350490282.png" id="logo" alt="Logo">
+      Power Platform Tips &amp; Tricks</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">Home</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+              
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/tags">Tags</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/glossary">Glossary</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/speakingengagements">Speaking</a>
+              </li>
+            
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/videos">Videos</a>
+              </li>
+            
+        
+        
+        
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/main-logo_hu9433149453350490282.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div style="margin-bottom: 80px;"></div>
+        
+
+        <div class="title">
+          <h1>How to embed a Power BI report into a Canvas app, and hide the nav &amp; filter</h1>
+        </div>
+
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <p class="text-muted">Thursday, June 27, 2024 | 4 minutes</p>
+        </div>
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/powerapps/" class="btn btn-sm btn-info">PowerApps</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/power-bi/" class="btn btn-sm btn-info">Power BI</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/rest-api/" class="btn btn-sm btn-info">REST API</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/powerfx/" class="btn btn-sm btn-info">PowerFx</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/untyped-objects/" class="btn btn-sm btn-info">Untyped Objects</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/troubleshooting/" class="btn btn-sm btn-info">Troubleshooting</a></li>
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <p>When working with the Power BI REST API in Power Apps, you&rsquo;ll often encounter untyped objects that can cause frustrating &ldquo;Invalid argument type (Dynamic). Expecting a Text value instead&rdquo; errors. In this post, I&rsquo;ll show you how to properly handle these dynamic values and share a common Gallery gotcha that can break your filtering logic.</p>
+<h2 id="the-problem-untyped-objects">The Problem: Untyped Objects</h2>
+<p>When you call the Power BI REST API using something like <code>PowerBIRest.GetReports()</code>, you get back a response that looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;@odata.context&#34;</span>: <span style="color:#e6db74">&#34;https://api.powerbi.com/v1.0/myorg/$metadata#reports&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;value&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;0e2e7533-2f14-46ab-bf61-eec5045da56b&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;reportType&#34;</span>: <span style="color:#e6db74">&#34;PowerBIReport&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Gantt 2.0&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;webUrl&#34;</span>: <span style="color:#e6db74">&#34;https://app.powerbi.com/groups/me/reports/...&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;embedUrl&#34;</span>: <span style="color:#e6db74">&#34;https://app.powerbi.com/reportEmbed?reportId=...&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;isOwnedByMe&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;datasetId&#34;</span>: <span style="color:#e6db74">&#34;203221f2-9af8-46c5-8c0e-5ff553f58fab&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;datasetWorkspaceId&#34;</span>: <span style="color:#e6db74">&#34;633e1009-a1b6-4529-b37b-3d870df5d30d&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The issue is that Power Apps treats this as an <strong>untyped object</strong> or <strong>dynamic value</strong>. When you try to use these properties in your formulas, Power Apps doesn&rsquo;t know what data type they should be, leading to errors.</p>
+<h2 id="the-solution-explicit-type-conversion">The Solution: Explicit Type Conversion</h2>
+<p>The key is to explicitly convert each property to its expected data type when creating your collection. Here are several approaches:</p>
+<h3 id="method-1-using-parsejson-with-type-conversion-recommended">Method 1: Using ParseJSON with Type Conversion (Recommended)</h3>
+<pre tabindex="0"><code class="language-powerfx" data-lang="powerfx">Set(varRawData, PowerBIRest.GetReports());
+ClearCollect(
+    colUserReports,
+    ForAll(
+        ParseJSON(JSON(varRawData)).value,
+        {
+            id: Text(ThisRecord.id),
+            reportType: Text(ThisRecord.reportType),
+            name: Text(ThisRecord.name),
+            webUrl: Text(ThisRecord.webUrl),
+            embedUrl: Text(ThisRecord.embedUrl),
+            isOwnedByMe: Boolean(ThisRecord.isOwnedByMe),
+            datasetId: Text(ThisRecord.datasetId),
+            datasetWorkspaceId: Text(ThisRecord.datasetWorkspaceId)
+        }
+    )
+);
+</code></pre><h3 id="method-2-direct-conversion-with-table-function">Method 2: Direct Conversion with Table Function</h3>
+<pre tabindex="0"><code class="language-powerfx" data-lang="powerfx">ClearCollect(
+    colUserReports,
+    ForAll(
+        Table(PowerBIRest.GetReports()).value,
+        {
+            id: Text(ThisRecord.id),
+            reportType: Text(ThisRecord.reportType),
+            name: Text(ThisRecord.name),
+            webUrl: Text(ThisRecord.webUrl),
+            embedUrl: Text(ThisRecord.embedUrl),
+            isOwnedByMe: Boolean(ThisRecord.isOwnedByMe),
+            datasetId: Text(ThisRecord.datasetId),
+            datasetWorkspaceId: Text(ThisRecord.datasetWorkspaceId)
+        }
+    )
+);
+</code></pre><h3 id="method-3-handling-null-values-with-coalesce">Method 3: Handling Null Values with Coalesce</h3>
+<pre tabindex="0"><code class="language-powerfx" data-lang="powerfx">ClearCollect(
+    colUserReports,
+    ForAll(
+        Table(PowerBIRest.GetReports()).value,
+        {
+            id: Text(Coalesce(ThisRecord.id, &#34;&#34;)),
+            reportType: Text(Coalesce(ThisRecord.reportType, &#34;&#34;)),
+            name: Text(Coalesce(ThisRecord.name, &#34;Unknown&#34;)),
+            webUrl: Text(Coalesce(ThisRecord.webUrl, &#34;&#34;)),
+            embedUrl: Text(Coalesce(ThisRecord.embedUrl, &#34;&#34;)),
+            isOwnedByMe: Boolean(Coalesce(ThisRecord.isOwnedByMe, false)),
+            datasetId: Text(Coalesce(ThisRecord.datasetId, &#34;&#34;)),
+            datasetWorkspaceId: Text(Coalesce(ThisRecord.datasetWorkspaceId, &#34;&#34;))
+        }
+    )
+);
+</code></pre><h2 id="key-type-conversion-functions">Key Type Conversion Functions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Function</th>
+          <th>Purpose</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>Text()</code></td>
+          <td>Convert to string</td>
+          <td><code>Text(ThisRecord.id)</code></td>
+      </tr>
+      <tr>
+          <td><code>Value()</code></td>
+          <td>Convert to number</td>
+          <td><code>Value(ThisRecord.reportFlags)</code></td>
+      </tr>
+      <tr>
+          <td><code>Boolean()</code></td>
+          <td>Convert to boolean</td>
+          <td><code>Boolean(ThisRecord.isOwnedByMe)</code></td>
+      </tr>
+      <tr>
+          <td><code>DateValue()</code></td>
+          <td>Convert to date</td>
+          <td><code>DateValue(ThisRecord.createdDate)</code></td>
+      </tr>
+      <tr>
+          <td><code>DateTimeValue()</code></td>
+          <td>Convert to datetime</td>
+          <td><code>DateTimeValue(ThisRecord.modifiedDateTime)</code></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="power-bi-api-endpoints-getting-all-your-reports">Power BI API Endpoints: Getting All Your Reports</h2>
+<p>One important thing to note: the <code>/myorg/reports</code> endpoint only returns reports from <strong>&ldquo;My Workspace&rdquo;</strong> (your personal workspace). If you own reports in other workspaces, you won&rsquo;t see them.</p>
+<h3 id="getting-reports-from-all-accessible-workspaces">Getting Reports from All Accessible Workspaces</h3>
+<pre tabindex="0"><code class="language-powerfx" data-lang="powerfx">// First get all workspaces you&#39;re a member of
+Set(varWorkspaces, PowerBIRest.GetGroups());
+
+// Get reports from each workspace
+ClearCollect(colAllReports, 
+    ForAll(
+        ParseJSON(JSON(varWorkspaces)).value,
+        ForAll(
+            ParseJSON(JSON(PowerBIRest.GetReportsInGroup(Text(ThisRecord.id)))).value,
+            {
+                id: Text(ThisRecord.id),
+                name: Text(ThisRecord.name),
+                webUrl: Text(ThisRecord.webUrl),
+                workspaceId: Text(Parent.ThisRecord.id),
+                workspaceName: Text(Parent.ThisRecord.name),
+                isOwnedByMe: Boolean(ThisRecord.isOwnedByMe)
+            }
+        )
+    )
+);
+
+// Also get reports from &#34;My Workspace&#34;
+Collect(colAllReports,
+    ForAll(
+        ParseJSON(JSON(PowerBIRest.GetReports())).value,
+        {
+            id: Text(ThisRecord.id),
+            name: Text(ThisRecord.name),
+            webUrl: Text(ThisRecord.webUrl),
+            workspaceId: &#34;MyWorkspace&#34;,
+            workspaceName: &#34;My Workspace&#34;,
+            isOwnedByMe: Boolean(ThisRecord.isOwnedByMe)
+        }
+    )
+);
+</code></pre><h2 id="common-gotcha-gallery-default-property">Common Gotcha: Gallery Default Property</h2>
+<p>Here&rsquo;s a sneaky issue that can break your filtering logic. When using a Gallery for selection filtering, you <strong>must</strong> set the <code>Default</code> property correctly:</p>
+<h3 id="-wrong-way">❌ Wrong Way</h3>
+<pre tabindex="0"><code class="language-powerfx" data-lang="powerfx">// Default property left empty or set to &#34;&#34;
+Default: &#34;&#34;
+</code></pre><h3 id="-right-way">✅ Right Way</h3>
+<pre tabindex="0"><code class="language-powerfx" data-lang="powerfx">// Default property set to empty record
+Default: {}
+// Or alternatively
+Default: Blank()
+</code></pre><p>Without the proper default, <code>IsBlank(Gallery9.Selected)</code> will never return <code>true</code>, breaking your conditional logic.</p>
+<h2 id="complete-filtering-example">Complete Filtering Example</h2>
+<p>Here&rsquo;s how to combine Power BI security filtering with other business logic:</p>
+<pre tabindex="0"><code class="language-powerfx" data-lang="powerfx">Filter(
+    Tiles,
+    // Security filter: Only show reports user has access to
+    Reportid in colUserReports.id &amp;&amp;
+    // Business logic filters
+    If(
+        varFilter &amp;&amp; !IsBlank(Gallery9.Selected),
+        Gallery9.Selected.Title2.Text = cr5fc_themanaam,
+        If(
+            IsEmpty(Filter_input.SelectedItems),
+            true,
+            Domein in Filter_input.SelectedItems.Value
+        )
+    )
+)
+</code></pre><h2 id="error-handling-best-practices">Error Handling Best Practices</h2>
+<p>Always wrap your API calls in error handling:</p>
+<pre tabindex="0"><code class="language-powerfx" data-lang="powerfx">IfError(
+    // Your Power BI API call and processing logic here
+    ClearCollect(colUserReports, /* your formula */),
+    // Error handling
+    Notify(&#34;Failed to load Power BI reports: &#34; &amp; FirstError.Message, NotificationType.Error);
+    Set(varDataLoaded, false)
+);
+</code></pre><h2 id="summary">Summary</h2>
+<p>When working with untyped objects from REST APIs in Power Apps:</p>
+<ol>
+<li><strong>Always use explicit type conversion</strong> functions (<code>Text()</code>, <code>Boolean()</code>, <code>Value()</code>, etc.)</li>
+<li><strong>Handle null values</strong> with <code>Coalesce()</code> or <code>If(IsBlank())</code></li>
+<li><strong>Set Gallery Default properties</strong> to <code>{}</code> or <code>Blank()</code></li>
+<li><strong>Remember API endpoint limitations</strong> - <code>/myorg/reports</code> only shows &ldquo;My Workspace&rdquo;</li>
+<li><strong>Implement proper error handling</strong> with <code>IfError()</code></li>
+</ol>
+<p>These patterns will save you hours of debugging and make your Power Apps more robust and user-friendly.</p>
+<p>Have you encountered other tricky scenarios with untyped objects in Power Apps? Share your experiences in the comments below!</p>
+<hr>
+<p><em>Found this helpful? Consider <a href="https://www.buymeacoffee.com/NathalieLeenders" target="_blank" rel="noopener">buying me a coffee</a> to support more Power Platform content!</em></p>
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+            <strong>Share on:</strong>
+            
+            
+            
+            
+            
+            
+                <a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fhandling-untyped-objects-power-bi-rest-api-powerapps%2f&title=How%20to%20embed%20a%20Power%20BI%20report%20into%20a%20Canvas%20app%2c%20and%20hide%20the%20nav%20%26%20filter" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            
+            
+             
+            
+                 <a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text=How%20to%20embed%20a%20Power%20BI%20report%20into%20a%20Canvas%20app%2c%20and%20hide%20the%20nav%20%26%20filter http%3a%2f%2flocalhost%3a1313%2fposts%2fhandling-untyped-objects-power-bi-rest-api-powerapps%2f" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+            
+            
+            <a class="btn icon-button bg-bluesky" href="https://bsky.app/intent/compose?text=How%20to%20embed%20a%20Power%20BI%20report%20into%20a%20Canvas%20app%2c%20and%20hide%20the%20nav%20%26%20filter http%3a%2f%2flocalhost%3a1313%2fposts%2fhandling-untyped-objects-power-bi-rest-api-powerapps%2f"
+              target="_blank">
+              <i class="fab fa-bluesky"></i>
+            </a>
+            
+            
+                <a class="btn icon-button" href="mailto:?subject=How%20to%20embed%20a%20Power%20BI%20report%20into%20a%20Canvas%20app%2c%20and%20hide%20the%20nav%20%26%20filter&body=http%3a%2f%2flocalhost%3a1313%2fposts%2fhandling-untyped-objects-power-bi-rest-api-powerapps%2f" target="_blank">
+                  <i class="fas fa-envelope-open-text"></i>
+                </a>
+            
+          
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/Nathalie-Leenders/nathalie-leenders.github.io/edit/main/content/posts%5chandling-untyped-objects-power-bi-rest-api-powerapps.md" title="Improve this page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row next-prev-navigator">
+  
+  
+</div>
+
+      <hr />
+
+      
+      
+        
+    
+
+
+
+
+<div id="utteranc_thread"></div>
+<div id="comments" class="comments">
+    <div id="comments-container"></div>
+</div>
+<script type="text/javascript">
+    (function() {
+        var utterances = document.createElement('script');
+        utterances.type = 'text/javascript';
+        utterances.async = true;
+        utterances.setAttribute('repo','Nathalie-Leenders\/nathalie-leenders.github.io')
+        utterances.setAttribute('issue-term','title')
+        utterances.setAttribute('theme','github-dark')
+        utterances.crossorigin = 'anonymous';
+        utterances.src = 'https://utteranc.es/client.js';
+
+        document.getElementById('comments-container').appendChild(utterances);
+    })();
+</script>
+
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
+                </li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/tags">Tags</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/glossary">Glossary</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/speakingengagements">Speaking</a>
+                    </li>
+                
+              
+                
+                    <li class="nav-item">
+                      <a class="smooth-scroll" href="/videos">Videos</a>
+                    </li>
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><span>Bluesky: </span> <span>nathleenders.bsky.social</span></li>
+              
+            
+              
+                <li><a href=mailto:info@nathalieleenders.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>info@nathalieleenders.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/Nathalie-Leenders target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>Nathalie-Leenders</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/nathalie-leenders-den-nijs-8853871b target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Nathalie Leenders</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2025 Copyright Nathalie Leenders. All Rights Reserved.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.be67475c076ea3ab2e5fde3d035e8d02f57a6b1b262d0696844c79f2cbf67bde.js" integrity="sha256-vmdHXAduo6suX949A16NAvV6axsmLQaWhEx58sv2e94=" defer></script>
+
+
+    
+     
+
+    
+    
+        
+        
+        
+        
+                      
+          <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="NathalieLeenders" data-description="Buy me a coffee!" data-message="Buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="10" data-y_margin="18"></script>
+        
+        
+    
+
+</body>
+</html>

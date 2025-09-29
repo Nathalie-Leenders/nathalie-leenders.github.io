@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Posts</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.c907d646076f1b03ced4c049049820ed8ebb2004402c43b75b656fd95b2900fd.css" integrity="sha256-yQfWRgdvGwPO1MBJBJgg7Y67IARALEO3W2Vv2VspAP0=" />
+<link rel="stylesheet" href="/application.83336b94aa95722a64c7f77d97b1ab664226417ccff4cf02153293844604ba17.css" integrity="sha256-gzNrlKqVcipkx/d9l7GrZkImQXzP9M8CFTKThEYEuhc=" />
 
 
 
@@ -23,7 +23,7 @@
 
   <link rel="icon" type="image/png" href="/images/site/favicon_hu9433149453350490282.png" />
 
-<meta property="og:url" content="https://blog.nathalieleenders.com/posts/">
+<meta property="og:url" content="http://localhost:1313/posts/">
   <meta property="og:site_name" content="Power Platform Tips & Tricks">
   <meta property="og:title" content="Posts">
   <meta property="og:locale" content="en">
@@ -38,6 +38,339 @@
 
     
 
+    
+
+        
+        
+<div id="cookie-consent-banner" class="cookie-consent-banner" style="display: none;">
+    <div class="cookie-consent-container">
+        <div class="cookie-consent-content">
+            <h4>🍪 Cookie Preferences</h4>
+            <p>We use cookies to improve your experience and analyze site usage. You can choose which types of cookies to accept:</p>
+            
+            <div class="cookie-preferences">
+                <div class="cookie-category">
+                    <label class="cookie-label">
+                        <input type="checkbox" id="analytics-consent" checked>
+                        <span class="checkmark"></span>
+                        <strong>Analytics Cookies</strong>
+                    </label>
+                    <p class="cookie-description">Help us understand how visitors interact with our website by collecting anonymous information.</p>
+                </div>
+                
+                <div class="cookie-category">
+                    <label class="cookie-label">
+                        <input type="checkbox" id="advertising-consent">
+                        <span class="checkmark"></span>
+                        <strong>Advertising Cookies</strong>
+                    </label>
+                    <p class="cookie-description">Used to make advertising messages more relevant to you and your interests.</p>
+                </div>
+            </div>
+            
+            <div class="cookie-consent-buttons">
+                <button id="accept-all-cookies" class="btn btn-primary">Accept All</button>
+                <button id="accept-selected-cookies" class="btn btn-outline-primary">Accept Selected</button>
+                <button id="reject-all-cookies" class="btn btn-secondary">Reject All</button>
+            </div>
+            
+            <p class="cookie-consent-note">
+                You can change your preferences anytime by clicking on the cookie settings icon in the bottom right corner.
+            </p>
+        </div>
+        
+        <button id="close-consent-banner" class="cookie-consent-close" aria-label="Close cookie banner">&times;</button>
+    </div>
+</div>
+
+
+<div id="cookie-settings-button" class="cookie-settings-btn" title="Cookie Settings">
+    🍪
+</div>
+
+<style>
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    padding: 20px;
+    z-index: 10000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.cookie-consent-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cookie-consent-content h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.cookie-consent-content p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.cookie-preferences {
+    margin: 20px 0;
+}
+
+.cookie-category {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.cookie-label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.cookie-label input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.cookie-description {
+    margin: 5px 0 0 25px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.cookie-consent-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cookie-consent-buttons .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.cookie-consent-note {
+    font-size: 0.8em;
+    color: #ccc;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.cookie-consent-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.cookie-consent-close:hover {
+    color: #ccc;
+}
+
+.cookie-settings-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.cookie-settings-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+ 
+@media (max-width: 768px) {
+    .cookie-consent-banner {
+        padding: 15px;
+    }
+    
+    .cookie-consent-buttons {
+        flex-direction: column;
+    }
+    
+    .cookie-consent-buttons .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .cookie-settings-btn {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+</style>
+        
+        
+        <script type="text/javascript" src="/js/consent-management.js" defer></script>
+
+        
+            
+            
+                
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0R550W0TM"></script>
+      <script>
+        var doNotTrack = false;
+        if ( null ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-G0R550W0TM');
+        }
+      </script>
+            
+
+            
+
+<script type="text/javascript">
+    
+    (function() {
+        
+        window.clarityId = "h4un3ap4e1";
+        
+        
+        function hasAnalyticsConsent() {
+            try {
+                const stored = localStorage.getItem('clarity_consent_preferences');
+                if (stored) {
+                    const preferences = JSON.parse(stored);
+                    return preferences.analytics_storage === true;
+                }
+            } catch (e) {
+                console.warn('Could not check consent preferences:', e);
+            }
+            return false;
+        }
+        
+        
+        function initClarity() {
+            if (typeof window.clarity === 'undefined') {
+                (function (c, l, a, r, i, t, y) {
+                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                    t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+                })(window, document, "clarity", "script", window.clarityId);
+                
+                console.log('Clarity initialized with consent');
+            }
+        }
+        
+        
+        if (hasAnalyticsConsent()) {
+            initClarity();
+        }
+        
+        
+        window.addEventListener('clarityConsentUpdated', function(event) {
+            if (event.detail.analytics_storage === true) {
+                initClarity();
+                
+                
+                setTimeout(function() {
+                    if (typeof window.clarity === 'function') {
+                        window.clarity('consentv2', {
+                            analytics_storage: "granted",
+                            ad_storage: event.detail.ad_storage ? "granted" : "denied"
+                        });
+                    }
+                }, 100);
+            } else if (event.detail.analytics_storage === false) {
+                
+                if (typeof window.clarity === 'function') {
+                    window.clarity('consent', false);
+                }
+            }
+        });
+    })();
+</script>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+
+            
+
+            
+        
     
 
 
@@ -282,6 +615,177 @@
       
       
       
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/microsoftexamsvideo/" class="post-card-link">
+        <img class="card-img-top" src='/posts/microsoftexamsvideo/Microsoft.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/microsoftexamsvideo/" class="post-card-link">
+        <h5 class="card-title">How to do Microsoft exams?</h5>
+        <p class="card-text post-summary">Check out this video that I did for testpreptraining.com, on how to become a Power Platform Analyst, some tips and how to prepare for a Microsoft exam.
+Why become Microsoft Power Platform Developer - Learn with Nathalie Leenders - https://www.youtube.com/watch?v=Vc637VyEsig
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/microsoft-exams/" class="btn btn-sm btn-info">Microsoft Exams</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Tuesday, February 28, 2023
+           | 1 minute </span>
+      <a
+      href="/posts/microsoftexamsvideo/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/boolean-in-sql/" class="post-card-link">
+        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/boolean-in-sql/" class="post-card-link">
+        <h5 class="card-title">Quick tip! Boolean in SQL</h5>
+        <p class="card-text post-summary">Are you looking for a boolean column in SQL? Or have a virtual table and need a toggle/checkbox in your app? If you have just a string/text field with True/False this wont work.
+You need to convert the column in SQL to BIT.
+Bit is an integer data type that can take a value of 0, 1, or NULL 1 for true, 0 for false.
+Then reload/refresh your table into your dataverse/virtual table and it can be selected with a checkbox!
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sql/" class="btn btn-sm btn-info">SQL</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/boolean/" class="btn btn-sm btn-info">Boolean</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Wednesday, February 15, 2023
+           | 1 minute </span>
+      <a
+      href="/posts/boolean-in-sql/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/dataversechoices-sqlbackend/" class="post-card-link">
+        <img class="card-img-top" src='/posts/dataversechoices-sqlbackend/powerapps-logo.png' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/dataversechoices-sqlbackend/" class="post-card-link">
+        <h5 class="card-title">Dataverse Choices to SQL backend- Update!</h5>
+        <p class="card-text post-summary"></p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/sql/" class="btn btn-sm btn-info">SQL</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/virtual-tables/" class="btn btn-sm btn-info">Virtual Tables</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Tuesday, February 14, 2023
+           | 3 minutes </span>
+      <a
+      href="/posts/dataversechoices-sqlbackend/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/forktobork/" class="post-card-link">
+        <img class="card-img-top" src='/posts/forktobork/swedish-chef-bork.gif' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/forktobork/" class="post-card-link">
+        <h5 class="card-title">Changing the button for “Fork” into “Bork!” for Github</h5>
+        <p class="card-text post-summary">This has to be the best thing to come out of 2023 (and yes, it’s only January so that’s saying something)
+My longest blog post and read to date, but I promise you it’s worth it!
+I was on the First Time Contributor training yesterday, one of the Sharing is Caring sessions led by David Warner and Hugo Bernier. (&lt;3) M365 &amp; Power Platform | Sharing Is Caring (pnp.github.io)
+In this training they explain how Github works, and how to edit an existing item using the Branches, Forks, Committing changes and how a Pull Request works. (I can highly recommend their sessions if you want to learn, there’s no recordings and it’s a safe space for all to ask questions and interrupt)
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/github/" class="btn btn-sm btn-info">Github</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/muppets/" class="btn btn-sm btn-info">Muppets</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Friday, January 13, 2023
+           | 2 minutes </span>
+      <a
+      href="/posts/forktobork/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+        
       
         
           <div class="post-card">
@@ -575,7 +1079,7 @@ If you want to use your adaptive card as for example an approval, or you want th
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://blog.nathalieleenders.com/#about">About</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
                 </li>
               
               
@@ -679,7 +1183,7 @@ If you want to use your adaptive card as for example an approval, or you want th
   </footer>
 
 
-    <script src="/application.5fb9b7fb051257336144cd5ed60f8e0a23d21f25118292999caae2cf15c4c00b.js" integrity="sha256-X7m3&#43;wUSVzNhRM1e1g&#43;OCiPSHyURgpKZnKrizxXEwAs=" defer></script>
+    <script src="/application.be67475c076ea3ab2e5fde3d035e8d02f57a6b1b262d0696844c79f2cbf67bde.js" integrity="sha256-vmdHXAduo6suX949A16NAvV6axsmLQaWhEx58sv2e94=" defer></script>
 
 
     

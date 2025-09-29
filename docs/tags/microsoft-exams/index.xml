@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Microsoft Exams on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/tags/microsoft-exams/</link>
+    <link>http://localhost:1313/tags/microsoft-exams/</link>
     <description>Recent content in Microsoft Exams on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 May 2023 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/microsoft-exams/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Thu, 11 May 2023 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/microsoft-exams/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>The secret to doing Microsoft exams for free!</title>
-      <link>https://blog.nathalieleenders.com/posts/microsoftexams-secrets/</link>
+      <link>http://localhost:1313/posts/microsoftexams-secrets/</link>
       <pubDate>Thu, 11 May 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/microsoftexams-secrets/</guid>
+      <guid>http://localhost:1313/posts/microsoftexams-secrets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to do Microsoft exams?</title>
-      <link>https://blog.nathalieleenders.com/posts/microsoftexamsvideo/</link>
+      <link>http://localhost:1313/posts/microsoftexamsvideo/</link>
       <pubDate>Tue, 28 Feb 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/microsoftexamsvideo/</guid>
+      <guid>http://localhost:1313/posts/microsoftexamsvideo/</guid>
       <description>&lt;p&gt;Check out this video that I did for testpreptraining.com, on how to become a Power Platform Analyst, some tips and how to prepare for a Microsoft exam.&lt;/p&gt;
 &lt;p&gt;Why become Microsoft Power Platform Developer - Learn with Nathalie Leenders - &lt;a href=&#34;https://www.youtube.com/watch?v=Vc637VyEsig&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.youtube.com/watch?v=Vc637VyEsig&lt;/a&gt;&lt;/p&gt;
 &lt;img src=&#34;microsoftexam.png&#34;

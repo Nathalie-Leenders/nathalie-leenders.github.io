@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Model Driven App on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/tags/model-driven-app/</link>
+    <link>http://localhost:1313/tags/model-driven-app/</link>
     <description>Recent content in Model Driven App on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Aug 2024 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/model-driven-app/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Mon, 12 Aug 2024 09:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/model-driven-app/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>How to use the PDF Viewer, to view PDF&#39;s in a Model Driven app from an attachment column</title>
-      <link>https://blog.nathalieleenders.com/posts/pdfviewerincanvascomponent/</link>
+      <link>http://localhost:1313/posts/pdfviewerincanvascomponent/</link>
       <pubDate>Mon, 12 Aug 2024 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/pdfviewerincanvascomponent/</guid>
+      <guid>http://localhost:1313/posts/pdfviewerincanvascomponent/</guid>
       <description>&lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
 &lt;p&gt;My PDF viewer works in the canvas app, but not when I embed it&lt;/p&gt;
 &lt;p&gt;Show image 0/0 in MDA&lt;/p&gt;
@@ -23,10 +23,10 @@ However these only work on Notes with attachments. My dataverse table/solution u
     
     <item>
       <title>Sending an email from a Model Driven App on a command bar button</title>
-      <link>https://blog.nathalieleenders.com/posts/commandbarsendemail/</link>
+      <link>http://localhost:1313/posts/commandbarsendemail/</link>
       <pubDate>Wed, 16 Aug 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/commandbarsendemail/</guid>
+      <guid>http://localhost:1313/posts/commandbarsendemail/</guid>
       <description>&lt;h1 id=&#34;what-is-the-command-bar&#34;&gt;What is the command bar?&lt;/h1&gt;
 &lt;p&gt;The command bar is the ribbon on top of your Powerapp.&lt;/p&gt;
 &lt;h1 id=&#34;how-do-i-edit-this&#34;&gt;How do I edit this?&lt;/h1&gt;
@@ -48,10 +48,10 @@ However these only work on Notes with attachments. My dataverse table/solution u
     
     <item>
       <title>Business Process Flow - How to automate moving through different stages</title>
-      <link>https://blog.nathalieleenders.com/posts/bpf-automation/</link>
+      <link>http://localhost:1313/posts/bpf-automation/</link>
       <pubDate>Wed, 05 Apr 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/bpf-automation/</guid>
+      <guid>http://localhost:1313/posts/bpf-automation/</guid>
       <description>&lt;h2 id=&#34;how-to-move-stages-automatically-bpf-using-power-automate-no-http-calls-needed&#34;&gt;How to move stages automatically (BPF) using Power Automate (no http calls needed)&lt;/h2&gt;
 &lt;p&gt;Quick summary: You need to grab data from 3 different tables, link them using lookup columns, capture ID&amp;rsquo;s, and add in conditions and use Data operations to shape the data into usable steps. Then add in a switch depending on your stage names, and add final actions updating your BPF table.&lt;/p&gt;
 &lt;p&gt;Sounds easy enough right?…..&lt;/p&gt;

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/tags/github/</link>
+    <link>http://localhost:1313/tags/github/</link>
     <description>Recent content in Github on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jan 2023 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Fri, 13 Jan 2023 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Changing the button for “Fork” into “Bork!” for Github</title>
-      <link>https://blog.nathalieleenders.com/posts/forktobork/</link>
+      <link>http://localhost:1313/posts/forktobork/</link>
       <pubDate>Fri, 13 Jan 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/forktobork/</guid>
+      <guid>http://localhost:1313/posts/forktobork/</guid>
       <description>&lt;p&gt;This has to be the best thing to come out of 2023 (and yes, it’s only January so that’s saying something)&lt;/p&gt;
 &lt;p&gt;My longest blog post and read to date, but I promise you it’s worth it!&lt;/p&gt;
 &lt;p&gt;I was on the First Time Contributor training yesterday, one of the Sharing is Caring sessions led by David Warner and Hugo Bernier. (&amp;lt;3) M365 &amp;amp; Power Platform | Sharing Is Caring (pnp.github.io)&lt;/p&gt;

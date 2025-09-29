@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SharePoint on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/tags/sharepoint/</link>
+    <link>http://localhost:1313/tags/sharepoint/</link>
     <description>Recent content in SharePoint on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Feb 2024 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/sharepoint/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Tue, 20 Feb 2024 09:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sharepoint/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Filter on date column with random years on SharePoint</title>
-      <link>https://blog.nathalieleenders.com/posts/sharepointfilteronyear/</link>
+      <link>http://localhost:1313/posts/sharepointfilteronyear/</link>
       <pubDate>Tue, 20 Feb 2024 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/sharepointfilteronyear/</guid>
+      <guid>http://localhost:1313/posts/sharepointfilteronyear/</guid>
       <description>&lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
 &lt;p&gt;You have a SharePoint list with birthdays, on a date column, but dont know how to filter on them to show the last few days or upcoming few days if someone has (had) their birthday.&lt;/p&gt;
 &lt;p&gt;I couldnt figure out how to do this, and then a colleague of mine Remco Bruijstens (thank you!) suggested this method, and after testing it worked.
@@ -20,10 +20,10 @@ Kudos to him, and I wanted to share with you how to accomplish this.&lt;/p&gt;</
     
     <item>
       <title>Custom document link sharing with SharePoint and Power Automate</title>
-      <link>https://blog.nathalieleenders.com/posts/sharepointlibrarypermissions/</link>
+      <link>http://localhost:1313/posts/sharepointlibrarypermissions/</link>
       <pubDate>Mon, 11 Sep 2023 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/sharepointlibrarypermissions/</guid>
+      <guid>http://localhost:1313/posts/sharepointlibrarypermissions/</guid>
       <description>&lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
 &lt;p&gt;You need to share a file from SharePoint to an external user, in an automated process. No manual &amp;lsquo;create link&amp;rsquo; actions needed on the SharePoint site. You can then email this link to your external client.&lt;/p&gt;
 &lt;p&gt;Default on Power automate for a sharing link for SharePoint, is to set the Link Scope to either:&lt;/p&gt;

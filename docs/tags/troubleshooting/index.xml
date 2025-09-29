@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshooting on Power Platform Tips &amp; Tricks</title>
+    <link>http://localhost:1313/tags/troubleshooting/</link>
+    <description>Recent content in Troubleshooting on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 11 Sep 2025 10:00:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/tags/troubleshooting/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Handling Untyped Objects from Power BI REST API in Power Apps</title>
+      <link>http://localhost:1313/posts/handling-untyped-objects-power-bi-rest-api-powerapps/</link>
+      <pubDate>Thu, 11 Sep 2025 10:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/handling-untyped-objects-power-bi-rest-api-powerapps/</guid>
+      <description>&lt;p&gt;When working with the Power BI REST API in Power Apps, you&amp;rsquo;ll often encounter untyped objects that can cause frustrating &amp;ldquo;Invalid argument type (Dynamic). Expecting a Text value instead&amp;rdquo; errors. In this post, I&amp;rsquo;ll show you how to properly handle these dynamic values and share a common Gallery gotcha that can break your filtering logic.&lt;/p&gt;
+&lt;h2 id=&#34;the-problem-untyped-objects&#34;&gt;The Problem: Untyped Objects&lt;/h2&gt;
+&lt;p&gt;When you call the Power BI REST API using something like &lt;code&gt;PowerBIRest.GetReports()&lt;/code&gt;, you get back a response that looks like this:&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

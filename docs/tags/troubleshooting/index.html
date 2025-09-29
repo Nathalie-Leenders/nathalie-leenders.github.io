@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Sharepoint - HTTP Series</title>
+    <title>Troubleshooting</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -23,21 +23,354 @@
 
   <link rel="icon" type="image/png" href="/images/site/favicon_hu9433149453350490282.png" />
 
-<meta property="og:url" content="http://localhost:1313/tags/sharepoint---http-series/">
+<meta property="og:url" content="http://localhost:1313/tags/troubleshooting/">
   <meta property="og:site_name" content="Power Platform Tips & Tricks">
-  <meta property="og:title" content="Sharepoint - HTTP Series">
+  <meta property="og:title" content="Troubleshooting">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Sharepoint - HTTP Series">
+  <meta name="twitter:title" content="Troubleshooting">
 
     
      
 
     
 
+    
+
+        
+        
+<div id="cookie-consent-banner" class="cookie-consent-banner" style="display: none;">
+    <div class="cookie-consent-container">
+        <div class="cookie-consent-content">
+            <h4>🍪 Cookie Preferences</h4>
+            <p>We use cookies to improve your experience and analyze site usage. You can choose which types of cookies to accept:</p>
+            
+            <div class="cookie-preferences">
+                <div class="cookie-category">
+                    <label class="cookie-label">
+                        <input type="checkbox" id="analytics-consent" checked>
+                        <span class="checkmark"></span>
+                        <strong>Analytics Cookies</strong>
+                    </label>
+                    <p class="cookie-description">Help us understand how visitors interact with our website by collecting anonymous information.</p>
+                </div>
+                
+                <div class="cookie-category">
+                    <label class="cookie-label">
+                        <input type="checkbox" id="advertising-consent">
+                        <span class="checkmark"></span>
+                        <strong>Advertising Cookies</strong>
+                    </label>
+                    <p class="cookie-description">Used to make advertising messages more relevant to you and your interests.</p>
+                </div>
+            </div>
+            
+            <div class="cookie-consent-buttons">
+                <button id="accept-all-cookies" class="btn btn-primary">Accept All</button>
+                <button id="accept-selected-cookies" class="btn btn-outline-primary">Accept Selected</button>
+                <button id="reject-all-cookies" class="btn btn-secondary">Reject All</button>
+            </div>
+            
+            <p class="cookie-consent-note">
+                You can change your preferences anytime by clicking on the cookie settings icon in the bottom right corner.
+            </p>
+        </div>
+        
+        <button id="close-consent-banner" class="cookie-consent-close" aria-label="Close cookie banner">&times;</button>
+    </div>
+</div>
+
+
+<div id="cookie-settings-button" class="cookie-settings-btn" title="Cookie Settings">
+    🍪
+</div>
+
+<style>
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    padding: 20px;
+    z-index: 10000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.cookie-consent-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cookie-consent-content h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.cookie-consent-content p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.cookie-preferences {
+    margin: 20px 0;
+}
+
+.cookie-category {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.cookie-label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.cookie-label input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.cookie-description {
+    margin: 5px 0 0 25px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.cookie-consent-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cookie-consent-buttons .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.cookie-consent-note {
+    font-size: 0.8em;
+    color: #ccc;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.cookie-consent-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.cookie-consent-close:hover {
+    color: #ccc;
+}
+
+.cookie-settings-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.cookie-settings-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+ 
+@media (max-width: 768px) {
+    .cookie-consent-banner {
+        padding: 15px;
+    }
+    
+    .cookie-consent-buttons {
+        flex-direction: column;
+    }
+    
+    .cookie-consent-buttons .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .cookie-settings-btn {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+</style>
+        
+        
+        <script type="text/javascript" src="/js/consent-management.js" defer></script>
+
+        
+            
+            
+                
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0R550W0TM"></script>
+      <script>
+        var doNotTrack = false;
+        if ( null ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-G0R550W0TM');
+        }
+      </script>
+            
+
+            
+
+<script type="text/javascript">
+    
+    (function() {
+        
+        window.clarityId = "h4un3ap4e1";
+        
+        
+        function hasAnalyticsConsent() {
+            try {
+                const stored = localStorage.getItem('clarity_consent_preferences');
+                if (stored) {
+                    const preferences = JSON.parse(stored);
+                    return preferences.analytics_storage === true;
+                }
+            } catch (e) {
+                console.warn('Could not check consent preferences:', e);
+            }
+            return false;
+        }
+        
+        
+        function initClarity() {
+            if (typeof window.clarity === 'undefined') {
+                (function (c, l, a, r, i, t, y) {
+                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                    t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+                })(window, document, "clarity", "script", window.clarityId);
+                
+                console.log('Clarity initialized with consent');
+            }
+        }
+        
+        
+        if (hasAnalyticsConsent()) {
+            initClarity();
+        }
+        
+        
+        window.addEventListener('clarityConsentUpdated', function(event) {
+            if (event.detail.analytics_storage === true) {
+                initClarity();
+                
+                
+                setTimeout(function() {
+                    if (typeof window.clarity === 'function') {
+                        window.clarity('consentv2', {
+                            analytics_storage: "granted",
+                            ad_storage: event.detail.ad_storage ? "granted" : "denied"
+                        });
+                    }
+                }, 100);
+            } else if (event.detail.analytics_storage === false) {
+                
+                if (typeof window.clarity === 'function') {
+                    window.clarity('consent', false);
+                }
+            }
+        });
+    })();
+</script>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+
+            
+
+            
+        
     
 
 
@@ -445,6 +778,11 @@
           
             
           
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/powerfx/" data-taxonomy-term="powerfx"><span class="taxonomy-label">PowerFx</span></a></li>
+        
+          
+            
+          
           <li><a class="taxonomy-term " href="http://localhost:1313/tags/powershell/" data-taxonomy-term="powershell"><span class="taxonomy-label">Powershell</span></a></li>
         
           
@@ -460,17 +798,22 @@
           
             
           
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/rest-api/" data-taxonomy-term="rest-api"><span class="taxonomy-label">REST API</span></a></li>
+        
+          
+            
+          
           <li><a class="taxonomy-term " href="http://localhost:1313/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="http://localhost:1313/tags/sharepoint/" data-taxonomy-term="sharepoint"><span class="taxonomy-label">Sharepoint</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/sharepoint/" data-taxonomy-term="sharepoint"><span class="taxonomy-label">SharePoint</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term active" href="http://localhost:1313/tags/sharepoint---http-series/" data-taxonomy-term="sharepoint-http-series"><span class="taxonomy-label">Sharepoint - HTTP Series</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/sharepoint-http-series/" data-taxonomy-term="sharepoint-http-series"><span class="taxonomy-label">SharePoint HTTP Series</span></a></li>
         
           
             
@@ -481,6 +824,16 @@
             
           
           <li><a class="taxonomy-term " href="http://localhost:1313/tags/sql/" data-taxonomy-term="sql"><span class="taxonomy-label">SQL</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term active" href="http://localhost:1313/tags/troubleshooting/" data-taxonomy-term="troubleshooting"><span class="taxonomy-label">Troubleshooting</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/untyped-objects/" data-taxonomy-term="untyped-objects"><span class="taxonomy-label">Untyped Objects</span></a></li>
         
           
             
@@ -526,17 +879,15 @@
           <div class="post-card">
   <div class="card">
     <div class="card-head">
-      <a href="/posts/series-http-breakinheritance/" class="post-card-link">
+      <a href="/posts/handling-untyped-objects-power-bi-rest-api-powerapps/" class="post-card-link">
         <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
       </a>
     </div>
     <div class="card-body">
-      <a href="/posts/series-http-breakinheritance/" class="post-card-link">
-        <h5 class="card-title">Blog series - Post - Breaking Role Inheritance for a Specific Item in a SharePoint List</h5>
-        <p class="card-text post-summary">Scenario Breaking Role Inheritance for a Specific Item in a SharePoint List
-Objective: You want to break the role inheritance for a specific item in a SharePoint list, for example when you need to set your own permissions on a file.
-Steps:
-Identify the List and Item: You have a SharePoint site with multiple lists, and you need to break the role inheritance for a specific item in a list. I have the list name and item ID stored in variables VarListname and VarItemID , but you&rsquo;re welcome to use your own names of course.
+      <a href="/posts/handling-untyped-objects-power-bi-rest-api-powerapps/" class="post-card-link">
+        <h5 class="card-title">Handling Untyped Objects from Power BI REST API in Power Apps</h5>
+        <p class="card-text post-summary">When working with the Power BI REST API in Power Apps, you&rsquo;ll often encounter untyped objects that can cause frustrating &ldquo;Invalid argument type (Dynamic). Expecting a Text value instead&rdquo; errors. In this post, I&rsquo;ll show you how to properly handle these dynamic values and share a common Gallery gotcha that can break your filtering logic.
+The Problem: Untyped Objects When you call the Power BI REST API using something like PowerBIRest.GetReports(), you get back a response that looks like this:
 </p>
       </a>
       
@@ -544,7 +895,22 @@ Identify the List and Item: You have a SharePoint site with multiple lists, and 
   <ul style="padding-left: 0;">
     
     
-    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
+    <li class="rounded"><a href="/tags/powerapps/" class="btn btn-sm btn-info">PowerApps</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/power-bi/" class="btn btn-sm btn-info">Power BI</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/rest-api/" class="btn btn-sm btn-info">REST API</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/powerfx/" class="btn btn-sm btn-info">PowerFx</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/untyped-objects/" class="btn btn-sm btn-info">Untyped Objects</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/troubleshooting/" class="btn btn-sm btn-info">Troubleshooting</a></li>
     
   </ul>
 </div>
@@ -553,215 +919,10 @@ Identify the List and Item: You have a SharePoint site with multiple lists, and 
     </div>
     <div class="card-footer">
       <span class="float-start">
-          Thursday, February 20, 2025
-           | 2 minutes </span>
+          Thursday, September 11, 2025
+           | 4 minutes </span>
       <a
-      href="/posts/series-http-breakinheritance/"
-      class="float-end btn btn-outline-info btn-sm">Read</a>
-    </div>
-  </div>
-</div>
-
-        
-      
-        
-          <div class="post-card">
-  <div class="card">
-    <div class="card-head">
-      <a href="/posts/series-http-copylistitem/" class="post-card-link">
-        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
-      </a>
-    </div>
-    <div class="card-body">
-      <a href="/posts/series-http-copylistitem/" class="post-card-link">
-        <h5 class="card-title">Blog series - Post - Copying a File to a New Location in SharePoint?</h5>
-        <p class="card-text post-summary">Scenario Copying a File to a New Location in SharePoint
-Objective You want to copy a file from one location to another within a SharePoint site. The source file URL and the destination file URL are known or in variables to use.
-Steps: Construct the HTTP Request Use the SharePoint REST API to copy the file by specifying the source file URL and the destination file URL in the URL.
-</p>
-      </a>
-      
-        <div class="tags">
-  <ul style="padding-left: 0;">
-    
-    
-    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
-    
-  </ul>
-</div>
-
-      
-    </div>
-    <div class="card-footer">
-      <span class="float-start">
-          Thursday, February 20, 2025
-           | 1 minute </span>
-      <a
-      href="/posts/series-http-copylistitem/"
-      class="float-end btn btn-outline-info btn-sm">Read</a>
-    </div>
-  </div>
-</div>
-
-        
-      
-        
-          <div class="post-card">
-  <div class="card">
-    <div class="card-head">
-      <a href="/posts/series-http-updatelistitem/" class="post-card-link">
-        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
-      </a>
-    </div>
-    <div class="card-body">
-      <a href="/posts/series-http-updatelistitem/" class="post-card-link">
-        <h5 class="card-title">Blog series - Post - Fetching a Specific Item from a SharePoint List by Title and Item ID?</h5>
-        <p class="card-text post-summary">Scenario Fetching a Specific Item from a SharePoint List by Title and Item ID
-Objective You want to retrieve the details of a specific item from a SharePoint list based on the list title and item ID.
-Steps: This call is very similar to getting the list item information, but instead of using Get, we use Post, to be able to update our item.
-In the body, you can then specify what you want to update.
-</p>
-      </a>
-      
-        <div class="tags">
-  <ul style="padding-left: 0;">
-    
-    
-    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
-    
-  </ul>
-</div>
-
-      
-    </div>
-    <div class="card-footer">
-      <span class="float-start">
-          Thursday, February 20, 2025
-           | 1 minute </span>
-      <a
-      href="/posts/series-http-updatelistitem/"
-      class="float-end btn btn-outline-info btn-sm">Read</a>
-    </div>
-  </div>
-</div>
-
-        
-      
-        
-          <div class="post-card">
-  <div class="card">
-    <div class="card-head">
-      <a href="/posts/series-http-updateitemfromtermstore/" class="post-card-link">
-        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
-      </a>
-    </div>
-    <div class="card-body">
-      <a href="/posts/series-http-updateitemfromtermstore/" class="post-card-link">
-        <h5 class="card-title">Blog series - Post - HTTP Update list item term store?</h5>
-        <p class="card-text post-summary">Scenario: You have a metadata column you want to update, but how to do this?
-Objective: You want to update the status field, with a new status from that term set.
-Steps Identify the List and Item Like always, I&rsquo;ll use varsitename in the URL, and in the URI Varlistname and VaritemID.
-Execute the HTTP Request With this request, I&rsquo;m updating the name_status field. I will have to have queried the term store before, to get the filter array for the status field I want to have it updated to.
-</p>
-      </a>
-      
-        <div class="tags">
-  <ul style="padding-left: 0;">
-    
-    
-    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
-    
-  </ul>
-</div>
-
-      
-    </div>
-    <div class="card-footer">
-      <span class="float-start">
-          Thursday, February 20, 2025
-           | 1 minute </span>
-      <a
-      href="/posts/series-http-updateitemfromtermstore/"
-      class="float-end btn btn-outline-info btn-sm">Read</a>
-    </div>
-  </div>
-</div>
-
-        
-      
-        
-          <div class="post-card">
-  <div class="card">
-    <div class="card-head">
-      <a href="/posts/series-http-setpermissionstoread/" class="post-card-link">
-        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
-      </a>
-    </div>
-    <div class="card-body">
-      <a href="/posts/series-http-setpermissionstoread/" class="post-card-link">
-        <h5 class="card-title">Blog series - Post - Revoke permissions to a document through the API</h5>
-        <p class="card-text post-summary">Scenario Revoke permissions to a document through the API.
-Here comes the tricky part. There are 2 kind (that I found) role types on Sharepoint.
-Roles from the Roletypekind None (Role = 0): No permissions assigned. Guest (Role = 1): Limited access, typically read-only. Reader (Role = 2): Can view items but not make changes. Contributor (Role = 3): Can add and edit items. WebDesigner (Role = 4): Can design and manage site content. Administrator (Role = 5): Full control over the site. Role (UserRoleAssignment). View (Role = 1): Grants read-only access to the document. Edit (Role = 2): Allows the user to edit the document. Owner (Role = 3): Grants full control over the document, including the ability to manage permissions. None (Role = 0): Removes any previously assigned permissions. Step 1 - You need to have broken inheritance first, otherwise this won&rsquo;t work. API call 1 - Get all the groups from Sharepoint Method: Post URI: _api/web/lists/getbytitle(&#39;@{variables(&#39;VarListname&#39;)}&#39;)/items(@{variables(&#39;VarItemID&#39;)})/UpdateDocumentSharingInfo </p>
-      </a>
-      
-        <div class="tags">
-  <ul style="padding-left: 0;">
-    
-    
-    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
-    
-  </ul>
-</div>
-
-      
-    </div>
-    <div class="card-footer">
-      <span class="float-start">
-          Thursday, February 20, 2025
-           | 2 minutes </span>
-      <a
-      href="/posts/series-http-setpermissionstoread/"
-      class="float-end btn btn-outline-info btn-sm">Read</a>
-    </div>
-  </div>
-</div>
-
-        
-      
-        
-          <div class="post-card">
-  <div class="card">
-    <div class="card-head">
-      <a href="/posts/series-http-introduction/" class="post-card-link">
-        <img class="card-img-top" src='/posts/series-http-introduction/list0.png' alt="Hero Image">
-      </a>
-    </div>
-    <div class="card-body">
-      <a href="/posts/series-http-introduction/" class="post-card-link">
-        <h5 class="card-title">Introduction to blog series - HTTP calls to Sharepoint</h5>
-        <p class="card-text post-summary">Introduction Welcome to my blog post series on HTTP SharePoint calls.
-In this series, we&rsquo;ll dive into the different types of HTTP calls you can make to SharePoint, including GET, POST, PUT, and DELETE. We&rsquo;ll explore the necessary permissions required for these calls and how to set them up correctly. Additionally, we&rsquo;ll cover the essential components of an HTTP request, such as headers and body, and explain how to structure them for successful communication with SharePoint.
-</p>
-      </a>
-      
-        <div class="tags">
-  <ul style="padding-left: 0;">
-    
-    
-    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">Sharepoint - HTTP series</a></li>
-    
-  </ul>
-</div>
-
-      
-    </div>
-    <div class="card-footer">
-      <span class="float-start">
-          Thursday, February 20, 2025
-           | 1 minute </span>
-      <a
-      href="/posts/series-http-introduction/"
+      href="/posts/handling-untyped-objects-power-bi-rest-api-powerapps/"
       class="float-end btn btn-outline-info btn-sm">Read</a>
     </div>
   </div>
@@ -772,26 +933,6 @@ In this series, we&rsquo;ll dive into the different types of HTTP calls you can 
     </div>
     <div class="paginator">
       
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/tags/sharepoint---http-series/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/sharepoint---http-series/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/sharepoint---http-series/" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
     </div>
   </div>
 </section>

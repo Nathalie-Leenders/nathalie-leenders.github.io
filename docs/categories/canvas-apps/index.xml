@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Canvas Apps on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/categories/canvas-apps/</link>
+    <link>http://localhost:1313/categories/canvas-apps/</link>
     <description>Recent content in Canvas Apps on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Apr 2023 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/canvas-apps/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Wed, 12 Apr 2023 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/canvas-apps/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Quick tip! Using QuickChart.IO with dynamic values (Canvas app edition)</title>
-      <link>https://blog.nathalieleenders.com/posts/quickchartiodynamic/</link>
+      <link>http://localhost:1313/posts/quickchartiodynamic/</link>
       <pubDate>Wed, 12 Apr 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/quickchartiodynamic/</guid>
+      <guid>http://localhost:1313/posts/quickchartiodynamic/</guid>
       <description>&lt;p&gt;(This is lengthy for a quick tip, whoops, scroll all the way down to quickly check the fix)&lt;/p&gt;
 &lt;p&gt;First of all, FULL credit goes to Pen Warner who graciously shared his QuickchartIO code with me that he used for his app. His app is awesome, check that out here.&lt;/p&gt;
 &lt;p&gt;He’s on Twitter here: @p3nf0ld

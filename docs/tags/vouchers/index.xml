@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vouchers on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/tags/vouchers/</link>
+    <link>http://localhost:1313/tags/vouchers/</link>
     <description>Recent content in Vouchers on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 May 2023 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/vouchers/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Thu, 11 May 2023 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vouchers/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>The secret to doing Microsoft exams for free!</title>
-      <link>https://blog.nathalieleenders.com/posts/microsoftexams-secrets/</link>
+      <link>http://localhost:1313/posts/microsoftexams-secrets/</link>
       <pubDate>Thu, 11 May 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/microsoftexams-secrets/</guid>
+      <guid>http://localhost:1313/posts/microsoftexams-secrets/</guid>
       <description></description>
     </item>
     

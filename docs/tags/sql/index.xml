@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQL on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/tags/sql/</link>
+    <link>http://localhost:1313/tags/sql/</link>
     <description>Recent content in SQL on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Feb 2023 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/sql/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Wed, 15 Feb 2023 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Quick tip! Boolean in SQL</title>
-      <link>https://blog.nathalieleenders.com/posts/boolean-in-sql/</link>
+      <link>http://localhost:1313/posts/boolean-in-sql/</link>
       <pubDate>Wed, 15 Feb 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/boolean-in-sql/</guid>
+      <guid>http://localhost:1313/posts/boolean-in-sql/</guid>
       <description>&lt;h1 id=&#34;are-you-looking-for-a-boolean-column-in-sql-or-have-a-virtual-table-and-need-a-togglecheckbox-in-your-app&#34;&gt;Are you looking for a boolean column in SQL? Or have a virtual table and need a toggle/checkbox in your app?&lt;/h1&gt;
 &lt;p&gt;If you have just a string/text field with True/False this wont work.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;You need to convert the column in SQL to BIT.&lt;/strong&gt;&lt;/p&gt;
@@ -22,10 +22,10 @@
     
     <item>
       <title>Dataverse Choices to SQL backend- Update!</title>
-      <link>https://blog.nathalieleenders.com/posts/dataversechoices-sqlbackend/</link>
+      <link>http://localhost:1313/posts/dataversechoices-sqlbackend/</link>
       <pubDate>Tue, 14 Feb 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/dataversechoices-sqlbackend/</guid>
+      <guid>http://localhost:1313/posts/dataversechoices-sqlbackend/</guid>
       <description></description>
     </item>
     

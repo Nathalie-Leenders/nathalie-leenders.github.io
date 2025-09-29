@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Powershell</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.c907d646076f1b03ced4c049049820ed8ebb2004402c43b75b656fd95b2900fd.css" integrity="sha256-yQfWRgdvGwPO1MBJBJgg7Y67IARALEO3W2Vv2VspAP0=" />
+<link rel="stylesheet" href="/application.83336b94aa95722a64c7f77d97b1ab664226417ccff4cf02153293844604ba17.css" integrity="sha256-gzNrlKqVcipkx/d9l7GrZkImQXzP9M8CFTKThEYEuhc=" />
 
 
 
@@ -23,7 +23,7 @@
 
   <link rel="icon" type="image/png" href="/images/site/favicon_hu9433149453350490282.png" />
 
-<meta property="og:url" content="https://blog.nathalieleenders.com/tags/powershell/">
+<meta property="og:url" content="http://localhost:1313/tags/powershell/">
   <meta property="og:site_name" content="Power Platform Tips & Tricks">
   <meta property="og:title" content="Powershell">
   <meta property="og:locale" content="en">
@@ -38,6 +38,339 @@
 
     
 
+    
+
+        
+        
+<div id="cookie-consent-banner" class="cookie-consent-banner" style="display: none;">
+    <div class="cookie-consent-container">
+        <div class="cookie-consent-content">
+            <h4>🍪 Cookie Preferences</h4>
+            <p>We use cookies to improve your experience and analyze site usage. You can choose which types of cookies to accept:</p>
+            
+            <div class="cookie-preferences">
+                <div class="cookie-category">
+                    <label class="cookie-label">
+                        <input type="checkbox" id="analytics-consent" checked>
+                        <span class="checkmark"></span>
+                        <strong>Analytics Cookies</strong>
+                    </label>
+                    <p class="cookie-description">Help us understand how visitors interact with our website by collecting anonymous information.</p>
+                </div>
+                
+                <div class="cookie-category">
+                    <label class="cookie-label">
+                        <input type="checkbox" id="advertising-consent">
+                        <span class="checkmark"></span>
+                        <strong>Advertising Cookies</strong>
+                    </label>
+                    <p class="cookie-description">Used to make advertising messages more relevant to you and your interests.</p>
+                </div>
+            </div>
+            
+            <div class="cookie-consent-buttons">
+                <button id="accept-all-cookies" class="btn btn-primary">Accept All</button>
+                <button id="accept-selected-cookies" class="btn btn-outline-primary">Accept Selected</button>
+                <button id="reject-all-cookies" class="btn btn-secondary">Reject All</button>
+            </div>
+            
+            <p class="cookie-consent-note">
+                You can change your preferences anytime by clicking on the cookie settings icon in the bottom right corner.
+            </p>
+        </div>
+        
+        <button id="close-consent-banner" class="cookie-consent-close" aria-label="Close cookie banner">&times;</button>
+    </div>
+</div>
+
+
+<div id="cookie-settings-button" class="cookie-settings-btn" title="Cookie Settings">
+    🍪
+</div>
+
+<style>
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    padding: 20px;
+    z-index: 10000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.cookie-consent-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cookie-consent-content h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.cookie-consent-content p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.cookie-preferences {
+    margin: 20px 0;
+}
+
+.cookie-category {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.cookie-label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.cookie-label input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.cookie-description {
+    margin: 5px 0 0 25px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.cookie-consent-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cookie-consent-buttons .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.cookie-consent-note {
+    font-size: 0.8em;
+    color: #ccc;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.cookie-consent-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.cookie-consent-close:hover {
+    color: #ccc;
+}
+
+.cookie-settings-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.cookie-settings-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+ 
+@media (max-width: 768px) {
+    .cookie-consent-banner {
+        padding: 15px;
+    }
+    
+    .cookie-consent-buttons {
+        flex-direction: column;
+    }
+    
+    .cookie-consent-buttons .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .cookie-settings-btn {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+</style>
+        
+        
+        <script type="text/javascript" src="/js/consent-management.js" defer></script>
+
+        
+            
+            
+                
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0R550W0TM"></script>
+      <script>
+        var doNotTrack = false;
+        if ( null ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-G0R550W0TM');
+        }
+      </script>
+            
+
+            
+
+<script type="text/javascript">
+    
+    (function() {
+        
+        window.clarityId = "h4un3ap4e1";
+        
+        
+        function hasAnalyticsConsent() {
+            try {
+                const stored = localStorage.getItem('clarity_consent_preferences');
+                if (stored) {
+                    const preferences = JSON.parse(stored);
+                    return preferences.analytics_storage === true;
+                }
+            } catch (e) {
+                console.warn('Could not check consent preferences:', e);
+            }
+            return false;
+        }
+        
+        
+        function initClarity() {
+            if (typeof window.clarity === 'undefined') {
+                (function (c, l, a, r, i, t, y) {
+                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                    t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+                })(window, document, "clarity", "script", window.clarityId);
+                
+                console.log('Clarity initialized with consent');
+            }
+        }
+        
+        
+        if (hasAnalyticsConsent()) {
+            initClarity();
+        }
+        
+        
+        window.addEventListener('clarityConsentUpdated', function(event) {
+            if (event.detail.analytics_storage === true) {
+                initClarity();
+                
+                
+                setTimeout(function() {
+                    if (typeof window.clarity === 'function') {
+                        window.clarity('consentv2', {
+                            analytics_storage: "granted",
+                            ad_storage: event.detail.ad_storage ? "granted" : "denied"
+                        });
+                    }
+                }, 100);
+            } else if (event.detail.analytics_storage === false) {
+                
+                if (typeof window.clarity === 'function') {
+                    window.clarity('consent', false);
+                }
+            }
+        });
+    })();
+</script>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+
+            
+
+            
+        
     
 
 
@@ -275,232 +608,252 @@
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/adaptive-cards/" data-taxonomy-term="adaptive-cards"><span class="taxonomy-label">Adaptive Cards</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/adaptive-cards/" data-taxonomy-term="adaptive-cards"><span class="taxonomy-label">Adaptive Cards</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/blogging/" data-taxonomy-term="blogging"><span class="taxonomy-label">Blogging</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/blogging/" data-taxonomy-term="blogging"><span class="taxonomy-label">Blogging</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/boolean/" data-taxonomy-term="boolean"><span class="taxonomy-label">Boolean</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/boolean/" data-taxonomy-term="boolean"><span class="taxonomy-label">Boolean</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/bpf/" data-taxonomy-term="bpf"><span class="taxonomy-label">BPF</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/bpf/" data-taxonomy-term="bpf"><span class="taxonomy-label">BPF</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/canvas-app/" data-taxonomy-term="canvas-app"><span class="taxonomy-label">Canvas App</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/canvas-app/" data-taxonomy-term="canvas-app"><span class="taxonomy-label">Canvas App</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/canvasapps/" data-taxonomy-term="canvasapps"><span class="taxonomy-label">Canvasapps</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/canvasapps/" data-taxonomy-term="canvasapps"><span class="taxonomy-label">Canvasapps</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/command-bar/" data-taxonomy-term="command-bar"><span class="taxonomy-label">Command Bar</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/command-bar/" data-taxonomy-term="command-bar"><span class="taxonomy-label">Command Bar</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/conditions/" data-taxonomy-term="conditions"><span class="taxonomy-label">Conditions</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/conditions/" data-taxonomy-term="conditions"><span class="taxonomy-label">Conditions</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/copilot-studio/" data-taxonomy-term="copilot-studio"><span class="taxonomy-label">Copilot Studio</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/copilot-studio/" data-taxonomy-term="copilot-studio"><span class="taxonomy-label">Copilot Studio</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/custom-emails/" data-taxonomy-term="custom-emails"><span class="taxonomy-label">Custom Emails</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/custom-emails/" data-taxonomy-term="custom-emails"><span class="taxonomy-label">Custom Emails</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/data-operations/" data-taxonomy-term="data-operations"><span class="taxonomy-label">Data Operations</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/data-operations/" data-taxonomy-term="data-operations"><span class="taxonomy-label">Data Operations</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/dataverse/" data-taxonomy-term="dataverse"><span class="taxonomy-label">Dataverse</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/dataverse/" data-taxonomy-term="dataverse"><span class="taxonomy-label">Dataverse</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/dynamics365/" data-taxonomy-term="dynamics365"><span class="taxonomy-label">Dynamics365</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/dynamics365/" data-taxonomy-term="dynamics365"><span class="taxonomy-label">Dynamics365</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/dynamics365ci/" data-taxonomy-term="dynamics365ci"><span class="taxonomy-label">Dynamics365CI</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/dynamics365ci/" data-taxonomy-term="dynamics365ci"><span class="taxonomy-label">Dynamics365CI</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/expressions/" data-taxonomy-term="expressions"><span class="taxonomy-label">Expressions</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/expressions/" data-taxonomy-term="expressions"><span class="taxonomy-label">Expressions</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/generative-answers/" data-taxonomy-term="generative-answers"><span class="taxonomy-label">Generative Answers</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/generative-answers/" data-taxonomy-term="generative-answers"><span class="taxonomy-label">Generative Answers</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/github/" data-taxonomy-term="github"><span class="taxonomy-label">Github</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/github/" data-taxonomy-term="github"><span class="taxonomy-label">Github</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/images/" data-taxonomy-term="images"><span class="taxonomy-label">Images</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/images/" data-taxonomy-term="images"><span class="taxonomy-label">Images</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/imposter-syndrome/" data-taxonomy-term="imposter-syndrome"><span class="taxonomy-label">Imposter Syndrome</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/imposter-syndrome/" data-taxonomy-term="imposter-syndrome"><span class="taxonomy-label">Imposter Syndrome</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/javascript/" data-taxonomy-term="javascript"><span class="taxonomy-label">Javascript</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/javascript/" data-taxonomy-term="javascript"><span class="taxonomy-label">Javascript</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/microsoft-exams/" data-taxonomy-term="microsoft-exams"><span class="taxonomy-label">Microsoft Exams</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/microsoft-exams/" data-taxonomy-term="microsoft-exams"><span class="taxonomy-label">Microsoft Exams</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/microsoft-teams/" data-taxonomy-term="microsoft-teams"><span class="taxonomy-label">Microsoft Teams</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/microsoft-teams/" data-taxonomy-term="microsoft-teams"><span class="taxonomy-label">Microsoft Teams</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/microsoftteams/" data-taxonomy-term="microsoftteams"><span class="taxonomy-label">MicrosoftTeams</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/microsoftteams/" data-taxonomy-term="microsoftteams"><span class="taxonomy-label">MicrosoftTeams</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/model-driven-app/" data-taxonomy-term="model-driven-app"><span class="taxonomy-label">Model Driven App</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/model-driven-app/" data-taxonomy-term="model-driven-app"><span class="taxonomy-label">Model Driven App</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/mppc23/" data-taxonomy-term="mppc23"><span class="taxonomy-label">MPPC23</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/mppc23/" data-taxonomy-term="mppc23"><span class="taxonomy-label">MPPC23</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/msword/" data-taxonomy-term="msword"><span class="taxonomy-label">MSWord</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/msword/" data-taxonomy-term="msword"><span class="taxonomy-label">MSWord</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/muppets/" data-taxonomy-term="muppets"><span class="taxonomy-label">Muppets</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/muppets/" data-taxonomy-term="muppets"><span class="taxonomy-label">Muppets</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/power-automate/" data-taxonomy-term="power-automate"><span class="taxonomy-label">Power Automate</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/power-automate/" data-taxonomy-term="power-automate"><span class="taxonomy-label">Power Automate</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/power-bi/" data-taxonomy-term="power-bi"><span class="taxonomy-label">Power BI</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/power-bi/" data-taxonomy-term="power-bi"><span class="taxonomy-label">Power BI</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/power-fx/" data-taxonomy-term="power-fx"><span class="taxonomy-label">Power FX</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/power-fx/" data-taxonomy-term="power-fx"><span class="taxonomy-label">Power FX</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/power-pages/" data-taxonomy-term="power-pages"><span class="taxonomy-label">Power Pages</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/power-pages/" data-taxonomy-term="power-pages"><span class="taxonomy-label">Power Pages</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/powerapps/" data-taxonomy-term="powerapps"><span class="taxonomy-label">PowerApps</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/powerapps/" data-taxonomy-term="powerapps"><span class="taxonomy-label">PowerApps</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/powerautomate/" data-taxonomy-term="powerautomate"><span class="taxonomy-label">PowerAutomate</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/powerautomate/" data-taxonomy-term="powerautomate"><span class="taxonomy-label">PowerAutomate</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/powerbi/" data-taxonomy-term="powerbi"><span class="taxonomy-label">PowerBI</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/powerbi/" data-taxonomy-term="powerbi"><span class="taxonomy-label">PowerBI</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term active" href="https://blog.nathalieleenders.com/tags/powershell/" data-taxonomy-term="powershell"><span class="taxonomy-label">Powershell</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/powerfx/" data-taxonomy-term="powerfx"><span class="taxonomy-label">PowerFx</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/quickchartio/" data-taxonomy-term="quickchartio"><span class="taxonomy-label">QuickChartIO</span></a></li>
+          <li><a class="taxonomy-term active" href="http://localhost:1313/tags/powershell/" data-taxonomy-term="powershell"><span class="taxonomy-label">Powershell</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/regex/" data-taxonomy-term="regex"><span class="taxonomy-label">RegEx</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/quickchartio/" data-taxonomy-term="quickchartio"><span class="taxonomy-label">QuickChartIO</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/regex/" data-taxonomy-term="regex"><span class="taxonomy-label">RegEx</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/sharepoint/" data-taxonomy-term="sharepoint"><span class="taxonomy-label">SharePoint</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/rest-api/" data-taxonomy-term="rest-api"><span class="taxonomy-label">REST API</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/sharepoint-http-series/" data-taxonomy-term="sharepoint-http-series"><span class="taxonomy-label">SharePoint HTTP Series</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/speaking/" data-taxonomy-term="speaking"><span class="taxonomy-label">Speaking</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/sharepoint/" data-taxonomy-term="sharepoint"><span class="taxonomy-label">SharePoint</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/sql/" data-taxonomy-term="sql"><span class="taxonomy-label">SQL</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/sharepoint-http-series/" data-taxonomy-term="sharepoint-http-series"><span class="taxonomy-label">SharePoint HTTP Series</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/variables/" data-taxonomy-term="variables"><span class="taxonomy-label">Variables</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/speaking/" data-taxonomy-term="speaking"><span class="taxonomy-label">Speaking</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/virtual-tables/" data-taxonomy-term="virtual-tables"><span class="taxonomy-label">Virtual Tables</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/sql/" data-taxonomy-term="sql"><span class="taxonomy-label">SQL</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/vouchers/" data-taxonomy-term="vouchers"><span class="taxonomy-label">Vouchers</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/troubleshooting/" data-taxonomy-term="troubleshooting"><span class="taxonomy-label">Troubleshooting</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://blog.nathalieleenders.com/tags/xmlmappings/" data-taxonomy-term="xmlmappings"><span class="taxonomy-label">XMLMappings</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/untyped-objects/" data-taxonomy-term="untyped-objects"><span class="taxonomy-label">Untyped Objects</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/variables/" data-taxonomy-term="variables"><span class="taxonomy-label">Variables</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/virtual-tables/" data-taxonomy-term="virtual-tables"><span class="taxonomy-label">Virtual Tables</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/vouchers/" data-taxonomy-term="vouchers"><span class="taxonomy-label">Vouchers</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/xmlmappings/" data-taxonomy-term="xmlmappings"><span class="taxonomy-label">XMLMappings</span></a></li>
         
   
 
@@ -654,7 +1007,7 @@ This explains how you can use the &lsquo;people with existing access&rsquo; shar
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://blog.nathalieleenders.com/#about">About</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
                 </li>
               
               
@@ -758,7 +1111,7 @@ This explains how you can use the &lsquo;people with existing access&rsquo; shar
   </footer>
 
 
-    <script src="/application.5fb9b7fb051257336144cd5ed60f8e0a23d21f25118292999caae2cf15c4c00b.js" integrity="sha256-X7m3&#43;wUSVzNhRM1e1g&#43;OCiPSHyURgpKZnKrizxXEwAs=" defer></script>
+    <script src="/application.be67475c076ea3ab2e5fde3d035e8d02f57a6b1b262d0696844c79f2cbf67bde.js" integrity="sha256-vmdHXAduo6suX949A16NAvV6axsmLQaWhEx58sv2e94=" defer></script>
 
 
     

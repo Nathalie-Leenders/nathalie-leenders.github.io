@@ -4,6 +4,7 @@ languageCode: en
 title: "Power Platform Tips & Tricks"
 publishDir: "docs"
 
+
 # Use Hugo modules to add theme
 module:
   imports:
@@ -11,6 +12,8 @@ module:
   mounts:
   - source: static/files
     target: static/files
+  - source: static/js
+    target: static/js
   - source: ./node_modules/flag-icons/flags
     target: static/flags
   - source: ./node_modules/@fontsource/mulish/files
@@ -156,7 +159,7 @@ params:
 
     # Enable Analytics
     analytics:
-      enabled: false #TODO: Set to true
+      enabled: true #TODO: Set to true
       services:
         # Google Analytics
         google:

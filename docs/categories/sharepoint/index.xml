@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SharePoint on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/categories/sharepoint/</link>
+    <link>http://localhost:1313/categories/sharepoint/</link>
     <description>Recent content in SharePoint on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Feb 2025 09:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/sharepoint/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Thu, 20 Feb 2025 09:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/sharepoint/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Blog series - Conclusion</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-conclusion/</link>
+      <link>http://localhost:1313/posts/series-http-conclusion/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-conclusion/</guid>
+      <guid>http://localhost:1313/posts/series-http-conclusion/</guid>
       <description>&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
 &lt;p&gt;So, there are a lot of HTTP calls that can be done. I&amp;rsquo;ve touched upon a few, hopefully you&amp;rsquo;ve gained a bit more insight in how these work.&lt;/p&gt;
 &lt;h2 id=&#34;some-takeaways&#34;&gt;Some takeaways&lt;/h2&gt;
@@ -21,10 +21,10 @@
     
     <item>
       <title>Blog series - Get term store (for content types)?</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-gettermstoreitems/</link>
+      <link>http://localhost:1313/posts/series-http-gettermstoreitems/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-gettermstoreitems/</guid>
+      <guid>http://localhost:1313/posts/series-http-gettermstoreitems/</guid>
       <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario:&lt;/h3&gt;
 &lt;p&gt;Fetching Terms from a Specific Term Set in a Term Store&lt;/p&gt;
 &lt;h3 id=&#34;objective&#34;&gt;Objective&lt;/h3&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>Blog series - HTTP calls to SharePoint - Best practises</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-best-practices/</link>
+      <link>http://localhost:1313/posts/series-http-best-practices/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-best-practices/</guid>
+      <guid>http://localhost:1313/posts/series-http-best-practices/</guid>
       <description>&lt;h1 id=&#34;best-practises&#34;&gt;Best practises&lt;/h1&gt;
 &lt;p&gt;Here are some best practises I found either online or discovered myself.&lt;/p&gt;
 &lt;h2 id=&#34;use-the-appropriate-http-method&#34;&gt;Use the Appropriate HTTP Method&lt;/h2&gt;
@@ -50,10 +50,10 @@
     
     <item>
       <title>Blog series - HTTP calls to SharePoint - Call a flow from a button</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-callflowfrombutton/</link>
+      <link>http://localhost:1313/posts/series-http-callflowfrombutton/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-callflowfrombutton/</guid>
+      <guid>http://localhost:1313/posts/series-http-callflowfrombutton/</guid>
       <description>&lt;h1 id=&#34;json-formatting-on-a-sharepoint-list&#34;&gt;JSON formatting on a SharePoint list?&lt;/h1&gt;
 &lt;p&gt;In this blog post, we&amp;rsquo;ll explore the powerful capabilities of JSON list formatting in SharePoint. JSON formatting allows you to customize the appearance of your lists and libraries, making them more user-friendly and visually appealing. We&amp;rsquo;ll cover how to get a flow identifier, add a column, set JSON formatting code, and additional button formatting options such as showing/hiding based on fields and permissions.&lt;/p&gt;
 &lt;h2 id=&#34;get-flow-identifier&#34;&gt;Get Flow Identifier&lt;/h2&gt;
@@ -62,10 +62,10 @@
     
     <item>
       <title>Blog series - HTTP calls to SharePoint - Fetching Specific List Information</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-getlistbyname/</link>
+      <link>http://localhost:1313/posts/series-http-getlistbyname/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-getlistbyname/</guid>
+      <guid>http://localhost:1313/posts/series-http-getlistbyname/</guid>
       <description>&lt;h1 id=&#34;scenario&#34;&gt;Scenario&lt;/h1&gt;
 &lt;p&gt;Fetching Specific List Information&lt;/p&gt;
 &lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
@@ -81,10 +81,10 @@ You can filter on other things as well, you can use basic filtering such as lt (
     
     <item>
       <title>Blog series - HTTP calls to SharePoint - Free vs Premium?</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-freevspremium/</link>
+      <link>http://localhost:1313/posts/series-http-freevspremium/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-freevspremium/</guid>
+      <guid>http://localhost:1313/posts/series-http-freevspremium/</guid>
       <description>&lt;h1 id=&#34;short-overview---when-to-need-a-premium-license-and-when-not&#34;&gt;Short overview - when to need a premium license and when not&lt;/h1&gt;
 &lt;p&gt;When can you get away with Power Automate free, and when do you need premium when working with http calls?&lt;/p&gt;
 &lt;table&gt;
@@ -132,10 +132,10 @@ You can filter on other things as well, you can use basic filtering such as lt (
     
     <item>
       <title>Blog series - HTTP calls to SharePoint - Get - Http get library id by GUID?</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-getlibraryidbyguid/</link>
+      <link>http://localhost:1313/posts/series-http-getlibraryidbyguid/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-getlibraryidbyguid/</guid>
+      <guid>http://localhost:1313/posts/series-http-getlibraryidbyguid/</guid>
       <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
 &lt;p&gt;Fetching a Specific List by Library ID&lt;/p&gt;
 &lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
@@ -149,10 +149,10 @@ You can filter on other things as well, you can use basic filtering such as lt (
     
     <item>
       <title>Blog series - HTTP calls to SharePoint - Get - Http get version number</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-getversionnumber/</link>
+      <link>http://localhost:1313/posts/series-http-getversionnumber/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-getversionnumber/</guid>
+      <guid>http://localhost:1313/posts/series-http-getversionnumber/</guid>
       <description>&lt;h2 id=&#34;scenario&#34;&gt;Scenario&lt;/h2&gt;
 &lt;p&gt;Fetching a Specific Item from a SharePoint List&lt;/p&gt;
 &lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
@@ -165,10 +165,10 @@ You can filter on other things as well, you can use basic filtering such as lt (
     
     <item>
       <title>Blog series - HTTP calls to SharePoint - Permissions</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-permissionsneeded/</link>
+      <link>http://localhost:1313/posts/series-http-permissionsneeded/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-permissionsneeded/</guid>
+      <guid>http://localhost:1313/posts/series-http-permissionsneeded/</guid>
       <description>&lt;h1 id=&#34;permissions-needed&#34;&gt;Permissions needed&lt;/h1&gt;
 &lt;p&gt;During my testing, I had SharePoint administrator access with full control on the lists, so I could do anything. For most of the calls, I recommend getting SharePoint administrator access to avoid any issues.&lt;/p&gt;
 &lt;h3 id=&#34;known-error&#34;&gt;Known Error:&lt;/h3&gt;
@@ -177,20 +177,20 @@ You can filter on other things as well, you can use basic filtering such as lt (
     
     <item>
       <title>Blog series - HTTP calls to SharePoint - Types in SharePoint</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-typesinsharepoint/</link>
+      <link>http://localhost:1313/posts/series-http-typesinsharepoint/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-typesinsharepoint/</guid>
+      <guid>http://localhost:1313/posts/series-http-typesinsharepoint/</guid>
       <description>&lt;h1 id=&#34;using-the-sharepoint-rest-api-to-update-metadata-fields&#34;&gt;Using the SharePoint REST API to Update Metadata Fields&lt;/h1&gt;
 &lt;p&gt;When working with SharePoint REST API, you might need to update a metadata field that originates from a content type. To do this, you first need to get the type value from your library. This type value is essential for making the correct HTTP call to update the metadata field. I dont fully understand the inner workings of SharePoint, but without this field being accurate your call wont work.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Blog series - HTTP calls to SharePoint - Why do I need X-request-digest?</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-xrequestdigest/</link>
+      <link>http://localhost:1313/posts/series-http-xrequestdigest/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-xrequestdigest/</guid>
+      <guid>http://localhost:1313/posts/series-http-xrequestdigest/</guid>
       <description>&lt;h1 id=&#34;what-is-it-and-why-do-i-need-it&#34;&gt;What is it, and why do I need it?&lt;/h1&gt;
 &lt;p&gt;Think of it as a type of token, that allows you, or permits you, to modify files on SharePoint through an HTTP request.&lt;/p&gt;
 &lt;p&gt;When you use POST as your method, and need to use Merge in your header, you also need to include a request digest value.&lt;/p&gt;
@@ -212,10 +212,10 @@ You can filter on other things as well, you can use basic filtering such as lt (
     
     <item>
       <title>Blog series - HTTP calls to SharePoint - Working with folders</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-workingwithfolders/</link>
+      <link>http://localhost:1313/posts/series-http-workingwithfolders/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-workingwithfolders/</guid>
+      <guid>http://localhost:1313/posts/series-http-workingwithfolders/</guid>
       <description>&lt;h1 id=&#34;working-with-folders-and-the-sharepoint-api&#34;&gt;Working with folders and the SharePoint API&lt;/h1&gt;
 &lt;p&gt;When working with the SharePoint API, handling folders can sometimes be tricky, especially when dealing with deeply nested structures. In this post, we&amp;rsquo;ll explore how to dynamically grab the file location regardless of how deep it is in the root or folder structure. We&amp;rsquo;ll also cover how to handle common issues like permission errors.&lt;/p&gt;
 &lt;h1 id=&#34;dynamically-grabbing-the-file-location&#34;&gt;Dynamically Grabbing the File Location&lt;/h1&gt;
@@ -224,10 +224,10 @@ You can filter on other things as well, you can use basic filtering such as lt (
     
     <item>
       <title>Blog series - Post - Breaking Role Inheritance for a Specific Item in a SharePoint List</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-breakinheritance/</link>
+      <link>http://localhost:1313/posts/series-http-breakinheritance/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-breakinheritance/</guid>
+      <guid>http://localhost:1313/posts/series-http-breakinheritance/</guid>
       <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
 &lt;p&gt;Breaking Role Inheritance for a Specific Item in a SharePoint List&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt;
@@ -241,10 +241,10 @@ You have a SharePoint site with multiple lists, and you need to break the role i
     
     <item>
       <title>Blog series - Post - Copying a File to a New Location in SharePoint?</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-copylistitem/</link>
+      <link>http://localhost:1313/posts/series-http-copylistitem/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-copylistitem/</guid>
+      <guid>http://localhost:1313/posts/series-http-copylistitem/</guid>
       <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
 &lt;p&gt;Copying a File to a New Location in SharePoint&lt;/p&gt;
 &lt;h3 id=&#34;objective&#34;&gt;Objective&lt;/h3&gt;
@@ -256,10 +256,10 @@ You have a SharePoint site with multiple lists, and you need to break the role i
     
     <item>
       <title>Blog series - Post - Fetching a Specific Item from a SharePoint List by Title and Item ID?</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-updatelistitem/</link>
+      <link>http://localhost:1313/posts/series-http-updatelistitem/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-updatelistitem/</guid>
+      <guid>http://localhost:1313/posts/series-http-updatelistitem/</guid>
       <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
 &lt;p&gt;Fetching a Specific Item from a SharePoint List by Title and Item ID&lt;/p&gt;
 &lt;h3 id=&#34;objective&#34;&gt;Objective&lt;/h3&gt;
@@ -271,10 +271,10 @@ You have a SharePoint site with multiple lists, and you need to break the role i
     
     <item>
       <title>Blog series - Post - HTTP Update list item term store?</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-updateitemfromtermstore/</link>
+      <link>http://localhost:1313/posts/series-http-updateitemfromtermstore/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-updateitemfromtermstore/</guid>
+      <guid>http://localhost:1313/posts/series-http-updateitemfromtermstore/</guid>
       <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario:&lt;/h3&gt;
 &lt;p&gt;You have a metadata column you want to update, but how to do this?&lt;/p&gt;
 &lt;h3 id=&#34;objective&#34;&gt;Objective:&lt;/h3&gt;
@@ -288,10 +288,10 @@ You have a SharePoint site with multiple lists, and you need to break the role i
     
     <item>
       <title>Blog series - Post - Revoke permissions to a document through the API</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-setpermissionstoread/</link>
+      <link>http://localhost:1313/posts/series-http-setpermissionstoread/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-setpermissionstoread/</guid>
+      <guid>http://localhost:1313/posts/series-http-setpermissionstoread/</guid>
       <description>&lt;h3 id=&#34;scenario&#34;&gt;Scenario&lt;/h3&gt;
 &lt;p&gt;Revoke permissions to a document through the API.&lt;/p&gt;
 &lt;p&gt;Here comes the tricky part. There are 2 kind (that I found) role types on SharePoint.&lt;/p&gt;
@@ -319,15 +319,15 @@ You have a SharePoint site with multiple lists, and you need to break the role i
 &lt;h2 id=&#34;api-call-1---get-all-the-groups-from-sharepoint&#34;&gt;API call 1 - Get all the groups from SharePoint&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Method: Post
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;URI: _api/web/lists/getbytitle(&amp;#39;@{variables(&amp;#39;VarListname&amp;#39;)}&amp;#39;)/items(@{variables(&amp;#39;VarItemID&amp;#39;)})/UpdateDocumentSharingInfo
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.nathalieleenders.com/posts/series-http-setpermissionstoread/list0.png&#34; alt=&#34;Http call&#34;&gt;&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/posts/series-http-setpermissionstoread/list0.png&#34; alt=&#34;Http call&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introduction to blog series - HTTP calls to SharePoint</title>
-      <link>https://blog.nathalieleenders.com/posts/series-http-introduction/</link>
+      <link>http://localhost:1313/posts/series-http-introduction/</link>
       <pubDate>Thu, 20 Feb 2025 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/series-http-introduction/</guid>
+      <guid>http://localhost:1313/posts/series-http-introduction/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Welcome to my blog post series on HTTP SharePoint calls.&lt;/p&gt;
 &lt;p&gt;In this series, we&amp;rsquo;ll dive into the different types of HTTP calls you can make to SharePoint, including GET, POST, PUT, and DELETE. We&amp;rsquo;ll explore the necessary permissions required for these calls and how to set them up correctly. Additionally, we&amp;rsquo;ll cover the essential components of an HTTP request, such as headers and body, and explain how to structure them for successful communication with SharePoint.&lt;/p&gt;</description>
@@ -335,10 +335,10 @@ You have a SharePoint site with multiple lists, and you need to break the role i
     
     <item>
       <title>Filter on date column with random years on SharePoint</title>
-      <link>https://blog.nathalieleenders.com/posts/sharepointfilteronyear/</link>
+      <link>http://localhost:1313/posts/sharepointfilteronyear/</link>
       <pubDate>Tue, 20 Feb 2024 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/sharepointfilteronyear/</guid>
+      <guid>http://localhost:1313/posts/sharepointfilteronyear/</guid>
       <description>&lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
 &lt;p&gt;You have a SharePoint list with birthdays, on a date column, but dont know how to filter on them to show the last few days or upcoming few days if someone has (had) their birthday.&lt;/p&gt;
 &lt;p&gt;I couldnt figure out how to do this, and then a colleague of mine Remco Bruijstens (thank you!) suggested this method, and after testing it worked.
@@ -347,10 +347,10 @@ Kudos to him, and I wanted to share with you how to accomplish this.&lt;/p&gt;</
     
     <item>
       <title>Custom document link sharing with SharePoint and Power Automate</title>
-      <link>https://blog.nathalieleenders.com/posts/sharepointlibrarypermissions/</link>
+      <link>http://localhost:1313/posts/sharepointlibrarypermissions/</link>
       <pubDate>Mon, 11 Sep 2023 09:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/sharepointlibrarypermissions/</guid>
+      <guid>http://localhost:1313/posts/sharepointlibrarypermissions/</guid>
       <description>&lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
 &lt;p&gt;You need to share a file from SharePoint to an external user, in an automated process. No manual &amp;lsquo;create link&amp;rsquo; actions needed on the SharePoint site. You can then email this link to your external client.&lt;/p&gt;
 &lt;p&gt;Default on Power automate for a sharing link for SharePoint, is to set the Link Scope to either:&lt;/p&gt;

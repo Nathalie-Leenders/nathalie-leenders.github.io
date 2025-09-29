@@ -2,16 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Powerapps on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/categories/powerapps/</link>
+    <link>http://localhost:1313/categories/powerapps/</link>
     <description>Recent content in Powerapps on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Jul 2023 07:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/powerapps/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Thu, 11 Sep 2025 10:00:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/categories/powerapps/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Handling Untyped Objects from Power BI REST API in Power Apps</title>
+      <link>http://localhost:1313/posts/handling-untyped-objects-power-bi-rest-api-powerapps/</link>
+      <pubDate>Thu, 11 Sep 2025 10:00:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/handling-untyped-objects-power-bi-rest-api-powerapps/</guid>
+      <description>&lt;p&gt;When working with the Power BI REST API in Power Apps, you&amp;rsquo;ll often encounter untyped objects that can cause frustrating &amp;ldquo;Invalid argument type (Dynamic). Expecting a Text value instead&amp;rdquo; errors. In this post, I&amp;rsquo;ll show you how to properly handle these dynamic values and share a common Gallery gotcha that can break your filtering logic.&lt;/p&gt;
+&lt;h2 id=&#34;the-problem-untyped-objects&#34;&gt;The Problem: Untyped Objects&lt;/h2&gt;
+&lt;p&gt;When you call the Power BI REST API using something like &lt;code&gt;PowerBIRest.GetReports()&lt;/code&gt;, you get back a response that looks like this:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Setting conditions on the visible property - Canvas App</title>
-      <link>https://blog.nathalieleenders.com/posts/visibleproperty/</link>
+      <link>http://localhost:1313/posts/visibleproperty/</link>
       <pubDate>Thu, 20 Jul 2023 07:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/visibleproperty/</guid>
+      <guid>http://localhost:1313/posts/visibleproperty/</guid>
       <description>&lt;h1 id=&#34;setting-conditions-on-the-visible-property---canvas-app&#34;&gt;Setting conditions on the visible property - Canvas App&lt;/h1&gt;
 &lt;p&gt;How can I hide my items/control based on conditions?&lt;/p&gt;
 &lt;p&gt;You can of course use an IF statement, or Switch, and work from there.&lt;/p&gt;
@@ -24,10 +35,10 @@ Set an environment variable in your solution, add the desired persons email addr
     
     <item>
       <title>Quick tip! Unmanaged layers - updates not moving through environments (ALM)</title>
-      <link>https://blog.nathalieleenders.com/posts/unmanagedlayers-alm/</link>
+      <link>http://localhost:1313/posts/unmanagedlayers-alm/</link>
       <pubDate>Thu, 16 Mar 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/unmanagedlayers-alm/</guid>
+      <guid>http://localhost:1313/posts/unmanagedlayers-alm/</guid>
       <description>&lt;p&gt;I had this issue today and figured I’d write a quick tip for it.&lt;/p&gt;
 &lt;p&gt;I’ve changed my app, modified flows, everything works fine in Dev, publish customizations, export as managed and move to Test. Verified the client can see the new app version, and asked her to test.&lt;/p&gt;
 &lt;p&gt;Uh-oh, the flows aren’t reflecting changes.

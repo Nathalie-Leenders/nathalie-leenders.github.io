@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conditions on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/tags/conditions/</link>
+    <link>http://localhost:1313/tags/conditions/</link>
     <description>Recent content in Conditions on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Jul 2023 07:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/tags/conditions/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Thu, 20 Jul 2023 07:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/conditions/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Setting conditions on the visible property - Canvas App</title>
-      <link>https://blog.nathalieleenders.com/posts/visibleproperty/</link>
+      <link>http://localhost:1313/posts/visibleproperty/</link>
       <pubDate>Thu, 20 Jul 2023 07:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/visibleproperty/</guid>
+      <guid>http://localhost:1313/posts/visibleproperty/</guid>
       <description>&lt;h1 id=&#34;setting-conditions-on-the-visible-property---canvas-app&#34;&gt;Setting conditions on the visible property - Canvas App&lt;/h1&gt;
 &lt;p&gt;How can I hide my items/control based on conditions?&lt;/p&gt;
 &lt;p&gt;You can of course use an IF statement, or Switch, and work from there.&lt;/p&gt;

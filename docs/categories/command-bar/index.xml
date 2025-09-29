@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Command Bar on Power Platform Tips &amp; Tricks</title>
-    <link>https://blog.nathalieleenders.com/categories/command-bar/</link>
+    <link>http://localhost:1313/categories/command-bar/</link>
     <description>Recent content in Command Bar on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Aug 2023 14:27:14 +0000</lastBuildDate><atom:link href="https://blog.nathalieleenders.com/categories/command-bar/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Wed, 16 Aug 2023 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/command-bar/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Sending an email from a Model Driven App on a command bar button</title>
-      <link>https://blog.nathalieleenders.com/posts/commandbarsendemail/</link>
+      <link>http://localhost:1313/posts/commandbarsendemail/</link>
       <pubDate>Wed, 16 Aug 2023 14:27:14 +0000</pubDate>
       
-      <guid>https://blog.nathalieleenders.com/posts/commandbarsendemail/</guid>
+      <guid>http://localhost:1313/posts/commandbarsendemail/</guid>
       <description>&lt;h1 id=&#34;what-is-the-command-bar&#34;&gt;What is the command bar?&lt;/h1&gt;
 &lt;p&gt;The command bar is the ribbon on top of your Powerapp.&lt;/p&gt;
 &lt;h1 id=&#34;how-do-i-edit-this&#34;&gt;How do I edit this?&lt;/h1&gt;
