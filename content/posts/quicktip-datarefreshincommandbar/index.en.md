@@ -42,7 +42,7 @@ Whatever I do, I cannot get it to recognise the column. It kept saying: The spec
 
 {{< img src="screenshotcropped.png" caption="Column not recognised." height="197" width="555">}}
 
-No logical name, schema name, display bname, with or without ''. It just wont recognise it.
+No logical name, schema name, display name, with or without ''. It just wont recognise it.
 
 I refreshed the app, published, reloaded, nothing.
 
