@@ -1,8 +1,8 @@
 ---
 title: "Quick tip - data refresh in command bar"
 subtitle: "How to refresh your data in a MDA command bar"
-date: 2025-09-29T14:27:14Z
-lastmod: 2025-09-29T14:27:14Z
+date: 2025-09-28T14:27:14Z
+lastmod: 2025-09-28T14:27:14Z
 draft: false
 authors: [nathalieleenders]
 description: ""
