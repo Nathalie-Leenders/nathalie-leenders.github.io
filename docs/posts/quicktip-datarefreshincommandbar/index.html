@@ -660,20 +660,20 @@
         <div class="post-content" id="post-content">
           <p>This is the quickest tip ever, but I just spent hours trying to figure this out (ouch) so figured I&rsquo;d share.</p>
 <p>I&rsquo;m working on a custom button in the command bar in a Model Driven app. I want it to trigger my flow, so I&rsquo;m doing a Patch to a new column Workflow started. Seems easy enough.</p>
-<pre tabindex="0"><code class="language-powerfx" data-lang="powerfx">Patch(
+<pre tabindex="0"><code class="language-PowerFX" data-lang="PowerFX">Patch(
     Datasource,
     Self.Selected.Item,
     {WorkflowStarted: true}
 );
 Notify(&#34;Flow started&#34;, NotificationType.Success)
 </code></pre><p>Whatever I do, I cannot get it to recognise the column. It kept saying: The specified column doesnt exist.</p>
-<img src="screenshot.png"
+<img src="screenshotcropped.png"
     
     
-        width="500"
+        width="555"
     
     
-        height="800"
+        height="197"
     
     
     

@@ -29,7 +29,7 @@ This is the quickest tip ever, but I just spent hours trying to figure this out 
 
 I'm working on a custom button in the command bar in a Model Driven app. I want it to trigger my flow, so I'm doing a Patch to a new column Workflow started. Seems easy enough.
 
-```powerfx
+```PowerFX
 Patch(
     Datasource,
     Self.Selected.Item,
@@ -40,7 +40,7 @@ Notify("Flow started", NotificationType.Success)
 
 Whatever I do, I cannot get it to recognise the column. It kept saying: The specified column doesnt exist.
 
-{{< img src="screenshot.png" caption="Column not recognised." height="800" width="500">}}
+{{< img src="screenshotcropped.png" caption="Column not recognised." height="197" width="555">}}
 
 No logical name, schema name, display bname, with or without ''. It just wont recognise it.
 
