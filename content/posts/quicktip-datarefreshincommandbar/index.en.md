@@ -5,7 +5,7 @@ date: 2025-09-28T14:27:14Z
 lastmod: 2025-09-28T14:27:14Z
 draft: false
 authors: [nathalieleenders]
-description: ""
+description: "How to refresh your data in a MDA command bar"
 
 tags: ["Command Bar", "Model Driven App", "Dataverse"]
 categories: ["Command Bar", "Model Driven App", "Dataverse"]
@@ -38,13 +38,9 @@ Patch(
 Notify("Flow started", NotificationType.Success)
 ```
 
-Whatever I do, I cannot get it to recognise the column. It kept saying: 
+Whatever I do, I cannot get it to recognise the column. It kept saying: The specified column doesnt exist.
 
-```
-The specified column doesnt exist.
-```
-
-{{< img src="screenshot.png" caption="Column not recognised"." height="800" width="500">}}
+{{< img src="screenshot.png" caption="Column not recognised." height="800" width="500">}}
 
 No logical name, schema name, display bname, with or without ''. It just wont recognise it.
 

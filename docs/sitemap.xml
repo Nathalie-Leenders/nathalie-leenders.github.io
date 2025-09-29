@@ -103,46 +103,37 @@
     <priority>0.1</priority>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/handling-untyped-objects-power-bi-rest-api-powerapps/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
+    <loc>http://localhost:1313/tags/command-bar/</loc>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/command-bar/</loc>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dataverse/</loc>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/dataverse/</loc>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/model-driven-app/</loc>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/model-driven-app/</loc>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/power-bi/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/power-bi/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/power-platform/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/powerapps/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/powerapps/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/powerfx/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/rest-api/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
+    <loc>http://localhost:1313/posts/quicktip-datarefreshincommandbar/</loc>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/troubleshooting/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/untyped-objects/</loc>
-    <lastmod>2025-09-11T10:00:00+01:00</lastmod>
+    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/series-http-conclusion/</loc>
     <lastmod>2025-02-20T09:27:14+00:00</lastmod>
@@ -204,22 +195,13 @@
     <loc>http://localhost:1313/tags/sharepoint-http-series/</loc>
     <lastmod>2025-02-20T09:27:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/teamsmentions/</loc>
-    <lastmod>2024-11-05T14:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/microsoft-teams/</loc>
-    <lastmod>2024-11-05T14:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/microsoft-teams/</loc>
-    <lastmod>2024-11-05T14:27:14+00:00</lastmod>
+    <loc>http://localhost:1313/posts/countinvariablescont/countinvariablescont/</loc>
+    <lastmod>2024-11-04T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/power-automate/</loc>
-    <lastmod>2024-11-05T14:27:14+00:00</lastmod>
+    <lastmod>2024-11-04T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/power-automate/</loc>
-    <lastmod>2024-11-05T14:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/countinvariablescont/countinvariablescont/</loc>
     <lastmod>2024-11-04T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/variables/</loc>
@@ -255,19 +237,7 @@
     <loc>http://localhost:1313/posts/pdfviewerincanvascomponent/</loc>
     <lastmod>2024-08-12T09:27:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/model-driven-app/</loc>
-    <lastmod>2024-08-12T09:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/model-driven-app/</loc>
-    <lastmod>2024-08-12T09:27:14+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/callpowerautomateflowfrompowerpagesform/</loc>
-    <lastmod>2024-07-17T14:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/dataverse/</loc>
-    <lastmod>2024-07-17T14:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/dataverse/</loc>
     <lastmod>2024-07-17T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/javascript/</loc>
@@ -289,6 +259,12 @@
     <lastmod>2024-07-11T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/powerbiembedparameters/</loc>
+    <lastmod>2024-07-01T14:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/power-bi/</loc>
+    <lastmod>2024-07-01T14:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/power-bi/</loc>
     <lastmod>2024-07-01T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/canvasapppowerbi/</loc>
@@ -324,6 +300,9 @@
     <loc>http://localhost:1313/posts/powerbiinadaptivecards/</loc>
     <lastmod>2023-10-17T09:27:14+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/microsoft-teams/</loc>
+    <lastmod>2023-10-17T09:27:14+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/powerbi/</loc>
     <lastmod>2023-10-17T09:27:14+00:00</lastmod>
   </url><url>
@@ -348,12 +327,6 @@
     <loc>http://localhost:1313/tags/microsoftteams/</loc>
     <lastmod>2023-09-07T09:27:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/command-bar/</loc>
-    <lastmod>2023-08-16T14:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/command-bar/</loc>
-    <lastmod>2023-08-16T14:27:14+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/custom-emails/</loc>
     <lastmod>2023-08-16T14:27:14+00:00</lastmod>
   </url><url>
@@ -367,6 +340,12 @@
     <lastmod>2023-08-16T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/conditions/</loc>
+    <lastmod>2023-07-20T07:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/powerapps/</loc>
+    <lastmod>2023-07-20T07:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/powerapps/</loc>
     <lastmod>2023-07-20T07:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/visibleproperty/</loc>
@@ -386,9 +365,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/dynamiccontent/</loc>
     <lastmod>2023-06-08T00:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/template-copy/</loc>
-    <lastmod>2023-06-07T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/blogging/</loc>
     <lastmod>2023-06-05T11:27:41+02:00</lastmod>
@@ -431,9 +407,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/quickchartio/</loc>
     <lastmod>2023-04-12T14:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/template/</loc>
-    <lastmod>2023-04-07T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/msword/</loc>
     <lastmod>2023-04-07T14:27:14+00:00</lastmod>
@@ -520,6 +493,9 @@
     <lastmod>2022-10-19T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/adaptivecards/</loc>
+    <lastmod>2022-10-19T14:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/microsoft-teams/</loc>
     <lastmod>2022-10-19T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/</loc>

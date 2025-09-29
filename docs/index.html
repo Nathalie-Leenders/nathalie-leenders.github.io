@@ -1115,6 +1115,51 @@ Still very excited to continue to share the knowledge!</p>
         <div class="post-card">
   <div class="card">
     <div class="card-head">
+      <a href="/posts/quicktip-datarefreshincommandbar/" class="post-card-link">
+        <img class="card-img-top" src='/posts/quicktip-datarefreshincommandbar/screenshot.png' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/quicktip-datarefreshincommandbar/" class="post-card-link">
+        <h5 class="card-title">Quick tip - data refresh in command bar</h5>
+        <p class="card-text post-summary">This is the quickest tip ever, but I just spent hours trying to figure this out (ouch) so figured I&rsquo;d share.
+I&rsquo;m working on a custom button in the command bar in a Model Driven app. I want it to trigger my flow, so I&rsquo;m doing a Patch to a new column Workflow started. Seems easy enough.
+Patch(Datasource,Self.Selected.Item,{WorkflowStarted: true});Notify(&#34;Flow started&#34;, NotificationType.Success) Whatever I do, I cannot get it to recognise the column. It kept saying: The specified column doesnt exist.
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/command-bar/" class="btn btn-sm btn-info">Command Bar</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/model-driven-app/" class="btn btn-sm btn-info">Model Driven App</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/dataverse/" class="btn btn-sm btn-info">Dataverse</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Sunday, September 28, 2025
+           | 1 minute </span>
+      <a
+      href="/posts/quicktip-datarefreshincommandbar/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+      
+        <div class="post-card">
+  <div class="card">
+    <div class="card-head">
       <a href="/posts/series-http-introduction/" class="post-card-link">
         <img class="card-img-top" src='/posts/series-http-introduction/list0.png' alt="Hero Image">
       </a>
@@ -1182,46 +1227,6 @@ Roles from the Roletypekind None (Role = 0): No permissions assigned. Guest (Rol
            | 2 minutes </span>
       <a
       href="/posts/series-http-setpermissionstoread/"
-      class="float-end btn btn-outline-info btn-sm">Read</a>
-    </div>
-  </div>
-</div>
-
-      
-        <div class="post-card">
-  <div class="card">
-    <div class="card-head">
-      <a href="/posts/series-http-updateitemfromtermstore/" class="post-card-link">
-        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
-      </a>
-    </div>
-    <div class="card-body">
-      <a href="/posts/series-http-updateitemfromtermstore/" class="post-card-link">
-        <h5 class="card-title">Blog series - Post - HTTP Update list item term store?</h5>
-        <p class="card-text post-summary">Scenario: You have a metadata column you want to update, but how to do this?
-Objective: You want to update the status field, with a new status from that term set.
-Steps Identify the List and Item Like always, I&rsquo;ll use varsitename in the URL, and in the URI Varlistname and VaritemID.
-Execute the HTTP Request With this request, I&rsquo;m updating the name_status field. I will have to have queried the term store before, to get the filter array for the status field I want to have it updated to.
-</p>
-      </a>
-      
-        <div class="tags">
-  <ul style="padding-left: 0;">
-    
-    
-    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">SharePoint HTTP series</a></li>
-    
-  </ul>
-</div>
-
-      
-    </div>
-    <div class="card-footer">
-      <span class="float-start">
-          Thursday, February 20, 2025
-           | 1 minute </span>
-      <a
-      href="/posts/series-http-updateitemfromtermstore/"
       class="float-end btn btn-outline-info btn-sm">Read</a>
     </div>
   </div>
