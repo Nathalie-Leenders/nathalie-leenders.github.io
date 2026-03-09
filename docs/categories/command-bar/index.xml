@@ -14,7 +14,7 @@
       <guid>http://localhost:1313/posts/quicktip-datarefreshincommandbar/</guid>
       <description>&lt;p&gt;This is the quickest tip ever, but I just spent hours trying to figure this out (ouch) so figured I&amp;rsquo;d share.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m working on a custom button in the command bar in a Model Driven app. I want it to trigger my flow, so I&amp;rsquo;m doing a Patch to a new column Workflow started. Seems easy enough.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-powerfx&#34; data-lang=&#34;powerfx&#34;&gt;Patch(
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-PowerFX&#34; data-lang=&#34;PowerFX&#34;&gt;Patch(
     Datasource,
     Self.Selected.Item,
     {WorkflowStarted: true}

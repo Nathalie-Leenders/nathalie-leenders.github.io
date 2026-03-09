@@ -2,5 +2,6 @@
     "cSpell.words": [
         "lastmod",
         "nathalieleenders"
-    ]
+    ],
+    "sarif-viewer.connectToGithubCodeScanning": "off"
 }
