@@ -1115,6 +1115,48 @@ Still very excited to continue to share the knowledge!</p>
         <div class="post-card">
   <div class="card">
     <div class="card-head">
+      <a href="/posts/usagemetricsppac/" class="post-card-link">
+        <img class="card-img-top" src='/posts/usagemetricsppac/Usage-1.png' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/usagemetricsppac/" class="post-card-link">
+        <h5 class="card-title">How to extract Usage metrics from the Power Platform Admin center (no code)</h5>
+        <p class="card-text post-summary">Why did I need this? Disclaimer, no AI was used to create this blogpost, but it did help me in finding this method.
+I have a usecase, where I need all report metrics for usage from the Power Platform admin center. The new log visuals are in preview, and dont (yet at the time of writing this) offer support in exporting these metrics.
+There is no PowerShell script way to do this, no endpoint to call using Get (Allthough if you were to try, it wont return anything)
+</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/ppac/" class="btn btn-sm btn-info">PPAC</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/admin/" class="btn btn-sm btn-info">Admin</a></li>
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Sunday, August 9, 2026
+           | 2 minutes </span>
+      <a
+      href="/posts/usagemetricsppac/"
+      class="float-end btn btn-outline-info btn-sm">Read</a>
+    </div>
+  </div>
+</div>
+
+      
+        <div class="post-card">
+  <div class="card">
+    <div class="card-head">
       <a href="/posts/quicktip-datarefreshincommandbar/" class="post-card-link">
         <img class="card-img-top" src='/posts/quicktip-datarefreshincommandbar/screenshot.png' alt="Hero Image">
       </a>
@@ -1189,44 +1231,6 @@ In this series, we&rsquo;ll dive into the different types of HTTP calls you can 
            | 1 minute </span>
       <a
       href="/posts/series-http-introduction/"
-      class="float-end btn btn-outline-info btn-sm">Read</a>
-    </div>
-  </div>
-</div>
-
-      
-        <div class="post-card">
-  <div class="card">
-    <div class="card-head">
-      <a href="/posts/series-http-setpermissionstoread/" class="post-card-link">
-        <img class="card-img-top" src='/images/default-hero.jpg' alt="Hero Image">
-      </a>
-    </div>
-    <div class="card-body">
-      <a href="/posts/series-http-setpermissionstoread/" class="post-card-link">
-        <h5 class="card-title">Blog series - Post - Revoke permissions to a document through the API</h5>
-        <p class="card-text post-summary">Scenario Revoke permissions to a document through the API.
-Here comes the tricky part. There are 2 kind (that I found) role types on SharePoint.
-Roles from the Roletypekind None (Role = 0): No permissions assigned. Guest (Role = 1): Limited access, typically read-only. Reader (Role = 2): Can view items but not make changes. Contributor (Role = 3): Can add and edit items. WebDesigner (Role = 4): Can design and manage site content. Administrator (Role = 5): Full control over the site. Role (UserRoleAssignment). View (Role = 1): Grants read-only access to the document. Edit (Role = 2): Allows the user to edit the document. Owner (Role = 3): Grants full control over the document, including the ability to manage permissions. None (Role = 0): Removes any previously assigned permissions. Step 1 - You need to have broken inheritance first, otherwise this won&rsquo;t work. API call 1 - Get all the groups from SharePoint Method: Post URI: _api/web/lists/getbytitle(&#39;@{variables(&#39;VarListname&#39;)}&#39;)/items(@{variables(&#39;VarItemID&#39;)})/UpdateDocumentSharingInfo </p>
-      </a>
-      
-        <div class="tags">
-  <ul style="padding-left: 0;">
-    
-    
-    <li class="rounded"><a href="/tags/sharepoint-http-series/" class="btn btn-sm btn-info">SharePoint HTTP series</a></li>
-    
-  </ul>
-</div>
-
-      
-    </div>
-    <div class="card-footer">
-      <span class="float-start">
-          Thursday, February 20, 2025
-           | 2 minutes </span>
-      <a
-      href="/posts/series-http-setpermissionstoread/"
       class="float-end btn btn-outline-info btn-sm">Read</a>
     </div>
   </div>

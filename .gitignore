@@ -1,3 +1,5 @@
 resources/*
 node_modules/*
 public/*
+static/files/powerbi/discount-sample-sales.csv
+docs/files/powerbi/discount-sample-sales.csv

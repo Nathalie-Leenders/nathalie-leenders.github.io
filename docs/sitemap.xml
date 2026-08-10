@@ -102,8 +102,29 @@
     <lastmod>2010-06-08T08:06:25+06:00</lastmod>
     <priority>0.1</priority>
   </url><url>
+    <loc>http://localhost:1313/tags/admin/</loc>
+    <lastmod>2026-08-09T09:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/admin/</loc>
+    <lastmod>2026-08-09T09:27:14+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
+    <lastmod>2026-08-09T09:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/usagemetricsppac/</loc>
+    <lastmod>2026-08-09T09:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-08-09T09:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-09T09:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ppac/</loc>
+    <lastmod>2026-08-09T09:27:14+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-08-09T09:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/command-bar/</loc>
     <lastmod>2025-09-28T14:27:14+00:00</lastmod>
@@ -123,16 +144,7 @@
     <loc>http://localhost:1313/categories/model-driven-app/</loc>
     <lastmod>2025-09-28T14:27:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/quicktip-datarefreshincommandbar/</loc>
-    <lastmod>2025-09-28T14:27:14+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-09-28T14:27:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/series-http-conclusion/</loc>

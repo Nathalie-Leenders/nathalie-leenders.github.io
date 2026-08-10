@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PPAC on Power Platform Tips &amp; Tricks</title>
+    <link>http://localhost:1313/tags/ppac/</link>
+    <description>Recent content in PPAC on Power Platform Tips &amp; Tricks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 09 Aug 2026 09:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ppac/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>How to extract Usage metrics from the Power Platform Admin center (no code)</title>
+      <link>http://localhost:1313/posts/usagemetricsppac/</link>
+      <pubDate>Sun, 09 Aug 2026 09:27:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/usagemetricsppac/</guid>
+      <description>&lt;h2 id=&#34;why-did-i-need-this&#34;&gt;Why did I need this?&lt;/h2&gt;
+&lt;p&gt;Disclaimer, no AI was used to create this blogpost, but it did help me in finding this method.&lt;/p&gt;
+&lt;p&gt;I have a usecase, where I need all report metrics for usage from the Power Platform admin center.
+The new log visuals are in preview, and dont (yet at the time of writing this) offer support in exporting these metrics.&lt;/p&gt;
+&lt;p&gt;There is no PowerShell script way to do this, no endpoint to call using Get (Allthough if you were to try, it wont return anything)&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>
