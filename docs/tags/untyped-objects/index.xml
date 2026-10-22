@@ -6,10 +6,10 @@
     <description>Recent content in Untyped Objects on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Sep 2025 10:00:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/tags/untyped-objects/index.xml" rel="self" type="application/rss+xml" /><item>
-      <title>Handling Untyped Objects from Power BI REST API in Power Apps</title>
+    <lastBuildDate>Thu, 27 Jun 2024 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/untyped-objects/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>How to embed a Power BI report into a Canvas app, and hide the nav &amp; filter</title>
       <link>http://localhost:1313/posts/handling-untyped-objects-power-bi-rest-api-powerapps/</link>
-      <pubDate>Thu, 11 Sep 2025 10:00:00 +0100</pubDate>
+      <pubDate>Thu, 27 Jun 2024 14:27:14 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/handling-untyped-objects-power-bi-rest-api-powerapps/</guid>
       <description>&lt;p&gt;When working with the Power BI REST API in Power Apps, you&amp;rsquo;ll often encounter untyped objects that can cause frustrating &amp;ldquo;Invalid argument type (Dynamic). Expecting a Text value instead&amp;rdquo; errors. In this post, I&amp;rsquo;ll show you how to properly handle these dynamic values and share a common Gallery gotcha that can break your filtering logic.&lt;/p&gt;

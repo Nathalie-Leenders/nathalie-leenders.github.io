@@ -1,6 +1,19 @@
 ---
 title: Videos
+date: 2026-10-22
 ---
+
+## [How to get usage metrics from the Power Platform Admin Center - Copilot, Microsoft 365 & Power Platform community call – 27th of August, 2026](https://youtu.be/EnstQENsmEM?list=PLR9nK3mnD-OURfm5Ypu-wK52cxBv_gXCA&t=2856)
+
+{{< youtube id="EnstQENsmEM" start="2856" >}}
+
+## [Talking about the (new) Microsoft AB and AI exams, taking beta exams and more](https://www.youtube.com/watch?v=p8k3QHu8cNw&list=PLeOrkF19qpjxvRbFimDlymwVXwYLXgsJ4&index=19)
+
+{{< youtube p8k3QHu8cNw >}}
+
+## [How to call a Power Automate flow from a Dataverse form](https://www.youtube.com/watch?v=Oh1lU72r0nY&list=PLeOrkF19qpjxvRbFimDlymwVXwYLXgsJ4&index=18)
+
+{{< youtube Oh1lU72r0nY >}}
 
 ## [A girl in love with Tech - Rachel Irabor and Nathalie Leenders](https://www.youtube.com/watch?v=rx_UXiG_SfM)
 

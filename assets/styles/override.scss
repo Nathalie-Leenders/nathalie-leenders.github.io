@@ -3,3 +3,20 @@
     color: #C3962D!important; // Example style
     border-bottom-color: #C3962D!important; // Example style
 }
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home .background {
+    width: 92%;
+    margin: 0 auto;
+    background-size: contain;
+    // Keep the previous bottom edge as the 1844x768 banner grows from 90% to 92%.
+    background-position: center calc(50% - min(50vh, 46vw * 768 / 1844) + min(50vh, 45vw * 768 / 1844));
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    transform: none;
+    filter: none;
+}

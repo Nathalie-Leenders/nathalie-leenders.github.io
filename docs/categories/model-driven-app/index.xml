@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Model Driven App on Power Platform Tips &amp; Tricks</title>
-    <link>http://localhost:1313/categories/model-driven-app/</link>
+    <link>https://nathalieleenders.com/categories/model-driven-app/</link>
     <description>Recent content in Model Driven App on Power Platform Tips &amp; Tricks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Sep 2025 14:27:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/model-driven-app/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 28 Sep 2025 14:27:14 +0000</lastBuildDate><atom:link href="https://nathalieleenders.com/categories/model-driven-app/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Quick tip - data refresh in command bar</title>
-      <link>http://localhost:1313/posts/quicktip-datarefreshincommandbar/</link>
+      <link>https://nathalieleenders.com/posts/quicktip-datarefreshincommandbar/</link>
       <pubDate>Sun, 28 Sep 2025 14:27:14 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/quicktip-datarefreshincommandbar/</guid>
+      <guid>https://nathalieleenders.com/posts/quicktip-datarefreshincommandbar/</guid>
       <description>&lt;p&gt;This is the quickest tip ever, but I just spent hours trying to figure this out (ouch) so figured I&amp;rsquo;d share.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m working on a custom button in the command bar in a Model Driven app. I want it to trigger my flow, so I&amp;rsquo;m doing a Patch to a new column Workflow started. Seems easy enough.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-PowerFX&#34; data-lang=&#34;PowerFX&#34;&gt;Patch(
@@ -25,10 +25,10 @@ Notify(&amp;#34;Flow started&amp;#34;, NotificationType.Success)
     
     <item>
       <title>How to use the PDF Viewer, to view PDF&#39;s in a Model Driven app from an attachment column</title>
-      <link>http://localhost:1313/posts/pdfviewerincanvascomponent/</link>
+      <link>https://nathalieleenders.com/posts/pdfviewerincanvascomponent/</link>
       <pubDate>Mon, 12 Aug 2024 09:27:14 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/pdfviewerincanvascomponent/</guid>
+      <guid>https://nathalieleenders.com/posts/pdfviewerincanvascomponent/</guid>
       <description>&lt;h2 id=&#34;usecase&#34;&gt;Usecase&lt;/h2&gt;
 &lt;p&gt;My PDF viewer works in the canvas app, but not when I embed it&lt;/p&gt;
 &lt;p&gt;Show image 0/0 in MDA&lt;/p&gt;
@@ -40,10 +40,10 @@ However these only work on Notes with attachments. My dataverse table/solution u
     
     <item>
       <title>Sending an email from a Model Driven App on a command bar button</title>
-      <link>http://localhost:1313/posts/commandbarsendemail/</link>
+      <link>https://nathalieleenders.com/posts/commandbarsendemail/</link>
       <pubDate>Wed, 16 Aug 2023 14:27:14 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/commandbarsendemail/</guid>
+      <guid>https://nathalieleenders.com/posts/commandbarsendemail/</guid>
       <description>&lt;h1 id=&#34;what-is-the-command-bar&#34;&gt;What is the command bar?&lt;/h1&gt;
 &lt;p&gt;The command bar is the ribbon on top of your Powerapp.&lt;/p&gt;
 &lt;h1 id=&#34;how-do-i-edit-this&#34;&gt;How do I edit this?&lt;/h1&gt;
