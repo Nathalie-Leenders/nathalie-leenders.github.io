@@ -21,6 +21,15 @@
     filter: none;
 }
 
+.home .greeting,
+.home .greeting-subtitle,
+.home .typing-carousel,
+html[data-theme='dark'] .home .greeting,
+html[data-theme='dark'] .home .greeting-subtitle,
+html[data-theme='dark'] .home .typing-carousel {
+    color: #33205C;
+}
+
 @media (max-width: 767.98px) {
     .home .background {
         background-position: center 70%;
